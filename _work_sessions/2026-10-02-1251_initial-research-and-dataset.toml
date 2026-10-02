@@ -1,0 +1,47 @@
+title = "Initial research: Einbürgerungstest catalog, Bayern answers, Munich process, GitHub survey"
+date = "2026-10-02"
+time = "12:51"
+areas = ["official/", "data/", "scripts/", "results/", "reports/", "_learnings/"]
+
+done = [
+  "Downloaded official BAMF Gesamtfragenkatalog PDF (Stand 07.05.2025, page date 26.05.2025), Prüfungsordnung, Musterfragebogen, Prüfstellen-BY.xlsx",
+  "Scraped all 310 Bayern questions (options + correct answer + stem images) from oet.bamf.de via Playwright MCP, ~8 min in 3 batches",
+  "Built data/questions_bayern.json/.csv, data/images (13 picture questions), QUESTIONS_AND_ANSWERS_BAYERN.md with scripts/build_dataset.py",
+  "Cross-checked answers: 310/310 vs youssefeghaly; 10 disagreements vs vlad-ds Anki deck, all resolved in our favor",
+  "Researched Munich process (KVR, fees, online application, 18+ months), test centers (MVHS, BRK + official list), current law (5 years, turbo track abolished 30.10.2025), BAMF certificate backlog (~12 weeks)",
+  "Surveyed GitHub / Hugging Face / AI tooling -> RESOURCES.md",
+  "Quick review: re-verified MVHS, BRK, München pages verbatim with Playwright; fixed 4 README errors (see _learnings/2026-10-02-1420_*); added input validation to build_dataset.py (output unchanged)",
+  "Pattern analysis: scripts/mine_patterns.py -> results/patterns.json -> scripts/build_pattern_report.py -> reports/patterns_report.html; findings in PATTERNS.md. 41 picker rules, option features, word rules, 1,456 conditional rules, 5-fold CV, exact exam model. Verdict: no trick passes alone (best held-out 7.6% pass); rule list cuts memorizing for 95% pass from 148 to 64",
+  "Option-order question (user doubted it): found the 2008 Berlin official sample sheet via Wayback, wrote scripts/check_sheet_order.py; 56/56 checkable questions on both official sheets in catalog order, but EinbTestV says the 100 real sheets are unpublished and nothing fixes option order. Added a shuffled-options scenario: 100 answers to memorize (vs 64 if order kept, 148 without rules)",
+  "Memorization counts for 50/60/70/80/90/95/99% pass and expected-17 (minimal pass); shuffled rules = exactly 48 answers cheaper than guessing at every level",
+]
+pending = [
+  "Nothing committed yet - repo has no commits; waiting for the user's go",
+]
+next = [
+  "Commit if the user wants it",
+  "Pick from DEFERRED_TODO.md (practice quiz, Anki deck, printable PDF)",
+  "Book the test: MVHS or BRK, in person; certificate takes ~12 weeks",
+]
+files = [
+  "README.md", "RESOURCES.md", "QUESTIONS_AND_ANSWERS_BAYERN.md", "DECISIONS.md", "CONVENTIONS.md", "DEFERRED_TODO.md", ".gitignore",
+  "official/gesamtfragenkatalog-lebenindeutschland_2025-05-26.pdf", "official/einbuergerungstest-pruefungsordnung.pdf",
+  "official/musterbogen_einbuergerungstest.pdf", "official/Pruefstellen-BY.xlsx",
+  "data/raw/oet_001_105.json", "data/raw/oet_106_210.json", "data/raw/oet_211_310.json",
+  "data/questions_bayern.json", "data/questions_bayern.csv", "data/images/*.png",
+  "scripts/build_dataset.py", "scripts/oet_scrape.js",
+  "scripts/mine_patterns.py", "scripts/build_pattern_report.py", "results/patterns.json", "reports/patterns_report.html",
+  "PATTERNS.md", "pyproject.toml", "uv.lock",
+  "_learnings/2026-10-02-1430_sample-sheets-keep-catalog-option-order.md",
+  "scripts/check_sheet_order.py", "results/sheet_order_check.json", "official/musterbogen_einbuergerungstest_2008_berlin.pdf",
+  "_learnings/2026-10-02-1445_pattern-mining-gotchas.md",
+  "_learnings/2026-10-02-1255_bamf-online-testcenter-quirks.md",
+  "_learnings/2026-10-02-1335_crosscheck-github-datasets.md",
+  "_learnings/2026-10-02-1345_bamf-pruefstellen-file-is-xlsx.md",
+]
+commits = []
+notes = """
+OET site shows no question text for 12 questions (only internal IDs like ET2021a_Meinungsfreiheit).
+Playwright MCP became unresponsive late in the session (navigate/close timed out); WebFetch + curl covered the rest.
+GitHub API had intermittent TLS timeouts.
+"""

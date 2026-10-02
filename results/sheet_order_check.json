@@ -1,0 +1,1441 @@
+{
+ "generated": "2026-10-02 15:16",
+ "sheets": [
+  {
+   "file": "musterbogen_einbuergerungstest.pdf",
+   "pruefungsnr": "105498",
+   "testfragebogennr": "4304955",
+   "bundesland": "Bayern",
+   "questions": 33,
+   "exact": 29,
+   "fuzzy": 1,
+   "ambiguous": 2,
+   "unmatched": 1,
+   "informative_matched": 30,
+   "same_order": 30,
+   "different_order": 0,
+   "rows": [
+    {
+     "sheet_number": 1,
+     "sheet_options": [
+      "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+      "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+      "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+      "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 164,
+     "question": "Was passierte am 9. November 1938 in Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 2,
+     "sheet_options": [
+      "Lohnsteuer",
+      "Beiträge zur Arbeitslosenversicherung",
+      "Beiträge zur Renten- und Krankenversicherung",
+      "Umsatzsteuer"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 285,
+     "question": "Frau Frost arbeitet als fest angestellte Mitarbeiterin in einem Büro. Was muss sie nicht von ihrem Gehalt bezahlen?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 3,
+     "sheet_options": [
+      "steuert sich allein nach Angebot und Nachfrage.",
+      "wird vom Staat geplant und gesteuert, Angebot und Nachfrage werden nicht berücksichtigt.",
+      "richtet sich nach der Nachfrage im Ausland.",
+      "richtet sich nach Angebot und Nachfrage, aber der Staat sorgt für einen sozialen Ausgleich."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 171,
+     "question": "Soziale Marktwirtschaft bedeutet, die Wirtschaft …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 4,
+     "sheet_options": [
+      "Ingolstadt.",
+      "Regensburg.",
+      "Nürnberg.",
+      "München."
+     ],
+     "status": "exact",
+     "section": "Bayern",
+     "number": 7,
+     "question": "Die Landeshauptstadt von Bayern heißt …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 5,
+     "sheet_options": [
+      "Ja, wenn mehr als die Hälfte der Abgeordneten im Bundestag dafür sind.",
+      "Ja, aber dazu müssen zwei Drittel der Abgeordneten im Bundestag dafür sein.",
+      "Nein, denn die Pressefreiheit ist ein Grundrecht. Sie kann nicht abgeschafft werden.",
+      "Nein, denn nur der Bundesrat kann die Pressefreiheit abschaffen."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 12,
+     "question": "Eine Partei im Deutschen Bundestag will die Pressefreiheit abschaffen. Ist das möglich?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 6,
+     "sheet_options": [
+      "Oberlandesgericht",
+      "Amtsgericht",
+      "Bundesverfassungsgericht",
+      "Verwaltungsgericht"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 80,
+     "question": "Welches Gericht in Deutschland ist zuständig für die Auslegung des Grundgesetzes?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 7,
+     "sheet_options": [
+      "Erster Minister/ Erste Ministerin",
+      "Premierminister/ Premierministerin",
+      "Senator/ Senatorin",
+      "Ministerpräsident/ Ministerpräsidentin"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 37,
+     "question": "Wie werden die Regierungschefinnen/Regierungschefs der meisten Bundesländer in Deutschland genannt?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 8,
+     "sheet_options": [
+      "Niedersachsen, Nordrhein-Westfalen, Hessen, Schleswig-Holstein, Brandenburg",
+      "Mecklenburg-Vorpommern, Brandenburg, Sachsen, Sachsen-Anhalt, Thüringen",
+      "Bayern, Baden-Württemberg, Rheinland-Pfalz, Thüringen, Sachsen",
+      "Sachsen, Thüringen, Hessen, Niedersachen, Brandenburg"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 201,
+     "question": "Welche der folgenden Auflistungen enthält nur Bundesländer, die zum Gebiet der früheren DDR gehörten?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 9,
+     "sheet_options": [
+      "Gerhard Schröder",
+      "Helmut Kohl",
+      "Konrad Adenauer",
+      "Helmut Schmidt"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 215,
+     "question": "Wer wird als \"Kanzler der Deutschen Einheit\" bezeichnet?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 10,
+     "sheet_options": [
+      "in Bonn, weil sich dort das Bundeskanzleramt und der Bundestag befinden.",
+      "auf Schloss Meseberg, dem Gästehaus der Bundesregierung, um Staatsgäste zu empfangen.",
+      "auf Schloss Bellevue, dem Amtssitz des Bundespräsidenten / der Bundespräsidentin, um Staatsgäste zu empfangen.",
+      "in Berlin, weil sich dort das Bundeskanzleramt und der Bundestag befinden."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 71,
+     "question": "Wo hält sich die deutsche Bundeskanzlerin/der deutsche Bundeskanzler am häufigsten auf? Am häufigsten ist sie/er …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 11,
+     "sheet_options": [
+      "Jugendlichen.",
+      "Arbeitnehmer und Arbeitnehmerinnen.",
+      "Rentner und Rentnerinnen.",
+      "Arbeitgeber und Arbeitgeberinnen."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 101,
+     "question": "Gewerkschaften sind Interessenverbände der …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 12,
+     "sheet_options": [
+      "das Abitur",
+      "ein Diplom",
+      "die Prokura",
+      "eine Gesellenprüfung"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 244,
+     "question": "Welchen Schulabschluss braucht man normalerweise, um an einer Universität in Deutschland ein Studium zu beginnen?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 13,
+     "sheet_options": [
+      "3",
+      "4",
+      "5",
+      "6"
+     ],
+     "status": "ambiguous",
+     "candidates": [
+      "Baden-Württemberg 3",
+      "Bayern 3",
+      "Berlin 3",
+      "Brandenburg 3",
+      "Bremen 3",
+      "Hamburg 3",
+      "Hessen 3",
+      "Mecklenburg-Vorpommern 3",
+      "Niedersachsen 3",
+      "Nordrhein-Westfalen 3",
+      "Rheinland-Pfalz 3",
+      "Saarland 3",
+      "Sachsen 3",
+      "Sachsen-Anhalt 3",
+      "Schleswig-Holstein 3",
+      "Thüringen 3",
+      "general 117",
+      "general 175"
+     ]
+    },
+    {
+     "sheet_number": 14,
+     "sheet_options": [
+      "Stadträte",
+      "Landräte",
+      "Gemeinden",
+      "Bezirksämter"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 69,
+     "question": "Die Bundesrepublik Deutschland hat einen dreistufigen Verwaltungsaufbau. Wie heißt die unterste politische Stufe?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 15,
+     "sheet_options": [
+      "Elsass-Lothringen",
+      "Nordrhein-Westfalen",
+      "Mecklenburg-Vorpommern",
+      "Sachsen-Anhalt"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 25,
+     "question": "Was ist kein Bundesland der Bundesrepublik Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 16,
+     "sheet_options": [
+      "eine kommunistische Republik.",
+      "ein demokratischer und sozialer Bundesstaat.",
+      "eine kapitalistische und soziale Monarchie.",
+      "ein sozialer und sozialistischer Bundesstaat."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 26,
+     "question": "Deutschland ist …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 17,
+     "sheet_options": [
+      "Bundesverdienstkreuz",
+      "Bundesadler",
+      "Vaterländischen Verdienstorden",
+      "Ehrentitel \"Held der Deutschen Demokratischen Republik\""
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 102,
+     "question": "Womit kann man in der Bundesrepublik Deutschland geehrt werden, wenn man auf politischem, wirtschaftlichem, kulturellem, geistigem oder sozialem Gebiet eine besondere Leistung erbracht hat? Mit dem …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 18,
+     "sheet_options": [
+      "Sozialistische Partei Deutschlands",
+      "Sozialpolitische Partei Deutschlands",
+      "Sozialdemokratische Partei Deutschlands",
+      "Sozialgerechte Partei Deutschlands"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 78,
+     "question": "Was bedeutet die Abkürzung SPD?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 19,
+     "sheet_options": [
+      "den Bundestagssitz in Berlin",
+      "das Bundesverfassungsgericht in Karlsruhe",
+      "das Bundesratsgebäude in Berlin",
+      "das Bundeskanzleramt in Berlin"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 55,
+     "question": "Was zeigt dieses Bild? © Deutscher Bundestag/Achim Melde",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 20,
+     "sheet_options": [
+      "Tod Adolf Hitlers",
+      "Beginn des Berliner Mauerbaus",
+      "Wahl von Konrad Adenauer zum Bundeskanzler",
+      "Ende des Zweiten Weltkriegs in Europa"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 153,
+     "question": "Was war am 8. Mai 1945?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 21,
+     "sheet_options": [
+      "die Krankenversicherung",
+      "die Autoversicherung",
+      "die Gebäudeversicherung",
+      "die Haftpflichtversicherung"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 36,
+     "question": "Welche Maßnahme schafft in Deutschland soziale Sicherheit?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 22,
+     "sheet_options": [
+      "Vereinstrainer / Vereinstrainerin",
+      "Wahlhelfer / Wahlhelferin",
+      "Bibliotheksaufsicht",
+      "Lehrer / Lehrerin"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 282,
+     "question": "Welches Ehrenamt müssen deutsche Staatsbürgerinnen und Staatsbürger übernehmen, wenn sie dazu aufgefordert werden?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 23,
+     "sheet_options": [
+      "für den Religionsunterricht.",
+      "nur für Jugendliche.",
+      "zur Weiterbildung.",
+      "nur für Rentner und Rentnerinnen."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 270,
+     "question": "Die Volkshochschule in Deutschland ist eine Einrichtung …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 24,
+     "sheet_options": [
+      "der feierliche Beitritt zum Warschauer Pakt",
+      "landesweite Streiks und ein Volksaufstand",
+      "der 1. SED-Parteitag",
+      "der erste Besuch Fidel Castros"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 210,
+     "question": "Was ereignete sich am 17. Juni 1953 in der DDR?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 25,
+     "sheet_options": [
+      "einen Reisepass",
+      "einen Personalausweis",
+      "einen Sozialversicherungsausweis",
+      "einen Führerschein"
+     ],
+     "status": "unmatched",
+     "best_score": 0.585,
+     "best_guess": "general 269: In Deutschland haben Kinder ab dem Alter von drei Jahren bis zur Ersteinschulung"
+    },
+    {
+     "sheet_number": 26,
+     "sheet_options": [
+      "Die Bundesrepublik hat die DDR besetzt.",
+      "Die heutigen fünf östlichen Bundesländer sind der Bundesrepublik Deutschland beigetreten.",
+      "Die westlichen Bundesländer sind der DDR beigetreten.",
+      "Die DDR hat die Bundesrepublik Deutschland besetzt."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 204,
+     "question": "Wie wurden die Bundesrepublik Deutschland und die DDR zu einem Staat?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 27,
+     "sheet_options": [
+      "mit dem Tod Adolf Hitlers",
+      "durch die bedingungslose Kapitulation Deutschlands",
+      "mit dem Rückzug der Deutschen aus den besetzten Gebieten",
+      "durch eine Revolution in Deutschland"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 179,
+     "question": "Wie endete der Zweite Weltkrieg in Europa offiziell?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 28,
+     "sheet_options": [
+      "Erster Minister/ Erste Ministerin",
+      "Premierminister/ Premierministerin",
+      "Bürgermeister/ Bürgermeisterin",
+      "Ministerpräsident/ Ministerpräsidentin"
+     ],
+     "status": "ambiguous",
+     "candidates": [
+      "Baden-Württemberg 9",
+      "Bayern 9",
+      "Brandenburg 9",
+      "Hessen 9",
+      "Mecklenburg-Vorpommern 9",
+      "Niedersachsen 9",
+      "Nordrhein-Westfalen 9",
+      "Rheinland-Pfalz 9",
+      "Saarland 9",
+      "Sachsen 9",
+      "Sachsen-Anhalt 9",
+      "Schleswig-Holstein 9",
+      "Thüringen 9"
+     ]
+    },
+    {
+     "sheet_number": 29,
+     "sheet_options": [
+      "eine Anzeige schreiben",
+      "den Fernseher reklamieren",
+      "das Gerät ungefragt austauschen",
+      "die Garantie verlängern"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 290,
+     "question": "Sie haben in Deutschland einen Fernseher gekauft. Zu Hause packen Sie den Fernseher aus, doch er funktioniert nicht. Der Fernseher ist kaputt. Was können Sie machen?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 30,
+     "sheet_options": [
+      "Löwe",
+      "Adler",
+      "Bär",
+      "Pferd"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 29,
+     "question": "Welches Tier ist das Wappentier der Bundesrepublik Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 31,
+     "sheet_options": [
+      "Italien",
+      "Polen",
+      "Marokko",
+      "Türkei"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 297,
+     "question": "Aus welchem Land sind die meisten Migrantinnen und Migranten nach Deutschland gekommen?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 32,
+     "sheet_options": [
+      "aktive Wahlkampagne.",
+      "aktives Wahlverfahren.",
+      "aktiver Wahlkampf.",
+      "aktives Wahlrecht."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 116,
+     "question": "Wenn Sie bei einer Bundestagswahl in Deutschland wählen dürfen, heißt das …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 33,
+     "sheet_options": [
+      "Rumänien",
+      "Bulgarien",
+      "Polen",
+      "Griechenland Letzte Seite – Nur vom Bundesamt auszufüllen –"
+     ],
+     "status": "fuzzy",
+     "section": "general",
+     "number": 223,
+     "question": "Welches Land ist ein Nachbarland von Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 0.84,
+     "same_order": true
+    }
+   ]
+  },
+  {
+   "file": "musterbogen_einbuergerungstest_2008_berlin.pdf",
+   "pruefungsnr": "1",
+   "testfragebogennr": "10001",
+   "bundesland": "Berlin",
+   "questions": 33,
+   "exact": 25,
+   "fuzzy": 1,
+   "ambiguous": 3,
+   "unmatched": 4,
+   "informative_matched": 26,
+   "same_order": 26,
+   "different_order": 0,
+   "rows": [
+    {
+     "sheet_number": 1,
+     "sheet_options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "status": "ambiguous",
+     "candidates": [
+      "Baden-Württemberg 1",
+      "Baden-Württemberg 8",
+      "Bayern 1",
+      "Bayern 8",
+      "Berlin 1",
+      "Berlin 8",
+      "Brandenburg 1",
+      "Brandenburg 8",
+      "Bremen 1",
+      "Bremen 8",
+      "Hamburg 1",
+      "Hamburg 8",
+      "Hessen 1",
+      "Hessen 8",
+      "Mecklenburg-Vorpommern 1",
+      "Mecklenburg-Vorpommern 8",
+      "Niedersachsen 1",
+      "Niedersachsen 8",
+      "Nordrhein-Westfalen 1",
+      "Nordrhein-Westfalen 8",
+      "Rheinland-Pfalz 1",
+      "Rheinland-Pfalz 8",
+      "Saarland 1",
+      "Saarland 8",
+      "Sachsen 1",
+      "Sachsen 8",
+      "Sachsen-Anhalt 1",
+      "Sachsen-Anhalt 8",
+      "Schleswig-Holstein 1",
+      "Schleswig-Holstein 8",
+      "Thüringen 1",
+      "Thüringen 8",
+      "general 130",
+      "general 209",
+      "general 21",
+      "general 226"
+     ]
+    },
+    {
+     "sheet_number": 2,
+     "sheet_options": [
+      "am Rosenmontag",
+      "am Maifeiertag",
+      "beim Oktoberfest",
+      "an Pfingsten"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 264,
+     "question": "Zu welchem Fest tragen Menschen in Deutschland bunte Kostüme und Masken?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 3,
+     "sheet_options": [
+      "16",
+      "18",
+      "21",
+      "23"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 94,
+     "question": "Ab welchem Alter darf man in Deutschland an der Wahl zum Deutschen Bundestag teilnehmen?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 4,
+     "sheet_options": [
+      "die Prügelstrafe",
+      "die Folter",
+      "die Todesstrafe",
+      "die Geldstrafe"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 10,
+     "question": "Was ist mit dem deutschen Grundgesetz vereinbar?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 5,
+     "sheet_options": [
+      "Völker, hört die Signale...",
+      "Einigkeit und Recht und Freiheit...",
+      "Freude schöner Götterfunken...",
+      "Deutschland einig Vaterland..."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 40,
+     "question": "Mit welchen Worten beginnt die deutsche Nationalhymne?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 6,
+     "sheet_options": [
+      "wenn ihr Wahlkampf zu teuer ist",
+      "wenn sie gegen die Verfassung kämpft",
+      "wenn sie Kritik am Staatsoberhaupt äußert",
+      "wenn ihr Programm eine neue Richtung vorschlägt"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 43,
+     "question": "Wann kann in Deutschland eine Partei verboten werden?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 7,
+     "sheet_options": [
+      "Christliche Deutsche Union",
+      "Club Deutscher Unternehmer",
+      "Christlicher Deutscher Umweltschutz",
+      "Christlich Demokratische Union"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 76,
+     "question": "Was bedeutet die Abkürzung CDU in Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 8,
+     "sheet_options": [
+      "2 Jahre",
+      "4 Jahre",
+      "6 Jahre",
+      "8 Jahre"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 107,
+     "question": "Für wie viele Jahre wird der Bundestag in Deutschland gewählt?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 9,
+     "sheet_options": [
+      "speziell.",
+      "geheim.",
+      "berufsbezogen.",
+      "geschlechtsabhängig."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 112,
+     "question": "Die Wahlen in Deutschland sind …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 10,
+     "sheet_options": [
+      "auf Flugblättern falsche Tatsachen behaupten darf.",
+      "meine Meinung in Leserbriefen äußern kann.",
+      "Nazi-Symbole tragen darf.",
+      "meine Meinung sagen darf, solange ich der Regierung nicht widerspreche."
+     ],
+     "status": "unmatched",
+     "best_score": 0.668,
+     "best_guess": "general 14: Meinungsfreiheit in Deutschland heißt, dass ich …"
+    },
+    {
+     "sheet_number": 11,
+     "sheet_options": [
+      "Abstimmungsregelung im Bundestag für kleine Parteien",
+      "Anwesenheitskontrolle im Bundestag für Abstimmungen",
+      "Mindestanteil an Wählerstimmen, um ins Parlament zu kommen",
+      "Anwesenheitskontrolle im Bundesrat für Abstimmungen"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 123,
+     "question": "Was ist in Deutschland die \"5%-Hürde\"?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 12,
+     "sheet_options": [
+      "die Bürger und Bürgerinnen zu zwingen, ihre Stimme abzugeben.",
+      "nach dem Willen der Wählermehrheit den Wechsel der Regierung zu ermöglichen.",
+      "im Land bestehende Gesetze beizubehalten.",
+      "den Armen mehr Macht zu geben."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 125,
+     "question": "In einer Demokratie ist eine Funktion von regelmäßigen Wahlen, …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 13,
+     "sheet_options": [
+      "der Leiter / die Leiterin einer Schule.",
+      "der Chef / die Chefin einer Bank.",
+      "das Oberhaupt einer Gemeinde.",
+      "der / die Vorsitzende einer Partei."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 131,
+     "question": "In Deutschland ist eine Bürgermeisterin/ein Bürgermeister …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 14,
+     "sheet_options": [
+      "Der Ehemann wählt für seine Frau mit.",
+      "Man kann durch Briefwahl seine Stimme abgeben.",
+      "Man kann am Wahltag telefonisch seine Stimme abgeben.",
+      "Kinder ab dem Alter von 14 Jahren dürfen wählen."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 133,
+     "question": "Was ist bei Bundestags- und Landtagswahlen in Deutschland erlaubt?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 15,
+     "sheet_options": [
+      "Judikative.",
+      "Exekutive.",
+      "Operative.",
+      "Legislative."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 143,
+     "question": "Eine Richterin/ein Richter in Deutschland gehört zur …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 16,
+     "sheet_options": [
+      "Militärdienst",
+      "Zwangsarbeit",
+      "freie Berufswahl",
+      "Arbeit im Ausland"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 15,
+     "question": "Was verbietet das deutsche Grundgesetz?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 17,
+     "sheet_options": [
+      "Diktatur.",
+      "Demokratie.",
+      "Monarchie.",
+      "Räterepublik."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 158,
+     "question": "Das \"Dritte Reich\" war eine …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 18,
+     "sheet_options": [
+      "des staatlichen Rassismus",
+      "der Meinungsfreiheit",
+      "der allgemeinen Religionsfreiheit",
+      "der Entwicklung der Demokratie"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 161,
+     "question": "Was kennzeichnete den NS-Staat? Eine Politik …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 19,
+     "sheet_options": [
+      "Mit dem Angriff auf Polen beginnt der Zweite Weltkrieg.",
+      "Die Nationalsozialisten verlieren eine Wahl und lösen den Reichstag auf.",
+      "Jüdische Geschäfte und Synagogen werden durch Nationalsozialisten und ihre Anhänger zerstört.",
+      "Hitler wird Reichspräsident und lässt alle Parteien verbieten."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 164,
+     "question": "Was passierte am 9. November 1938 in Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 20,
+     "sheet_options": [
+      "1919",
+      "1933",
+      "1949",
+      "1989"
+     ],
+     "status": "unmatched",
+     "best_score": 0.875,
+     "best_guess": "general 154: Wann war der Zweite Weltkrieg zu Ende?"
+    },
+    {
+     "sheet_number": 21,
+     "sheet_options": [
+      "von einer Diktatur zur Demokratie.",
+      "von einer liberalen Marktwirtschaft zum Sozialismus.",
+      "von einer Monarchie zur Sozialdemokratie.",
+      "von einem religiösen Staat zu einem kommunistischen Staat"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 196,
+     "question": "Warum nennt man die Zeit im Herbst 1989 in der DDR \"Die Wende\"? In dieser Zeit veränderte sich die DDR politisch …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 22,
+     "sheet_options": [
+      "1933.",
+      "1949.",
+      "1971.",
+      "1990."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 219,
+     "question": "Die Bundesrepublik Deutschland hat die Grenzen von heute seit …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 23,
+     "sheet_options": [
+      "5 Jahre.",
+      "6 Jahre.",
+      "7 Jahre.",
+      "8 Jahre."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 230,
+     "question": "Das Europäische Parlament wird regelmäßig gewählt, nämlich alle …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 24,
+     "sheet_options": [
+      "Finnland",
+      "Dänemark",
+      "Norwegen",
+      "Schweden"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 227,
+     "question": "Welches Land ist ein Nachbarland von Deutschland?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 25,
+     "sheet_options": [
+      "Rentenberechnung.",
+      "Lehrstellensuche.",
+      "Steuererklärung.",
+      "Krankenversicherung."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 259,
+     "question": "Das Berufsinformationszentrum BIZ bei der Bundesagentur für Arbeit in Deutschland hilft bei der …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 26,
+     "sheet_options": [
+      "eine Erlaubnis der Polizei",
+      "eine Genehmigung einer Partei",
+      "eine Genehmigung des Einwohnermeldeamts",
+      "eine Gaststättenerlaubnis von der zuständigen Behörde"
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 256,
+     "question": "Ein Ehepaar möchte in Deutschland ein Restaurant eröffnen. Was braucht es dazu unbedingt?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 27,
+     "sheet_options": [
+      "einer Hochschule.",
+      "einem Abendgymnasium.",
+      "einer Hauptschule.",
+      "einer Privatuniversität."
+     ],
+     "status": "ambiguous",
+     "candidates": [
+      "general 257",
+      "general 261"
+     ]
+    },
+    {
+     "sheet_number": 28,
+     "sheet_options": [
+      "telefonieren",
+      "rauchen",
+      "Alkohol trinken",
+      "lautes Reden"
+     ],
+     "status": "unmatched",
+     "best_score": 0.51,
+     "best_guess": "Hamburg 7: Welches Bundesland ist ein Stadtstaat?"
+    },
+    {
+     "sheet_number": 29,
+     "sheet_options": [
+      "im Rollstuhl sitzt.",
+      "keine Erfahrung hat.",
+      "zu hohe Gehaltsvorstellungen hat.",
+      "kein Englisch spricht."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 278,
+     "question": "Ein Mann im Rollstuhl hat sich auf eine Stelle als Buchhalter beworben. Was ist ein Beispiel für Diskriminierung? Er bekommt die Stelle nur deshalb nicht, weil er …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 30,
+     "sheet_options": [
+      "Vietnam, Polen, Mosambik.",
+      "Frankreich, Rumänien, Somalia.",
+      "Chile, Ungarn, Simbabwe.",
+      "Nordkorea, Mexiko, Ägypten."
+     ],
+     "status": "exact",
+     "section": "general",
+     "number": 298,
+     "question": "In der DDR lebten vor allem Migrantinnen und Migranten aus …",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 1.0,
+     "same_order": true
+    },
+    {
+     "sheet_number": 31,
+     "sheet_options": [
+      "1",
+      "2",
+      "3",
+      "4"
+     ],
+     "status": "ambiguous",
+     "candidates": [
+      "Baden-Württemberg 1",
+      "Baden-Württemberg 8",
+      "Bayern 1",
+      "Bayern 8",
+      "Berlin 1",
+      "Berlin 8",
+      "Brandenburg 1",
+      "Brandenburg 8",
+      "Bremen 1",
+      "Bremen 8",
+      "Hamburg 1",
+      "Hamburg 8",
+      "Hessen 1",
+      "Hessen 8",
+      "Mecklenburg-Vorpommern 1",
+      "Mecklenburg-Vorpommern 8",
+      "Niedersachsen 1",
+      "Niedersachsen 8",
+      "Nordrhein-Westfalen 1",
+      "Nordrhein-Westfalen 8",
+      "Rheinland-Pfalz 1",
+      "Rheinland-Pfalz 8",
+      "Saarland 1",
+      "Saarland 8",
+      "Sachsen 1",
+      "Sachsen 8",
+      "Sachsen-Anhalt 1",
+      "Sachsen-Anhalt 8",
+      "Schleswig-Holstein 1",
+      "Schleswig-Holstein 8",
+      "Thüringen 1",
+      "Thüringen 8",
+      "general 130",
+      "general 209",
+      "general 21",
+      "general 226"
+     ]
+    },
+    {
+     "sheet_number": 32,
+     "sheet_options": [
+      "Ministerpräsident/ Ministerpräsidentin",
+      "Oberbürgermeister/ Oberbürgermeisterin",
+      "Präsident/ Präsidentin des Senats",
+      "Regierender Bürgermeister/ Regierende Bürgermeisterin"
+     ],
+     "status": "fuzzy",
+     "section": "Berlin",
+     "number": 9,
+     "question": "Wie nennt man die Regierungschefin/den Regierungschef des Stadtstaates Berlin?",
+     "mapping": [
+      0,
+      1,
+      2,
+      3
+     ],
+     "score": 0.996,
+     "same_order": true
+    },
+    {
+     "sheet_number": 33,
+     "sheet_options": [
+      "1",
+      "2",
+      "3",
+      "4 Letzte Seite – Nur vom Bundesamt auszufüllen –"
+     ],
+     "status": "unmatched",
+     "best_score": 0.761,
+     "best_guess": "general 21: Welches ist das Wappen der Bundesrepublik Deutschland?"
+    }
+   ]
+  }
+ ],
+ "total_informative_matched": 56,
+ "total_same_order": 56,
+ "log10_p_all_same_if_shuffled": -77.29182953584994
+}
