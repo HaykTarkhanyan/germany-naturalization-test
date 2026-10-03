@@ -29,14 +29,13 @@ function getSettings(): Settings {
   return current
 }
 
+function subscribe(listener: () => void): () => void {
+  listeners.add(listener)
+  return () => listeners.delete(listener)
+}
+
 export function useSettings(): Settings {
-  return useSyncExternalStore(
-    (l) => {
-      listeners.add(l)
-      return () => listeners.delete(l)
-    },
-    getSettings,
-  )
+  return useSyncExternalStore(subscribe, getSettings)
 }
 
 export function updateSettings(change: Partial<Settings>): void {
