@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated": "2026-10-02 15:26",
+  "generated": "2026-10-03 01:32",
   "n_questions": 310,
   "seed": 509,
   "baseline": 0.25,
@@ -6767,7 +6767,7 @@
    {
     "id": 184,
     "section": "general",
-    "question": "184. Auf welcher rechtlichen Grundlage wurde der Staat Israel gegründet?",
+    "question": "Auf welcher rechtlichen Grundlage wurde der Staat Israel gegründet?",
     "rule": "fallback_B",
     "picked_index": 1,
     "picked": "ein Beschluss des Zionistenkongresses",
@@ -6987,7 +6987,7 @@
    {
     "id": 206,
     "section": "general",
-    "question": "206. Woran erinnern die sogenannten „Stolpersteine“ in Deutschland?",
+    "question": "Woran erinnern die sogenannten „Stolpersteine“ in Deutschland?",
     "rule": "fallback_B",
     "picked_index": 1,
     "picked": "an die Opfer des Nationalsozialismus",

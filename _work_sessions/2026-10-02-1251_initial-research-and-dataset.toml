@@ -14,12 +14,13 @@ done = [
   "Pattern analysis: scripts/mine_patterns.py -> results/patterns.json -> scripts/build_pattern_report.py -> reports/patterns_report.html; findings in PATTERNS.md. 41 picker rules, option features, word rules, 1,456 conditional rules, 5-fold CV, exact exam model. Verdict: no trick passes alone (best held-out 7.6% pass); rule list cuts memorizing for 95% pass from 148 to 64",
   "Option-order question (user doubted it): found the 2008 Berlin official sample sheet via Wayback, wrote scripts/check_sheet_order.py; 56/56 checkable questions on both official sheets in catalog order, but EinbTestV says the 100 real sheets are unpublished and nothing fixes option order. Added a shuffled-options scenario: 100 answers to memorize (vs 64 if order kept, 148 without rules)",
   "Memorization counts for 50/60/70/80/90/95/99% pass and expected-17 (minimal pass); shuffled rules = exactly 48 answers cheaper than guessing at every level",
+  "Committed and pushed everything (890871c, public repo); global CLAUDE.md: HTML sections collapsible + TOC (notes repo b57a723)",
+  "Study topics: data/topics.json, 24 topics in 3 BAMF modules + Bayern, validated 310/310; fixed PDF typo prefix in Q184/Q206 stems (build_dataset.py)",
 ]
 pending = [
-  "Nothing committed yet - repo has no commits; waiting for the user's go",
+  "Pattern report predates the HTML rule (TOC + collapsible sections) - see DEFERRED_TODO.md",
 ]
 next = [
-  "Commit if the user wants it",
   "Pick from DEFERRED_TODO.md (practice quiz, Anki deck, printable PDF)",
   "Book the test: MVHS or BRK, in person; certificate takes ~12 weeks",
 ]
@@ -39,7 +40,7 @@ files = [
   "_learnings/2026-10-02-1335_crosscheck-github-datasets.md",
   "_learnings/2026-10-02-1345_bamf-pruefstellen-file-is-xlsx.md",
 ]
-commits = []
+commits = ["890871c initial commit (catalog, answers, Munich guide, pattern analysis)", "study topics + Q184/Q206 stem fix (this session, commit after 890871c)"]
 notes = """
 OET site shows no question text for 12 questions (only internal IDs like ET2021a_Meinungsfreiheit).
 Playwright MCP became unresponsive late in the session (navigate/close timed out); WebFetch + curl covered the rest.

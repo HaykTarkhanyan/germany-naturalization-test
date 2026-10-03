@@ -10,6 +10,7 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 |---|---|
 | [`QUESTIONS_AND_ANSWERS_BAYERN.md`](QUESTIONS_AND_ANSWERS_BAYERN.md) | All 310 questions (300 general + 10 Bayern) with the correct answer marked, picture questions included. Start here. |
 | [`data/questions_bayern.json`](data/questions_bayern.json) / [`.csv`](data/questions_bayern.csv) | Same, machine-readable (for Anki, a quiz app, an LLM, ...) |
+| `data/topics.json` | The 310 questions grouped into 24 study topics (in the 3 BAMF course modules + Bayern), ids in study order with related questions next to each other |
 | `data/images/` | The 13 picture questions (coats of arms, flags, photos) as served by BAMF |
 | `data/raw/` | Raw scrape of the BAMF Online-Testcenter - the record the dataset is built from |
 | `official/gesamtfragenkatalog-lebenindeutschland_2025-05-26.pdf` | Official BAMF catalog, all 460 questions incl. all 16 states, "Stand 07.05.2025". **No answers in it.** |

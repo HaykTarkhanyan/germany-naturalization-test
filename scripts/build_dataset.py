@@ -123,7 +123,8 @@ def parse_catalog(text: str) -> dict[str, dict[int, dict]]:
 
     for name, questions in sections.items():
         for num, q in questions.items():
-            q["question"] = " ".join(q["question"])
+            # the 2025 PDF repeats the number in a few stems ("184. Auf welcher ..."), a typo in the source
+            q["question"] = re.sub(rf"^{num}\.\s+", "", " ".join(q["question"]))
             q["options"] = [" ".join(parts) for parts in q["options"]]
             if len(q["options"]) != 4 or not q["question"]:
                 raise ValueError(f"{name} Aufgabe {num}: {len(q['options'])} options, question={q['question']!r}")

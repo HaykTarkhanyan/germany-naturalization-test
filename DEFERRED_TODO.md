@@ -10,3 +10,4 @@ Parked ideas, not started.
 - **Other states** - only if moving away from Bayern (see DECISIONS.md #2).
 - **Pattern analysis follow-ups** - (a) model guessing after crossing out options (guess probability 1/3 or 1/2 instead of 1/4; needs a Poisson-binomial instead of the 3-category exact model); (b) when BAMF publishes a new catalog, score the current rule list on the new/changed questions only - a true out-of-sample test.
 - **Commit the cross-check probe** as `scripts/non_essential/` tooling if catalog updates make it worth re-running.
+- **Pattern report: TOC + collapsible sections** - `reports/patterns_report.html` was built before the global HTML rule (sections collapsible, table of contents on top); rebuild `scripts/build_pattern_report.py` to follow it.

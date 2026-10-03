@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 8. Study topics: hand-curated grouping in data/topics.json, separate from the question data
+
+- **Date / status:** 2026-10-03, active
+- **Why:** For studying topic by topic. 24 topics of 6-20 questions, nested in the three modules of the official BAMF Orientierungskurs curriculum (Politik in der Demokratie / Geschichte und Verantwortung / Mensch und Gesellschaft) plus Bayern. Assigned by reading all 310 questions; within a topic, related questions are adjacent (e.g. all Bundespräsident questions together) so near-identical answers get learned side by side. Kept as its own file (ids only) so `build_dataset.py` and the topic choice can change independently. Validated: 310 ids, 310 unique, none missing.
+- **Alternatives rejected:** The leben-in-deutschland project's `category` field (lopsided: "History & Geography" 169 of 460, "Press Freedom" 1; different numbering); keyword-based automatic grouping (not tried; would misfile questions like 216 "Bundesadler im Plenarsaal"); catalog order alone (roughly topical but scattered, e.g. Wahlhelfer at 105/106 and 282).
+- **What would change this:** A new BAMF catalog (new ids must be placed), or study sessions showing a topic is too big to learn in one go (split it).
+
 ## 7. Treat the option order on the real exam as unverified; report both scenarios
 
 - **Date / status:** 2026-10-02, active
