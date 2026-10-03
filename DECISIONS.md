@@ -2,6 +2,20 @@
 
 Newest first.
 
+## 10. "Known" = the last two answers to a question were right; the pass chance counts only known questions as sure
+
+- **Date / status:** 2026-10-03, active
+- **Why:** One right answer is weak evidence: in practice the right answer was often just shown, and a blind guess is right 25% of the time. Two right answers in a row is the simplest rule that filters both, and it is easy to explain on screen. The pass chance then uses the exact exam model from `mine_patterns.py` with two kinds of question (known = always right, everything else = guessed at 25%), ported to `app/src/lib/exam.ts` and unit-tested against independent Python values (0.0009509599956171568 for nothing known, 0.9360898856228623 for 150 + 5 known; matches to 10 decimals). Conservative on purpose: "learning" questions you would often get right count as guesses.
+- **Alternatives rejected:** last answer only (counts lucky guesses and just-seen answers as known); a per-question probability from the whole history (needs a Poisson-binomial over draws without replacement, and is harder to explain); FSRS retrievability (spaced repetition was not chosen for this app).
+- **What would change this:** Mock exam scores running clearly above the predicted expected score (then the rule is too strict).
+
+## 9. Study app: nemeceren's frontend stack, browser-only progress, three modes, GitHub Pages
+
+- **Date / status:** 2026-10-03, active (stack, storage, modes and hosting chosen by Hayk)
+- **Why:** Hayk asked for an app and pointed at `misc/nemeceren` as the stack reference, so it is the same toolchain at the same pinned versions that already run on Node 20.20.0 there: Vite 8.3.1, React 19.3.0, TypeScript 6.0.3, zod 4.6.5, Vitest 4.1.11, plain CSS with variables, the 20-line hash router, and the same Pages workflow. Hayk chose: progress in the browser's localStorage with export/import (no backend), the modes topic practice + mock exam + progress/pass chance (no spaced repetition), hosting on GitHub Pages. The app imports `data/` directly (no copy) and validates it with zod at startup; invalid stored progress is shown with a download-then-reset screen, never silently replaced.
+- **Alternatives rejected (offered to Hayk):** reusing nemeceren's Neon backend for PC/phone sync (couples the two projects); a new Neon project (most work for a few weeks of use); local-only hosting (no phone access). Spaced repetition (FSRS via ts-fsrs) was offered as a mode and not chosen.
+- **What would change this:** Studying regularly on both phone and PC (then sync via nemeceren's backend), or wanting daily review scheduling (then ts-fsrs like nemeceren).
+
 ## 8. Study topics: hand-curated grouping in data/topics.json, separate from the question data
 
 - **Date / status:** 2026-10-03, active

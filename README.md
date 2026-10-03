@@ -4,6 +4,25 @@ Everything needed to prepare for the "Leben in Deutschland" / Einbürgerungstest
 the official question catalog, all 310 Bayern questions with verified answers, the practical
 steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
+## Study app
+
+**https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Practice topic by topic (the
+24 topics of `data/topics.json`, with instant feedback), take real-format mock exams (30 general + 3 Bayern, 60 min,
+17 to pass), and see your pass chance today. Progress is saved in the browser only; export/import it on the
+Progress page to move it between devices.
+
+Run locally (Node 20.20.0, same stack as the nemeceren app):
+
+```
+cd app
+npm install        # ~1 min the first time
+npm run dev        # http://localhost:5174/
+npm test           # ~5 s, unit tests (exam model checked against the Python numbers)
+npm run build      # ~15 s, type check + production build into app/dist/
+```
+
+Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.github/workflows/pages.yml`).
+
 ## What is in this repo
 
 | Path | What it is |
@@ -23,6 +42,7 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
 | `scripts/` | Dataset build (scraper + `build_dataset.py`) and pattern analysis (`mine_patterns.py`, `build_pattern_report.py`) |
+| `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json` and `data/images/` directly |
 
 ## Where the answers come from (and why you can trust them)
 

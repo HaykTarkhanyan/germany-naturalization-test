@@ -1,0 +1,33 @@
+title = "Study topics grouping and the study app (GitHub Pages)"
+date = "2026-10-03"
+time = "01:25"
+areas = ["data/", "scripts/", "app/", ".github/", "_learnings/"]
+
+done = [
+  "data/topics.json: 310 questions in 24 study topics (3 BAMF modules + Bayern), validated; Q184/Q206 PDF typo prefix stripped (commit b39956f)",
+  "Study app in app/: nemeceren's stack (Vite 8.3.1, React 19.3.0, TS 6.0.3, zod 4.6.5, Vitest 4.1.11, Node 20.20.0); modes chosen by Hayk: topic practice, mock exam, progress + pass chance; progress in localStorage with export/import",
+  "Exam model ported to TS, matches Python to 10 decimals; 22 unit tests (exam model, exam flow, stats, progress schema, data)",
+  "Browser-checked with Playwright: practice flow, mock exam start/answer/submit/results, timeout auto-submit, invalid import message, pass chance 94% at 155 known, phone width 390 px without overflow",
+  "GitHub Pages workflow (.github/workflows/pages.yml), README section, DECISIONS #9-#10",
+]
+pending = [
+  "Pattern report still predates the HTML rule (TOC + collapsible sections) - DEFERRED_TODO.md",
+]
+next = [
+  "Use the app; check mock-exam scores against the predicted expected score (DECISIONS #10)",
+  "Possible app additions if wanted: spaced repetition (ts-fsrs), PC/phone sync via nemeceren's backend, shuffled option order toggle",
+]
+files = [
+  "data/topics.json", "scripts/build_dataset.py",
+  "app/package.json", "app/package-lock.json", "app/vite.config.ts", "app/index.html", "app/tsconfig*.json",
+  "app/src/App.tsx", "app/src/main.tsx", "app/src/styles.css",
+  "app/src/lib/data.ts", "app/src/lib/exam.ts", "app/src/lib/examFlow.ts", "app/src/lib/progress.ts", "app/src/lib/stats.ts", "app/src/lib/router.ts",
+  "app/src/lib/*.test.ts", "app/src/pages/*.tsx", "app/src/components/*.tsx",
+  ".github/workflows/pages.yml", "README.md", "DECISIONS.md", ".gitignore",
+  "_learnings/2026-10-03-0245_study-app-build-gotchas.md",
+]
+commits = ["b39956f study topics + Q184/Q206 stem fix", "study app + Pages deploy (this session)"]
+notes = """
+TaskStop left the Windows child processes of npm run dev running; stopped by PID (see _learnings).
+A full npm run build took ~3 min wall clock once while the machine was busy; normally ~15 s.
+"""
