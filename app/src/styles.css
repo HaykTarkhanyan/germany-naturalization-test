@@ -81,6 +81,8 @@ header {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 4px;
 }
 
@@ -316,6 +318,34 @@ details.plain > summary {
 .options {
   display: grid;
   gap: 8px;
+}
+
+/* English translation lines */
+.en {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+}
+
+.question-en {
+  margin: -6px 0 12px;
+  font-size: 0.95rem;
+}
+
+.option-en {
+  margin-top: 2px;
+}
+
+button.toggle {
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+button.toggle.on {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .option {

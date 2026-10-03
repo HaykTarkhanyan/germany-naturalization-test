@@ -8,7 +8,8 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
 **https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Practice topic by topic (the
 24 topics of `data/topics.json`, with instant feedback), take real-format mock exams (30 general + 3 Bayern, 60 min,
-17 to pass), and see your pass chance today. Progress is saved in the browser only; export/import it on the
+17 to pass), and see your pass chance today. Every question and answer shows its English translation under the
+German (switch "English on/off" in the header). Progress is saved in the browser only; export/import it on the
 Progress page to move it between devices.
 
 Run locally (Node 20.20.0, same stack as the nemeceren app):
@@ -29,6 +30,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 |---|---|
 | [`QUESTIONS_AND_ANSWERS_BAYERN.md`](QUESTIONS_AND_ANSWERS_BAYERN.md) | All 310 questions (300 general + 10 Bayern) with the correct answer marked, picture questions included. Start here. |
 | [`data/questions_bayern.json`](data/questions_bayern.json) / [`.csv`](data/questions_bayern.csv) | Same, machine-readable (for Anki, a quiz app, an LLM, ...) |
+| `data/translations_en.json` | English translation of every question and option, in catalog option order (`scripts/build_translations.py`; 40 hand translations in `data/translations_en_overrides.json`) |
 | `data/topics.json` | The 310 questions grouped into 24 study topics (in the 3 BAMF course modules + Bayern), ids in study order with related questions next to each other |
 | `data/images/` | The 13 picture questions (coats of arms, flags, photos) as served by BAMF |
 | `data/raw/` | Raw scrape of the BAMF Online-Testcenter - the record the dataset is built from |

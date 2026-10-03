@@ -8,7 +8,8 @@ done = [
   "Study app in app/: nemeceren's stack (Vite 8.3.1, React 19.3.0, TS 6.0.3, zod 4.6.5, Vitest 4.1.11, Node 20.20.0); modes chosen by Hayk: topic practice, mock exam, progress + pass chance; progress in localStorage with export/import",
   "Exam model ported to TS, matches Python to 10 decimals; 22 unit tests (exam model, exam flow, stats, progress schema, data)",
   "Browser-checked with Playwright: practice flow, mock exam start/answer/submit/results, timeout auto-submit, invalid import message, pass chance 94% at 155 known, phone width 390 px without overflow",
-  "GitHub Pages workflow (.github/workflows/pages.yml), README section, DECISIONS #9-#10",
+  "GitHub Pages workflow (.github/workflows/pages.yml), README section, DECISIONS #9-#10; deployed 257c7a0, live site checked",
+  "English under every question/option (toggle in header): data/translations_en.json from abdullahbutt matched by German text + 40 hand translations (scripts/build_translations.py, DECISIONS #11); source rewrites 38 questions and reorders options for 19",
 ]
 pending = [
   "Pattern report still predates the HTML rule (TOC + collapsible sections) - DEFERRED_TODO.md",
@@ -25,9 +26,12 @@ files = [
   "app/src/lib/*.test.ts", "app/src/pages/*.tsx", "app/src/components/*.tsx",
   ".github/workflows/pages.yml", "README.md", "DECISIONS.md", ".gitignore",
   "_learnings/2026-10-03-0245_study-app-build-gotchas.md",
+  "scripts/build_translations.py", "data/translations_en.json", "data/translations_en_overrides.json", "app/src/lib/settings.ts",
+  "_learnings/2026-10-03-0300_translation-source-rewrites-questions.md",
 ]
 commits = ["b39956f study topics + Q184/Q206 stem fix", "study app + Pages deploy (this session)"]
 notes = """
+Playwright MCP was blocked ("Browser is already in use") by another session; the visual check used playwright-core from the npx cache with channel msedge in a fresh browser (.playwright-mcp/phone_check.cjs, not committed).
 TaskStop left the Windows child processes of npm run dev running; stopped by PID (see _learnings).
 A full npm run build took ~3 min wall clock once while the machine was busy; normally ~15 s.
 """

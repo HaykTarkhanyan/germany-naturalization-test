@@ -3,6 +3,7 @@
 import { z } from 'zod'
 import questionsJson from '../../../data/questions_bayern.json' with { type: 'json' }
 import topicsJson from '../../../data/topics.json' with { type: 'json' }
+import translationsJson from '../../../data/translations_en.json' with { type: 'json' }
 
 const QuestionSchema = z.strictObject({
   id: z.number().int().min(1).max(310),
@@ -68,6 +69,24 @@ for (const t of TOPICS) {
 const listed = TOPICS.flatMap((t) => t.questions)
 if (listed.length !== 310 || new Set(listed).size !== 310 || listed.some((id) => !QUESTION_BY_ID.has(id))) {
   throw new Error('data/topics.json must list every question id 1-310 exactly once')
+}
+
+// English translations (scripts/build_translations.py), options in catalog order like the German ones.
+const EnglishSchema = z.strictObject({ question: z.string().min(1), options: z.array(z.string().min(1)).length(4) })
+const TranslationsFileSchema = z.strictObject({ source: z.string(), translations: z.record(z.string(), EnglishSchema) })
+export type English = z.infer<typeof EnglishSchema>
+const translations = parse(TranslationsFileSchema, translationsJson as unknown, 'data/translations_en.json').translations
+export const ENGLISH = new Map<number, English>()
+for (const q of QUESTIONS) {
+  const en = translations[String(q.id)]
+  if (en === undefined) throw new Error(`data/translations_en.json has no translation for question ${q.id}`)
+  ENGLISH.set(q.id, en)
+}
+
+export function english(q: Question): English {
+  const en = ENGLISH.get(q.id)
+  if (en === undefined) throw new Error(`no English translation for question ${q.id}`)
+  return en
 }
 
 // Picture questions: the images are bundled by Vite (hashed URLs in the build).

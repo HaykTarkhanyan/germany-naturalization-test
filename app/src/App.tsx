@@ -1,5 +1,6 @@
 import { emptyProgress, downloadText, replaceProgress, useLoadError, type ProgressError } from './lib/progress.ts'
 import { link, useRoute } from './lib/router.ts'
+import { updateSettings, useSettings } from './lib/settings.ts'
 import { ExamPage } from './pages/Exam.tsx'
 import { Home } from './pages/Home.tsx'
 import { Practice } from './pages/Practice.tsx'
@@ -16,6 +17,7 @@ const NAV: [string, string][] = [
 export function App() {
   const route = useRoute()
   const loadError = useLoadError()
+  const { showEnglish } = useSettings()
   const page = route[0] ?? ''
   return (
     <>
@@ -29,6 +31,15 @@ export function App() {
               {label}
             </a>
           ))}
+          <button
+            type="button"
+            className={`toggle ${showEnglish ? 'on' : ''}`}
+            aria-pressed={showEnglish}
+            title="Show the English translation under every question and answer"
+            onClick={() => updateSettings({ showEnglish: !showEnglish })}
+          >
+            English {showEnglish ? 'on' : 'off'}
+          </button>
         </nav>
       </header>
       <main>{loadError ? <Recovery error={loadError} /> : <Page route={route} />}</main>

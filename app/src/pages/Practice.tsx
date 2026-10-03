@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import { QuestionCard } from '../components/QuestionCard.tsx'
-import { QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS, type Question } from '../lib/data.ts'
+import { english, QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS, type Question } from '../lib/data.ts'
 import { getProgress, recordAnswer } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
+import { useSettings } from '../lib/settings.ts'
 import { statusById } from '../lib/stats.ts'
 
 type Session = { title: string; ids: number[]; topicKey: string | null }
@@ -40,6 +41,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
   const [pos, setPos] = useState(0)
   const [chosen, setChosen] = useState<number | null>(null)
   const [results, setResults] = useState<{ id: number; correct: boolean }[]>([])
+  const { showEnglish } = useSettings()
 
   const current = pos < queue.length ? question(queue[pos]) : null
 
@@ -126,6 +128,11 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
               return (
                 <li key={id}>
                   <span className="muted">Frage {id}:</span> {q.question} <b>→ {q.answer}</b>
+                  {showEnglish && (
+                    <span className="en">
+                      {english(q).question} → {english(q).options[q.answer_index]}
+                    </span>
+                  )}
                 </li>
               )
             })}
@@ -172,6 +179,9 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
             {right ? 'Right.' : (
               <>
                 Not quite. Right answer: <b>{'ABCD'[current.answer_index]}) {current.answer}</b>
+                {showEnglish && english(current).options[current.answer_index] !== current.answer && (
+                  <span className="en">{english(current).options[current.answer_index]}</span>
+                )}
               </>
             )}
           </span>

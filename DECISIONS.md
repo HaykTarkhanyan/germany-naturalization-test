@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 11. English translations: reuse abdullahbutt's English, matched by German text, with hand translations wherever its German is not the official catalog
+
+- **Date / status:** 2026-10-03, active (Hayk asked for English under everything)
+- **Why:** Translating 310 questions + 1,240 options from scratch is slow and error-prone; abdullahbutt/leben-in-deutschland-test (commit 0323d5d) has English for all of them and numbers questions like the catalog. But it is not safe to take by position: it lists the options in a different order than the catalog for 19 questions (e.g. Q57, Q98), and for 38 questions its German is not the official text at all (rewritten questions such as Q247 "how long is Mutterschutz", Q255, Q267, Q274, or changed options). So `scripts/build_translations.py` matches every option by its German text (best permutation of word-bag similarities), checks the question text, and refuses to build unless every unmatched question has a hand translation in `data/translations_en_overrides.json`. Result: 253 exact German matches, 19 near matches reviewed by hand (2 corrected: Q251 "a man hits his child" -> "you hit a child", Q291 missing "Because …"), 38 + 2 = 40 hand translations from the official German. Key German terms (Jugendamt, Standesamt, Abitur, ...) are kept in parentheses in the hand translations.
+- **Alternatives rejected:** leben-in-deutschland's AI translations (also shuffled options, and rewords stems, e.g. "weil?" instead of "weil …"); translating everything by hand (about 7x the work of reviewing, for the 253 questions where the source German is identical); taking the source's English by position (would put wrong English under options for 19 questions).
+- **What would change this:** A new BAMF catalog (re-run the script; new or changed questions show up as unmatched and need hand translations), or translation errors found while studying (fix them in the overrides file).
+
 ## 10. "Known" = the last two answers to a question were right; the pass chance counts only known questions as sure
 
 - **Date / status:** 2026-10-03, active
