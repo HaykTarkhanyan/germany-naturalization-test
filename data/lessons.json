@@ -216,7 +216,7 @@
         {"title": "Before and on election day", "facts": [
           {"text": "Eligible voters get a **Wahlbenachrichtigung** (voting notice) **from their municipality** (Gemeinde).", "q": [126]},
           {"text": "**Briefwahl** (voting by post) is allowed in Bundestag and Landtag elections.", "q": [133]},
-          {"text": "**Wahlhelfer** (volunteer poll workers) **count the votes** after the polls close. It is the honorary job citizens **must accept** when asked.", "q": [105, 106, 282]}
+          {"text": "**Wahlhelfer** (volunteer poll workers) **count the votes** after the polls close. It is an honorary job citizens **must accept** when asked.", "q": [105, 106, 282]}
         ]}
       ],
       "traps": []

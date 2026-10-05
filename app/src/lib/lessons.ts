@@ -66,7 +66,7 @@ export type LessonStats = {
   points: number
   memorize: number
   memorizePoints: number
-  /** Distinct facts the memorize questions boil down to (one "18" fact can answer several questions). */
+  /** Facts the memorize questions boil down to within this lesson (one "4 years" fact answers three questions). */
   facts: number
   commonSense: number
 }

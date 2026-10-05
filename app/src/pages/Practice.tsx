@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import { QuestionCard } from '../components/QuestionCard.tsx'
+import { ReadButton } from '../components/ReadButton.tsx'
 import { english, QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS, type Question } from '../lib/data.ts'
 import { getProgress, recordAnswer } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { useSettings } from '../lib/settings.ts'
 import { statusById } from '../lib/stats.ts'
-import { ReadButton } from './Topics.tsx'
 
 type Session = { title: string; ids: number[]; topicKey: string | null }
 

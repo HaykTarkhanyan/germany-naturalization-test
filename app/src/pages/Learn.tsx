@@ -69,7 +69,7 @@ export function Learn() {
         </p>
         <p>
           <b>{TOTAL.commonSense} of 310</b> questions are common sense: the wrong options are absurd. The other <b>{TOTAL.memorize}</b>{' '}
-          boil down to <b>{TOTAL.facts} facts</b> worth memorizing. Common sense alone, with blind guesses on the rest, averages about{' '}
+          boil down to <b>{TOTAL.facts} facts</b> worth memorizing (counted per lesson, so a few like "18" repeat across lessons). Common sense alone, with blind guesses on the rest, averages about{' '}
           {fmt(SENSE_EXPECTED)} of {EXAM.questions} ({EXAM.passMark} pass), a {Math.round(100 * SENSE_PASS)}% pass chance. That holds
           only if my common-sense calls are right and you read the German correctly. The facts are what make the pass safe.
         </p>
@@ -91,8 +91,8 @@ export function Learn() {
         <p className="muted small">
           <b>Points</b>: how many of your {EXAM.questions} exam questions come from the topic on average (each general question has a{' '}
           {EXAM.general.draw} in {EXAM.general.pool} chance to be on your sheet, each Bayern question {EXAM.bayern.draw} in{' '}
-          {EXAM.bayern.pool}). <b>Memorize</b>: questions with a believable wrong option. <b>Facts</b>: what those boil down to (one
-          "18" answers several questions). <b>Sense</b>: common sense. The split is my judgment, not official.
+          {EXAM.bayern.pool}). <b>Memorize</b>: questions with a believable wrong option. <b>Facts</b>: what those boil down to within the
+          lesson (one "4 years" fact answers three questions). <b>Sense</b>: common sense. The split is my judgment, not official.
         </p>
         <table className="points-table">
           <colgroup>

@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
+import { ReadButton } from '../components/ReadButton.tsx'
 import { Readiness } from '../components/Readiness.tsx'
 import { TOPICS } from '../lib/data.ts'
 import { EXAM } from '../lib/exam.ts'
 import { useProgress } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { countStatuses, statusById } from '../lib/stats.ts'
-import { ReadButton } from './Topics.tsx'
 
 // Bayern first: each Bayern question is three times as likely to be on the sheet (3 of 10 vs 30 of 300).
 const STUDY_ORDER = [...TOPICS.filter((t) => t.module === 'bayern'), ...TOPICS.filter((t) => t.module !== 'bayern')]
