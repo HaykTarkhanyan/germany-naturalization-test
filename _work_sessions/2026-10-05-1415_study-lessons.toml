@@ -11,6 +11,7 @@ done = [
   "lessons.ts validates at startup: one lesson per topic, exact question coverage, common_sense within topic, balanced ** markup; 4 new tests (27 total pass)",
   "Fixed: useEffect returning window.scrollTo's Promise crashed lesson pages (learning file); phone header (123 px after adding Learn) no longer sticky so the exam timer bar stays visible",
   "Quick review after commit: 4 small fixes (see commits); Q-tag practice rounds still go back to Topics, not the lesson",
+  "Independent review (2 fresh-context agents: code, content): fixed Q70/Q26/Q212/Q104/Q263 wording, Schengen + Steinmeier notes, moved 14 questions to memorize (142 common sense, 168 memorize, 118 facts, 85% common-sense-only pass chance), grey per-question Q numbers, traps never grey, breakpoint 700px, short table headers, expectedScore reused, startup check for picture questions",
   "Browser-checked desktop + iPhone 13 (Edge via playwright-core): 0 px overflow, no console errors, next lesson opens at top, Q tags start the right round",
 ]
 pending = [
@@ -24,7 +25,7 @@ files = [
   "data/lessons.json", "app/src/lib/lessons.ts", "app/src/lib/lessons.test.ts", "app/src/pages/Learn.tsx",
   "app/src/App.tsx", "app/src/pages/Topics.tsx", "app/src/pages/Home.tsx", "app/src/pages/Practice.tsx",
   "app/src/lib/data.ts", "app/src/lib/exam.ts", "app/src/styles.css",
-  "README.md", "DECISIONS.md", "_learnings/2026-10-05-1505_scrollto-returns-promise.md",
+  "README.md", "DECISIONS.md", "_learnings/2026-10-05-1505_scrollto-returns-promise.md", "_learnings/2026-10-05-1545_check-lessons-against-distractors.md", "app/src/components/ReadButton.tsx",
 ]
-commits = ["5e5c19d lessons feature", "follow-up: review fixes (fact-count wording, Wahlhelfer wording, ReadButton moved to components/, this log)"]
+commits = ["5e5c19d lessons feature", "a585efc review fixes (fact-count wording, Wahlhelfer wording, ReadButton moved to components/)", "follow-up: independent review fixes"]
 notes = "Lesson lengths 150-280 words (~1-2 min at 180 wpm). The 500 kB bundle warning comes from bundling all question/translation/lesson JSON; harmless for this app."

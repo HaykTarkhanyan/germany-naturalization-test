@@ -636,6 +636,16 @@ a.qref:hover {
 
 .points-table th {
   font-size: 0.8rem;
+  overflow-wrap: normal;
+}
+
+.points-table .short {
+  display: none;
+}
+
+.qref .q-memo {
+  color: var(--text);
+  font-weight: 600;
 }
 
 tr.total td {
@@ -643,8 +653,9 @@ tr.total td {
   border-top: 2px solid var(--border);
 }
 
-/* Phones: the nav wraps to several rows, so a sticky header would eat the screen and cover the exam bar. */
-@media (max-width: 600px) {
+/* Narrow screens: the nav wraps (measured up to 614px with Segoe UI; 700 leaves room for other fonts), so a sticky
+   header would eat the screen and cover the exam bar. */
+@media (max-width: 700px) {
   header {
     position: static;
   }
@@ -656,5 +667,15 @@ tr.total td {
   .learn-module,
   .lesson-section {
     scroll-margin-top: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .points-table .long {
+    display: none;
+  }
+
+  .points-table .short {
+    display: inline;
   }
 }

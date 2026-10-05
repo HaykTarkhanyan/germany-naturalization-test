@@ -47,7 +47,7 @@
       "sections": [
         {"title": "What kind of state", "facts": [
           {"text": "Germany is a **Republik** (republic), so it is **not a monarchy**.", "q": [22, 34]},
-          {"text": "The official formula: Germany is **'ein demokratischer und sozialer Bundesstaat'** (a democratic and social federal state). If the question is just 'Deutschland ist ...', pick **Bundesstaat**.", "q": [26, 27, 38]}
+          {"text": "The official formula: Germany is **'ein demokratischer und sozialer Bundesstaat'** (a democratic and social federal state). The look-alike 'sozialer und **sozialistischer** Bundesstaat' is wrong: Germany is not socialist. In the short versions, pick **Bundesstaat** (not Staatenbund, Staatenverbund or Zentralstaat).", "q": [26, 27, 38]}
         ]},
         {"title": "Power to the people", "facts": [
           {"text": "**Volkssouveränität** means **'Alle Staatsgewalt geht vom Volke aus'**: all state power comes from the people.", "q": [52, 61]}
@@ -68,7 +68,7 @@
     },
     {
       "topic": "parlament",
-      "common_sense": [42, 98, 13, 88, 48],
+      "common_sense": [98, 13, 88, 48],
       "hook": "The Bundestag meets in the old Reichstag building in Berlin, the one with the glass dome that visitors can walk up.",
       "summary": [
         "The national parliament is the **Bundestag**; it passes the laws.",
@@ -79,7 +79,7 @@
       "sections": [
         {"title": "The Bundestag", "facts": [
           {"text": "The parliament for all of Germany is the **Bundestag**, seated in **Berlin** (the picture question shows its building).", "q": [74, 55]},
-          {"text": "New laws are passed by **the parliament** (das Parlament).", "q": [42]},
+          {"text": "New laws are passed by **the parliament** (das Parlament), not by the government.", "q": [42]},
           {"text": "The Bundestag elects the chancellor and controls the government, but it does **not form the cabinet**.", "q": [65]},
           {"text": "The **President of the Bundestag** usually comes from the **strongest parliamentary group** (stärkste Fraktion).", "q": [57]}
         ]},
@@ -115,10 +115,10 @@
           {"text": "The current chancellor is **Friedrich Merz** (since May 2025).", "q": [72]}
         ]},
         {"title": "The Federal President", "facts": [
-          {"text": "The head of state (Staatsoberhaupt) is the **Bundespräsident**, currently **Frank-Walter Steinmeier**.", "q": [87, 75]},
+          {"text": "The head of state (Staatsoberhaupt) is the **Bundespräsident**, currently **Frank-Walter Steinmeier** (term ends March 2027).", "q": [87, 75]},
           {"text": "The president's main job: **representing the country**.", "q": [84]},
           {"text": "The president is elected by the **Bundesversammlung** (the Bundestag members plus the same number of delegates from the states), so citizens **can't vote for the president directly**.", "q": [86, 44]},
-          {"text": "The president **proposes the chancellor** for election (the picture: President Heinemann hands Helmut Schmidt his appointment, 1974) and **appoints the ministers**.", "q": [70, 58]}
+          {"text": "The president **proposes the chancellor** for election (the picture: President Heinemann hands Helmut Schmidt his appointment, 1974). The president also formally **appoints** (ernennt) the ministers but does **not choose** them, the chancellor does: 'wählt die Minister aus' is wrong.", "q": [70, 58]}
         ]},
         {"title": "Honours and army", "facts": [
           {"text": "Germany's honour for service to the country is the **Bundesverdienstkreuz** (Federal Cross of Merit).", "q": [102]},
@@ -160,7 +160,7 @@
     },
     {
       "topic": "wahlen_grundsaetze",
-      "common_sense": [28, 114, 116, 5, 119, 112, 122, 113, 125],
+      "common_sense": [28, 116, 5, 112, 122, 113, 125],
       "hook": "German elections run on three words you will see again and again: frei, gleich, geheim.",
       "summary": [
         "Elections are **free, equal and secret** (frei, gleich, geheim).",
@@ -187,12 +187,12 @@
         ]}
       ],
       "traps": [
-        {"text": "Two questions ask 'Wahlen sind frei. Was bedeutet das?' The answer is always about **no pressure and no influence**, never 'everyone must vote' or 'you may take money for your vote'.", "q": [5, 119]}
+        {"text": "Two questions ask 'Wahlen sind frei. Was bedeutet das?' The answer is always about **no pressure and no influence**. Wrong: 'everyone must vote', 'you may take money for your vote', and the word games on 'frei': choosing **where** you vote, or your employer giving you time off (frei geben).", "q": [5, 119]}
       ]
     },
     {
       "topic": "wahlen_praxis",
-      "common_sense": [93, 120, 126, 133, 282],
+      "common_sense": [120, 126, 133, 282],
       "hook": "Your ballot has two crosses, and the second one (Zweitstimme) decides how many seats each party gets.",
       "summary": [
         "Bundestag elections: **every 4 years**.",
@@ -206,7 +206,7 @@
         ]},
         {"title": "Two votes, one threshold", "facts": [
           {"text": "The system mixes **majority and proportional voting** (Mehrheits- und Verhältniswahlrecht): the **Erststimme** goes to a local candidate, the **Zweitstimme** to a party.", "q": [120]},
-          {"text": "The more **Zweitstimmen** a party gets, **the more seats** it gets in parliament.", "q": [93]},
+          {"text": "The more **Zweitstimmen** a party gets, **the more seats** it gets in parliament (not more direct candidates: those come from the Erststimme).", "q": [93]},
           {"text": "**5%-Hürde**: a party needs at least **5% of the Zweitstimmen** to enter the Bundestag. It is a minimum share of the votes.", "q": [117, 121, 123]},
           {"text": "Why? Because **many small parties make forming a government harder**.", "q": [127]}
         ]},
@@ -251,7 +251,7 @@
     },
     {
       "topic": "gerichte_recht",
-      "common_sense": [80, 139, 142, 147, 148, 263],
+      "common_sense": [80, 139, 142, 147, 148],
       "hook": "In German courts, ordinary citizens sometimes sit next to the judges, as Schöffen.",
       "summary": [
         "The **Bundesverfassungsgericht** interprets the Grundgesetz.",
@@ -272,7 +272,7 @@
           {"text": "**Schöffen** are **volunteer judges** (ehrenamtliche Richter) who decide **guilt and punishment** together with the professional judges.", "q": [140, 150]},
           {"text": "A **Rechtsanwalt** (lawyer) advises on legal questions and represents people in court.", "q": [141]},
           {"text": "The **police** watch that laws are obeyed.", "q": [148]},
-          {"text": "Young people are **strafmündig from 14**: from that age they **are punished** for crimes.", "q": [263]}
+          {"text": "Young people are **strafmündig from 14**: from that age they **are punished** for crimes, under youth criminal law, so **not like adults**.", "q": [263]}
         ]}
       ],
       "traps": []
@@ -367,7 +367,7 @@
     },
     {
       "topic": "nachkriegszeit",
-      "common_sense": [167, 168, 177, 185, 297],
+      "common_sense": [167, 168, 177, 185],
       "hook": "For almost a year, West Berlin was supplied entirely by air: the 'raisin bombers' landed every few minutes.",
       "summary": [
         "After 1945: **4 occupation powers** (USA, UK, France, Soviet Union), **4 zones**, Berlin in **4 sectors**.",
@@ -390,7 +390,7 @@
         ]},
         {"title": "Migration", "facts": [
           {"text": "Foreign workers recruited in the 1950s and 60s were called **Gastarbeiter**; the first came from **Italy**.", "q": [299, 300]},
-          {"text": "Most migrants to Germany came from **Turkey**.", "q": [297]},
+          {"text": "Most migrants to Germany came from **Turkey**. **Poland** (Polen) is the believable wrong option.", "q": [297]},
           {"text": "In the **GDR**, migrants came mainly from **Vietnam, Poland and Mozambique**.", "q": [298]}
         ]}
       ],
@@ -398,7 +398,7 @@
     },
     {
       "topic": "ddr",
-      "common_sense": [172, 190, 187, 202, 207, 203, 199, 208],
+      "common_sense": [172, 190, 187, 202, 207, 203, 199],
       "hook": "The GDR called itself 'democratic', but it was a one-party dictatorship watched over by the Stasi.",
       "summary": [
         "**DDR** = Deutsche Demokratische Republik, **1949-1990**, founded in the **Soviet zone**.",
@@ -416,7 +416,7 @@
           {"text": "Its economy was a **Planwirtschaft** (planned economy).", "q": [203]}
         ]},
         {"title": "The Stasi and 1953", "facts": [
-          {"text": "**Stasi** = **Ministerium für Staatssicherheit**, the GDR's **secret service**.", "q": [199, 208]},
+          {"text": "**Stasi** = **Ministerium für Staatssicherheit**, the **GDR's** secret service (the Nazis' was the Gestapo, a different one).", "q": [199, 208]},
           {"text": "**17 June 1953**: **nationwide strikes and a popular uprising**. West Germany long marked the day as a public holiday.", "q": [186, 210]}
         ]}
       ],
@@ -454,11 +454,11 @@
     },
     {
       "topic": "europa",
-      "common_sense": [224, 226, 231, 235, 232, 238],
+      "common_sense": [224, 226, 231, 235, 238],
       "hook": "The EU began as a peace project: former enemies like France and Germany chose to trade instead of fight.",
       "summary": [
         "Germany is a **founding member**; the **Treaties of Rome** (1957) created the **EEC (EWG)**.",
-        "**27 member states**, euro cash since **2002**, and **Schengen** means no passport checks.",
+        "**27 member states**, euro cash since **2002**, and **Schengen** means, in principle, no passport checks.",
         "The European Parliament is elected **every 5 years** and works in **Strasbourg, Luxembourg and Brussels**."
       ],
       "sections": [
@@ -470,11 +470,11 @@
         ]},
         {"title": "Today", "facts": [
           {"text": "**EU** = **Europäische Union**, with **27 member states**. Its flag is the **circle of yellow stars on blue** (picture **2**).", "q": [224, 236, 226]},
-          {"text": "**Schengen**: Germans can travel to many European countries **without passport control**.", "q": [221]},
+          {"text": "**Schengen**: Germans can travel to many European countries **without passport control** (in principle: Germany has run temporary border checks since 2024; the exam answer stays the same).", "q": [221]},
           {"text": "People in Germany have paid **in cash with euros since 2002**.", "q": [240]}
         ]},
         {"title": "The European Parliament", "facts": [
-          {"text": "It is elected **every 5 years**; in the European election you elect **the members of the European Parliament**.", "q": [230, 232]},
+          {"text": "It is elected **every 5 years**; in the European election you elect **the members of the European Parliament**, not the European Commission.", "q": [230, 232]},
           {"text": "It works in **Strasbourg, Luxembourg and Brussels**. When asked for one seat, the answer is **Strasbourg** (Straßburg).", "q": [234, 238]}
         ]}
       ],
@@ -482,7 +482,7 @@
     },
     {
       "topic": "symbole_land",
-      "common_sense": [214, 212, 222, 223, 227, 229, 233, 225],
+      "common_sense": [214, 222, 223, 227, 229, 233, 225],
       "hook": "Germany has 9 neighbours. Learn the list once and five questions are free.",
       "summary": [
         "The national symbol is the **eagle**: coat of arms picture **1**, and the Bundesadler in the Bundestag.",
@@ -496,7 +496,7 @@
           {"text": "The anthem begins '**Einigkeit und Recht und Freiheit**' (unity and justice and freedom).", "q": [40]}
         ]},
         {"title": "The country", "facts": [
-          {"text": "Full name: **Bundesrepublik Deutschland**. Population: about **84 million**.", "q": [212, 213]},
+          {"text": "Full name: **Bundesrepublik Deutschland**, not 'Bundesstaat Deutschland' (federal state is what Germany is, federal republic is its name). Population: about **84 million**.", "q": [212, 213]},
           {"text": "The **9 neighbours**: Denmark (Dänemark), Poland (Polen), Czech Republic (Tschechien), Austria (Österreich), Switzerland (Schweiz), France, Luxembourg, Belgium, Netherlands. In each 'Nachbarland' question exactly one option is on this list.", "q": [222, 223, 227, 229, 233]},
           {"text": "**Austria** (Österreich) has a large German-speaking population.", "q": [225]}
         ]}
@@ -507,7 +507,7 @@
     },
     {
       "topic": "familie",
-      "common_sense": [245, 252, 272, 254, 275, 248, 249, 251, 258, 267, 241],
+      "common_sense": [245, 252, 272, 275, 248, 249, 251, 267],
       "hook": "German family law in one line: adults decide for themselves, and children are protected, even from their own parents.",
       "summary": [
         "One marriage at a time. You marry at the **Standesamt**; a divorce needs a **lawyer** and usually a **separation year**.",
@@ -520,17 +520,17 @@
           {"text": "Adults of any combination may live together as a couple, but **Anne (13) and Tim (25)** may not: she is a child.", "q": [245]},
           {"text": "You may be married to **only one partner at a time**, so a man married to two women is **not allowed**.", "q": [252, 272]},
           {"text": "To get married, you go first to the **Standesamt** (registry office).", "q": [265]},
-          {"text": "Divorce usually comes after the **Trennungsjahr** (the spouses **live separately for at least a year**), and you need a **lawyer**.", "q": [254, 275]}
+          {"text": "Divorce usually comes after the **Trennungsjahr**: the spouses **live separately for at least a year** (it does not mean the divorce takes a year). You need a **lawyer**.", "q": [254, 275]}
         ]},
         {"title": "Children", "facts": [
           {"text": "Bringing up children is mainly the task of **the parents**.", "q": [248, 249]},
           {"text": "**Hitting a child can be punished.**", "q": [251]},
-          {"text": "Problems with bringing up your children? The **Jugendamt** (youth welfare office) helps. It can **take a child who is beaten or starved out of the family**.", "q": [255, 273, 258]},
+          {"text": "Problems with bringing up your children? The **Jugendamt** (youth welfare office) helps. It can **take a child who is beaten or starved out of the family**. It does **not** pay Kindergeld (the Familienkasse does).", "q": [255, 273, 258]},
           {"text": "You are an adult (volljährig) at **18**. Parents must **respect the decisions** of their adult daughter, for example about her boyfriend.", "q": [246, 267]}
         ]},
         {"title": "Babies", "facts": [
           {"text": "The legal protection shortly before and after birth is **Mutterschutz**.", "q": [247]},
-          {"text": "For **Elterngeld** (parental allowance) you **apply at the Elterngeldstelle**.", "q": [241]}
+          {"text": "For **Elterngeld** (parental allowance) you **apply at the Elterngeldstelle**. It does not come automatically or through the health insurance.", "q": [241]}
         ]}
       ],
       "traps": []
@@ -562,7 +562,7 @@
     },
     {
       "topic": "arbeit",
-      "common_sense": [23, 101, 135, 287, 136, 137, 250, 284, 259],
+      "common_sense": [101, 135, 287, 136, 137, 250, 284, 259],
       "hook": "Fired unfairly? Germany has a whole court just for work: the Arbeitsgericht.",
       "summary": [
         "Most people work for a **company or public authority**.",
@@ -572,7 +572,7 @@
       ],
       "sections": [
         {"title": "Working", "facts": [
-          {"text": "Most workers are **employed by a company or a public authority** (Firma oder Behörde).", "q": [23]},
+          {"text": "Most workers are **employed by a company or a public authority** (Firma oder Behörde), not self-employed and not mostly in small family businesses.", "q": [23]},
           {"text": "**Gewerkschaften** (unions) represent **employees** (Arbeitnehmer).", "q": [101, 135]},
           {"text": "Inside a company, the **Betriebsrat** (works council) helps employees with problems with the employer.", "q": [286]}
         ]},
@@ -590,8 +590,8 @@
     },
     {
       "topic": "gleichbehandlung",
-      "common_sense": [262, 281, 104, 277, 278, 289],
-      "hook": "The easiest topic: in every discrimination question, the answer is the personal trait the question mentions.",
+      "common_sense": [262, 281, 277, 278, 289],
+      "hook": "The easiest topic: when a job applicant is turned down, the discrimination answer is the personal trait the question mentions. One exception to watch: long illness can be a legal reason for dismissal, pregnancy never.",
       "summary": [
         "**Gleichbehandlung**: nobody may be disadvantaged, for example because of a disability.",
         "Discrimination = being turned down for **who you are** (mother, wheelchair, skin colour), not for missing skills."
@@ -602,7 +602,7 @@
           {"text": "Two friends with dark skin are refused entry to a public pool: their right to **Gleichbehandlung** is violated, not freedom of opinion or of assembly.", "q": [281]}
         ]},
         {"title": "Spot the discrimination", "facts": [
-          {"text": "A woman may **not** be fired because she is **having a child** and her boss knows it. Being often late or doing private things at work can be reasons.", "q": [104]},
+          {"text": "A woman may **not** be fired because she is **having a child** and her boss knows it. Being often late, doing private things at work, or even being **ill for a long time** and unable to work can be legal reasons.", "q": [104]},
           {"text": "Turned down only because she is a **mother**, he **uses a wheelchair** or he has **dark skin** = discrimination. Turned down for no experience, weak language skills or high salary wishes = not discrimination.", "q": [277, 278, 289]}
         ]}
       ],

@@ -1,8 +1,7 @@
 import { Fragment, useEffect } from 'react'
 import { BAYERN_IDS, imageUrl, MODULES, QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS } from '../lib/data.ts'
-import { EXAM, GUESS, passProbability } from '../lib/exam.ts'
+import { EXAM, expectedScore, passProbability } from '../lib/exam.ts'
 import {
-  drawChance,
   isCommonSense,
   LESSON_BY_TOPIC,
   LESSONS,
@@ -32,7 +31,7 @@ const TOTAL = [...STATS.values()].reduce(
 const SENSE = new Set(LESSONS.flatMap((l) => l.common_sense))
 const SENSE_BAYERN = BAYERN_IDS.filter((id) => SENSE.has(id)).length
 const SENSE_PASS = passProbability(SENSE.size - SENSE_BAYERN, SENSE_BAYERN)
-const SENSE_EXPECTED = [...QUESTION_BY_ID.keys()].reduce((sum, id) => sum + drawChance(id) * (SENSE.has(id) ? 1 : GUESS), 0)
+const SENSE_EXPECTED = expectedScore(SENSE.size - SENSE_BAYERN, SENSE_BAYERN)
 
 const fmt = (x: number) => x.toFixed(1)
 
@@ -70,7 +69,7 @@ export function Learn() {
         <p>
           <b>{TOTAL.commonSense} of 310</b> questions are common sense: the wrong options are absurd. The other <b>{TOTAL.memorize}</b>{' '}
           boil down to <b>{TOTAL.facts} facts</b> worth memorizing (counted per lesson, so a few like "18" repeat across lessons). Common sense alone, with blind guesses on the rest, averages about{' '}
-          {fmt(SENSE_EXPECTED)} of {EXAM.questions} ({EXAM.passMark} pass), a {Math.round(100 * SENSE_PASS)}% pass chance. That holds
+          {fmt(SENSE_EXPECTED)} of {EXAM.questions} ({EXAM.passMark} pass), with a pass chance of {Math.round(100 * SENSE_PASS)}%. That holds
           only if my common-sense calls are right and you read the German correctly. The facts are what make the pass safe.
         </p>
         <div className="toc">
@@ -92,7 +91,8 @@ export function Learn() {
           <b>Points</b>: how many of your {EXAM.questions} exam questions come from the topic on average (each general question has a{' '}
           {EXAM.general.draw} in {EXAM.general.pool} chance to be on your sheet, each Bayern question {EXAM.bayern.draw} in{' '}
           {EXAM.bayern.pool}). <b>Memorize</b>: questions with a believable wrong option. <b>Facts</b>: what those boil down to within the
-          lesson (one "4 years" fact answers three questions). <b>Sense</b>: common sense. The split is my judgment, not official.
+          lesson (one "4 years" fact answers three questions). <b>Sense</b>: common sense. In a lesson, common-sense question numbers are grey and the ones to memorize dark. The split
+          is my judgment, not official.
         </p>
         <table className="points-table">
           <colgroup>
@@ -106,9 +106,18 @@ export function Learn() {
           <thead>
             <tr>
               <th>Lesson</th>
-              <th className="num">Questions</th>
-              <th className="num">Points</th>
-              <th className="num">Memorize</th>
+              <th className="num">
+                <span className="long">Questions</span>
+                <span className="short">Qs</span>
+              </th>
+              <th className="num">
+                <span className="long">Points</span>
+                <span className="short">Pts</span>
+              </th>
+              <th className="num">
+                <span className="long">Memorize</span>
+                <span className="short">Memo</span>
+              </th>
               <th className="num">Facts</th>
               <th className="num">Sense</th>
             </tr>
@@ -227,7 +236,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
             <b>{s.memorize}</b> to memorize: {s.facts} facts, ≈{fmt(s.memorizePoints)} points
           </div>
           <div>
-            <b>{s.commonSense}</b> common sense (grey below)
+            <b>{s.commonSense}</b> common sense (grey Q numbers)
           </div>
         </div>
         <p className="lesson-hook">{lesson.hook}</p>
@@ -259,7 +268,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
           <summary>
             <h2>{sec.title}</h2>
           </summary>
-          <Facts lesson={lesson} facts={sec.facts} images />
+          <Facts lesson={lesson} facts={sec.facts} trap={false} />
         </details>
       ))}
       {lesson.traps.length > 0 && (
@@ -267,7 +276,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
           <summary>
             <h2>Watch out</h2>
           </summary>
-          <Facts lesson={lesson} facts={lesson.traps} images={false} />
+          <Facts lesson={lesson} facts={lesson.traps} trap />
         </details>
       )}
       <div className="card">
@@ -290,20 +299,27 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
   )
 }
 
-/** Facts with their question tags. Common-sense facts are grey; picture questions show the exam picture
- * (images=false in traps, whose pictures already show above). */
-function Facts({ lesson, facts, images }: { lesson: Lesson; facts: Fact[]; images: boolean }) {
+/** Facts with their question tags: common-sense question numbers are grey, memorize ones dark, and a fact whose
+ * questions are all common sense is grey as a whole. Traps are never grey (they exist to warn) and show no pictures
+ * (lessons.ts checks that every picture question is in a fact above). */
+function Facts({ lesson, facts, trap }: { lesson: Lesson; facts: Fact[]; trap: boolean }) {
+  const sense = new Set(lesson.common_sense)
   return (
     <ul className="facts">
       {facts.map((f, i) => {
-        const sense = isCommonSense(lesson, f)
+        const grey = !trap && isCommonSense(lesson, f)
         return (
-          <li key={i} className={sense ? 'sense' : undefined}>
-            {sense && <span className="tag">common sense</span>} <Rich text={f.text} />{' '}
+          <li key={i} className={grey ? 'sense' : undefined}>
+            {grey && <span className="tag">common sense</span>} <Rich text={f.text} />{' '}
             <a className="qref" href={link('practice', 'list', f.q.join(','))} title="Practice these exam questions">
-              {f.q.map((id) => `Q${id}`).join(' ')}
+              {f.q.map((id, j) => (
+                <Fragment key={id}>
+                  {j > 0 && ' '}
+                  <span className={sense.has(id) ? 'q-sense' : 'q-memo'}>Q{id}</span>
+                </Fragment>
+              ))}
             </a>
-            {images &&
+            {!trap &&
               f.q.map((id) => {
                 const q = QUESTION_BY_ID.get(id)
                 if (!q) throw new Error(`lesson fact refers to unknown question ${id}`)

@@ -42,6 +42,12 @@ for (const [i, l] of LESSONS.entries()) {
   if (sense.size !== l.common_sense.length || l.common_sense.some((id) => !want.has(id))) {
     throw new Error(`data/lessons.json: common_sense of lesson ${l.topic} has duplicates or other topics' questions`)
   }
+  const inFacts = new Set(l.sections.flatMap((s) => s.facts).flatMap((f) => f.q))
+  for (const id of want) {
+    if (QUESTION_BY_ID.get(id)?.image && !inFacts.has(id)) {
+      throw new Error(`data/lessons.json: picture question ${id} of lesson ${l.topic} must be in a fact, not only in a trap (traps show no pictures)`)
+    }
+  }
   for (const t of texts(l)) {
     if (t.split('**').length % 2 === 0) throw new Error(`data/lessons.json: unbalanced ** in lesson ${l.topic}: "${t}"`)
   }
