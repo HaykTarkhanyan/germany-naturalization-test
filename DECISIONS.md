@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 14. Videos: short Russian explainers of the memorize facts only, scripted as Markdown; tools not chosen yet
+
+- **Date / status:** 2026-10-05, active for content and format; voice, renderer, shape and hosting are open (videos/PLAN.md, D1-D5, waiting for Hayk)
+- **Why:** Hayk asked for Russian videos per topic with stock footage and TTS, at minimal study time. So a video teaches only the questions marked memorize in data/lessons.json (#13) and mentions common-sense ones in one recap line, which keeps each script at 190-260 words (about 1:20-1:50 spoken at an assumed 140 words/min). German exam terms stay German on screen and in the narration because the sheet is German. Pilot = the six lessons with the most memorize points (bayern 2.1, nachkriegszeit 1.2, mauer_einheit 1.2, wahlen_praxis 1.1, regierung_praesident 1.1, parlament 1.0): 7.7 of the catalog's 18.2 memorize points. Scripts are Markdown with four fixed fields per scene (Voice, On screen, Visual, Questions), readable for review and parseable by any renderer; a check confirmed each script covers exactly its topic's memorize questions in the main scenes and the common-sense ones only in the recap.
+- **Alternatives rejected:** narrating the full lessons (2-3x longer, repeats common sense); one long video for all topics (no way to pick a topic to rewatch); English narration (Hayk asked for Russian); JSON scripts (harder to review the Russian text).
+- **What would change this:** The pilot showing that 1.5 minutes is too dense to follow (then split into more scenes or slow the voice), or Hayk preferring full-topic videos.
+
 ## 13. Split every question into "memorize" or "common sense" by hand, and show exam points per lesson
 
 - **Date / status:** 2026-10-05, active, revisited 2026-10-05 after an independent review (see Revision below) (Hayk asked how many questions and points each lesson is worth, and how many are really worth memorizing)

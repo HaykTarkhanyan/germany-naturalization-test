@@ -5,3 +5,6 @@ __pycache__/
 *.stackdump
 node_modules/
 app/dist/
+
+# video pipeline outputs (audio, downloaded media, renders) - large, rebuildable
+videos/build/

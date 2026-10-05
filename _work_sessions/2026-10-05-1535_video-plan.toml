@@ -1,0 +1,27 @@
+title = "Plan and pilot scripts for Russian explainer videos"
+date = "2026-10-05"
+time = "15:35"
+areas = ["videos/", "DECISIONS.md", "README.md", ".gitignore"]
+
+done = [
+  "videos/PLAN.md: goal, format (1.5-2 min, Russian narration, German terms on screen), topic order by memorize points, script format, 6-step local pipeline, open decisions D1-D5 with options and recommendations, cost, compute, milestones, risks",
+  "Prices checked on official pages 2026-10-05 (rendered with playwright-core where the pages need JS): ElevenLabs Free 10k credits, Starter $6/30k, Creator $22/121k; Azure neural TTS $15 per 1M characters, 0.5M free per month; OpenAI gpt-4o-mini-tts ~$0.015/min (vendor figure via search); Google Chirp 3 HD row shows $160 per 1M (left out); third-party sites had Azure at $16 (wrong)",
+  "Six pilot scripts in videos/scripts/ (01 bayern, 02 mauer_einheit, 03 nachkriegszeit, 04 wahlen_praxis, 05 regierung_praesident, 06 parlament): Russian narration from data/lessons.json facts only, each names the believable wrong option to avoid",
+  "Checked by script: every scene has Voice/On screen/Visual/Questions; main scenes cover exactly the topic's memorize questions, recap exactly its common-sense ones; no dashes or curly quotes; 9,655 narration characters in total; 1:19-1:51 spoken per video at an assumed 140 words/min",
+  "DECISIONS #14 (content and format; tools open), README row, .gitignore videos/build/",
+]
+pending = [
+  "Hayk's choices D1-D5 in videos/PLAN.md (voice, renderer, 16:9 vs 9:16, hosting, keys)",
+  "Nothing in videos/ is committed yet (waiting for Hayk)",
+]
+next = [
+  "After D1 + keys: voice test on 2 scenes of 01_bayern (ElevenLabs vs Silero, or the chosen pair)",
+  "Then the pilot render of 01_bayern (ask before the first CPU-heavy render), measure render time and file size",
+]
+files = [
+  "videos/PLAN.md", "videos/scripts/01_bayern.md", "videos/scripts/02_mauer_einheit.md", "videos/scripts/03_nachkriegszeit.md",
+  "videos/scripts/04_wahlen_praxis.md", "videos/scripts/05_regierung_praesident.md", "videos/scripts/06_parlament.md",
+  "DECISIONS.md", "README.md", ".gitignore",
+]
+commits = []
+notes = "Scripts state dated facts (Merz since May 2025, Steinmeier until March 2027) at the top of 05; re-check before rendering. Silero v5 Russian is a free local fallback that needs no key."

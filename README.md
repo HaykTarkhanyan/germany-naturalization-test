@@ -47,6 +47,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
 | `scripts/` | Dataset build (scraper + `build_dataset.py`) and pattern analysis (`mine_patterns.py`, `build_pattern_report.py`) |
+| [`videos/PLAN.md`](videos/PLAN.md) | Plan for short Russian explainer videos (open tool choices, costs), and `videos/scripts/`: six pilot scripts |
 | `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json`, `data/lessons.json`, `data/translations_en.json` and `data/images/` directly |
 
 ## Where the answers come from (and why you can trust them)
