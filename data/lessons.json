@@ -1,0 +1,689 @@
+{
+  "description": "One short lesson per study topic (data/topics.json). Every fact lists the question ids it answers; together the facts and traps of a lesson cover every question of its topic exactly (checked by the app's tests). Text is English with German exam terms in **bold**. 'common_sense' lists the questions whose wrong options are absurd enough to answer without studying (a judgment call, see DECISIONS.md #13); every other question counts as one to memorize. Written 2026-10-05 from the official answers in data/questions_bayern.json.",
+  "lessons": [
+    {
+      "topic": "grundgesetz_grundrechte",
+      "common_sense": [4, 1, 14, 16, 9, 15, 17, 8, 10],
+      "hook": "Germany wrote its constitution in 1949 so that a dictatorship could never happen again. That is why human dignity comes first, in Article 1.",
+      "summary": [
+        "The constitution is the **Grundgesetz** (Basic Law).",
+        "Article 1: human dignity is untouchable (**Menschenwürde**).",
+        "Basic rights include freedom of opinion, of faith and conscience, choosing where you live, and the privacy of letters.",
+        "Basic rights can't be voted away, not even by a party in the Bundestag."
+      ],
+      "sections": [
+        {"title": "The Basic Law", "facts": [
+          {"text": "The German constitution is called the **Grundgesetz** (Basic Law), in force since 1949.", "q": [6, 11]},
+          {"text": "**Article 1** guarantees the **inviolability of human dignity** (die Unantastbarkeit der Menschenwürde): 'Die Würde des Menschen ist unantastbar.'", "q": [18]}
+        ]},
+        {"title": "Your basic rights (Grundrechte)", "facts": [
+          {"text": "**Freedom of opinion** (Meinungsfreiheit) is a basic right. It is why people may openly criticise the government, and it covers saying your opinion **on the internet**.", "q": [4, 1, 14]},
+          {"text": "**Freedom of faith and conscience** (Glaubens- und Gewissensfreiheit) is guaranteed too.", "q": [7]},
+          {"text": "**Freizügigkeit** = you may choose yourself where you live.", "q": [19]},
+          {"text": "Opening someone else's letter on purpose breaks the **Briefgeheimnis** (privacy of correspondence).", "q": [274]},
+          {"text": "One basic right is only for foreigners: **asylum** (Asyl) for people persecuted for political reasons.", "q": [9]}
+        ]},
+        {"title": "Limits and protections", "facts": [
+          {"text": "Freedom of opinion has a limit: you may not **publicly spread false claims about a specific person**.", "q": [16]},
+          {"text": "**Press freedom** is a basic right, so a party in the Bundestag **cannot abolish it**.", "q": [12]},
+          {"text": "The Grundgesetz **bans forced labour** (Zwangsarbeit), and the state may not treat citizens unequally (**Ungleichbehandlung**).", "q": [15, 17]},
+          {"text": "Punishments must respect dignity: a **fine** (Geldstrafe) is allowed; beating, torture and the death penalty are not.", "q": [10]}
+        ]}
+      ],
+      "traps": [
+        {"text": "'Everyone should have the same amount of money' is **not** in the Grundgesetz. The real principles next to it (dignity, free speech, equality before the law) are.", "q": [8]}
+      ]
+    },
+    {
+      "topic": "demokratie_rechtsstaat",
+      "common_sense": [22, 34, 26, 27, 52, 61, 3, 53, 51, 30],
+      "hook": "Four words describe the whole German system: republic, democracy, federal state, rule of law.",
+      "summary": [
+        "Germany is a **republic** (not a monarchy) and a **democratic and social federal state** (Bundesstaat).",
+        "**Volkssouveränität**: all state power comes from the people.",
+        "**Rechtsstaat**: everyone, including the state, must obey the law.",
+        "Power is split three ways: Legislative, Executive, Judiciary. The press is not one of them."
+      ],
+      "sections": [
+        {"title": "What kind of state", "facts": [
+          {"text": "Germany is a **Republik** (republic), so it is **not a monarchy**.", "q": [22, 34]},
+          {"text": "The official formula: Germany is **'ein demokratischer und sozialer Bundesstaat'** (a democratic and social federal state). If the question is just 'Deutschland ist ...', pick **Bundesstaat**.", "q": [26, 27, 38]}
+        ]},
+        {"title": "Power to the people", "facts": [
+          {"text": "**Volkssouveränität** means **'Alle Staatsgewalt geht vom Volke aus'**: all state power comes from the people.", "q": [52, 61]}
+        ]},
+        {"title": "Rule of law (Rechtsstaat)", "facts": [
+          {"text": "**Rechtsstaat** = all residents **and the state itself** must obey the laws.", "q": [3, 53]},
+          {"text": "Not compatible with a Rechtsstaat: people being **arrested by a private police force without reason**.", "q": [51]},
+          {"text": "A democracy has a free press, so **press censorship** (Pressezensur) is **not** a feature of German democracy.", "q": [30]}
+        ]},
+        {"title": "Separation of powers (Gewaltenteilung)", "facts": [
+          {"text": "Three powers: **Legislative** (makes laws: Bundestag and Bundesrat), **Executive** (government, administration, police) and **Judikative** (the courts).", "q": [60, 63]},
+          {"text": "The **press** is sometimes called the 'fourth power', but it is **not a state power**. '**Direktive**' is not a power at all.", "q": [32, 54]}
+        ]}
+      ],
+      "traps": [
+        {"text": "'Was gehört **nicht** zur Exekutive?' The answer is **the courts**: they are the Judikative.", "q": [63]}
+      ]
+    },
+    {
+      "topic": "parlament",
+      "common_sense": [42, 98, 13, 88, 48],
+      "hook": "The Bundestag meets in the old Reichstag building in Berlin, the one with the glass dome that visitors can walk up.",
+      "summary": [
+        "The national parliament is the **Bundestag**; it passes the laws.",
+        "Elected members are **Abgeordnete**; one party's members together are a **Fraktion**.",
+        "**Opposition** = everyone not in government; its job is to control the government.",
+        "The **Bundesrat** = representatives of the state governments. Through it the Länder help make federal laws."
+      ],
+      "sections": [
+        {"title": "The Bundestag", "facts": [
+          {"text": "The parliament for all of Germany is the **Bundestag**, seated in **Berlin** (the picture question shows its building).", "q": [74, 55]},
+          {"text": "New laws are passed by **the parliament** (das Parlament).", "q": [42]},
+          {"text": "The Bundestag elects the chancellor and controls the government, but it does **not form the cabinet**.", "q": [65]},
+          {"text": "The **President of the Bundestag** usually comes from the **strongest parliamentary group** (stärkste Fraktion).", "q": [57]}
+        ]},
+        {"title": "Members and groups", "facts": [
+          {"text": "Members of parliament elected by the citizens are **Abgeordnete**.", "q": [128]},
+          {"text": "The members of one party together form a **Fraktion** (parliamentary group).", "q": [89]},
+          {"text": "If members switch to another Fraktion, the **government can lose its majority**.", "q": [98]},
+          {"text": "**Opposition** = all members who don't belong to the governing party or parties. Its job: it **controls the government**.", "q": [13, 88]}
+        ]},
+        {"title": "The Bundesrat", "facts": [
+          {"text": "The **Bundesrat** is made of **representatives of the state governments** (Regierungsvertreter der Bundesländer). Through it the Länder take part in federal law-making.", "q": [85, 90]},
+          {"text": "So a change of government in one Land can make governing in Berlin **harder**, if it **changes the majority in the Bundesrat**.", "q": [91]}
+        ]}
+      ],
+      "traps": [
+        {"text": "Constitutional organs are Bundestag, Bundesrat, Federal President, federal government and the constitutional court. A **Bürgerversammlung** (citizens' assembly) is **not** one.", "q": [48]}
+      ]
+    },
+    {
+      "topic": "regierung_praesident",
+      "common_sense": [71, 102, 77],
+      "hook": "Germany has two heads: the chancellor runs the government, the president represents the country. You vote directly for neither of them.",
+      "summary": [
+        "**Chancellor** (Bundeskanzler, now **Friedrich Merz**): elected by the **Bundestag**, leads the cabinet.",
+        "**Federal President** (Bundespräsident, now **Frank-Walter Steinmeier**): head of state, represents Germany.",
+        "The president is elected by the **Bundesversammlung**, proposes the chancellor and appoints the ministers."
+      ],
+      "sections": [
+        {"title": "The chancellor", "facts": [
+          {"text": "The **Bundestag** elects the chancellor.", "q": [81, 83]},
+          {"text": "The chancellor **leads the federal cabinet** (Bundeskabinett).", "q": [82]},
+          {"text": "The chancellor works mostly **in Berlin**, where the Chancellery and the Bundestag are.", "q": [71]},
+          {"text": "The current chancellor is **Friedrich Merz** (since May 2025).", "q": [72]}
+        ]},
+        {"title": "The Federal President", "facts": [
+          {"text": "The head of state (Staatsoberhaupt) is the **Bundespräsident**, currently **Frank-Walter Steinmeier**.", "q": [87, 75]},
+          {"text": "The president's main job: **representing the country**.", "q": [84]},
+          {"text": "The president is elected by the **Bundesversammlung** (the Bundestag members plus the same number of delegates from the states), so citizens **can't vote for the president directly**.", "q": [86, 44]},
+          {"text": "The president **proposes the chancellor** for election (the picture: President Heinemann hands Helmut Schmidt his appointment, 1974) and **appoints the ministers**.", "q": [70, 58]}
+        ]},
+        {"title": "Honours and army", "facts": [
+          {"text": "Germany's honour for service to the country is the **Bundesverdienstkreuz** (Federal Cross of Merit).", "q": [102]},
+          {"text": "The **Bundeswehr** is the German army.", "q": [77]}
+        ]}
+      ],
+      "traps": [
+        {"text": "Who appoints the ministers? The **Federal President**, not the presidents of the Bundestag, the Bundesrat or the constitutional court.", "q": [58]}
+      ]
+    },
+    {
+      "topic": "parteien",
+      "common_sense": [41, 20, 43],
+      "hook": "Germany is almost always governed by coalitions, and they get nicknames from the party colours, like the 'Ampel' (traffic light).",
+      "summary": [
+        "**CDU**, **CSU**, **SPD**, **FDP**: know what the letters stand for.",
+        "Parties working together to form a government = **Koalition**.",
+        "The two biggest groups in today's Bundestag: **CDU/CSU and AfD**.",
+        "A party that fights the constitution can be banned."
+      ],
+      "sections": [
+        {"title": "The abbreviations", "facts": [
+          {"text": "**CDU** = Christlich Demokratische Union. **CSU** = Christlich Soziale Union, the CDU's sister party that only runs in Bayern.", "q": [76, 92]},
+          {"text": "**SPD** = Sozialdemokratische Partei Deutschlands. **FDP** = Freie Demokratische Partei.", "q": [78, 79]}
+        ]},
+        {"title": "Today's Bundestag", "facts": [
+          {"text": "The two largest parliamentary groups (Fraktionen) are currently **CDU/CSU and AfD** (since the February 2025 election).", "q": [73]}
+        ]},
+        {"title": "Coalitions", "facts": [
+          {"text": "Parties working together to form a government = **Koalition**.", "q": [31]},
+          {"text": "**Ampelkoalition** (traffic light) = **SPD** (red), **FDP** (yellow) and **Bündnis 90/Die Grünen** (green).", "q": [103]},
+          {"text": "Why more than one party? So that **the different opinions of citizens are represented**.", "q": [41]}
+        ]},
+        {"title": "Banned parties", "facts": [
+          {"text": "A party aiming for a dictatorship is **verfassungswidrig** (unconstitutional). A party can be banned **when it fights against the constitution**, not for criticising the government.", "q": [20, 43]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "wahlen_grundsaetze",
+      "common_sense": [28, 114, 116, 5, 119, 112, 122, 113, 125],
+      "hook": "German elections run on three words you will see again and again: frei, gleich, geheim.",
+      "summary": [
+        "Elections are **free, equal and secret** (frei, gleich, geheim).",
+        "The people elect the **Bundestag**; voters must be **German citizens aged 18+**.",
+        "Voting is a **right, not a duty**. 'Aktives Wahlrecht' = you may vote.",
+        "The party with the most votes wins; regular elections make a change of government possible."
+      ],
+      "sections": [
+        {"title": "Who votes for what", "facts": [
+          {"text": "The **eligible people** (das wahlberechtigte Volk) elect the members of the Bundestag. The **Bundestag** is the body the people elect, and the Bundestag election is the election of **the parliament for Germany**.", "q": [28, 129, 124]},
+          {"text": "You may vote in a Bundestag election if you are a **German citizen and at least 18**.", "q": [108, 94]}
+        ]},
+        {"title": "A right, not a duty", "facts": [
+          {"text": "Taking part in elections is **a right** (ein Recht). Nobody has to vote.", "q": [114]},
+          {"text": "**Aktives Wahlrecht** = being allowed **to vote**. (Passives Wahlrecht would be the right to be elected.)", "q": [115, 116]}
+        ]},
+        {"title": "The principles", "facts": [
+          {"text": "**Frei** (free): nobody may influence or force you, a vote brings you no disadvantage, and you decide **without pressure whether and whom** you vote for.", "q": [5, 119]},
+          {"text": "Elections are **geheim** (secret); the full formula is **frei, gleich, geheim**.", "q": [112, 122]}
+        ]},
+        {"title": "Results", "facts": [
+          {"text": "The party that gets **the most votes** wins.", "q": [113]},
+          {"text": "Regular elections let the majority of voters **change the government**.", "q": [125]}
+        ]}
+      ],
+      "traps": [
+        {"text": "Two questions ask 'Wahlen sind frei. Was bedeutet das?' The answer is always about **no pressure and no influence**, never 'everyone must vote' or 'you may take money for your vote'.", "q": [5, 119]}
+      ]
+    },
+    {
+      "topic": "wahlen_praxis",
+      "common_sense": [93, 120, 126, 133, 282],
+      "hook": "Your ballot has two crosses, and the second one (Zweitstimme) decides how many seats each party gets.",
+      "summary": [
+        "Bundestag elections: **every 4 years**.",
+        "The **Zweitstimme** decides the seats; a party needs **5%** to get in (5%-Hürde).",
+        "Before an election you get a **Wahlbenachrichtigung** from your municipality; **Briefwahl** (postal vote) is allowed.",
+        "**Wahlhelfer** count the votes. It's an honorary job citizens must accept if asked."
+      ],
+      "sections": [
+        {"title": "When", "facts": [
+          {"text": "The Bundestag is elected for **4 years**, so there are elections **every four years**.", "q": [107, 110, 109]}
+        ]},
+        {"title": "Two votes, one threshold", "facts": [
+          {"text": "The system mixes **majority and proportional voting** (Mehrheits- und Verhältniswahlrecht): the **Erststimme** goes to a local candidate, the **Zweitstimme** to a party.", "q": [120]},
+          {"text": "The more **Zweitstimmen** a party gets, **the more seats** it gets in parliament.", "q": [93]},
+          {"text": "**5%-Hürde**: a party needs at least **5% of the Zweitstimmen** to enter the Bundestag. It is a minimum share of the votes.", "q": [117, 121, 123]},
+          {"text": "Why? Because **many small parties make forming a government harder**.", "q": [127]}
+        ]},
+        {"title": "The ballot (picture question)", "facts": [
+          {"text": "Valid = **one cross per column**: one on the left (Erststimme) and one on the right (Zweitstimme). That is **ballot 1**; the others have two or three crosses in one column. Choosing a candidate from one party and the list of another is fine.", "q": [130]}
+        ]},
+        {"title": "Before and on election day", "facts": [
+          {"text": "Eligible voters get a **Wahlbenachrichtigung** (voting notice) **from their municipality** (Gemeinde).", "q": [126]},
+          {"text": "**Briefwahl** (voting by post) is allowed in Bundestag and Landtag elections.", "q": [133]},
+          {"text": "**Wahlhelfer** (volunteer poll workers) **count the votes** after the polls close. It is the honorary job citizens **must accept** when asked.", "q": [105, 106, 282]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "foederalismus",
+      "common_sense": [39, 62, 64, 131, 134, 132],
+      "hook": "Germany has 16 states with their own governments, and school is their business, not Berlin's.",
+      "summary": [
+        "**16 Bundesländer**, each with **its own government**, usually led by a **Ministerpräsident**.",
+        "Three levels: **Bund, Länder, Kommunen**. The lowest is the **Gemeinde**, led by a **Bürgermeister**.",
+        "**School policy** is a job of the Länder.",
+        "You can take part locally: citizens' initiatives, volunteering."
+      ],
+      "sections": [
+        {"title": "The Länder", "facts": [
+          {"text": "Germany has **16 Bundesländer**. **Elsass-Lothringen** (Alsace-Lorraine) is **not** one of them; it is in France.", "q": [24, 25]},
+          {"text": "Every Land has **its own government**, mostly headed by a **Ministerpräsident**. Electing a Land parliament is a **Landtagswahl**.", "q": [39, 37, 62]},
+          {"text": "**School policy** (Schulpolitik) is decided mainly by **the Länder**.", "q": [49, 67]}
+        ]},
+        {"title": "Three levels", "facts": [
+          {"text": "Germany is divided into **Bund, Länder und Kommunen** (federation, states, municipalities).", "q": [64]},
+          {"text": "The lowest political level is the **Gemeinde** (municipality); its head is the **Bürgermeister**.", "q": [69, 131]},
+          {"text": "The **Ordnungsamt** (public order office) belongs to the municipal administration.", "q": [56]}
+        ]},
+        {"title": "Getting involved", "facts": [
+          {"text": "They want to cut your bus line? **Join or start a Bürgerinitiative** (citizens' initiative).", "q": [134]},
+          {"text": "**Ehrenamtlich** = working **voluntarily and unpaid** in clubs and associations (Vereine und Verbände).", "q": [132]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "gerichte_recht",
+      "common_sense": [80, 139, 142, 147, 148, 263],
+      "hook": "In German courts, ordinary citizens sometimes sit next to the judges, as Schöffen.",
+      "summary": [
+        "The **Bundesverfassungsgericht** interprets the Grundgesetz.",
+        "Judges belong to the **Judikative** (rechtsprechende Gewalt); their job is to deliver verdicts.",
+        "**Schöffen** are volunteer judges; a **Rechtsanwalt** advises and represents you.",
+        "Criminal responsibility starts at **14**."
+      ],
+      "sections": [
+        {"title": "Courts", "facts": [
+          {"text": "The **Bundesverfassungsgericht** (Federal Constitutional Court, in Karlsruhe) interprets the Grundgesetz.", "q": [80]},
+          {"text": "A court case is a **Prozess**. There is a criminal trial when someone **has committed a crime and is charged**.", "q": [146, 139]}
+        ]},
+        {"title": "Judges", "facts": [
+          {"text": "A judge **works at a court and delivers verdicts**: **Recht sprechen**.", "q": [142, 147]},
+          {"text": "Judges belong to the **Judikative**, the **rechtsprechende Gewalt** (judicial power).", "q": [143, 144, 145]}
+        ]},
+        {"title": "Other roles", "facts": [
+          {"text": "**Schöffen** are **volunteer judges** (ehrenamtliche Richter) who decide **guilt and punishment** together with the professional judges.", "q": [140, 150]},
+          {"text": "A **Rechtsanwalt** (lawyer) advises on legal questions and represents people in court.", "q": [141]},
+          {"text": "The **police** watch that laws are obeyed.", "q": [148]},
+          {"text": "Young people are **strafmündig from 14**: from that age they **are punished** for crimes.", "q": [263]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "sozialstaat_wirtschaft",
+      "common_sense": [35, 36, 97, 46, 47],
+      "hook": "If you have a job in Germany, social insurance comes out of your pay automatically. That is how the welfare state is paid for.",
+      "summary": [
+        "The economic system is the **soziale Marktwirtschaft**: a free market, but the state ensures social balance.",
+        "Social insurance is paid **automatically**, by **employers and employees together**.",
+        "**Life insurance** is not social insurance, and **VAT** is not taken from your salary."
+      ],
+      "sections": [
+        {"title": "Social market economy", "facts": [
+          {"text": "The economy is a **soziale Marktwirtschaft**: it follows **supply and demand**, but **the state ensures social balance**.", "q": [50, 171]}
+        ]},
+        {"title": "Social insurance", "facts": [
+          {"text": "It is financed by **Sozialabgaben** (social contributions), paid by **employers and employees** together, and **automatically** if you have a permanent job.", "q": [35, 99, 97]},
+          {"text": "It includes **health insurance** (which creates social security), pension, unemployment and **long-term care insurance** (Pflegeversicherung).", "q": [36, 45]}
+        ]},
+        {"title": "What the state pays for", "facts": [
+          {"text": "The state **builds roads and schools**, pays Kindergeld, supports museums and athletes, but it does **not pay holidays for everyone**.", "q": [46, 47]}
+        ]}
+      ],
+      "traps": [
+        {"text": "Not part of the statutory social insurance: **life insurance** (Lebensversicherung).", "q": [100]},
+        {"text": "An employee does **not** pay **Umsatzsteuer** (VAT) out of her salary. Wage tax (Lohnsteuer) and social contributions, yes.", "q": [285]}
+      ]
+    },
+    {
+      "topic": "nationalsozialismus",
+      "common_sense": [157, 158, 159, 170, 161, 160, 154],
+      "hook": "Most answers in this topic hang on four years: 1933, 1938, 1939 and 1945.",
+      "summary": [
+        "The Nazis ruled **1933-1945**; Hitler became chancellor in **1933** and set up a **dictatorship**.",
+        "**9 November 1938**: synagogues and Jewish shops were destroyed.",
+        "**World War II: 1939-1945**. It ended in Europe on **8 May 1945** with Germany's unconditional surrender.",
+        "**Stauffenberg**: the attempt on Hitler's life on **20 July 1944**."
+      ],
+      "sections": [
+        {"title": "1933: dictatorship", "facts": [
+          {"text": "The Nazis under Hitler were in power from **1933 to 1945**; Hitler became **Reichskanzler in 1933**.", "q": [152, 155, 156]},
+          {"text": "They built a **dictatorship**: the 'Third Reich' was a **Diktatur**.", "q": [157, 158]},
+          {"text": "There were **no free elections**, parties were **banned**, and the state's policy was **state racism**.", "q": [159, 170, 161]}
+        ]},
+        {"title": "1938: the pogrom", "facts": [
+          {"text": "On **9 November 1938**, Nazis and their followers **destroyed Jewish shops and synagogues**.", "q": [163, 164]}
+        ]},
+        {"title": "1939-1945: the war", "facts": [
+          {"text": "**World War II** lasted from **1939 to 1945**.", "q": [160]},
+          {"text": "**Claus Schenk Graf von Stauffenberg** is known for the **assassination attempt on Hitler on 20 July 1944**.", "q": [162]},
+          {"text": "The war ended in Europe on **8 May 1945** (the year to remember: **1945**) with Germany's **unconditional surrender**.", "q": [153, 154, 179]}
+        ]}
+      ],
+      "traps": [
+        {"text": "'Was gab es **nicht** in der NS-Zeit?' The answer is **free elections**. Press censorship, arbitrary arrests and persecution of Jews all **did** exist.", "q": [159]}
+      ]
+    },
+    {
+      "topic": "juedisches_leben",
+      "common_sense": [118, 182, 149, 111, 288, 181],
+      "hook": "Jewish life in Germany is older than Germany: the first documented community, in Cologne, dates from the year 321.",
+      "summary": [
+        "Jewish communities have existed here for **about 1700 years**; the largest today are in **Berlin and Munich**.",
+        "Denying the Holocaust is antisemitic and a crime: up to **5 years** in prison or a fine.",
+        "Germany's special responsibility for Israel comes from the **Nazi crimes against Jews**.",
+        "Remembrance: **27 January**, **Stolpersteine**, Willy Brandt's **Kniefall** (1970)."
+      ],
+      "sections": [
+        {"title": "Jewish life today", "facts": [
+          {"text": "The first Jewish community on today's German territory existed **about 1700 years ago**.", "q": [59]},
+          {"text": "The largest Jewish communities are in **Berlin and Munich**.", "q": [66]},
+          {"text": "The Jewish house of prayer is the **Synagoge**.", "q": [182]},
+          {"text": "The roughly 40 **Makkabi** sports clubs are open to **everyone**.", "q": [118]}
+        ]},
+        {"title": "Antisemitism is a crime", "facts": [
+          {"text": "**Denying the Holocaust** is antisemitic and can be punished with **up to five years in prison or a fine**.", "q": [149, 96]},
+          {"text": "**Publicly calling for the destruction of Israel** is forbidden.", "q": [111]}
+        ]},
+        {"title": "Israel", "facts": [
+          {"text": "Israel was founded on the basis of a **United Nations resolution**.", "q": [184]},
+          {"text": "Germany's special responsibility for Israel comes from the **Nazi crimes against Jews**.", "q": [288]}
+        ]},
+        {"title": "Remembrance", "facts": [
+          {"text": "**Stolpersteine**, small brass plates in the pavement in front of houses, remember **victims of National Socialism** who lived there.", "q": [206]},
+          {"text": "**27 January** (the liberation of Auschwitz in 1945) is the day of remembrance for the **victims of National Socialism**.", "q": [220]},
+          {"text": "**1970, Warsaw**: Chancellor **Willy Brandt** knelt at the ghetto memorial, asking **Poland and the Polish Jews for forgiveness**.", "q": [181]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "nachkriegszeit",
+      "common_sense": [167, 168, 177, 185, 297],
+      "hook": "For almost a year, West Berlin was supplied entirely by air: the 'raisin bombers' landed every few minutes.",
+      "summary": [
+        "After 1945: **4 occupation powers** (USA, UK, France, Soviet Union), **4 zones**, Berlin in **4 sectors**.",
+        "1948/49 **Luftbrücke** (airlift): the Soviets had blocked the land routes to West Berlin.",
+        "**1949**: the Federal Republic is founded, first chancellor **Konrad Adenauer**. **1950s**: the Wirtschaftswunder.",
+        "**Gastarbeiter** came from the 1950s on, the first from **Italy**; most migrants overall came from **Turkey**."
+      ],
+      "sections": [
+        {"title": "Occupation", "facts": [
+          {"text": "The four **Allied occupation powers** were the **USA, the Soviet Union, Great Britain and France**. **Japan** was not one of them.", "q": [167, 168]},
+          {"text": "Germany had **4 occupation zones**. On the map: **1 = Great Britain** (north-west), **2 = Soviet Union** (east), **3 = USA** (south, with Bayern), **4 = France** (south-west).", "q": [175, 176]},
+          {"text": "**Berlin** was divided into **four sectors**.", "q": [177]},
+          {"text": "**Luftbrücke**, June 1948 to May 1949: West Berlin was supplied by air because **the Soviet Union had cut off all land routes**.", "q": [178]}
+        ]},
+        {"title": "The young Federal Republic", "facts": [
+          {"text": "The Federal Republic was founded in **1949**; its first chancellor was **Konrad Adenauer**.", "q": [169, 165, 180]},
+          {"text": "The **Wirtschaftswunder** (economic miracle) happened in the **1950s**.", "q": [183]},
+          {"text": "**Willy Brandt** stands for the **Ostverträge** (the treaties with the Eastern bloc).", "q": [211]},
+          {"text": "The '**Iron Curtain**' meant the **Warsaw Pact sealing itself off from the West**.", "q": [185]}
+        ]},
+        {"title": "Migration", "facts": [
+          {"text": "Foreign workers recruited in the 1950s and 60s were called **Gastarbeiter**; the first came from **Italy**.", "q": [299, 300]},
+          {"text": "Most migrants to Germany came from **Turkey**.", "q": [297]},
+          {"text": "In the **GDR**, migrants came mainly from **Vietnam, Poland and Mozambique**.", "q": [298]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "ddr",
+      "common_sense": [172, 190, 187, 202, 207, 203, 199, 208],
+      "hook": "The GDR called itself 'democratic', but it was a one-party dictatorship watched over by the Stasi.",
+      "summary": [
+        "**DDR** = Deutsche Demokratische Republik, **1949-1990**, founded in the **Soviet zone**.",
+        "It belonged to the **Warsaw Pact**; its economy was a **Planwirtschaft**.",
+        "**Stasi** = Ministerium für Staatssicherheit, the secret service.",
+        "**17 June 1953**: strikes and a popular uprising."
+      ],
+      "sections": [
+        {"title": "The state", "facts": [
+          {"text": "**DDR** = **Deutsche Demokratische Republik** (GDR), founded in **1949** in the **Soviet occupation zone**; it existed from **1949 to 1990**.", "q": [190, 174, 172, 217]},
+          {"text": "Its flag was **black-red-gold with hammer, compass and a wreath of grain**; its coat of arms is picture **4**.", "q": [187, 209]}
+        ]},
+        {"title": "Bloc and economy", "facts": [
+          {"text": "In the Cold War the GDR belonged to the **Warsaw Pact**, the Eastern military alliance.", "q": [202, 207]},
+          {"text": "Its economy was a **Planwirtschaft** (planned economy).", "q": [203]}
+        ]},
+        {"title": "The Stasi and 1953", "facts": [
+          {"text": "**Stasi** = **Ministerium für Staatssicherheit**, the GDR's **secret service**.", "q": [199, 208]},
+          {"text": "**17 June 1953**: **nationwide strikes and a popular uprising**. West Germany long marked the day as a public holiday.", "q": [186, 210]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "mauer_einheit",
+      "common_sense": [151, 193, 196, 191, 228, 194, 219, 205],
+      "hook": "The Wall stood for 28 years: built by the GDR in 1961, opened in 1989.",
+      "summary": [
+        "The **GDR** built the Wall in **1961**; Berlin stayed divided until **1989**.",
+        "**1989**: 'Wir sind das Volk' (Monday demonstrations), the **Wende**, the Wall opens.",
+        "**3 October 1990**: reunification. **5 eastern states** joined the Federal Republic, under chancellor **Helmut Kohl**.",
+        "The 5 eastern states: **Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen**."
+      ],
+      "sections": [
+        {"title": "The Wall", "facts": [
+          {"text": "**The GDR** built the Wall in Berlin in **1961**; from **1961 to 1989** Berlin was **divided by a wall**.", "q": [151, 188, 189, 193]}
+        ]},
+        {"title": "1989", "facts": [
+          {"text": "'**Wir sind das Volk**' was the call of the **Monday demonstrations in 1989 in the GDR**.", "q": [166]},
+          {"text": "The **Wende** (autumn 1989): the GDR changed **from a dictatorship to a democracy**.", "q": [196]},
+          {"text": "The Wall was opened for everyone in **1989** (on 9 November).", "q": [191]}
+        ]},
+        {"title": "1990: one country", "facts": [
+          {"text": "**Deutsche Wiedervereinigung** (reunification), 1990: **the five eastern states joined the Federal Republic**. It is celebrated on **3 October**, the Tag der Deutschen **Einheit**.", "q": [228, 204, 194, 218]},
+          {"text": "**Helmut Kohl** is called the 'chancellor of German unity'.", "q": [215]},
+          {"text": "Germany has had **today's borders since 1990**, and with reunification the new states also became part of the **EU**.", "q": [219, 205]}
+        ]},
+        {"title": "The five eastern states", "facts": [
+          {"text": "**Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen**. In every 'which state belonged to the GDR?' question exactly one option is on this list; in the list question, pick the list of exactly these five.", "q": [192, 195, 197, 198, 200, 201]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "europa",
+      "common_sense": [224, 226, 231, 235, 232, 238],
+      "hook": "The EU began as a peace project: former enemies like France and Germany chose to trade instead of fight.",
+      "summary": [
+        "Germany is a **founding member**; the **Treaties of Rome** (1957) created the **EEC (EWG)**.",
+        "**27 member states**, euro cash since **2002**, and **Schengen** means no passport checks.",
+        "The European Parliament is elected **every 5 years** and works in **Strasbourg, Luxembourg and Brussels**."
+      ],
+      "sections": [
+        {"title": "Beginnings", "facts": [
+          {"text": "Germany is a **founding member** of the EU.", "q": [173]},
+          {"text": "The **Treaties of Rome** (1957, celebrated 50 years later in 2007) founded the **European Economic Community (EWG)**.", "q": [237, 239]},
+          {"text": "The goal shown by Mitterrand and Kohl at Verdun (picture question): **peace and security** in the EU.", "q": [235]},
+          {"text": "**Europäische Integration** = European states **joining together in the EU**.", "q": [231]}
+        ]},
+        {"title": "Today", "facts": [
+          {"text": "**EU** = **Europäische Union**, with **27 member states**. Its flag is the **circle of yellow stars on blue** (picture **2**).", "q": [224, 236, 226]},
+          {"text": "**Schengen**: Germans can travel to many European countries **without passport control**.", "q": [221]},
+          {"text": "People in Germany have paid **in cash with euros since 2002**.", "q": [240]}
+        ]},
+        {"title": "The European Parliament", "facts": [
+          {"text": "It is elected **every 5 years**; in the European election you elect **the members of the European Parliament**.", "q": [230, 232]},
+          {"text": "It works in **Strasbourg, Luxembourg and Brussels**. When asked for one seat, the answer is **Strasbourg** (Straßburg).", "q": [234, 238]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "symbole_land",
+      "common_sense": [214, 212, 222, 223, 227, 229, 233, 225],
+      "hook": "Germany has 9 neighbours. Learn the list once and five questions are free.",
+      "summary": [
+        "The national symbol is the **eagle**: coat of arms picture **1**, and the Bundesadler in the Bundestag.",
+        "Flag: **black-red-gold**. Anthem starts: '**Einigkeit und Recht und Freiheit**'.",
+        "**Bundesrepublik Deutschland**: about **84 million** people, **9 neighbours**."
+      ],
+      "sections": [
+        {"title": "Symbols", "facts": [
+          {"text": "The coat of arms is the black **eagle** (picture **1**). The **Bundesadler** also hangs in the Bundestag's plenary hall.", "q": [21, 29, 216]},
+          {"text": "The flag is **schwarz-rot-gold** (black-red-gold).", "q": [214]},
+          {"text": "The anthem begins '**Einigkeit und Recht und Freiheit**' (unity and justice and freedom).", "q": [40]}
+        ]},
+        {"title": "The country", "facts": [
+          {"text": "Full name: **Bundesrepublik Deutschland**. Population: about **84 million**.", "q": [212, 213]},
+          {"text": "The **9 neighbours**: Denmark (Dänemark), Poland (Polen), Czech Republic (Tschechien), Austria (Österreich), Switzerland (Schweiz), France, Luxembourg, Belgium, Netherlands. In each 'Nachbarland' question exactly one option is on this list.", "q": [222, 223, 227, 229, 233]},
+          {"text": "**Austria** (Österreich) has a large German-speaking population.", "q": [225]}
+        ]}
+      ],
+      "traps": [
+        {"text": "In the Bundestag hangs the **Bundesadler** (federal eagle). The option **Reichsadler** (the old empire's eagle) is wrong.", "q": [216]}
+      ]
+    },
+    {
+      "topic": "familie",
+      "common_sense": [245, 252, 272, 254, 275, 248, 249, 251, 258, 267, 241],
+      "hook": "German family law in one line: adults decide for themselves, and children are protected, even from their own parents.",
+      "summary": [
+        "One marriage at a time. You marry at the **Standesamt**; a divorce needs a **lawyer** and usually a **separation year**.",
+        "**Parents** raise their children, and **hitting a child is punishable**.",
+        "Help with bringing up children: the **Jugendamt**, which can even take a child out of a violent family.",
+        "Adult at **18**. Pregnant women get **Mutterschutz**; Elterngeld needs an **application**."
+      ],
+      "sections": [
+        {"title": "Partners and marriage", "facts": [
+          {"text": "Adults of any combination may live together as a couple, but **Anne (13) and Tim (25)** may not: she is a child.", "q": [245]},
+          {"text": "You may be married to **only one partner at a time**, so a man married to two women is **not allowed**.", "q": [252, 272]},
+          {"text": "To get married, you go first to the **Standesamt** (registry office).", "q": [265]},
+          {"text": "Divorce usually comes after the **Trennungsjahr** (the spouses **live separately for at least a year**), and you need a **lawyer**.", "q": [254, 275]}
+        ]},
+        {"title": "Children", "facts": [
+          {"text": "Bringing up children is mainly the task of **the parents**.", "q": [248, 249]},
+          {"text": "**Hitting a child can be punished.**", "q": [251]},
+          {"text": "Problems with bringing up your children? The **Jugendamt** (youth welfare office) helps. It can **take a child who is beaten or starved out of the family**.", "q": [255, 273, 258]},
+          {"text": "You are an adult (volljährig) at **18**. Parents must **respect the decisions** of their adult daughter, for example about her boyfriend.", "q": [246, 267]}
+        ]},
+        {"title": "Babies", "facts": [
+          {"text": "The legal protection shortly before and after birth is **Mutterschutz**.", "q": [247]},
+          {"text": "For **Elterngeld** (parental allowance) you **apply at the Elterngeldstelle**.", "q": [241]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "schule_bildung",
+      "common_sense": [95, 260, 2, 242, 269, 270],
+      "hook": "School is compulsory in Germany, and home-schooling is not allowed.",
+      "summary": [
+        "**Schulpflicht** and **Anwesenheitspflicht**: children must go to school, and the state oversees schools.",
+        "Parents decide on **religious education until the child is 14**, and on **kindergarten** (a place is guaranteed from age 3).",
+        "University needs the **Abitur**; adults can get it at an **Abendgymnasium**. **Volkshochschule** = further education."
+      ],
+      "sections": [
+        {"title": "Compulsory school", "facts": [
+          {"text": "Most children have **Schulpflicht** (compulsory schooling) and must be present at school (**Anwesenheitspflicht**).", "q": [95, 260]},
+          {"text": "The state controls the schools **because the Grundgesetz makes it its task**.", "q": [68]},
+          {"text": "Until the child turns **14**, the parents decide whether it attends **Religionsunterricht** (religious education).", "q": [2]}
+        ]},
+        {"title": "Before school", "facts": [
+          {"text": "The **parents** decide whether a child goes to kindergarten. From **age 3** every child has the **right to a kindergarten place**.", "q": [242, 269]}
+        ]},
+        {"title": "Later", "facts": [
+          {"text": "To study at a university you normally need the **Abitur**. Adults can catch it up at an **Abendgymnasium** (evening school).", "q": [244, 257, 261]},
+          {"text": "The **Volkshochschule** (VHS) is a place for **further education** (Weiterbildung), for everyone.", "q": [270]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "arbeit",
+      "common_sense": [23, 101, 135, 287, 136, 137, 250, 284, 259],
+      "hook": "Fired unfairly? Germany has a whole court just for work: the Arbeitsgericht.",
+      "summary": [
+        "Most people work for a **company or public authority**.",
+        "**Gewerkschaften** (unions) represent employees; inside a company the **Betriebsrat** helps.",
+        "Quitting: mind the **Kündigungsfrist**. Unfair dismissal: **Kündigungsschutzklage** at the **Arbeitsgericht**.",
+        "Good training gives the best chances, and you keep learning all your life."
+      ],
+      "sections": [
+        {"title": "Working", "facts": [
+          {"text": "Most workers are **employed by a company or a public authority** (Firma oder Behörde).", "q": [23]},
+          {"text": "**Gewerkschaften** (unions) represent **employees** (Arbeitnehmer).", "q": [101, 135]},
+          {"text": "Inside a company, the **Betriebsrat** (works council) helps employees with problems with the employer.", "q": [286]}
+        ]},
+        {"title": "Quitting and being fired", "facts": [
+          {"text": "If you want to end your job, respect the **Kündigungsfrist** (notice period).", "q": [287]},
+          {"text": "Fired without good reason? Go to the **Arbeitsgericht** (labour court, responsible for conflicts at work) and file a **Kündigungsschutzklage**.", "q": [136, 137, 138]}
+        ]},
+        {"title": "Careers", "facts": [
+          {"text": "The best chance of a well-paid job: **be well trained** (gut ausgebildet).", "q": [250]},
+          {"text": "Work changes fast, so **adults must keep learning after their training**.", "q": [284]},
+          {"text": "The **BIZ** (Berufsinformationszentrum) of the Federal Employment Agency helps with **finding an apprenticeship** (Lehrstelle).", "q": [259]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "gleichbehandlung",
+      "common_sense": [262, 281, 104, 277, 278, 289],
+      "hook": "The easiest topic: in every discrimination question, the answer is the personal trait the question mentions.",
+      "summary": [
+        "**Gleichbehandlung**: nobody may be disadvantaged, for example because of a disability.",
+        "Discrimination = being turned down for **who you are** (mother, wheelchair, skin colour), not for missing skills."
+      ],
+      "sections": [
+        {"title": "The principle", "facts": [
+          {"text": "**Gleichbehandlung** (equal treatment): **nobody may be disadvantaged**, for example because of a **disability**.", "q": [262]},
+          {"text": "Two friends with dark skin are refused entry to a public pool: their right to **Gleichbehandlung** is violated, not freedom of opinion or of assembly.", "q": [281]}
+        ]},
+        {"title": "Spot the discrimination", "facts": [
+          {"text": "A woman may **not** be fired because she is **having a child** and her boss knows it. Being often late or doing private things at work can be reasons.", "q": [104]},
+          {"text": "Turned down only because she is a **mother**, he **uses a wheelchair** or he has **dark skin** = discrimination. Turned down for no experience, weak language skills or high salary wishes = not discrimination.", "q": [277, 278, 289]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "religion_feste",
+      "common_sense": [33, 292, 295, 271, 293],
+      "hook": "Germany separates church and state, and yet the state collects church tax for the churches.",
+      "summary": [
+        "**State and religious communities are separate**. Religious tolerance: everyone may believe what they want.",
+        "**Christianity** shaped German and European culture. **Church tax** is why the tax return asks about church membership.",
+        "The year: **Advent** (4 weeks before Christmas), the Christmas tree, Easter eggs, **Pfingsten** (Christian), **Rosenmontag** costumes."
+      ],
+      "sections": [
+        {"title": "State and religion", "facts": [
+          {"text": "In Germany **state and religious communities are separate** from each other.", "q": [33]},
+          {"text": "**Religious tolerance**: **everyone can believe what they want**.", "q": [292]},
+          {"text": "**Christianity** shaped European and German culture.", "q": [295]},
+          {"text": "Your tax return asks whether you belong to a church **because there is a church tax**, linked to income tax and wage tax.", "q": [291]}
+        ]},
+        {"title": "Customs through the year", "facts": [
+          {"text": "**Advent** (Adventszeit) = the **last four weeks before Christmas**. At Christmas people **decorate a fir tree** (Tannenbaum).", "q": [296, 271]},
+          {"text": "At Easter people **paint eggs**. **Pfingsten** (Pentecost) is a **Christian holiday**.", "q": [293, 294]},
+          {"text": "Colourful **costumes and masks**: **Rosenmontag** (carnival).", "q": [264]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "alltag_behoerden",
+      "common_sense": [256, 279, 268, 290, 280, 283, 276],
+      "hook": "Most everyday questions follow one pattern: use the official channel. Register, object, complain.",
+      "summary": [
+        "Moving? Register at the **Einwohnermeldeamt**. Night-time quiet starts at **22:00**; the **Hausordnung** has rules for all residents.",
+        "Wrong tax assessment: **Einspruch**. Wrong bill from an authority: **Widerspruch**. Treated badly: complain to the **head of the authority**.",
+        "Broken new TV: **reklamieren**. Demonstration: **register it**. Restaurant: **Gaststättenerlaubnis**."
+      ],
+      "sections": [
+        {"title": "At home", "facts": [
+          {"text": "When you move, you register at the **Einwohnermeldeamt** (residents' registration office).", "q": [253]},
+          {"text": "The legal night-time quiet (**Nachtruhe**) starts at **22:00**. The **Hausordnung** contains **rules all residents must follow**.", "q": [266, 279]}
+        ]},
+        {"title": "Dealing with public offices", "facts": [
+          {"text": "Wrong **tax assessment** (Steuerbescheid): **Einspruch einlegen**. Wrong **bill from an authority**: **Widerspruch** with the authority.", "q": [280, 283]},
+          {"text": "Treated badly by an official? You can **complain to the head of the authority** (Behördenleiter).", "q": [276]},
+          {"text": "To open a restaurant you need a **Gaststättenerlaubnis** (restaurant licence) from the responsible authority.", "q": [256]},
+          {"text": "A demonstration in the street **must be registered** (anmelden).", "q": [243]}
+        ]},
+        {"title": "Everyday rights", "facts": [
+          {"text": "Your new TV doesn't work? **Reklamieren**: take it back to the shop as defective.", "q": [290]},
+          {"text": "Driving licence: the **theory test can be taken in many languages** (more than ten).", "q": [268]}
+        ]}
+      ],
+      "traps": []
+    },
+    {
+      "topic": "bayern",
+      "common_sense": [306, 307, 310],
+      "hook": "Bayern is the largest German state by area, and officially a 'Freistaat' (free state). Each of these 10 questions is three times as likely to be on your sheet as a general one.",
+      "summary": [
+        "Capital **München**; flag **white-blue**; coat of arms with **white and blue diamonds** (picture 2).",
+        "Head of government: **Ministerpräsident**. The Landtag is elected for **5 years**; local elections from **18**.",
+        "Bayern has **no foreign minister**: foreign policy belongs to the federal government."
+      ],
+      "sections": [
+        {"title": "Symbols and map", "facts": [
+          {"text": "Coat of arms: picture **2**, the shield with the **diamond pattern** (Rauten) under a crown. The exam picture is black and white, so look for the shape, not the colours.", "q": [301]},
+          {"text": "The flag is **weiß-blau** (white-blue).", "q": [305]},
+          {"text": "On the map, Bayern is **4**: the **big state in the south-east**.", "q": [308]},
+          {"text": "The capital is **München**. **Altötting** is a Bavarian Landkreis (district).", "q": [307, 302]}
+        ]},
+        {"title": "Politics", "facts": [
+          {"text": "The head of government is the **Ministerpräsident**, as in most Länder.", "q": [309]},
+          {"text": "The **Landtag** is elected for **5 years** (the Bundestag: 4).", "q": [303]},
+          {"text": "In local elections (Kommunalwahlen) you can vote from **18** in Bayern.", "q": [304]},
+          {"text": "Bayern has ministers for justice, finance and the interior, but **no foreign minister** (Außenminister).", "q": [310]},
+          {"text": "For information on political topics: the **Landeszentrale für politische Bildung**.", "q": [306]}
+        ]}
+      ],
+      "traps": []
+    }
+  ]
+}

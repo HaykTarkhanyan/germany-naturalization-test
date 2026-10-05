@@ -6,7 +6,9 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
 ## Study app
 
-**https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Practice topic by topic (the
+**https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Read a 1-2 minute lesson per
+topic (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
+the topic is worth and which of its questions need memorizing vs. common sense), practice topic by topic (the
 24 topics of `data/topics.json`, with instant feedback), take real-format mock exams (30 general + 3 Bayern, 60 min,
 17 to pass), and see your pass chance today. Every question and answer shows its English translation under the
 German (switch "English on/off" in the header). Progress is saved in the browser only; export/import it on the
@@ -32,6 +34,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | [`data/questions_bayern.json`](data/questions_bayern.json) / [`.csv`](data/questions_bayern.csv) | Same, machine-readable (for Anki, a quiz app, an LLM, ...) |
 | `data/translations_en.json` | English translation of every question and option, in catalog option order (`scripts/build_translations.py`; 40 hand translations in `data/translations_en_overrides.json`) |
 | `data/topics.json` | The 310 questions grouped into 24 study topics (in the 3 BAMF course modules + Bayern), ids in study order with related questions next to each other |
+| `data/lessons.json` | One short English lesson per study topic; every fact lists the questions it answers, and `common_sense` marks the questions answerable without studying (DECISIONS.md #12, #13) |
 | `data/images/` | The 13 picture questions (coats of arms, flags, photos) as served by BAMF |
 | `data/raw/` | Raw scrape of the BAMF Online-Testcenter - the record the dataset is built from |
 | `official/gesamtfragenkatalog-lebenindeutschland_2025-05-26.pdf` | Official BAMF catalog, all 460 questions incl. all 16 states, "Stand 07.05.2025". **No answers in it.** |
@@ -44,7 +47,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
 | `scripts/` | Dataset build (scraper + `build_dataset.py`) and pattern analysis (`mine_patterns.py`, `build_pattern_report.py`) |
-| `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json` and `data/images/` directly |
+| `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json`, `data/lessons.json`, `data/translations_en.json` and `data/images/` directly |
 
 ## Where the answers come from (and why you can trust them)
 

@@ -1,0 +1,30 @@
+title = "Study lessons per topic, with exam points and memorize vs. common sense"
+date = "2026-10-05"
+time = "14:15"
+areas = ["data/", "app/", "_learnings/"]
+
+done = [
+  "data/lessons.json: 24 short English lessons (hook, 60-second summary, facts by theme, traps), German terms in bold; each fact lists the question ids it answers; about 25 min reading in total",
+  "Fact check: every fact printed next to its official answers; distractors named in lessons checked against the real option lists; ballot (Q130) and Bayern coat of arms (Q301) pictures checked by eye",
+  "common_sense split (hand judgment, DECISIONS #13): 156 common sense, 154 memorize -> 107 facts; points per lesson = expected exam questions (sum 33); common sense alone + guessing = 20.4 of 33 expected, 93% pass chance",
+  "App: Learn page (overview table 'Where the points are' + lesson list with hooks), lesson page (stat strip, 60 seconds, collapsible sections with TOC, common-sense facts grey, Q tags start practice rounds, exam pictures inline, next lesson); Read buttons on Topics, Home and the practice summary",
+  "lessons.ts validates at startup: one lesson per topic, exact question coverage, common_sense within topic, balanced ** markup; 4 new tests (27 total pass)",
+  "Fixed: useEffect returning window.scrollTo's Promise crashed lesson pages (learning file); phone header (123 px after adding Learn) no longer sticky so the exam timer bar stays visible",
+  "Browser-checked desktop + iPhone 13 (Edge via playwright-core): 0 px overflow, no console errors, next lesson opens at top, Q tags start the right round",
+]
+pending = [
+  "Not committed or pushed yet (waiting for Hayk)",
+  "Pattern report still predates the HTML rule (TOC + collapsible sections) - DEFERRED_TODO.md",
+]
+next = [
+  "Read the lessons, then practice; if common-sense questions get answered wrong, move them to memorize (DECISIONS #13)",
+  "Practice rounds started from a Q tag go back to Topics, not to the lesson; change if it gets annoying",
+]
+files = [
+  "data/lessons.json", "app/src/lib/lessons.ts", "app/src/lib/lessons.test.ts", "app/src/pages/Learn.tsx",
+  "app/src/App.tsx", "app/src/pages/Topics.tsx", "app/src/pages/Home.tsx", "app/src/pages/Practice.tsx",
+  "app/src/lib/data.ts", "app/src/lib/exam.ts", "app/src/styles.css",
+  "README.md", "DECISIONS.md", "_learnings/2026-10-05-1505_scrollto-returns-promise.md",
+]
+commits = []
+notes = "Lesson lengths 150-280 words (~1-2 min at 180 wpm). The 500 kB bundle warning comes from bundling all question/translation/lesson JSON; harmless for this app."

@@ -5,6 +5,7 @@ import { getProgress, recordAnswer } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { useSettings } from '../lib/settings.ts'
 import { statusById } from '../lib/stats.ts'
+import { ReadButton } from './Topics.tsx'
 
 type Session = { title: string; ids: number[]; topicKey: string | null }
 
@@ -147,6 +148,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
           <button type="button" onClick={() => restart(queue)}>
             Again ({queue.length})
           </button>
+          {session.topicKey && missed.length > 0 && <ReadButton topicKey={session.topicKey} />}
           {nextTopic && (
             <a className="button" href={link('practice', nextTopic.key, 'open')}>
               Next topic: {nextTopic.title}

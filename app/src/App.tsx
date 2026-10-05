@@ -3,12 +3,14 @@ import { link, useRoute } from './lib/router.ts'
 import { updateSettings, useSettings } from './lib/settings.ts'
 import { ExamPage } from './pages/Exam.tsx'
 import { Home } from './pages/Home.tsx'
+import { Learn, LessonPage } from './pages/Learn.tsx'
 import { Practice } from './pages/Practice.tsx'
 import { ProgressPage } from './pages/Progress.tsx'
 import { Topics } from './pages/Topics.tsx'
 
 const NAV: [string, string][] = [
   ['', 'Home'],
+  ['learn', 'Learn'],
   ['topics', 'Topics'],
   ['exam', 'Exam'],
   ['progress', 'Progress'],
@@ -51,6 +53,8 @@ function Page({ route }: { route: string[] }) {
   switch (route[0] ?? '') {
     case '':
       return <Home />
+    case 'learn':
+      return route[1] ? <LessonPage key={route[1]} topicKey={route[1]} /> : <Learn />
     case 'topics':
       return <Topics />
     case 'practice':

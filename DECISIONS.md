@@ -2,6 +2,20 @@
 
 Newest first.
 
+## 13. Split every question into "memorize" or "common sense" by hand, and show exam points per lesson
+
+- **Date / status:** 2026-10-05, active (Hayk asked how many questions and points each lesson is worth, and how many are really worth memorizing)
+- **Why:** To spend study time where it pays. A question is **common sense** when all three wrong options are absurd or undemocratic (e.g. Q10: fine vs. caning, torture, death penalty), so plain logic or general knowledge picks the answer; it is **memorize** when at least one wrong option is believable (e.g. Q12: "two thirds of the Bundestag can abolish press freedom"). Judged by reading all 310 questions with their options; when in doubt, memorize (the safe side for passing). Result: 156 common sense, 154 memorize. The 154 boil down to 107 facts, because one fact often answers several questions (a lesson fact counts if it brings a memorize question no earlier fact of the lesson covered). **Exam points** per lesson = the expected number of its questions on the sheet: 30/300 per general question, 3/10 per Bayern question, so all lessons add up to 33 (unit-tested). With the existing exam model, common sense alone plus blind guesses averages 20.4 of 33, a 93% pass chance, valid only if the common-sense calls hold and the German is read correctly.
+- **Alternatives rejected:** using the pattern-mining rules (PATTERNS.md) as the "easy" label (they are statistical shortcuts about option positions and lengths, not about whether a person can reason to the answer); per-question difficulty from published pass statistics (BAMF publishes none per question); no split (the user asked for it).
+- **What would change this:** Practice data showing many wrong answers on common-sense questions (then they are not common sense for this reader: move them to memorize and lower the 93% claim).
+
+## 12. Study lessons: one short English lesson per topic as data (data/lessons.json), with exact question coverage enforced
+
+- **Date / status:** 2026-10-05, active (Hayk asked for interesting study material per topic, at minimal reading time)
+- **Why:** Reading the facts behind a topic before practicing turns the practice round into recognition. One lesson per topic (24, 150-280 words, about 25 minutes in total): a one-line hook, an "In 60 seconds" summary, facts grouped by theme, and "Watch out" traps for questions with tricky options. Written in English (Hayk is not strong in German) with the German exam terms in **bold**. Every fact lists the question ids it answers; `app/src/lib/lessons.ts` refuses to start unless each lesson covers exactly its topic's questions (no question unread, none from another topic), so lessons cannot silently drift from the catalog. Each fact's Q tags start a practice round with just those questions, and picture questions show the exam picture inside the lesson. Facts were checked against the official answers (a dump of every fact next to its answers) and the distractors that lessons name against the real option lists.
+- **Alternatives rejected:** Markdown lesson files (no machine-checkable link between a sentence and the questions it covers); per-question explanations only (310 snippets, far more reading, no story to remember); German text (Hayk reads English faster; the exam terms stay German in bold so they are recognized on the sheet).
+- **What would change this:** A new BAMF catalog (the coverage check fails and names the missing ids), or practice data showing a lesson's facts don't stick (rewrite that lesson).
+
 ## 11. English translations: reuse abdullahbutt's English, matched by German text, with hand translations wherever its German is not the official catalog
 
 - **Date / status:** 2026-10-03, active (Hayk asked for English under everything)

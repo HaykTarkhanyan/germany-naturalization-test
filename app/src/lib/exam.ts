@@ -11,7 +11,7 @@ export const EXAM = {
   minutes: 60,
 } as const
 
-const GUESS = 0.25
+export const GUESS = 0.25
 
 export function shuffle<T>(items: readonly T[], rand: () => number = Math.random): T[] {
   const a = [...items]

@@ -34,7 +34,7 @@ const TopicsFileSchema = z.strictObject({
 export type Module = z.infer<typeof ModuleSchema>
 export type Topic = z.infer<typeof TopicSchema>
 
-function parse<T>(schema: z.ZodType<T>, data: unknown, file: string): T {
+export function parse<T>(schema: z.ZodType<T>, data: unknown, file: string): T {
   const result = schema.safeParse(data)
   if (!result.success) {
     const issues = result.error.issues.map((i) => `${i.path.join('.') || '(root)'}: ${i.message}`)

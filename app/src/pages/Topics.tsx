@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { StatusBar } from '../components/StatusBar.tsx'
 import { MODULES, TOPICS, type Topic } from '../lib/data.ts'
+import { LESSON_BY_TOPIC, readingMinutes } from '../lib/lessons.ts'
 import { useProgress } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { countStatuses, statusById, type Status } from '../lib/stats.ts'
@@ -72,7 +73,18 @@ function TopicRow({ topic, statuses }: { topic: Topic; statuses: ReadonlyMap<num
         <a className="button" href={link('practice', topic.key, 'all')}>
           All {topic.questions.length}
         </a>
+        <ReadButton topicKey={topic.key} />
       </div>
     </div>
+  )
+}
+
+export function ReadButton({ topicKey }: { topicKey: string }) {
+  const lesson = LESSON_BY_TOPIC.get(topicKey)
+  if (!lesson) throw new Error(`no lesson for topic ${topicKey}`)
+  return (
+    <a className="button" href={link('learn', topicKey)}>
+      Read the lesson ({readingMinutes(lesson)} min)
+    </a>
   )
 }

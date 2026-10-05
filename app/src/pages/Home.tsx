@@ -5,6 +5,7 @@ import { EXAM } from '../lib/exam.ts'
 import { useProgress } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { countStatuses, statusById } from '../lib/stats.ts'
+import { ReadButton } from './Topics.tsx'
 
 // Bayern first: each Bayern question is three times as likely to be on the sheet (3 of 10 vs 30 of 300).
 const STUDY_ORDER = [...TOPICS.filter((t) => t.module === 'bayern'), ...TOPICS.filter((t) => t.module !== 'bayern')]
@@ -35,6 +36,7 @@ export function Home() {
               <a className="button primary" href={link('practice', next.t.key, 'open')}>
                 Practice them
               </a>
+              <ReadButton topicKey={next.t.key} />
               <a className="button" href={link('topics')}>
                 All topics
               </a>
