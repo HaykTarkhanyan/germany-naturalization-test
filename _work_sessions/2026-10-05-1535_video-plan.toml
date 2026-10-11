@@ -1,4 +1,4 @@
-title = "Plan and pilot scripts for Russian explainer videos"
+title = "Plan and pilot scripts for explainer videos (Russian and English, with exam cards)"
 date = "2026-10-05"
 time = "15:35"
 areas = ["videos/", "DECISIONS.md", "README.md", ".gitignore"]
@@ -8,14 +8,16 @@ done = [
   "Prices checked on official pages 2026-10-05 (rendered with playwright-core where the pages need JS): ElevenLabs Free 10k credits, Starter $6/30k, Creator $22/121k; Azure neural TTS $15 per 1M characters, 0.5M free per month; OpenAI gpt-4o-mini-tts ~$0.015/min (vendor figure via search); Google Chirp 3 HD row shows $160 per 1M (left out); third-party sites had Azure at $16 (wrong)",
   "Six pilot scripts in videos/scripts/ (01 bayern, 02 mauer_einheit, 03 nachkriegszeit, 04 wahlen_praxis, 05 regierung_praesident, 06 parlament): Russian narration from data/lessons.json facts only, each names the believable wrong option to avoid",
   "Checked by script: every scene has Voice/On screen/Visual/Questions; main scenes cover exactly the topic's memorize questions, recap exactly its common-sense ones; no dashes or curly quotes; 9,655 narration characters in total; 1:19-1:51 spoken per video at an assumed 140 words/min",
-  "DECISIONS #14 (content and format; tools open), README row, .gitignore videos/build/",
+  "DECISIONS #14 (content and format; tools open), README row, .gitignore videos/build/ (committed 8975a78)",
+  "Second round (Hayk): every video in Russian and English from one script (Voice RU + Voice EN), and an exam card for every answer given, placed by {Q<id>} markers; cards generated from data/questions_bayern.json, German only, correct option green; DECISIONS #15",
+  "Check on all six scripts passed: same markers in both voices, one card per topic question per language, no memorize question left to the recap; RU 1:19-1:51, EN 1:33-1:58; 9,665 RU + 10,002 EN narration characters",
 ]
 pending = [
   "Hayk's choices D1-D5 in videos/PLAN.md (voice, renderer, 16:9 vs 9:16, hosting, keys)",
-  "Nothing in videos/ is committed yet (waiting for Hayk)",
+  "Second round (bilingual scripts, exam cards, PLAN.md, DECISIONS #15) not committed yet",
 ]
 next = [
-  "After D1 + keys: voice test on 2 scenes of 01_bayern (ElevenLabs vs Silero, or the chosen pair)",
+  "After D1 + keys: voice test on 2 scenes of 01_bayern in both languages",
   "Then the pilot render of 01_bayern (ask before the first CPU-heavy render), measure render time and file size",
 ]
 files = [
@@ -23,5 +25,5 @@ files = [
   "videos/scripts/04_wahlen_praxis.md", "videos/scripts/05_regierung_praesident.md", "videos/scripts/06_parlament.md",
   "DECISIONS.md", "README.md", ".gitignore",
 ]
-commits = []
+commits = ["8975a78 plan + Russian scripts"]
 notes = "Scripts state dated facts (Merz since May 2025, Steinmeier until March 2027) at the top of 05; re-check before rendering. Silero v5 Russian is a free local fallback that needs no key."

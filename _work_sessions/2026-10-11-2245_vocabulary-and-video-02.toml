@@ -1,0 +1,34 @@
+title = "Vocabulary count, Words page in the app, video 02 (Mauer und Einheit)"
+date = "2026-10-11"
+time = "22:45"
+areas = ["scripts/", "data/", "app/", "videos/", "results/"]
+
+done = [
+  "Vocabulary count: 1,409 German words (dictionary forms) in questions + options; 870 in questions or correct answers; 150 names/places and 14 abbreviations not counted; 43 words = half the text, 345 = 80% (first in-chat figure was 1,453 before merging one form under two word types)",
+  "scripts/build_vocabulary.py (spaCy 3.8.16 + de_core_news_md 3.8.0 pinned inline, ~11 s) -> data/vocabulary.json; hand-checked NOT_A_NAME list for ~70 ordinary words the model called names; feminine forms merged",
+  "scripts/translate_vocabulary.py (Gemini 3.1 Flash-Lite on Vertex, metric account) -> data/vocabulary_en.json: dictionary form with article + English; one-batch check first; 29 calls, $0.073, 95 s; 40 random words spot-checked; schlagen fixed by hand",
+  "App: Words page (#/words) with search (German, English, inflected forms), word type filter, questions-and-correct-answers filter, A-Z, 150 rows per page, practice link per word (<= 40 questions), articles coloured der/die/das; lib/vocabulary.ts validates both files at startup; 3 tests (30 total pass); browser-checked desktop + phone",
+  "Video renderer: card grid for answers given together (the five 'which state was in the GDR' questions); term card hidden above cards when it does not fit; long grid options drop the English",
+  "Video 02 Mauer und Einheit rendered RU (2:42) + EN (2:33). RU scene 4 switched to German mid-sentence ('heißt Helmut Kohl'); caught only at the 70% threshold. Fixed the script line, raised the transcript threshold to 80% (all correct scenes score >= 83%), regenerated that scene (100%)",
+  "Hayk: longer videos with bigger groups for the rest. All 24 topics scripted as 14 videos (08 new grouped scripts 07-14, 2-5.5 min each, ~45 min RU / 43 min EN in total); all 310 questions have exactly one exam card across the series (DECISIONS #19)",
+  "Independent review (2 fresh-context agents): scripts 07-14 had no wrong answers; fixed false friend (рекламировать), over-broad claims (only Bundestag elected directly; only a fine compatible; EU started with Rome), the 9 November night, Stasi/Gestapo wording (lesson too), card timing (grid for the five neighbours, renderer groups cards < 2 s apart, mixed grids show each question), ~15 language fixes, fewer German phrases inside Russian narration",
+  "Vocabulary review fixes: word type from the translator, duplicate rows merged (stable via data/vocabulary_raw.json), hand lemma fixes (führen, was, mich, seine, erster, unterste), feminine merge rules, overrides file (20), search ignores the article, tests for duplicates and types; 1,392 words, 864 core; re-translation $0.093",
+  "TTS language drift: Russian scenes came back Ukrainian (04 sc1 once, 08 sc5 three times); language_code 'ru-RU' pins Russian ('ru' does not); renderer retries up to 3 times with every failed clip kept; learning file",
+  "Videos 03-06 rendered RU + EN (04 RU after a retry); batch for 07-14 + frame re-render of 01-06 running",
+]
+pending = [
+  "Commit and push (vocabulary, Words page, video scripts and docs since 2026-10-05, .gitignore) - waiting for Hayk",
+  "Re-render 08 RU with ru-RU after the batch",
+  "Renderer + helpers still in the session scratchpad; move into the repo (videos/pipeline/) once Hayk is happy with the look",
+]
+next = [
+  "Videos 03-06 (scripted), then decide whether to script the other 18 topics",
+  "Words page: maybe a 'known' tick per word, if Hayk wants to track vocabulary",
+]
+files = [
+  "scripts/build_vocabulary.py", "scripts/translate_vocabulary.py", "data/vocabulary.json", "data/vocabulary_en.json",
+  "app/src/lib/vocabulary.ts", "app/src/lib/vocabulary.test.ts", "app/src/pages/Words.tsx", "app/src/App.tsx", "app/src/styles.css",
+  "videos/scripts/02_mauer_einheit.md", "videos/scripts/07-14 (new)", "videos/image_marks.json", "videos/PLAN.md", "data/vocabulary_raw.json", "data/vocabulary_en_overrides.json", "data/lessons.json (Q208)", "_learnings/2026-10-12-0010_tts-language-drift.md", "README.md", "DECISIONS.md", "results/vocabulary_de.json (first exploratory count)",
+]
+commits = []
+notes = "API spend 2026-10-11: vocabulary translation $0.073, video 02 about $0.06 (both via Vertex, trial credit). Session total since 2026-10-05 about $0.35 at paid rates."

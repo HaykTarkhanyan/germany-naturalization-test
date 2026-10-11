@@ -7,10 +7,12 @@ import { Learn, LessonPage } from './pages/Learn.tsx'
 import { Practice } from './pages/Practice.tsx'
 import { ProgressPage } from './pages/Progress.tsx'
 import { Topics } from './pages/Topics.tsx'
+import { Words } from './pages/Words.tsx'
 
 const NAV: [string, string][] = [
   ['', 'Home'],
   ['learn', 'Learn'],
+  ['words', 'Words'],
   ['topics', 'Topics'],
   ['exam', 'Exam'],
   ['progress', 'Progress'],
@@ -55,6 +57,8 @@ function Page({ route }: { route: string[] }) {
       return <Home />
     case 'learn':
       return route[1] ? <LessonPage key={route[1]} topicKey={route[1]} /> : <Learn />
+    case 'words':
+      return <Words />
     case 'topics':
       return <Topics />
     case 'practice':

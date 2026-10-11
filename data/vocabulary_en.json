@@ -1,0 +1,7070 @@
+{
+ "description": "Dictionary form, English meaning and word type for data/vocabulary.json, by gemini-3.1-flash-lite (scripts/translate_vocabulary.py) plus hand corrections from data/vocabulary_en_overrides.json. Machine translation: spot-checked, not reviewed word by word.",
+ "words": {
+  "der|function": {
+   "de": "der, die, das",
+   "en": "the (definite article)",
+   "type": "function"
+  },
+  "in|function": {
+   "de": "in",
+   "en": "in",
+   "type": "function"
+  },
+  "ein|function": {
+   "de": "ein",
+   "en": "a; one",
+   "type": "function"
+  },
+  "sein|content": {
+   "de": "sein",
+   "en": "to be",
+   "type": "verb"
+  },
+  "und|function": {
+   "de": "und",
+   "en": "and",
+   "type": "function"
+  },
+  "zu|function": {
+   "de": "zu",
+   "en": "to; at",
+   "type": "function"
+  },
+  "was|function": {
+   "de": "was",
+   "en": "what",
+   "type": "function"
+  },
+  "sie|function": {
+   "de": "sie",
+   "en": "she, they; Sie: you (formal)",
+   "type": "function"
+  },
+  "welcher|function": {
+   "de": "welcher",
+   "en": "which",
+   "type": "function"
+  },
+  "deutsch|content": {
+   "de": "deutsch",
+   "en": "German",
+   "type": "adjective"
+  },
+  "werden|content": {
+   "de": "werden",
+   "en": "to become; to be",
+   "type": "verb"
+  },
+  "haben|content": {
+   "de": "haben",
+   "en": "to have",
+   "type": "verb"
+  },
+  "man|function": {
+   "de": "man",
+   "en": "one; you (general)",
+   "type": "function"
+  },
+  "Jahr|content": {
+   "de": "das Jahr",
+   "en": "year",
+   "type": "noun"
+  },
+  "an|function": {
+   "de": "an",
+   "en": "at; on",
+   "type": "function"
+  },
+  "bei|function": {
+   "de": "bei",
+   "en": "at; during",
+   "type": "function"
+  },
+  "von|function": {
+   "de": "von",
+   "en": "of; from",
+   "type": "function"
+  },
+  "für|function": {
+   "de": "für",
+   "en": "for",
+   "type": "function"
+  },
+  "können|content": {
+   "de": "können",
+   "en": "to be able to",
+   "type": "verb"
+  },
+  "mit|function": {
+   "de": "mit",
+   "en": "with",
+   "type": "function"
+  },
+  "nicht|function": {
+   "de": "nicht",
+   "en": "not",
+   "type": "function"
+  },
+  "Bundesrepublik|content": {
+   "de": "die Bundesrepublik",
+   "en": "Federal Republic",
+   "type": "noun"
+  },
+  "wählen|content": {
+   "de": "wählen",
+   "en": "to vote; to choose",
+   "type": "verb"
+  },
+  "dürfen|content": {
+   "de": "dürfen",
+   "en": "to be allowed to",
+   "type": "verb"
+  },
+  "Partei|content": {
+   "de": "die Partei",
+   "en": "party",
+   "type": "noun"
+  },
+  "wenn|function": {
+   "de": "wenn",
+   "en": "if; when",
+   "type": "function"
+  },
+  "es|function": {
+   "de": "es",
+   "en": "it",
+   "type": "function"
+  },
+  "Staat|content": {
+   "de": "der Staat",
+   "en": "state",
+   "type": "noun"
+  },
+  "Bürger|content": {
+   "de": "der Bürger",
+   "en": "citizen",
+   "type": "noun"
+  },
+  "sich|function": {
+   "de": "sich",
+   "en": "oneself, themselves (reflexive)",
+   "type": "function"
+  },
+  "Bundesland|content": {
+   "de": "das Bundesland",
+   "en": "federal state",
+   "type": "noun"
+  },
+  "ihr|function": {
+   "de": "ihr",
+   "en": "her, their; Ihr: your (formal)",
+   "type": "function"
+  },
+  "Bundestag|content": {
+   "de": "der Bundestag",
+   "en": "Bundestag",
+   "type": "noun"
+  },
+  "er|function": {
+   "de": "er",
+   "en": "he",
+   "type": "function"
+  },
+  "Bundespräsident|content": {
+   "de": "der Bundespräsident",
+   "en": "Federal President",
+   "type": "noun"
+  },
+  "gehören|content": {
+   "de": "gehören",
+   "en": "to belong",
+   "type": "verb"
+  },
+  "wie|content": {
+   "de": "wie",
+   "en": "how; like",
+   "type": "adverb"
+  },
+  "auf|function": {
+   "de": "auf",
+   "en": "on; at",
+   "type": "function"
+  },
+  "Bundeskanzler|content": {
+   "de": "der Bundeskanzler",
+   "en": "Federal Chancellor",
+   "type": "noun"
+  },
+  "ich|function": {
+   "de": "ich",
+   "en": "I",
+   "type": "function"
+  },
+  "Land|content": {
+   "de": "das Land",
+   "en": "country; state",
+   "type": "noun"
+  },
+  "vor|function": {
+   "de": "vor",
+   "en": "before; in front of",
+   "type": "function"
+  },
+  "geben|content": {
+   "de": "geben",
+   "en": "to give; es gibt: there is",
+   "type": "verb"
+  },
+  "aller|function": {
+   "de": "alle",
+   "en": "all",
+   "type": "function"
+  },
+  "nur|content": {
+   "de": "nur",
+   "en": "only",
+   "type": "adverb"
+  },
+  "Wahl|content": {
+   "de": "die Wahl",
+   "en": "election",
+   "type": "noun"
+  },
+  "wer|function": {
+   "de": "wer",
+   "en": "who",
+   "type": "function"
+  },
+  "europäisch|content": {
+   "de": "europäisch",
+   "en": "European",
+   "type": "adjective"
+  },
+  "bedeuten|content": {
+   "de": "bedeuten",
+   "en": "to mean",
+   "type": "verb"
+  },
+  "bis|function": {
+   "de": "bis",
+   "en": "until",
+   "type": "function"
+  },
+  "Gesetz|content": {
+   "de": "das Gesetz",
+   "en": "law",
+   "type": "noun"
+  },
+  "Kind|content": {
+   "de": "das Kind",
+   "en": "child",
+   "type": "noun"
+  },
+  "müssen|content": {
+   "de": "müssen",
+   "en": "must; have to",
+   "type": "verb"
+  },
+  "Frau|content": {
+   "de": "die Frau",
+   "en": "woman; wife",
+   "type": "noun"
+  },
+  "nach|function": {
+   "de": "nach",
+   "en": "according to; after",
+   "type": "function"
+  },
+  "aus|function": {
+   "de": "aus",
+   "en": "out of; from",
+   "type": "function"
+  },
+  "Mensch|content": {
+   "de": "der Mensch",
+   "en": "human; person",
+   "type": "noun"
+  },
+  "Richter|content": {
+   "de": "der Richter",
+   "en": "judge",
+   "type": "noun"
+  },
+  "weil|function": {
+   "de": "weil",
+   "en": "because",
+   "type": "function"
+  },
+  "Bild|content": {
+   "de": "das Bild",
+   "en": "picture; image",
+   "type": "noun"
+  },
+  "Parlament|content": {
+   "de": "das Parlament",
+   "en": "parliament",
+   "type": "noun"
+  },
+  "um|function": {
+   "de": "um",
+   "en": "in order to; around",
+   "type": "function"
+  },
+  "vieler|function": {
+   "de": "viel",
+   "en": "many",
+   "type": "function"
+  },
+  "Arbeitgeber|content": {
+   "de": "der Arbeitgeber",
+   "en": "employer",
+   "type": "noun"
+  },
+  "durch|function": {
+   "de": "durch",
+   "en": "through; by",
+   "type": "function"
+  },
+  "gehen|content": {
+   "de": "gehen",
+   "en": "to go; to walk",
+   "type": "verb"
+  },
+  "Regierung|content": {
+   "de": "die Regierung",
+   "en": "government",
+   "type": "noun"
+  },
+  "abgeordneter|content": {
+   "de": "der Abgeordnete",
+   "en": "member of parliament",
+   "type": "noun"
+  },
+  "als|function": {
+   "de": "als",
+   "en": "as; than",
+   "type": "function"
+  },
+  "heißen|content": {
+   "de": "heißen",
+   "en": "to be called; to mean",
+   "type": "verb"
+  },
+  "Recht|content": {
+   "de": "das Recht",
+   "en": "right; law",
+   "type": "noun"
+  },
+  "kein|function": {
+   "de": "kein",
+   "en": "no; not any",
+   "type": "function"
+  },
+  "nennen|content": {
+   "de": "nennen",
+   "en": "to name; to call",
+   "type": "verb"
+  },
+  "wann|content": {
+   "de": "wann",
+   "en": "when",
+   "type": "adverb"
+  },
+  "Union|content": {
+   "de": "die Union",
+   "en": "union",
+   "type": "noun"
+  },
+  "Arbeitnehmer|content": {
+   "de": "der Arbeitnehmer",
+   "en": "employee",
+   "type": "noun"
+  },
+  "Aufgabe|content": {
+   "de": "die Aufgabe",
+   "en": "task; duty",
+   "type": "noun"
+  },
+  "bekommen|content": {
+   "de": "bekommen",
+   "en": "to get; to receive",
+   "type": "verb"
+  },
+  "demokratisch|content": {
+   "de": "demokratisch",
+   "en": "democratic",
+   "type": "adjective"
+  },
+  "frei|content": {
+   "de": "frei",
+   "en": "free",
+   "type": "adjective"
+  },
+  "gegen|function": {
+   "de": "gegen",
+   "en": "against",
+   "type": "function"
+  },
+  "Minister|content": {
+   "de": "der Minister",
+   "en": "minister",
+   "type": "noun"
+  },
+  "möchten|content": {
+   "de": "möchten",
+   "en": "would like",
+   "type": "verb"
+  },
+  "Schule|content": {
+   "de": "die Schule",
+   "en": "school",
+   "type": "noun"
+  },
+  "sozial|content": {
+   "de": "sozial",
+   "en": "social",
+   "type": "adjective"
+  },
+  "Weltkrieg|content": {
+   "de": "der Weltkrieg",
+   "en": "world war",
+   "type": "noun"
+  },
+  "Bundesrat|content": {
+   "de": "der Bundesrat",
+   "en": "Federal Council",
+   "type": "noun"
+  },
+  "Gericht|content": {
+   "de": "das Gericht",
+   "en": "court",
+   "type": "noun"
+  },
+  "Meinungsfreiheit|content": {
+   "de": "die Meinungsfreiheit",
+   "en": "freedom of speech",
+   "type": "noun"
+  },
+  "seine|function": {
+   "de": "sein (seine, seinem, seinen)",
+   "en": "his, its",
+   "type": "function"
+  },
+  "tun|content": {
+   "de": "tun",
+   "en": "to do",
+   "type": "verb"
+  },
+  "über|function": {
+   "de": "über",
+   "en": "about; over",
+   "type": "function"
+  },
+  "arbeiten|content": {
+   "de": "arbeiten",
+   "en": "to work",
+   "type": "verb"
+  },
+  "dieser|function": {
+   "de": "dieser",
+   "en": "this",
+   "type": "function"
+  },
+  "Eltern|content": {
+   "de": "die Eltern",
+   "en": "parents",
+   "type": "noun"
+  },
+  "entscheiden|content": {
+   "de": "entscheiden",
+   "en": "to decide",
+   "type": "verb"
+  },
+  "Grundgesetz|content": {
+   "de": "das Grundgesetz",
+   "en": "Basic Law",
+   "type": "noun"
+  },
+  "machen|content": {
+   "de": "machen",
+   "en": "to make; to do",
+   "type": "verb"
+  },
+  "meister|function": {
+   "de": "die meisten",
+   "en": "most",
+   "type": "function"
+  },
+  "Ministerpräsident|content": {
+   "de": "der Ministerpräsident",
+   "en": "state premier",
+   "type": "noun"
+  },
+  "Person|content": {
+   "de": "die Person",
+   "en": "person",
+   "type": "noun"
+  },
+  "zweiter|content": {
+   "de": "zweiter",
+   "en": "second",
+   "type": "adjective"
+  },
+  "anderer|content": {
+   "de": "anderer",
+   "en": "other",
+   "type": "adjective"
+  },
+  "Arbeit|content": {
+   "de": "die Arbeit",
+   "en": "work; job",
+   "type": "noun"
+  },
+  "Bundesregierung|content": {
+   "de": "die Bundesregierung",
+   "en": "federal government",
+   "type": "noun"
+  },
+  "Einwohner|content": {
+   "de": "der Einwohner",
+   "en": "inhabitant",
+   "type": "noun"
+  },
+  "Gebiet|content": {
+   "de": "das Gebiet",
+   "en": "territory; area",
+   "type": "noun"
+  },
+  "jüdisch|content": {
+   "de": "jüdisch",
+   "en": "Jewish",
+   "type": "adjective"
+  },
+  "Volk|content": {
+   "de": "das Volk",
+   "en": "people; nation",
+   "type": "noun"
+  },
+  "Besatzungszone|content": {
+   "de": "die Besatzungszone",
+   "en": "occupation zone",
+   "type": "noun"
+  },
+  "bezahlen|content": {
+   "de": "bezahlen",
+   "en": "to pay",
+   "type": "verb"
+  },
+  "christlich|content": {
+   "de": "christlich",
+   "en": "Christian",
+   "type": "adjective"
+  },
+  "eigen|content": {
+   "de": "eigen",
+   "en": "own",
+   "type": "adjective"
+  },
+  "heutig|content": {
+   "de": "heutig",
+   "en": "today's; current",
+   "type": "adjective"
+  },
+  "jeder|function": {
+   "de": "jeder",
+   "en": "everyone; each",
+   "type": "function"
+  },
+  "kommen|content": {
+   "de": "kommen",
+   "en": "to come",
+   "type": "verb"
+  },
+  "leben|content": {
+   "de": "leben",
+   "en": "to live",
+   "type": "verb"
+  },
+  "Mann|content": {
+   "de": "der Mann",
+   "en": "man",
+   "type": "noun"
+  },
+  "Republik|content": {
+   "de": "die Republik",
+   "en": "republic",
+   "type": "noun"
+  },
+  "Stimme|content": {
+   "de": "die Stimme",
+   "en": "vote; voice",
+   "type": "noun"
+  },
+  "Wahlhelfer|content": {
+   "de": "der Wahlhelfer",
+   "en": "poll worker",
+   "type": "noun"
+  },
+  "Abkürzung|content": {
+   "de": "die Abkürzung",
+   "en": "abbreviation",
+   "type": "noun"
+  },
+  "alt|content": {
+   "de": "alt",
+   "en": "old",
+   "type": "adjective"
+  },
+  "Bundestagswahl|content": {
+   "de": "die Bundestagswahl",
+   "en": "federal election",
+   "type": "noun"
+  },
+  "Chef|content": {
+   "de": "der Chef",
+   "en": "boss",
+   "type": "noun"
+  },
+  "Demokratie|content": {
+   "de": "die Demokratie",
+   "en": "democracy",
+   "type": "noun"
+  },
+  "erster|content": {
+   "de": "erster",
+   "en": "first",
+   "type": "adjective"
+  },
+  "Gemeinde|content": {
+   "de": "die Gemeinde",
+   "en": "community; municipality",
+   "type": "noun"
+  },
+  "klein|content": {
+   "de": "klein",
+   "en": "small",
+   "type": "adjective"
+  },
+  "mehr|function": {
+   "de": "mehr",
+   "en": "more",
+   "type": "function"
+  },
+  "Monarchie|content": {
+   "de": "die Monarchie",
+   "en": "monarchy",
+   "type": "noun"
+  },
+  "oder|function": {
+   "de": "oder",
+   "en": "or",
+   "type": "function"
+  },
+  "Pakt|content": {
+   "de": "der Pakt",
+   "en": "pact",
+   "type": "noun"
+  },
+  "Polizei|content": {
+   "de": "die Polizei",
+   "en": "police",
+   "type": "noun"
+  },
+  "teilnehmen|content": {
+   "de": "teilnehmen",
+   "en": "to participate",
+   "type": "verb"
+  },
+  "Vertrag|content": {
+   "de": "der Vertrag",
+   "en": "contract; treaty",
+   "type": "noun"
+  },
+  "wollen|content": {
+   "de": "wollen",
+   "en": "to want",
+   "type": "verb"
+  },
+  "Zeit|content": {
+   "de": "die Zeit",
+   "en": "time; era",
+   "type": "noun"
+  },
+  "ab|function": {
+   "de": "ab",
+   "en": "from; starting at",
+   "type": "function"
+  },
+  "Behörde|content": {
+   "de": "die Behörde",
+   "en": "authority; public office",
+   "type": "noun"
+  },
+  "Bundesratspräsident|content": {
+   "de": "der Bundesratspräsident",
+   "en": "president of the Bundesrat",
+   "type": "noun"
+  },
+  "Bundestagspräsident|content": {
+   "de": "der Bundestagspräsident",
+   "en": "president of the Bundestag",
+   "type": "noun"
+  },
+  "Bundesverfassungsgericht|content": {
+   "de": "das Bundesverfassungsgericht",
+   "en": "federal constitutional court",
+   "type": "noun"
+  },
+  "Bundesversammlung|content": {
+   "de": "die Bundesversammlung",
+   "en": "federal convention",
+   "type": "noun"
+  },
+  "dafür|content": {
+   "de": "dafür",
+   "en": "for it; in favor",
+   "type": "adverb"
+  },
+  "dazu|content": {
+   "de": "dazu",
+   "en": "in addition; for that",
+   "type": "adverb"
+  },
+  "Demonstration|content": {
+   "de": "die Demonstration",
+   "en": "demonstration; protest",
+   "type": "noun"
+  },
+  "Diktatur|content": {
+   "de": "die Diktatur",
+   "en": "dictatorship",
+   "type": "noun"
+  },
+  "Fraktion|content": {
+   "de": "die Fraktion",
+   "en": "parliamentary group",
+   "type": "noun"
+  },
+  "Gewalt|content": {
+   "de": "die Gewalt",
+   "en": "power; violence",
+   "type": "noun"
+  },
+  "groß|content": {
+   "de": "groß",
+   "en": "large; big",
+   "type": "adjective"
+  },
+  "Grundrecht|content": {
+   "de": "das Grundrecht",
+   "en": "fundamental right",
+   "type": "noun"
+  },
+  "gründen|content": {
+   "de": "gründen",
+   "en": "to found; to establish",
+   "type": "verb"
+  },
+  "mein|function": {
+   "de": "mein",
+   "en": "my",
+   "type": "function"
+  },
+  "meinen|content": {
+   "de": "meinen",
+   "en": "to mean; to think",
+   "type": "verb"
+  },
+  "mindestens|content": {
+   "de": "mindestens",
+   "en": "at least",
+   "type": "adverb"
+  },
+  "Mitglied|content": {
+   "de": "das Mitglied",
+   "en": "member",
+   "type": "noun"
+  },
+  "Nationalsozialist|content": {
+   "de": "der Nationalsozialist",
+   "en": "National Socialist",
+   "type": "noun"
+  },
+  "neu|content": {
+   "de": "neu",
+   "en": "new",
+   "type": "adjective"
+  },
+  "ohne|function": {
+   "de": "ohne",
+   "en": "without",
+   "type": "function"
+  },
+  "Ordnungsamt|content": {
+   "de": "das Ordnungsamt",
+   "en": "public order office",
+   "type": "noun"
+  },
+  "politisch|content": {
+   "de": "politisch",
+   "en": "political",
+   "type": "adjective"
+  },
+  "Regierungschef|content": {
+   "de": "der Regierungschef",
+   "en": "head of government",
+   "type": "noun"
+  },
+  "sprechen|content": {
+   "de": "sprechen",
+   "en": "to speak; to pass (judgment)",
+   "type": "verb"
+  },
+  "stehen|content": {
+   "de": "stehen",
+   "en": "to stand; to be written",
+   "type": "verb"
+  },
+  "Stelle|content": {
+   "de": "die Stelle",
+   "en": "job; position; place",
+   "type": "noun"
+  },
+  "verbieten|content": {
+   "de": "verbieten",
+   "en": "to forbid; to prohibit",
+   "type": "verb"
+  },
+  "Verfassung|content": {
+   "de": "die Verfassung",
+   "en": "constitution",
+   "type": "noun"
+  },
+  "zusammen|content": {
+   "de": "zusammen",
+   "en": "together",
+   "type": "adverb"
+  },
+  "öffentlich|content": {
+   "de": "öffentlich",
+   "en": "public",
+   "type": "adjective"
+  },
+  "aktiv|content": {
+   "de": "aktiv",
+   "en": "active",
+   "type": "adjective"
+  },
+  "Alter|content": {
+   "de": "das Alter",
+   "en": "age",
+   "type": "noun"
+  },
+  "bauen|content": {
+   "de": "bauen",
+   "en": "to build",
+   "type": "verb"
+  },
+  "bestrafen|content": {
+   "de": "bestrafen",
+   "en": "to punish",
+   "type": "verb"
+  },
+  "bilden|content": {
+   "de": "bilden",
+   "en": "to form; to constitute",
+   "type": "verb"
+  },
+  "Bundesstaat|content": {
+   "de": "der Bundesstaat",
+   "en": "federal state",
+   "type": "noun"
+  },
+  "Bürgermeister|content": {
+   "de": "der Bürgermeister",
+   "en": "mayor",
+   "type": "noun"
+  },
+  "deshalb|content": {
+   "de": "deshalb",
+   "en": "therefore",
+   "type": "adverb"
+  },
+  "dritter|content": {
+   "de": "dritter",
+   "en": "third",
+   "type": "adjective"
+  },
+  "ehrenamtlich|content": {
+   "de": "ehrenamtlich",
+   "en": "honorary; voluntary",
+   "type": "adjective"
+  },
+  "Ende|content": {
+   "de": "das Ende",
+   "en": "end",
+   "type": "noun"
+  },
+  "erhalten|content": {
+   "de": "erhalten",
+   "en": "to receive; to obtain",
+   "type": "verb"
+  },
+  "Exekutive|content": {
+   "de": "die Exekutive",
+   "en": "executive branch",
+   "type": "noun"
+  },
+  "falsch|content": {
+   "de": "falsch",
+   "en": "wrong; false",
+   "type": "adjective"
+  },
+  "früher|content": {
+   "de": "früher",
+   "en": "earlier; formerly",
+   "type": "adverb"
+  },
+  "Geld|content": {
+   "de": "das Geld",
+   "en": "money",
+   "type": "noun"
+  },
+  "gelten|content": {
+   "de": "gelten",
+   "en": "to be valid; to apply",
+   "type": "verb"
+  },
+  "gleich|content": {
+   "de": "gleich",
+   "en": "equal; same",
+   "type": "adjective"
+  },
+  "helfen|content": {
+   "de": "helfen",
+   "en": "to help",
+   "type": "verb"
+  },
+  "jugendliche|content": {
+   "de": "der/die Jugendliche",
+   "en": "adolescent; youth",
+   "type": "noun"
+  },
+  "Kanzler|content": {
+   "de": "der Kanzler",
+   "en": "chancellor",
+   "type": "noun"
+  },
+  "Kirche|content": {
+   "de": "die Kirche",
+   "en": "church",
+   "type": "noun"
+  },
+  "kontrollieren|content": {
+   "de": "kontrollieren",
+   "en": "to control; to monitor",
+   "type": "verb"
+  },
+  "Mauer|content": {
+   "de": "die Mauer",
+   "en": "wall",
+   "type": "noun"
+  },
+  "Meinung|content": {
+   "de": "die Meinung",
+   "en": "opinion",
+   "type": "noun"
+  },
+  "Nachbarland|content": {
+   "de": "das Nachbarland",
+   "en": "neighboring country",
+   "type": "noun"
+  },
+  "Nachfrage|content": {
+   "de": "die Nachfrage",
+   "en": "demand",
+   "type": "noun"
+  },
+  "nichts|function": {
+   "de": "nichts",
+   "en": "nothing",
+   "type": "function"
+  },
+  "ob|function": {
+   "de": "ob",
+   "en": "whether; if",
+   "type": "function"
+  },
+  "Politiker|content": {
+   "de": "der Politiker",
+   "en": "politician",
+   "type": "noun"
+  },
+  "schreiben|content": {
+   "de": "schreiben",
+   "en": "to write",
+   "type": "verb"
+  },
+  "Soldat|content": {
+   "de": "der Soldat",
+   "en": "soldier",
+   "type": "noun"
+  },
+  "Sozialversicherung|content": {
+   "de": "die Sozialversicherung",
+   "en": "social security",
+   "type": "noun"
+  },
+  "vertreten|content": {
+   "de": "vertreten",
+   "en": "to represent",
+   "type": "verb"
+  },
+  "warum|content": {
+   "de": "warum",
+   "en": "why",
+   "type": "adverb"
+  },
+  "wie|function": {
+   "de": "wie",
+   "en": "how",
+   "type": "function"
+  },
+  "wo|content": {
+   "de": "wo",
+   "en": "where",
+   "type": "adverb"
+  },
+  "zwei|function": {
+   "de": "zwei",
+   "en": "two",
+   "type": "function"
+  },
+  "abschaffen|content": {
+   "de": "abschaffen",
+   "en": "to abolish",
+   "type": "verb"
+  },
+  "Angebot|content": {
+   "de": "das Angebot",
+   "en": "supply; offer",
+   "type": "noun"
+  },
+  "Arzt|content": {
+   "de": "der Arzt",
+   "en": "doctor",
+   "type": "noun"
+  },
+  "Außenminister|content": {
+   "de": "der Außenminister",
+   "en": "foreign minister",
+   "type": "noun"
+  },
+  "beginnen|content": {
+   "de": "beginnen",
+   "en": "to begin",
+   "type": "verb"
+  },
+  "Begriff|content": {
+   "de": "der Begriff",
+   "en": "term; concept",
+   "type": "noun"
+  },
+  "Beispiel|content": {
+   "de": "das Beispiel",
+   "en": "example",
+   "type": "noun"
+  },
+  "Beitritt|content": {
+   "de": "der Beitritt",
+   "en": "accession; joining",
+   "type": "noun"
+  },
+  "Beruf|content": {
+   "de": "der Beruf",
+   "en": "profession; job",
+   "type": "noun"
+  },
+  "Buslinie|content": {
+   "de": "die Buslinie",
+   "en": "bus route",
+   "type": "noun"
+  },
+  "Bündnis|content": {
+   "de": "das Bündnis",
+   "en": "alliance",
+   "type": "noun"
+  },
+  "dadurch|content": {
+   "de": "dadurch",
+   "en": "thereby; through that",
+   "type": "adverb"
+  },
+  "damit|content": {
+   "de": "damit",
+   "en": "with that; thereby",
+   "type": "adverb"
+  },
+  "denn|function": {
+   "de": "denn",
+   "en": "because; for",
+   "type": "function"
+  },
+  "ehemalig|content": {
+   "de": "ehemalig",
+   "en": "former",
+   "type": "adjective"
+  },
+  "Einheit|content": {
+   "de": "die Einheit",
+   "en": "unity",
+   "type": "noun"
+  },
+  "Einwohnermeldeamt|content": {
+   "de": "das Einwohnermeldeamt",
+   "en": "residents' registration office",
+   "type": "noun"
+  },
+  "etwa|content": {
+   "de": "etwa",
+   "en": "approximately",
+   "type": "adverb"
+  },
+  "Fernseher|content": {
+   "de": "der Fernseher",
+   "en": "television set",
+   "type": "noun"
+  },
+  "Finanzamt|content": {
+   "de": "das Finanzamt",
+   "en": "tax office",
+   "type": "noun"
+  },
+  "Firma|content": {
+   "de": "die Firma",
+   "en": "company",
+   "type": "noun"
+  },
+  "Flagge|content": {
+   "de": "die Flagge",
+   "en": "flag",
+   "type": "noun"
+  },
+  "Freund|content": {
+   "de": "der Freund",
+   "en": "friend",
+   "type": "noun"
+  },
+  "Führerschein|content": {
+   "de": "der Führerschein",
+   "en": "driver's license",
+   "type": "noun"
+  },
+  "Gastarbeiter|content": {
+   "de": "der Gastarbeiter",
+   "en": "guest worker",
+   "type": "noun"
+  },
+  "grüne|content": {
+   "de": "grün",
+   "en": "green",
+   "type": "adjective"
+  },
+  "gut|content": {
+   "de": "gut",
+   "en": "good",
+   "type": "adjective"
+  },
+  "halten|content": {
+   "de": "halten",
+   "en": "to hold; to keep",
+   "type": "verb"
+  },
+  "Jude|content": {
+   "de": "der Jude",
+   "en": "Jew",
+   "type": "noun"
+  },
+  "Judikative|content": {
+   "de": "die Judikative",
+   "en": "judiciary",
+   "type": "noun"
+  },
+  "Legislative|content": {
+   "de": "die Legislative",
+   "en": "legislature",
+   "type": "noun"
+  },
+  "Lehrer|content": {
+   "de": "der Lehrer",
+   "en": "teacher",
+   "type": "noun"
+  },
+  "lernen|content": {
+   "de": "lernen",
+   "en": "to learn",
+   "type": "verb"
+  },
+  "Marktwirtschaft|content": {
+   "de": "die Marktwirtschaft",
+   "en": "market economy",
+   "type": "noun"
+  },
+  "Migrant|content": {
+   "de": "der Migrant",
+   "en": "migrant",
+   "type": "noun"
+  },
+  "Million|content": {
+   "de": "die Million",
+   "en": "million",
+   "type": "noun"
+  },
+  "Ministerium|content": {
+   "de": "das Ministerium",
+   "en": "ministry",
+   "type": "noun"
+  },
+  "Nationalsozialismus|content": {
+   "de": "der Nationalsozialismus",
+   "en": "National Socialism",
+   "type": "noun"
+  },
+  "Politik|content": {
+   "de": "die Politik",
+   "en": "politics",
+   "type": "noun"
+  },
+  "Premierminister|content": {
+   "de": "der Premierminister",
+   "en": "prime minister",
+   "type": "noun"
+  },
+  "Pressefreiheit|content": {
+   "de": "die Pressefreiheit",
+   "en": "freedom of the press",
+   "type": "noun"
+  },
+  "Präsident|content": {
+   "de": "der Präsident",
+   "en": "president",
+   "type": "noun"
+  },
+  "Rechnung|content": {
+   "de": "die Rechnung",
+   "en": "bill; invoice",
+   "type": "noun"
+  },
+  "Rechtsstaat|content": {
+   "de": "der Rechtsstaat",
+   "en": "constitutional state",
+   "type": "noun"
+  },
+  "Religion|content": {
+   "de": "die Religion",
+   "en": "religion",
+   "type": "noun"
+  },
+  "Religionsgemeinschaft|content": {
+   "de": "die Religionsgemeinschaft",
+   "en": "religious community",
+   "type": "noun"
+  },
+  "Rentner|content": {
+   "de": "der Rentner",
+   "en": "pensioner",
+   "type": "noun"
+  },
+  "schlagen|content": {
+   "de": "schlagen",
+   "en": "to hit (vorschlagen: to propose)",
+   "type": "verb"
+  },
+  "Schöff|content": {
+   "de": "der Schöffe",
+   "en": "lay judge",
+   "type": "noun"
+  },
+  "sicher|content": {
+   "de": "sicher",
+   "en": "safe; certain",
+   "type": "adjective"
+  },
+  "staatlich|content": {
+   "de": "staatlich",
+   "en": "state-run; public",
+   "type": "adjective"
+  },
+  "Staatsgewalt|content": {
+   "de": "die Staatsgewalt",
+   "en": "state authority",
+   "type": "noun"
+  },
+  "Stadt|content": {
+   "de": "die Stadt",
+   "en": "city",
+   "type": "noun"
+  },
+  "stellen|content": {
+   "de": "stellen",
+   "en": "to place; to issue",
+   "type": "verb"
+  },
+  "Tochter|content": {
+   "de": "die Tochter",
+   "en": "daughter",
+   "type": "noun"
+  },
+  "verheiraten|content": {
+   "de": "verheiraten",
+   "en": "to marry",
+   "type": "verb"
+  },
+  "verlieren|content": {
+   "de": "verlieren",
+   "en": "to lose",
+   "type": "verb"
+  },
+  "vier|function": {
+   "de": "vier",
+   "en": "four",
+   "type": "function"
+  },
+  "weiter|content": {
+   "de": "weiter",
+   "en": "further, on (weitergeben: to pass on)",
+   "type": "adverb"
+  },
+  "Wähler|content": {
+   "de": "der Wähler",
+   "en": "voter",
+   "type": "noun"
+  },
+  "während|function": {
+   "de": "während",
+   "en": "during; while",
+   "type": "function"
+  },
+  "ändern|content": {
+   "de": "ändern",
+   "en": "to change",
+   "type": "verb"
+  },
+  "äußern|content": {
+   "de": "äußern",
+   "en": "to express",
+   "type": "verb"
+  },
+  "abgeben|content": {
+   "de": "abgeben",
+   "en": "to submit; to cast",
+   "type": "verb"
+  },
+  "Abitur|content": {
+   "de": "das Abitur",
+   "en": "high school diploma",
+   "type": "noun"
+  },
+  "allgemein|content": {
+   "de": "allgemein",
+   "en": "general",
+   "type": "adjective"
+  },
+  "amerikanisch|content": {
+   "de": "amerikanisch",
+   "en": "American",
+   "type": "adjective"
+  },
+  "beide|function": {
+   "de": "beide",
+   "en": "both",
+   "type": "function"
+  },
+  "benachteiligen|content": {
+   "de": "benachteiligen",
+   "en": "to disadvantage; discriminate",
+   "type": "verb"
+  },
+  "bestimmt|content": {
+   "de": "bestimmt",
+   "en": "certain; specific",
+   "type": "adjective"
+  },
+  "besuchen|content": {
+   "de": "besuchen",
+   "en": "to visit",
+   "type": "verb"
+  },
+  "bezeichnen|content": {
+   "de": "bezeichnen",
+   "en": "to designate; to call",
+   "type": "verb"
+  },
+  "Brauch|content": {
+   "de": "der Brauch",
+   "en": "custom; tradition",
+   "type": "noun"
+  },
+  "brauchen|content": {
+   "de": "brauchen",
+   "en": "to need",
+   "type": "verb"
+  },
+  "Brief|content": {
+   "de": "der Brief",
+   "en": "letter",
+   "type": "noun"
+  },
+  "Bundeskanzleramt|content": {
+   "de": "das Bundeskanzleramt",
+   "en": "Federal Chancellery",
+   "type": "noun"
+  },
+  "dann|content": {
+   "de": "dann",
+   "en": "then",
+   "type": "adverb"
+  },
+  "demonstrieren|content": {
+   "de": "demonstrieren",
+   "en": "to demonstrate",
+   "type": "verb"
+  },
+  "Diskriminierung|content": {
+   "de": "die Diskriminierung",
+   "en": "discrimination",
+   "type": "noun"
+  },
+  "dunkel|content": {
+   "de": "dunkel",
+   "en": "dark",
+   "type": "adjective"
+  },
+  "Erfahrung|content": {
+   "de": "die Erfahrung",
+   "en": "experience",
+   "type": "noun"
+  },
+  "erinnern|content": {
+   "de": "erinnern",
+   "en": "to remind; to remember",
+   "type": "verb"
+  },
+  "erlauben|content": {
+   "de": "erlauben",
+   "en": "to allow",
+   "type": "verb"
+  },
+  "etwas|function": {
+   "de": "etwas",
+   "en": "something",
+   "type": "function"
+  },
+  "Euro|content": {
+   "de": "der Euro",
+   "en": "euro",
+   "type": "noun"
+  },
+  "Familie|content": {
+   "de": "die Familie",
+   "en": "family",
+   "type": "noun"
+  },
+  "Feiertag|content": {
+   "de": "der Feiertag",
+   "en": "holiday",
+   "type": "noun"
+  },
+  "führen|content": {
+   "de": "führen",
+   "en": "to lead; to conduct",
+   "type": "verb"
+  },
+  "fünf|function": {
+   "de": "fünf",
+   "en": "five",
+   "type": "function"
+  },
+  "Gehaltsvorstellung|content": {
+   "de": "die Gehaltsvorstellung",
+   "en": "salary expectation",
+   "type": "noun"
+  },
+  "gesetzlich|content": {
+   "de": "gesetzlich",
+   "en": "legal; statutory",
+   "type": "adjective"
+  },
+  "glauben|content": {
+   "de": "glauben",
+   "en": "believe",
+   "type": "verb"
+  },
+  "Grund|content": {
+   "de": "der Grund",
+   "en": "reason; ground",
+   "type": "noun"
+  },
+  "Grundsatz|content": {
+   "de": "der Grundsatz",
+   "en": "principle",
+   "type": "noun"
+  },
+  "heiraten|content": {
+   "de": "heiraten",
+   "en": "marry",
+   "type": "verb"
+  },
+  "heute|content": {
+   "de": "heute",
+   "en": "today",
+   "type": "adverb"
+  },
+  "hoch|content": {
+   "de": "hoch",
+   "en": "high",
+   "type": "adjective"
+  },
+  "jemand|function": {
+   "de": "jemand",
+   "en": "someone",
+   "type": "function"
+  },
+  "Jugendamt|content": {
+   "de": "das Jugendamt",
+   "en": "youth welfare office",
+   "type": "noun"
+  },
+  "Juni|content": {
+   "de": "der Juni",
+   "en": "June",
+   "type": "noun"
+  },
+  "Kindergeld|content": {
+   "de": "das Kindergeld",
+   "en": "child benefit",
+   "type": "noun"
+  },
+  "Krankenversicherung|content": {
+   "de": "die Krankenversicherung",
+   "en": "health insurance",
+   "type": "noun"
+  },
+  "König|content": {
+   "de": "der König",
+   "en": "king",
+   "type": "noun"
+  },
+  "lassen|content": {
+   "de": "lassen",
+   "en": "let; allow; leave",
+   "type": "verb"
+  },
+  "leicht|content": {
+   "de": "leicht",
+   "en": "light; easy",
+   "type": "adjective"
+  },
+  "Macht|content": {
+   "de": "die Macht",
+   "en": "power",
+   "type": "noun"
+  },
+  "Mai|content": {
+   "de": "der Mai",
+   "en": "May",
+   "type": "noun"
+  },
+  "Mehrheit|content": {
+   "de": "die Mehrheit",
+   "en": "majority",
+   "type": "noun"
+  },
+  "Menschenwürde|content": {
+   "de": "die Menschenwürde",
+   "en": "human dignity",
+   "type": "noun"
+  },
+  "möglich|content": {
+   "de": "möglich",
+   "en": "possible",
+   "type": "adjective"
+  },
+  "Nachbar|content": {
+   "de": "der Nachbar",
+   "en": "neighbor",
+   "type": "noun"
+  },
+  "Nation|content": {
+   "de": "die Nation",
+   "en": "nation",
+   "type": "noun"
+  },
+  "niemand|function": {
+   "de": "niemand",
+   "en": "nobody",
+   "type": "function"
+  },
+  "offen|content": {
+   "de": "offen",
+   "en": "openly",
+   "type": "adverb"
+  },
+  "Opposition|content": {
+   "de": "die Opposition",
+   "en": "opposition",
+   "type": "noun"
+  },
+  "Partner|content": {
+   "de": "der Partner",
+   "en": "partner",
+   "type": "noun"
+  },
+  "Programm|content": {
+   "de": "das Programm",
+   "en": "program",
+   "type": "noun"
+  },
+  "regelmäßig|content": {
+   "de": "regelmäßig",
+   "en": "regular",
+   "type": "adjective"
+  },
+  "regieren|content": {
+   "de": "regieren",
+   "en": "govern; rule",
+   "type": "verb"
+  },
+  "Regierungspartei|content": {
+   "de": "die Regierungspartei",
+   "en": "ruling party",
+   "type": "noun"
+  },
+  "Reich|content": {
+   "de": "das Reich",
+   "en": "empire; realm",
+   "type": "noun"
+  },
+  "Religionsfreiheit|content": {
+   "de": "die Religionsfreiheit",
+   "en": "freedom of religion",
+   "type": "noun"
+  },
+  "religiös|content": {
+   "de": "religiös",
+   "en": "religious",
+   "type": "adjective"
+  },
+  "Schutz|content": {
+   "de": "der Schutz",
+   "en": "protection",
+   "type": "noun"
+  },
+  "seit|function": {
+   "de": "seit",
+   "en": "since; for",
+   "type": "function"
+  },
+  "sozialistisch|content": {
+   "de": "sozialistisch",
+   "en": "socialist",
+   "type": "adjective"
+  },
+  "Sportverein|content": {
+   "de": "der Sportverein",
+   "en": "sports club",
+   "type": "noun"
+  },
+  "Staatsoberhaupt|content": {
+   "de": "das Staatsoberhaupt",
+   "en": "head of state",
+   "type": "noun"
+  },
+  "Steuererklärung|content": {
+   "de": "die Steuererklärung",
+   "en": "tax return",
+   "type": "noun"
+  },
+  "Straße|content": {
+   "de": "die Straße",
+   "en": "street; road",
+   "type": "noun"
+  },
+  "Synagoge|content": {
+   "de": "die Synagoge",
+   "en": "synagogue",
+   "type": "noun"
+  },
+  "Tag|content": {
+   "de": "der Tag",
+   "en": "day",
+   "type": "noun"
+  },
+  "teilen|content": {
+   "de": "teilen",
+   "en": "divide; share",
+   "type": "verb"
+  },
+  "Unternehmen|content": {
+   "de": "das Unternehmen",
+   "en": "company; enterprise",
+   "type": "noun"
+  },
+  "verantwortlich|content": {
+   "de": "verantwortlich",
+   "en": "responsible",
+   "type": "adjective"
+  },
+  "Verein|content": {
+   "de": "der Verein",
+   "en": "association; club",
+   "type": "noun"
+  },
+  "wahlberechtigt|content": {
+   "de": "wahlberechtigt",
+   "en": "eligible to vote",
+   "type": "adjective"
+  },
+  "Wahlrecht|content": {
+   "de": "das Wahlrecht",
+   "en": "right to vote",
+   "type": "noun"
+  },
+  "Wappen|content": {
+   "de": "das Wappen",
+   "en": "coat of arms",
+   "type": "noun"
+  },
+  "Wiedervereinigung|content": {
+   "de": "die Wiedervereinigung",
+   "en": "reunification",
+   "type": "noun"
+  },
+  "zahlen|content": {
+   "de": "zahlen",
+   "en": "to pay",
+   "type": "verb"
+  },
+  "zuständig|content": {
+   "de": "zuständig",
+   "en": "responsible",
+   "type": "adjective"
+  },
+  "Abendgymnasium|content": {
+   "de": "das Abendgymnasium",
+   "en": "evening high school",
+   "type": "noun"
+  },
+  "aber|function": {
+   "de": "aber",
+   "en": "but",
+   "type": "function"
+  },
+  "Abstimmung|content": {
+   "de": "die Abstimmung",
+   "en": "vote",
+   "type": "noun"
+  },
+  "alliiert|content": {
+   "de": "alliiert",
+   "en": "allied",
+   "type": "adjective"
+  },
+  "alliierter|content": {
+   "de": "der Alliierte",
+   "en": "ally",
+   "type": "noun"
+  },
+  "am|function": {
+   "de": "an dem",
+   "en": "at the",
+   "type": "function"
+  },
+  "Amt|content": {
+   "de": "das Amt",
+   "en": "office; agency",
+   "type": "noun"
+  },
+  "Amtsgericht|content": {
+   "de": "das Amtsgericht",
+   "en": "local court",
+   "type": "noun"
+  },
+  "angeklagter|content": {
+   "de": "der Angeklagte",
+   "en": "defendant",
+   "type": "noun"
+  },
+  "Angst|content": {
+   "de": "die Angst",
+   "en": "fear",
+   "type": "noun"
+  },
+  "anmelden|content": {
+   "de": "anmelden",
+   "en": "to register",
+   "type": "verb"
+  },
+  "Ansprechpartner|content": {
+   "de": "der Ansprechpartner",
+   "en": "contact person",
+   "type": "noun"
+  },
+  "Anspruch|content": {
+   "de": "der Anspruch",
+   "en": "claim; right",
+   "type": "noun"
+  },
+  "Anwalt|content": {
+   "de": "der Anwalt",
+   "en": "lawyer",
+   "type": "noun"
+  },
+  "Anwesenheitskontrolle|content": {
+   "de": "die Anwesenheitskontrolle",
+   "en": "attendance check",
+   "type": "noun"
+  },
+  "anzeigen|content": {
+   "de": "anzeigen",
+   "en": "to report to police",
+   "type": "verb"
+  },
+  "Arbeiter|content": {
+   "de": "der Arbeiter",
+   "en": "worker",
+   "type": "noun"
+  },
+  "Arbeitsgericht|content": {
+   "de": "das Arbeitsgericht",
+   "en": "labor court",
+   "type": "noun"
+  },
+  "Arbeitslosenversicherung|content": {
+   "de": "die Arbeitslosenversicherung",
+   "en": "unemployment insurance",
+   "type": "noun"
+  },
+  "Arbeitszeit|content": {
+   "de": "die Arbeitszeit",
+   "en": "working hours",
+   "type": "noun"
+  },
+  "Armee|content": {
+   "de": "die Armee",
+   "en": "army",
+   "type": "noun"
+  },
+  "auch|content": {
+   "de": "auch",
+   "en": "also",
+   "type": "adverb"
+  },
+  "Ausland|content": {
+   "de": "das Ausland",
+   "en": "foreign country",
+   "type": "noun"
+  },
+  "Ausländer|content": {
+   "de": "der Ausländer",
+   "en": "foreigner",
+   "type": "noun"
+  },
+  "Auswanderer|content": {
+   "de": "der Auswanderer",
+   "en": "emigrant",
+   "type": "noun"
+  },
+  "Auto|content": {
+   "de": "das Auto",
+   "en": "car",
+   "type": "noun"
+  },
+  "automatisch|content": {
+   "de": "automatisch",
+   "en": "automatically",
+   "type": "adverb"
+  },
+  "beachten|content": {
+   "de": "beachten",
+   "en": "to observe; to heed",
+   "type": "verb"
+  },
+  "befinden|content": {
+   "de": "sich befinden",
+   "en": "to be located",
+   "type": "verb"
+  },
+  "begehen|content": {
+   "de": "begehen",
+   "en": "to commit",
+   "type": "verb"
+  },
+  "behandeln|content": {
+   "de": "behandeln",
+   "en": "to treat",
+   "type": "verb"
+  },
+  "Behördenleiter|content": {
+   "de": "der Behördenleiter",
+   "en": "head of authority",
+   "type": "noun"
+  },
+  "Beitrag|content": {
+   "de": "der Beitrag",
+   "en": "contribution",
+   "type": "noun"
+  },
+  "beitreten|content": {
+   "de": "beitreten",
+   "en": "to join",
+   "type": "verb"
+  },
+  "bekannt|content": {
+   "de": "bekannt",
+   "en": "known; famous",
+   "type": "adjective"
+  },
+  "Benachrichtigung|content": {
+   "de": "die Benachrichtigung",
+   "en": "notification",
+   "type": "noun"
+  },
+  "berühmt|content": {
+   "de": "berühmt",
+   "en": "famous",
+   "type": "adjective"
+  },
+  "Bescheid|content": {
+   "de": "der Bescheid",
+   "en": "official notice",
+   "type": "noun"
+  },
+  "beschließen|content": {
+   "de": "beschließen",
+   "en": "to decide; to pass",
+   "type": "verb"
+  },
+  "beschäftigen|content": {
+   "de": "beschäftigen",
+   "en": "to employ",
+   "type": "verb"
+  },
+  "besetzen|content": {
+   "de": "besetzen",
+   "en": "to occupy",
+   "type": "verb"
+  },
+  "besonderer|content": {
+   "de": "besonderer",
+   "en": "special",
+   "type": "adjective"
+  },
+  "bestimmen|content": {
+   "de": "bestimmen",
+   "en": "to determine",
+   "type": "verb"
+  },
+  "Betriebsprüfer|content": {
+   "de": "der Betriebsprüfer",
+   "en": "tax auditor",
+   "type": "noun"
+  },
+  "Bevölkerung|content": {
+   "de": "die Bevölkerung",
+   "en": "population",
+   "type": "noun"
+  },
+  "bewirben|content": {
+   "de": "sich bewerben",
+   "en": "to apply",
+   "type": "verb"
+  },
+  "Bewohner|content": {
+   "de": "der Bewohner",
+   "en": "resident",
+   "type": "noun"
+  },
+  "Bildung|content": {
+   "de": "die Bildung",
+   "en": "formation; education",
+   "type": "noun"
+  },
+  "bitten|content": {
+   "de": "bitten",
+   "en": "to ask; to request",
+   "type": "verb"
+  },
+  "Botschafter|content": {
+   "de": "der Botschafter",
+   "en": "ambassador",
+   "type": "noun"
+  },
+  "Bund|content": {
+   "de": "der Bund",
+   "en": "federal government; federation",
+   "type": "noun"
+  },
+  "Bundesadler|content": {
+   "de": "der Bundesadler",
+   "en": "federal eagle",
+   "type": "noun"
+  },
+  "Bundeskabinett|content": {
+   "de": "das Bundeskabinett",
+   "en": "federal cabinet",
+   "type": "noun"
+  },
+  "Bundesminister|content": {
+   "de": "der Bundesminister",
+   "en": "federal minister",
+   "type": "noun"
+  },
+  "Bundestagsfraktion|content": {
+   "de": "die Bundestagsfraktion",
+   "en": "parliamentary group",
+   "type": "noun"
+  },
+  "bunt|content": {
+   "de": "bunt",
+   "en": "colorful",
+   "type": "adjective"
+  },
+  "Bürgerinitiative|content": {
+   "de": "die Bürgerinitiative",
+   "en": "citizens' initiative",
+   "type": "noun"
+  },
+  "damalig|content": {
+   "de": "damalig",
+   "en": "at that time",
+   "type": "adjective"
+  },
+  "dass|function": {
+   "de": "dass",
+   "en": "that",
+   "type": "function"
+  },
+  "dauern|content": {
+   "de": "dauern",
+   "en": "to last",
+   "type": "verb"
+  },
+  "Direktive|content": {
+   "de": "die Direktive",
+   "en": "directive",
+   "type": "noun"
+  },
+  "Diskussion|content": {
+   "de": "die Diskussion",
+   "en": "discussion",
+   "type": "noun"
+  },
+  "dort|content": {
+   "de": "dort",
+   "en": "there",
+   "type": "adverb"
+  },
+  "drei|function": {
+   "de": "drei",
+   "en": "three",
+   "type": "function"
+  },
+  "Ehegatt|content": {
+   "de": "der Ehegatte",
+   "en": "spouse",
+   "type": "noun"
+  },
+  "Ehepaar|content": {
+   "de": "das Ehepaar",
+   "en": "married couple",
+   "type": "noun"
+  },
+  "Ehepartner|content": {
+   "de": "der Ehepartner",
+   "en": "spouse",
+   "type": "noun"
+  },
+  "Ei|content": {
+   "de": "das Ei",
+   "en": "egg",
+   "type": "noun"
+  },
+  "einhalten|content": {
+   "de": "einhalten",
+   "en": "to comply with",
+   "type": "verb"
+  },
+  "Einhaltung|content": {
+   "de": "die Einhaltung",
+   "en": "compliance",
+   "type": "noun"
+  },
+  "einheitlich|content": {
+   "de": "einheitlich",
+   "en": "uniform; consistent",
+   "type": "adjective"
+  },
+  "einmal|content": {
+   "de": "einmal",
+   "en": "once",
+   "type": "adverb"
+  },
+  "Einwanderer|content": {
+   "de": "der Einwanderer",
+   "en": "immigrant",
+   "type": "noun"
+  },
+  "Einwilligung|content": {
+   "de": "die Einwilligung",
+   "en": "consent",
+   "type": "noun"
+  },
+  "Elterngeld|content": {
+   "de": "das Elterngeld",
+   "en": "parental allowance",
+   "type": "noun"
+  },
+  "empfangen|content": {
+   "de": "empfangen",
+   "en": "to receive; to welcome",
+   "type": "verb"
+  },
+  "Englisch|content": {
+   "de": "das Englisch",
+   "en": "English",
+   "type": "noun"
+  },
+  "entwerfen|content": {
+   "de": "entwerfen",
+   "en": "to draft; to design",
+   "type": "verb"
+  },
+  "Erlaubnis|content": {
+   "de": "die Erlaubnis",
+   "en": "permission",
+   "type": "noun"
+  },
+  "errichten|content": {
+   "de": "errichten",
+   "en": "to establish; to build",
+   "type": "verb"
+  },
+  "Erststimme|content": {
+   "de": "die Erststimme",
+   "en": "first vote",
+   "type": "noun"
+  },
+  "erwachsene|content": {
+   "de": "erwachsen",
+   "en": "adult",
+   "type": "adjective"
+  },
+  "Erziehungsproblem|content": {
+   "de": "das Erziehungsproblem",
+   "en": "upbringing problem",
+   "type": "noun"
+  },
+  "Europawahl|content": {
+   "de": "die Europawahl",
+   "en": "European election",
+   "type": "noun"
+  },
+  "Farbe|content": {
+   "de": "die Farbe",
+   "en": "color",
+   "type": "noun"
+  },
+  "feiern|content": {
+   "de": "feiern",
+   "en": "to celebrate",
+   "type": "verb"
+  },
+  "fest|content": {
+   "de": "fest",
+   "en": "fixed; permanent",
+   "type": "adjective"
+  },
+  "Fest|content": {
+   "de": "das Fest",
+   "en": "festival; celebration",
+   "type": "noun"
+  },
+  "Finanzminister|content": {
+   "de": "der Finanzminister",
+   "en": "finance minister",
+   "type": "noun"
+  },
+  "Flugzeug|content": {
+   "de": "das Flugzeug",
+   "en": "airplane",
+   "type": "noun"
+  },
+  "französisch|content": {
+   "de": "französisch",
+   "en": "French",
+   "type": "adjective"
+  },
+  "freiwillig|content": {
+   "de": "freiwillig",
+   "en": "voluntary",
+   "type": "adjective"
+  },
+  "Freizeit|content": {
+   "de": "die Freizeit",
+   "en": "leisure time",
+   "type": "noun"
+  },
+  "Freizügigkeit|content": {
+   "de": "die Freizügigkeit",
+   "en": "freedom of movement",
+   "type": "noun"
+  },
+  "friedlich|content": {
+   "de": "friedlich",
+   "en": "peaceful",
+   "type": "adjective"
+  },
+  "früh|content": {
+   "de": "früh",
+   "en": "early; former",
+   "type": "adjective"
+  },
+  "Fürstentum|content": {
+   "de": "das Fürstentum",
+   "en": "principality",
+   "type": "noun"
+  },
+  "gar|content": {
+   "de": "gar",
+   "en": "at all; even",
+   "type": "adverb"
+  },
+  "garantieren|content": {
+   "de": "garantieren",
+   "en": "to guarantee",
+   "type": "verb"
+  },
+  "Gedenktag|content": {
+   "de": "der Gedenktag",
+   "en": "day of remembrance",
+   "type": "noun"
+  },
+  "geheim|content": {
+   "de": "geheim",
+   "en": "secret",
+   "type": "adjective"
+  },
+  "Geheimdienst|content": {
+   "de": "der Geheimdienst",
+   "en": "secret service",
+   "type": "noun"
+  },
+  "Geldstrafe|content": {
+   "de": "die Geldstrafe",
+   "en": "fine",
+   "type": "noun"
+  },
+  "Genehmigung|content": {
+   "de": "die Genehmigung",
+   "en": "permission; approval",
+   "type": "noun"
+  },
+  "Gerichtsschöffe|content": {
+   "de": "der Gerichtsschöffe",
+   "en": "lay judge",
+   "type": "noun"
+  },
+  "Geschäft|content": {
+   "de": "das Geschäft",
+   "en": "shop; business",
+   "type": "noun"
+  },
+  "Gesetzgebung|content": {
+   "de": "die Gesetzgebung",
+   "en": "legislation",
+   "type": "noun"
+  },
+  "Gesundheitsamt|content": {
+   "de": "das Gesundheitsamt",
+   "en": "public health department",
+   "type": "noun"
+  },
+  "Gewerkschaft|content": {
+   "de": "die Gewerkschaft",
+   "en": "trade union",
+   "type": "noun"
+  },
+  "Gleichbehandlung|content": {
+   "de": "die Gleichbehandlung",
+   "en": "equal treatment",
+   "type": "noun"
+  },
+  "Gott|content": {
+   "de": "der Gott",
+   "en": "God",
+   "type": "noun"
+  },
+  "Hauptaufgabe|content": {
+   "de": "die Hauptaufgabe",
+   "en": "main task",
+   "type": "noun"
+  },
+  "Hauptschule|content": {
+   "de": "die Hauptschule",
+   "en": "secondary general school",
+   "type": "noun"
+  },
+  "Haus|content": {
+   "de": "das Haus",
+   "en": "house; building",
+   "type": "noun"
+  },
+  "Hausordnung|content": {
+   "de": "die Hausordnung",
+   "en": "house rules",
+   "type": "noun"
+  },
+  "Hautfarbe|content": {
+   "de": "die Hautfarbe",
+   "en": "skin color",
+   "type": "noun"
+  },
+  "hier|content": {
+   "de": "hier",
+   "en": "here",
+   "type": "adverb"
+  },
+  "Hochschule|content": {
+   "de": "die Hochschule",
+   "en": "university; college",
+   "type": "noun"
+  },
+  "Holocaust|content": {
+   "de": "der Holocaust",
+   "en": "Holocaust",
+   "type": "noun"
+  },
+  "häufig|content": {
+   "de": "häufig",
+   "en": "frequently",
+   "type": "adverb"
+  },
+  "immer|content": {
+   "de": "immer",
+   "en": "always",
+   "type": "adverb"
+  },
+  "Innenminister|content": {
+   "de": "der Innenminister",
+   "en": "interior minister",
+   "type": "noun"
+  },
+  "Interessenverband|content": {
+   "de": "der Interessenverband",
+   "en": "interest group",
+   "type": "noun"
+  },
+  "israelisch|content": {
+   "de": "israelisch",
+   "en": "Israeli",
+   "type": "adjective"
+  },
+  "ja|function": {
+   "de": "ja",
+   "en": "yes",
+   "type": "function"
+  },
+  "jetzig|content": {
+   "de": "jetzig",
+   "en": "current",
+   "type": "adjective"
+  },
+  "Juli|content": {
+   "de": "der Juli",
+   "en": "July",
+   "type": "noun"
+  },
+  "jung|content": {
+   "de": "jung",
+   "en": "young",
+   "type": "adjective"
+  },
+  "Justizminister|content": {
+   "de": "der Justizminister",
+   "en": "justice minister",
+   "type": "noun"
+  },
+  "Kandidat|content": {
+   "de": "der Kandidat",
+   "en": "candidate",
+   "type": "noun"
+  },
+  "Kanzlerkandidat|content": {
+   "de": "der Kanzlerkandidat",
+   "en": "chancellor candidate",
+   "type": "noun"
+  },
+  "Kindergart|content": {
+   "de": "der Kindergarten",
+   "en": "kindergarten",
+   "type": "noun"
+  },
+  "Kirchensteuer|content": {
+   "de": "die Kirchensteuer",
+   "en": "church tax",
+   "type": "noun"
+  },
+  "Koalition|content": {
+   "de": "die Koalition",
+   "en": "coalition",
+   "type": "noun"
+  },
+  "Kommunalwahl|content": {
+   "de": "die Kommunalwahl",
+   "en": "local election",
+   "type": "noun"
+  },
+  "kommunistisch|content": {
+   "de": "kommunistisch",
+   "en": "communist",
+   "type": "adjective"
+  },
+  "Kostüm|content": {
+   "de": "das Kostüm",
+   "en": "costume",
+   "type": "noun"
+  },
+  "Krieg|content": {
+   "de": "der Krieg",
+   "en": "war",
+   "type": "noun"
+  },
+  "Kritik|content": {
+   "de": "die Kritik",
+   "en": "criticism",
+   "type": "noun"
+  },
+  "kritisieren|content": {
+   "de": "kritisieren",
+   "en": "to criticize",
+   "type": "verb"
+  },
+  "Kürbiß|content": {
+   "de": "der Kürbis",
+   "en": "pumpkin",
+   "type": "noun"
+  },
+  "Landtagswahl|content": {
+   "de": "die Landtagswahl",
+   "en": "state election",
+   "type": "noun"
+  },
+  "Leben|content": {
+   "de": "das Leben",
+   "en": "life",
+   "type": "noun"
+  },
+  "Leistung|content": {
+   "de": "die Leistung",
+   "en": "service; benefit; achievement",
+   "type": "noun"
+  },
+  "Leiter|content": {
+   "de": "der Leiter",
+   "en": "manager; head; leader",
+   "type": "noun"
+  },
+  "letzter|content": {
+   "de": "letzter",
+   "en": "last; previous",
+   "type": "adjective"
+  },
+  "leugnen|content": {
+   "de": "leugnen",
+   "en": "deny",
+   "type": "verb"
+  },
+  "linke|content": {
+   "de": "die Linke",
+   "en": "The Left (political party)",
+   "type": "noun"
+  },
+  "Lohnsteuer|content": {
+   "de": "die Lohnsteuer",
+   "en": "income tax",
+   "type": "noun"
+  },
+  "Luftbrücke|content": {
+   "de": "die Luftbrücke",
+   "en": "airlift",
+   "type": "noun"
+  },
+  "Maske|content": {
+   "de": "die Maske",
+   "en": "mask",
+   "type": "noun"
+  },
+  "mehr|content": {
+   "de": "mehr",
+   "en": "more",
+   "type": "adverb"
+  },
+  "meistens|content": {
+   "de": "meistens",
+   "en": "mostly; usually",
+   "type": "adverb"
+  },
+  "Mieter|content": {
+   "de": "der Mieter",
+   "en": "tenant",
+   "type": "noun"
+  },
+  "Mindestanteil|content": {
+   "de": "der Mindestanteil",
+   "en": "minimum share",
+   "type": "noun"
+  },
+  "Moschee|content": {
+   "de": "die Moschee",
+   "en": "mosque",
+   "type": "noun"
+  },
+  "Muttersprache|content": {
+   "de": "die Muttersprache",
+   "en": "native language",
+   "type": "noun"
+  },
+  "nachholen|content": {
+   "de": "nachholen",
+   "en": "catch up on; make up",
+   "type": "verb"
+  },
+  "nein|function": {
+   "de": "nein",
+   "en": "no",
+   "type": "function"
+  },
+  "noch|content": {
+   "de": "noch",
+   "en": "still; yet",
+   "type": "adverb"
+  },
+  "normalerweise|content": {
+   "de": "normalerweise",
+   "en": "normally",
+   "type": "adverb"
+  },
+  "November|content": {
+   "de": "der November",
+   "en": "November",
+   "type": "noun"
+  },
+  "offiziell|content": {
+   "de": "offiziell",
+   "en": "officially",
+   "type": "adjective"
+  },
+  "oft|content": {
+   "de": "oft",
+   "en": "often",
+   "type": "adverb"
+  },
+  "Opfer|content": {
+   "de": "das Opfer",
+   "en": "victim; sacrifice",
+   "type": "noun"
+  },
+  "Passkontrolle|content": {
+   "de": "die Passkontrolle",
+   "en": "passport control",
+   "type": "noun"
+  },
+  "Pfarramt|content": {
+   "de": "das Pfarramt",
+   "en": "parish office",
+   "type": "noun"
+  },
+  "Pfingst|content": {
+   "de": "Pfingsten",
+   "en": "Whitsun; Pentecost",
+   "type": "noun"
+  },
+  "Pflegeversicherung|content": {
+   "de": "die Pflegeversicherung",
+   "en": "long-term care insurance",
+   "type": "noun"
+  },
+  "Planwirtschaft|content": {
+   "de": "die Planwirtschaft",
+   "en": "planned economy",
+   "type": "noun"
+  },
+  "Presse|content": {
+   "de": "die Presse",
+   "en": "press",
+   "type": "noun"
+  },
+  "Pressezensur|content": {
+   "de": "die Pressezensur",
+   "en": "press censorship",
+   "type": "noun"
+  },
+  "Privatuniversität|content": {
+   "de": "die Privatuniversität",
+   "en": "private university",
+   "type": "noun"
+  },
+  "Problem|content": {
+   "de": "das Problem",
+   "en": "problem",
+   "type": "noun"
+  },
+  "Prozess|content": {
+   "de": "der Prozess",
+   "en": "trial; process",
+   "type": "noun"
+  },
+  "rechtlich|content": {
+   "de": "rechtlich",
+   "en": "legal",
+   "type": "adjective"
+  },
+  "Rechtsanwalt|content": {
+   "de": "der Rechtsanwalt",
+   "en": "lawyer",
+   "type": "noun"
+  },
+  "Regel|content": {
+   "de": "die Regel",
+   "en": "rule",
+   "type": "noun"
+  },
+  "regierend|content": {
+   "de": "regierend",
+   "en": "ruling",
+   "type": "adjective"
+  },
+  "reisen|content": {
+   "de": "reisen",
+   "en": "travel",
+   "type": "verb"
+  },
+  "Religionsunterricht|content": {
+   "de": "der Religionsunterricht",
+   "en": "religious education",
+   "type": "noun"
+  },
+  "Restaurant|content": {
+   "de": "das Restaurant",
+   "en": "restaurant",
+   "type": "noun"
+  },
+  "richten|content": {
+   "de": "sich richten nach",
+   "en": "to depend on, follow",
+   "type": "verb"
+  },
+  "richtig|content": {
+   "de": "richtig",
+   "en": "correct; right",
+   "type": "adjective"
+  },
+  "Rollstuhl|content": {
+   "de": "der Rollstuhl",
+   "en": "wheelchair",
+   "type": "noun"
+  },
+  "sagen|content": {
+   "de": "sagen",
+   "en": "say",
+   "type": "verb"
+  },
+  "scheiden|content": {
+   "de": "scheiden",
+   "en": "divorce; separate",
+   "type": "verb"
+  },
+  "Scheidung|content": {
+   "de": "die Scheidung",
+   "en": "divorce",
+   "type": "noun"
+  },
+  "Schichtarbeiter|content": {
+   "de": "der Schichtarbeiter",
+   "en": "shift worker",
+   "type": "noun"
+  },
+  "Schloss|content": {
+   "de": "das Schloss",
+   "en": "castle; palace; lock",
+   "type": "noun"
+  },
+  "schmücken|content": {
+   "de": "schmücken",
+   "en": "decorate",
+   "type": "verb"
+  },
+  "schnell|content": {
+   "de": "schnell",
+   "en": "fast; quick",
+   "type": "adjective"
+  },
+  "Schulabschluss|content": {
+   "de": "der Schulabschluss",
+   "en": "school leaving certificate",
+   "type": "noun"
+  },
+  "Schulpolitik|content": {
+   "de": "die Schulpolitik",
+   "en": "school policy",
+   "type": "noun"
+  },
+  "Schwarzarbeiter|content": {
+   "de": "der Schwarzarbeiter",
+   "en": "illegal worker",
+   "type": "noun"
+  },
+  "Schweigepflicht|content": {
+   "de": "die Schweigepflicht",
+   "en": "confidentiality",
+   "type": "noun"
+  },
+  "schwierig|content": {
+   "de": "schwierig",
+   "en": "difficult",
+   "type": "adjective"
+  },
+  "Schüler|content": {
+   "de": "der Schüler",
+   "en": "student",
+   "type": "noun"
+  },
+  "Senator|content": {
+   "de": "der Senator",
+   "en": "senator",
+   "type": "noun"
+  },
+  "Sicherheit|content": {
+   "de": "die Sicherheit",
+   "en": "security",
+   "type": "noun"
+  },
+  "Sitz|content": {
+   "de": "der Sitz",
+   "en": "seat",
+   "type": "noun"
+  },
+  "sitzen|content": {
+   "de": "sitzen",
+   "en": "to sit",
+   "type": "verb"
+  },
+  "sollen|content": {
+   "de": "sollen",
+   "en": "should; to be supposed to",
+   "type": "verb"
+  },
+  "Sportler|content": {
+   "de": "der Sportler",
+   "en": "athlete",
+   "type": "noun"
+  },
+  "Sprache|content": {
+   "de": "die Sprache",
+   "en": "language",
+   "type": "noun"
+  },
+  "Staatsangehörig|content": {
+   "de": "der Staatsangehörige",
+   "en": "citizen",
+   "type": "noun"
+  },
+  "Staatsanwalt|content": {
+   "de": "der Staatsanwalt",
+   "en": "public prosecutor",
+   "type": "noun"
+  },
+  "Staatsbürger|content": {
+   "de": "der Staatsbürger",
+   "en": "citizen",
+   "type": "noun"
+  },
+  "Staatsgast|content": {
+   "de": "der Staatsgast",
+   "en": "state guest",
+   "type": "noun"
+  },
+  "Standesamt|content": {
+   "de": "das Standesamt",
+   "en": "registry office",
+   "type": "noun"
+  },
+  "Stellvertreter|content": {
+   "de": "der Stellvertreter",
+   "en": "deputy",
+   "type": "noun"
+  },
+  "Steuer|content": {
+   "de": "die Steuer",
+   "en": "tax",
+   "type": "noun"
+  },
+  "steuern|content": {
+   "de": "steuern",
+   "en": "to control; to steer",
+   "type": "verb"
+  },
+  "Steuerzahler|content": {
+   "de": "der Steuerzahler",
+   "en": "taxpayer",
+   "type": "noun"
+  },
+  "Stimmabgabe|content": {
+   "de": "die Stimmabgabe",
+   "en": "casting of votes",
+   "type": "noun"
+  },
+  "Strafe|content": {
+   "de": "die Strafe",
+   "en": "punishment",
+   "type": "noun"
+  },
+  "Straftäter|content": {
+   "de": "der Straftäter",
+   "en": "offender",
+   "type": "noun"
+  },
+  "Tannenbaum|content": {
+   "de": "der Tannenbaum",
+   "en": "Christmas tree",
+   "type": "noun"
+  },
+  "Tod|content": {
+   "de": "der Tod",
+   "en": "death",
+   "type": "noun"
+  },
+  "tragen|content": {
+   "de": "tragen",
+   "en": "to wear; to carry",
+   "type": "verb"
+  },
+  "trennen|content": {
+   "de": "trennen",
+   "en": "to separate",
+   "type": "verb"
+  },
+  "tätig|content": {
+   "de": "tätig",
+   "en": "active; working",
+   "type": "adjective"
+  },
+  "Tür|content": {
+   "de": "die Tür",
+   "en": "door",
+   "type": "noun"
+  },
+  "Uhr|content": {
+   "de": "die Uhr",
+   "en": "o'clock; clock",
+   "type": "noun"
+  },
+  "Universität|content": {
+   "de": "die Universität",
+   "en": "university",
+   "type": "noun"
+  },
+  "Verband|content": {
+   "de": "der Verband",
+   "en": "association",
+   "type": "noun"
+  },
+  "Verbrechen|content": {
+   "de": "das Verbrechen",
+   "en": "crime",
+   "type": "noun"
+  },
+  "Vereinstrainer|content": {
+   "de": "der Vereinstrainer",
+   "en": "club coach",
+   "type": "noun"
+  },
+  "vereint|content": {
+   "de": "vereint",
+   "en": "united",
+   "type": "adjective"
+  },
+  "verhaften|content": {
+   "de": "verhaften",
+   "en": "to arrest",
+   "type": "verb"
+  },
+  "Versammlungsfreiheit|content": {
+   "de": "die Versammlungsfreiheit",
+   "en": "freedom of assembly",
+   "type": "noun"
+  },
+  "verschieden|content": {
+   "de": "verschieden",
+   "en": "different",
+   "type": "adjective"
+  },
+  "versorgen|content": {
+   "de": "versorgen",
+   "en": "to provide for",
+   "type": "verb"
+  },
+  "Versorgung|content": {
+   "de": "die Versorgung",
+   "en": "supply; provision",
+   "type": "noun"
+  },
+  "verteidigen|content": {
+   "de": "verteidigen",
+   "en": "to defend",
+   "type": "verb"
+  },
+  "verändern|content": {
+   "de": "verändern",
+   "en": "to change",
+   "type": "verb"
+  },
+  "Volkssouveränität|content": {
+   "de": "die Volkssouveränität",
+   "en": "popular sovereignty",
+   "type": "noun"
+  },
+  "volljährig|content": {
+   "de": "volljährig",
+   "en": "of legal age",
+   "type": "adjective"
+  },
+  "Vorschlag|content": {
+   "de": "der Vorschlag",
+   "en": "proposal",
+   "type": "noun"
+  },
+  "Wahlbenachrichtigung|content": {
+   "de": "die Wahlbenachrichtigung",
+   "en": "polling card",
+   "type": "noun"
+  },
+  "Wahlkampf|content": {
+   "de": "der Wahlkampf",
+   "en": "election campaign",
+   "type": "noun"
+  },
+  "wechseln|content": {
+   "de": "wechseln",
+   "en": "to change",
+   "type": "verb"
+  },
+  "Weihnachten|content": {
+   "de": "das Weihnachten",
+   "en": "Christmas",
+   "type": "noun"
+  },
+  "wichtig|content": {
+   "de": "wichtig",
+   "en": "important",
+   "type": "adjective"
+  },
+  "wieder|content": {
+   "de": "wieder",
+   "en": "again",
+   "type": "adverb"
+  },
+  "Wirtschaft|content": {
+   "de": "die Wirtschaft",
+   "en": "economy",
+   "type": "noun"
+  },
+  "wirtschaftlich|content": {
+   "de": "wirtschaftlich",
+   "en": "economic",
+   "type": "adjective"
+  },
+  "Wirtschaftsgemeinschaft|content": {
+   "de": "die Wirtschaftsgemeinschaft",
+   "en": "economic community",
+   "type": "noun"
+  },
+  "Wohnort|content": {
+   "de": "der Wohnort",
+   "en": "place of residence",
+   "type": "noun"
+  },
+  "Wohnung|content": {
+   "de": "die Wohnung",
+   "en": "apartment",
+   "type": "noun"
+  },
+  "woran|content": {
+   "de": "woran",
+   "en": "what of",
+   "type": "adverb"
+  },
+  "Wählerstimme|content": {
+   "de": "die Wählerstimme",
+   "en": "vote",
+   "type": "noun"
+  },
+  "zehn|function": {
+   "de": "zehn",
+   "en": "ten",
+   "type": "function"
+  },
+  "zeigen|content": {
+   "de": "zeigen",
+   "en": "to show",
+   "type": "verb"
+  },
+  "Zeitarbeiter|content": {
+   "de": "der Zeitarbeiter",
+   "en": "temporary worker",
+   "type": "noun"
+  },
+  "Zentralwirtschaft|content": {
+   "de": "die Zentralwirtschaft",
+   "en": "planned economy",
+   "type": "noun"
+  },
+  "zerstören|content": {
+   "de": "zerstören",
+   "en": "to destroy",
+   "type": "verb"
+  },
+  "Ziel|content": {
+   "de": "das Ziel",
+   "en": "goal",
+   "type": "noun"
+  },
+  "Zusammenarbeit|content": {
+   "de": "die Zusammenarbeit",
+   "en": "cooperation",
+   "type": "noun"
+  },
+  "Zwang|content": {
+   "de": "der Zwang",
+   "en": "compulsion",
+   "type": "noun"
+  },
+  "Zweitstimmen|content": {
+   "de": "die Zweitstimme",
+   "en": "second vote",
+   "type": "noun"
+  },
+  "zwingen|content": {
+   "de": "zwingen",
+   "en": "to force",
+   "type": "verb"
+  },
+  "Zwischenergebnis|content": {
+   "de": "das Zwischenergebnis",
+   "en": "interim result",
+   "type": "noun"
+  },
+  "zählen|content": {
+   "de": "zählen",
+   "en": "to count",
+   "type": "verb"
+  },
+  "öffnen|content": {
+   "de": "öffnen",
+   "en": "to open",
+   "type": "verb"
+  },
+  "überwachen|content": {
+   "de": "überwachen",
+   "en": "to monitor",
+   "type": "verb"
+  },
+  "aber|content": {
+   "de": "aber",
+   "en": "but; however",
+   "type": "function"
+  },
+  "abhalten|content": {
+   "de": "abhalten",
+   "en": "to hold",
+   "type": "verb"
+  },
+  "abhängig|content": {
+   "de": "abhängig",
+   "en": "dependent",
+   "type": "adjective"
+  },
+  "abhören|content": {
+   "de": "abhören",
+   "en": "to wiretap",
+   "type": "verb"
+  },
+  "Abkommen|content": {
+   "de": "das Abkommen",
+   "en": "agreement",
+   "type": "noun"
+  },
+  "abschleppen|content": {
+   "de": "abschleppen",
+   "en": "to tow",
+   "type": "verb"
+  },
+  "Abschottung|content": {
+   "de": "die Abschottung",
+   "en": "isolation",
+   "type": "noun"
+  },
+  "absichtlich|content": {
+   "de": "absichtlich",
+   "en": "intentionally",
+   "type": "adverb"
+  },
+  "Abstimmungsregelung|content": {
+   "de": "die Abstimmungsregelung",
+   "en": "voting regulation",
+   "type": "noun"
+  },
+  "Adler|content": {
+   "de": "der Adler",
+   "en": "eagle",
+   "type": "noun"
+  },
+  "Adresse|content": {
+   "de": "die Adresse",
+   "en": "address",
+   "type": "noun"
+  },
+  "adressieren|content": {
+   "de": "adressieren",
+   "en": "to address",
+   "type": "verb"
+  },
+  "Adventszeit|content": {
+   "de": "die Adventszeit",
+   "en": "advent season",
+   "type": "noun"
+  },
+  "Agentur|content": {
+   "de": "die Agentur",
+   "en": "agency",
+   "type": "noun"
+  },
+  "allein|content": {
+   "de": "allein",
+   "en": "alone; only",
+   "type": "adverb"
+  },
+  "alleinerziehend|content": {
+   "de": "alleinerziehend",
+   "en": "single-parent",
+   "type": "adjective"
+  },
+  "Allerheiligen|content": {
+   "de": "Allerheiligen",
+   "en": "All Saints' Day",
+   "type": "noun"
+  },
+  "Ampelkoalition|content": {
+   "de": "die Ampelkoalition",
+   "en": "traffic light coalition",
+   "type": "noun"
+  },
+  "Amtssitz|content": {
+   "de": "der Amtssitz",
+   "en": "official residence",
+   "type": "noun"
+  },
+  "Angabe|content": {
+   "de": "die Angabe",
+   "en": "information",
+   "type": "noun"
+  },
+  "angestellt|content": {
+   "de": "angestellt",
+   "en": "employed",
+   "type": "adjective"
+  },
+  "angeworben|content": {
+   "de": "anwerben",
+   "en": "to recruit",
+   "type": "verb"
+  },
+  "Angriff|content": {
+   "de": "der Angriff",
+   "en": "attack",
+   "type": "noun"
+  },
+  "Anhänger|content": {
+   "de": "der Anhänger",
+   "en": "supporter",
+   "type": "noun"
+  },
+  "anklagen|content": {
+   "de": "anklagen",
+   "en": "to accuse",
+   "type": "verb"
+  },
+  "Anlage|content": {
+   "de": "die Anlage",
+   "en": "appendix",
+   "type": "noun"
+  },
+  "Anlehnung|content": {
+   "de": "die Anlehnung",
+   "en": "reference; leaning",
+   "type": "noun"
+  },
+  "annehmen|content": {
+   "de": "annehmen",
+   "en": "accept; assume",
+   "type": "verb"
+  },
+  "anstellen|content": {
+   "de": "anstellen",
+   "en": "employ; hire",
+   "type": "verb"
+  },
+  "antisemitisch|content": {
+   "de": "antisemitisch",
+   "en": "antisemitic",
+   "type": "adjective"
+  },
+  "Antrag|content": {
+   "de": "der Antrag",
+   "en": "application; request",
+   "type": "noun"
+  },
+  "Anwesenheitspflicht|content": {
+   "de": "die Anwesenheitspflicht",
+   "en": "compulsory attendance",
+   "type": "noun"
+  },
+  "Anzeige|content": {
+   "de": "die Anzeige",
+   "en": "advertisement; police report",
+   "type": "noun"
+  },
+  "anzuregen|content": {
+   "de": "anregen",
+   "en": "stimulate; encourage",
+   "type": "verb"
+  },
+  "Arbeiteraufstand|content": {
+   "de": "der Arbeiteraufstand",
+   "en": "workers' uprising",
+   "type": "noun"
+  },
+  "Arbeitsamt|content": {
+   "de": "das Arbeitsamt",
+   "en": "employment office",
+   "type": "noun"
+  },
+  "Arbeitsplatz|content": {
+   "de": "der Arbeitsplatz",
+   "en": "job; workplace",
+   "type": "noun"
+  },
+  "arbeitsunfähig|content": {
+   "de": "arbeitsunfähig",
+   "en": "incapable of working",
+   "type": "adjective"
+  },
+  "Arbeitsverhältnis|content": {
+   "de": "das Arbeitsverhältnis",
+   "en": "employment relationship",
+   "type": "noun"
+  },
+  "Arbeitswelt|content": {
+   "de": "die Arbeitswelt",
+   "en": "working world",
+   "type": "noun"
+  },
+  "arme|content": {
+   "de": "arm",
+   "en": "poor",
+   "type": "adjective"
+  },
+  "Artikel|content": {
+   "de": "der Artikel",
+   "en": "article",
+   "type": "noun"
+  },
+  "Asyl|content": {
+   "de": "das Asyl",
+   "en": "asylum",
+   "type": "noun"
+  },
+  "Attentat|content": {
+   "de": "das Attentat",
+   "en": "assassination attempt",
+   "type": "noun"
+  },
+  "Attest|content": {
+   "de": "das Attest",
+   "en": "medical certificate",
+   "type": "noun"
+  },
+  "Aufbau|content": {
+   "de": "der Aufbau",
+   "en": "construction; structure",
+   "type": "noun"
+  },
+  "auffordern|content": {
+   "de": "auffordern",
+   "en": "request; call upon",
+   "type": "verb"
+  },
+  "aufhängen|content": {
+   "de": "aufhängen",
+   "en": "hang up",
+   "type": "verb"
+  },
+  "aufhören|content": {
+   "de": "aufhören",
+   "en": "stop; cease",
+   "type": "verb"
+  },
+  "Auflistung|content": {
+   "de": "die Auflistung",
+   "en": "list",
+   "type": "noun"
+  },
+  "Aufruf|content": {
+   "de": "der Aufruf",
+   "en": "call; appeal",
+   "type": "noun"
+  },
+  "aufschreiben|content": {
+   "de": "aufschreiben",
+   "en": "write down",
+   "type": "verb"
+  },
+  "Aufstand|content": {
+   "de": "der Aufstand",
+   "en": "uprising; rebellion",
+   "type": "noun"
+  },
+  "aufteilen|content": {
+   "de": "aufteilen",
+   "en": "divide; split up",
+   "type": "verb"
+  },
+  "Ausbildung|content": {
+   "de": "die Ausbildung",
+   "en": "training; education",
+   "type": "noun"
+  },
+  "Ausdruck|content": {
+   "de": "der Ausdruck",
+   "en": "expression; term",
+   "type": "noun"
+  },
+  "ausdrücken|content": {
+   "de": "ausdrücken",
+   "en": "express",
+   "type": "verb"
+  },
+  "ausgebildet|content": {
+   "de": "ausgebildet",
+   "en": "trained; educated",
+   "type": "adjective"
+  },
+  "Ausgleich|content": {
+   "de": "der Ausgleich",
+   "en": "balance; compensation",
+   "type": "noun"
+  },
+  "Auslegung|content": {
+   "de": "die Auslegung",
+   "en": "interpretation",
+   "type": "noun"
+  },
+  "ausländisch|content": {
+   "de": "ausländisch",
+   "en": "foreign",
+   "type": "adjective"
+  },
+  "ausreichend|content": {
+   "de": "ausreichend",
+   "en": "sufficient",
+   "type": "adjective"
+  },
+  "Aussage|content": {
+   "de": "die Aussage",
+   "en": "statement",
+   "type": "noun"
+  },
+  "aussuchen|content": {
+   "de": "aussuchen",
+   "en": "choose; select",
+   "type": "verb"
+  },
+  "austauschen|content": {
+   "de": "austauschen",
+   "en": "exchange; replace",
+   "type": "verb"
+  },
+  "Auswahl|content": {
+   "de": "die Auswahl",
+   "en": "selection; choice",
+   "type": "noun"
+  },
+  "Auswirkung|content": {
+   "de": "die Auswirkung",
+   "en": "effect; impact",
+   "type": "noun"
+  },
+  "auswärtiges|content": {
+   "de": "auswärtig",
+   "en": "foreign",
+   "type": "adjective"
+  },
+  "Auszählung|content": {
+   "de": "die Auszählung",
+   "en": "counting",
+   "type": "noun"
+  },
+  "Autoversicherung|content": {
+   "de": "die Autoversicherung",
+   "en": "car insurance",
+   "type": "noun"
+  },
+  "Außenpolitik|content": {
+   "de": "die Außenpolitik",
+   "en": "foreign policy",
+   "type": "noun"
+  },
+  "Bank|content": {
+   "de": "die Bank",
+   "en": "bank; bench",
+   "type": "noun"
+  },
+  "bar|content": {
+   "de": "bar",
+   "en": "cash",
+   "type": "adverb"
+  },
+  "Basilika|content": {
+   "de": "die Basilika",
+   "en": "basilica",
+   "type": "noun"
+  },
+  "Basiswert|content": {
+   "de": "der Basiswert",
+   "en": "base value",
+   "type": "noun"
+  },
+  "Bau|content": {
+   "de": "der Bau",
+   "en": "construction; building",
+   "type": "noun"
+  },
+  "bayerisch|content": {
+   "de": "bayerisch",
+   "en": "Bavarian",
+   "type": "adjective"
+  },
+  "bedingungslos|content": {
+   "de": "bedingungslos",
+   "en": "unconditional",
+   "type": "adjective"
+  },
+  "beeinflusst|content": {
+   "de": "beeinflussen",
+   "en": "influence",
+   "type": "verb"
+  },
+  "beenden|content": {
+   "de": "beenden",
+   "en": "end; finish",
+   "type": "verb"
+  },
+  "befolgen|content": {
+   "de": "befolgen",
+   "en": "obey; follow",
+   "type": "verb"
+  },
+  "Befreiung|content": {
+   "de": "die Befreiung",
+   "en": "liberation",
+   "type": "noun"
+  },
+  "Beginn|content": {
+   "de": "der Beginn",
+   "en": "beginning; start",
+   "type": "noun"
+  },
+  "begrenzen|content": {
+   "de": "begrenzen",
+   "en": "limit; restrict",
+   "type": "verb"
+  },
+  "begründen|content": {
+   "de": "begründen",
+   "en": "justify; explain",
+   "type": "verb"
+  },
+  "Behandlung|content": {
+   "de": "die Behandlung",
+   "en": "treatment",
+   "type": "noun"
+  },
+  "Behauptung|content": {
+   "de": "die Behauptung",
+   "en": "claim; assertion",
+   "type": "noun"
+  },
+  "Behinderung|content": {
+   "de": "die Behinderung",
+   "en": "disability; handicap",
+   "type": "noun"
+  },
+  "beibehalten|content": {
+   "de": "beibehalten",
+   "en": "maintain; keep",
+   "type": "verb"
+  },
+  "bekleiden|content": {
+   "de": "bekleiden",
+   "en": "clothe; dress",
+   "type": "verb"
+  },
+  "bemalen|content": {
+   "de": "bemalen",
+   "en": "paint",
+   "type": "verb"
+  },
+  "Benutzung|content": {
+   "de": "die Benutzung",
+   "en": "use",
+   "type": "noun"
+  },
+  "beraten|content": {
+   "de": "beraten",
+   "en": "advise; consult",
+   "type": "verb"
+  },
+  "berufsbezogen|content": {
+   "de": "berufsbezogen",
+   "en": "job-related",
+   "type": "adjective"
+  },
+  "Berufsinformationszentrum|content": {
+   "de": "das Berufsinformationszentrum",
+   "en": "career information center",
+   "type": "noun"
+  },
+  "Berufswahl|content": {
+   "de": "die Berufswahl",
+   "en": "career choice",
+   "type": "noun"
+  },
+  "berücksichtigen|content": {
+   "de": "berücksichtigen",
+   "en": "consider; take into account",
+   "type": "verb"
+  },
+  "Besatzungsmächt|content": {
+   "de": "die Besatzungsmacht",
+   "en": "occupying powers",
+   "type": "noun"
+  },
+  "beschimpfen|content": {
+   "de": "beschimpfen",
+   "en": "insult; abuse",
+   "type": "verb"
+  },
+  "Beschluss|content": {
+   "de": "der Beschluss",
+   "en": "decision; resolution",
+   "type": "noun"
+  },
+  "beschweren|content": {
+   "de": "sich beschweren",
+   "en": "complain",
+   "type": "verb"
+  },
+  "beschützen|content": {
+   "de": "beschützen",
+   "en": "protect",
+   "type": "verb"
+  },
+  "besetzt|content": {
+   "de": "besetzt",
+   "en": "occupied",
+   "type": "adjective"
+  },
+  "besonders|content": {
+   "de": "besonders",
+   "en": "especially; particularly",
+   "type": "adverb"
+  },
+  "Bestechung|content": {
+   "de": "die Bestechung",
+   "en": "bribery",
+   "type": "noun"
+  },
+  "bestehend|content": {
+   "de": "bestehend",
+   "en": "existing",
+   "type": "adjective"
+  },
+  "Besuch|content": {
+   "de": "der Besuch",
+   "en": "visit",
+   "type": "noun"
+  },
+  "Besuchsrecht|content": {
+   "de": "das Besuchsrecht",
+   "en": "visitation rights",
+   "type": "noun"
+  },
+  "beteiligen|content": {
+   "de": "sich beteiligen",
+   "en": "participate",
+   "type": "verb"
+  },
+  "betreuen|content": {
+   "de": "betreuen",
+   "en": "look after; care for",
+   "type": "verb"
+  },
+  "Betriebsgruppe|content": {
+   "de": "die Betriebsgruppe",
+   "en": "company group",
+   "type": "noun"
+  },
+  "Betriebsmanagement|content": {
+   "de": "das Betriebsmanagement",
+   "en": "operations management",
+   "type": "noun"
+  },
+  "Betriebsrat|content": {
+   "de": "der Betriebsrat",
+   "en": "works council",
+   "type": "noun"
+  },
+  "Bettag|content": {
+   "de": "der Bettag",
+   "en": "day of prayer",
+   "type": "noun"
+  },
+  "bevor|function": {
+   "de": "bevor",
+   "en": "before",
+   "type": "function"
+  },
+  "bewegen|content": {
+   "de": "sich bewegen",
+   "en": "move",
+   "type": "verb"
+  },
+  "bezahlt|content": {
+   "de": "bezahlt",
+   "en": "paid",
+   "type": "adjective"
+  },
+  "Bezirksamt|content": {
+   "de": "das Bezirksamt",
+   "en": "district office",
+   "type": "noun"
+  },
+  "Bezug|content": {
+   "de": "der Bezug",
+   "en": "reference; relation",
+   "type": "noun"
+  },
+  "Bibliotheksaufsicht|content": {
+   "de": "die Bibliotheksaufsicht",
+   "en": "library supervision",
+   "type": "noun"
+  },
+  "blockfrei|content": {
+   "de": "blockfrei",
+   "en": "non-aligned",
+   "type": "adjective"
+  },
+  "Briefgeheimnis|content": {
+   "de": "das Briefgeheimnis",
+   "en": "secrecy of correspondence",
+   "type": "noun"
+  },
+  "Briefwahl|content": {
+   "de": "die Briefwahl",
+   "en": "postal voting",
+   "type": "noun"
+  },
+  "britisch|content": {
+   "de": "britisch",
+   "en": "British",
+   "type": "adjective"
+  },
+  "Buchhalter|content": {
+   "de": "der Buchhalter",
+   "en": "accountant",
+   "type": "noun"
+  },
+  "Buddhismus|content": {
+   "de": "der Buddhismus",
+   "en": "Buddhism",
+   "type": "noun"
+  },
+  "Bundesagentur|content": {
+   "de": "die Bundesagentur",
+   "en": "federal agency",
+   "type": "noun"
+  },
+  "Bundesbezirk|content": {
+   "de": "der Bundesbezirk",
+   "en": "federal district",
+   "type": "noun"
+  },
+  "Bundesgerichtshof|content": {
+   "de": "der Bundesgerichtshof",
+   "en": "Federal Court of Justice",
+   "type": "noun"
+  },
+  "Bundesgesetz|content": {
+   "de": "das Bundesgesetz",
+   "en": "federal law",
+   "type": "noun"
+  },
+  "Bundesparlament|content": {
+   "de": "das Bundesparlament",
+   "en": "federal parliament",
+   "type": "noun"
+  },
+  "Bundespolitik|content": {
+   "de": "die Bundespolitik",
+   "en": "federal politics",
+   "type": "noun"
+  },
+  "Bundesratsgebäude|content": {
+   "de": "das Bundesratsgebäude",
+   "en": "Federal Council building",
+   "type": "noun"
+  },
+  "Bundestagsabgeordneter|content": {
+   "de": "der Bundestagsabgeordnete",
+   "en": "member of parliament",
+   "type": "noun"
+  },
+  "Bundestagssitz|content": {
+   "de": "der Bundestagssitz",
+   "en": "parliamentary seat",
+   "type": "noun"
+  },
+  "Bundesverdienstkreuz|content": {
+   "de": "das Bundesverdienstkreuz",
+   "en": "Federal Cross of Merit",
+   "type": "noun"
+  },
+  "Bundesverfassung|content": {
+   "de": "die Bundesverfassung",
+   "en": "federal constitution",
+   "type": "noun"
+  },
+  "Bundeswahlordnung|content": {
+   "de": "die Bundeswahlordnung",
+   "en": "federal election regulations",
+   "type": "noun"
+  },
+  "Bundeswehr|content": {
+   "de": "die Bundeswehr",
+   "en": "German armed forces",
+   "type": "noun"
+  },
+  "Bus|content": {
+   "de": "der Bus",
+   "en": "bus",
+   "type": "noun"
+  },
+  "Bär|content": {
+   "de": "der Bär",
+   "en": "bear",
+   "type": "noun"
+  },
+  "Bürgerversammlung|content": {
+   "de": "die Bürgerversammlung",
+   "en": "citizens' meeting",
+   "type": "noun"
+  },
+  "Büro|content": {
+   "de": "das Büro",
+   "en": "office",
+   "type": "noun"
+  },
+  "Chance|content": {
+   "de": "die Chance",
+   "en": "opportunity",
+   "type": "noun"
+  },
+  "Christentum|content": {
+   "de": "das Christentum",
+   "en": "Christianity",
+   "type": "noun"
+  },
+  "Club|content": {
+   "de": "der Club",
+   "en": "club",
+   "type": "noun"
+  },
+  "dabei|content": {
+   "de": "dabei",
+   "en": "thereby; in doing so",
+   "type": "adverb"
+  },
+  "danach|content": {
+   "de": "danach",
+   "en": "afterwards",
+   "type": "adverb"
+  },
+  "demonstrativ|content": {
+   "de": "demonstrativ",
+   "en": "demonstrative",
+   "type": "adjective"
+  },
+  "Demut|content": {
+   "de": "die Demut",
+   "en": "humility",
+   "type": "noun"
+  },
+  "desto|content": {
+   "de": "desto",
+   "en": "the (more)",
+   "type": "function"
+  },
+  "deutlich|content": {
+   "de": "deutlich",
+   "en": "clearly",
+   "type": "adverb"
+  },
+  "Deutsch|content": {
+   "de": "Deutsch",
+   "en": "German",
+   "type": "noun"
+  },
+  "Deutschkenntnisse|content": {
+   "de": "die Deutschkenntnisse",
+   "en": "German language skills",
+   "type": "noun"
+  },
+  "deutschsprachig|content": {
+   "de": "deutschsprachig",
+   "en": "German-speaking",
+   "type": "adjective"
+  },
+  "Diplom|content": {
+   "de": "das Diplom",
+   "en": "degree; diploma",
+   "type": "noun"
+  },
+  "direkt|content": {
+   "de": "direkt",
+   "en": "directly",
+   "type": "adverb"
+  },
+  "Direktkandidat|content": {
+   "de": "der Direktkandidat",
+   "en": "direct candidate",
+   "type": "noun"
+  },
+  "doch|function": {
+   "de": "doch",
+   "en": "but; however",
+   "type": "function"
+  },
+  "Dreiklassenwahlrecht|content": {
+   "de": "das Dreiklassenwahlrecht",
+   "en": "three-class franchise",
+   "type": "noun"
+  },
+  "dreistufig|content": {
+   "de": "dreistufig",
+   "en": "three-tier",
+   "type": "adjective"
+  },
+  "Drittel|content": {
+   "de": "das Drittel",
+   "en": "third",
+   "type": "noun"
+  },
+  "drohen|content": {
+   "de": "drohen",
+   "en": "to threaten",
+   "type": "verb"
+  },
+  "egal|content": {
+   "de": "egal",
+   "en": "doesn't matter",
+   "type": "adjective"
+  },
+  "Ehemann|content": {
+   "de": "der Ehemann",
+   "en": "husband",
+   "type": "noun"
+  },
+  "Ehescheidung|content": {
+   "de": "die Ehescheidung",
+   "en": "divorce",
+   "type": "noun"
+  },
+  "ehren|content": {
+   "de": "ehren",
+   "en": "to honor",
+   "type": "verb"
+  },
+  "Ehrenamt|content": {
+   "de": "das Ehrenamt",
+   "en": "honorary office; volunteering",
+   "type": "noun"
+  },
+  "Ehrentitel|content": {
+   "de": "der Ehrentitel",
+   "en": "honorary title",
+   "type": "noun"
+  },
+  "einig|content": {
+   "de": "einig",
+   "en": "united",
+   "type": "adjective"
+  },
+  "Einigkeit|content": {
+   "de": "die Einigkeit",
+   "en": "unity",
+   "type": "noun"
+  },
+  "einlegen|content": {
+   "de": "einlegen",
+   "en": "to file, to insert",
+   "type": "verb"
+  },
+  "einreisen|content": {
+   "de": "einreisen",
+   "en": "to enter a country",
+   "type": "verb"
+  },
+  "Einrichtung|content": {
+   "de": "die Einrichtung",
+   "en": "institution, facility",
+   "type": "noun"
+  },
+  "einschränken|content": {
+   "de": "einschränken",
+   "en": "to restrict, to limit",
+   "type": "verb"
+  },
+  "Einspruch|content": {
+   "de": "der Einspruch",
+   "en": "objection, appeal",
+   "type": "noun"
+  },
+  "eintreten|content": {
+   "de": "eintreten",
+   "en": "to join, to enter",
+   "type": "verb"
+  },
+  "Einverständnis|content": {
+   "de": "das Einverständnis",
+   "en": "consent, agreement",
+   "type": "noun"
+  },
+  "Einwanderungsstopp|content": {
+   "de": "der Einwanderungsstopp",
+   "en": "immigration ban",
+   "type": "noun"
+  },
+  "einzeln|content": {
+   "de": "einzeln",
+   "en": "individual, single",
+   "type": "adjective"
+  },
+  "eiserner|content": {
+   "de": "ehern",
+   "en": "iron",
+   "type": "adjective"
+  },
+  "elterlich|content": {
+   "de": "elterlich",
+   "en": "parental",
+   "type": "adjective"
+  },
+  "Elterngeldstelle|content": {
+   "de": "die Elterngeldstelle",
+   "en": "parental allowance office",
+   "type": "noun"
+  },
+  "Elternzeit|content": {
+   "de": "die Elternzeit",
+   "en": "parental leave",
+   "type": "noun"
+  },
+  "enden|content": {
+   "de": "enden",
+   "en": "to end, to finish",
+   "type": "verb"
+  },
+  "Entfaltung|content": {
+   "de": "die Entfaltung",
+   "en": "development, unfolding",
+   "type": "noun"
+  },
+  "enthalten|content": {
+   "de": "enthalten",
+   "en": "to contain, to include",
+   "type": "verb"
+  },
+  "Entlassung|content": {
+   "de": "die Entlassung",
+   "en": "dismissal, firing",
+   "type": "noun"
+  },
+  "Entscheidung|content": {
+   "de": "die Entscheidung",
+   "en": "decision",
+   "type": "noun"
+  },
+  "Entwicklung|content": {
+   "de": "die Entwicklung",
+   "en": "development",
+   "type": "noun"
+  },
+  "erbringen|content": {
+   "de": "erbringen",
+   "en": "to provide, to achieve",
+   "type": "verb"
+  },
+  "ereignen|content": {
+   "de": "sich ereignen",
+   "en": "to happen, to occur",
+   "type": "verb"
+  },
+  "Erhaltung|content": {
+   "de": "die Erhaltung",
+   "en": "preservation, maintenance",
+   "type": "noun"
+  },
+  "erheben|content": {
+   "de": "erheben",
+   "en": "to raise, to file",
+   "type": "verb"
+  },
+  "erlassen|content": {
+   "de": "erlassen",
+   "en": "to enact, to issue",
+   "type": "verb"
+  },
+  "erledigen|content": {
+   "de": "erledigen",
+   "en": "to do, to handle",
+   "type": "verb"
+  },
+  "ermöglichen|content": {
+   "de": "ermöglichen",
+   "en": "to enable, to facilitate",
+   "type": "verb"
+  },
+  "ernennen|content": {
+   "de": "ernennen",
+   "en": "to appoint",
+   "type": "verb"
+  },
+  "Ernennungsurkunde|content": {
+   "de": "die Ernennungsurkunde",
+   "en": "certificate of appointment",
+   "type": "noun"
+  },
+  "Erntedankfest|content": {
+   "de": "das Erntedankfest",
+   "en": "harvest festival",
+   "type": "noun"
+  },
+  "erreichbar|content": {
+   "de": "erreichbar",
+   "en": "accessible, reachable",
+   "type": "adjective"
+  },
+  "erreichen|content": {
+   "de": "erreichen",
+   "en": "to reach, to achieve",
+   "type": "verb"
+  },
+  "erschweren|content": {
+   "de": "erschweren",
+   "en": "to complicate, to hinder",
+   "type": "verb"
+  },
+  "Ersteinschulung|content": {
+   "de": "die Ersteinschulung",
+   "en": "first school enrollment",
+   "type": "noun"
+  },
+  "erstellen|content": {
+   "de": "erstellen",
+   "en": "to create, to prepare",
+   "type": "verb"
+  },
+  "erstmals|content": {
+   "de": "erstmals",
+   "en": "for the first time",
+   "type": "adverb"
+  },
+  "erwerbstätige|content": {
+   "de": "erwerbstätig",
+   "en": "employed, working",
+   "type": "adjective"
+  },
+  "Erziehung|content": {
+   "de": "die Erziehung",
+   "en": "upbringing, education",
+   "type": "noun"
+  },
+  "Erziehungsberechtigten|content": {
+   "de": "die Erziehungsberechtigten",
+   "en": "legal guardians",
+   "type": "noun"
+  },
+  "eröffnen|content": {
+   "de": "eröffnen",
+   "en": "to open, to start",
+   "type": "verb"
+  },
+  "Europabündnis|content": {
+   "de": "das Europabündnis",
+   "en": "European alliance",
+   "type": "noun"
+  },
+  "Fach|content": {
+   "de": "das Fach",
+   "en": "subject, compartment",
+   "type": "noun"
+  },
+  "Fahne|content": {
+   "de": "die Fahne",
+   "en": "flag",
+   "type": "noun"
+  },
+  "fahren|content": {
+   "de": "fahren",
+   "en": "to drive, to travel",
+   "type": "verb"
+  },
+  "Familiengericht|content": {
+   "de": "das Familiengericht",
+   "en": "family court",
+   "type": "noun"
+  },
+  "Familienministerium|content": {
+   "de": "das Familienministerium",
+   "en": "family ministry",
+   "type": "noun"
+  },
+  "Familienunternehma|content": {
+   "de": "das Familienunternehmen",
+   "en": "family business",
+   "type": "noun"
+  },
+  "Faustrecht|content": {
+   "de": "das Faustrecht",
+   "en": "law of the jungle",
+   "type": "noun"
+  },
+  "feierlich|content": {
+   "de": "feierlich",
+   "en": "solemn, festive",
+   "type": "adjective"
+  },
+  "Ferienpass|content": {
+   "de": "der Ferienpass",
+   "en": "holiday pass",
+   "type": "noun"
+  },
+  "Festlegung|content": {
+   "de": "die Festlegung",
+   "en": "determination; definition",
+   "type": "noun"
+  },
+  "Feuerversicherung|content": {
+   "de": "die Feuerversicherung",
+   "en": "fire insurance",
+   "type": "noun"
+  },
+  "finanzieren|content": {
+   "de": "finanzieren",
+   "en": "to finance",
+   "type": "verb"
+  },
+  "finden|content": {
+   "de": "finden",
+   "en": "to find; to think/consider",
+   "type": "verb"
+  },
+  "folgend|content": {
+   "de": "folgend",
+   "en": "following",
+   "type": "adjective"
+  },
+  "Folter|content": {
+   "de": "die Folter",
+   "en": "torture",
+   "type": "noun"
+  },
+  "Forstamt|content": {
+   "de": "das Forstamt",
+   "en": "forestry office",
+   "type": "noun"
+  },
+  "Freiheit|content": {
+   "de": "die Freiheit",
+   "en": "freedom",
+   "type": "noun"
+  },
+  "Freiheitsstrafe|content": {
+   "de": "die Freiheitsstrafe",
+   "en": "imprisonment",
+   "type": "noun"
+  },
+  "Freistaat|content": {
+   "de": "der Freistaat",
+   "en": "free state",
+   "type": "noun"
+  },
+  "Freude|content": {
+   "de": "die Freude",
+   "en": "joy",
+   "type": "noun"
+  },
+  "freundlich|content": {
+   "de": "freundlich",
+   "en": "friendly",
+   "type": "adjective"
+  },
+  "Freundschaft|content": {
+   "de": "die Freundschaft",
+   "en": "friendship",
+   "type": "noun"
+  },
+  "Frieden|content": {
+   "de": "der Frieden",
+   "en": "peace",
+   "type": "noun"
+  },
+  "Funktion|content": {
+   "de": "die Funktion",
+   "en": "function",
+   "type": "noun"
+  },
+  "funktionieren|content": {
+   "de": "funktionieren",
+   "en": "to work; to function",
+   "type": "verb"
+  },
+  "Fußball|content": {
+   "de": "der Fußball",
+   "en": "soccer",
+   "type": "noun"
+  },
+  "fällen|content": {
+   "de": "fällen",
+   "en": "to make (a decision)",
+   "type": "verb"
+  },
+  "fördern|content": {
+   "de": "fördern",
+   "en": "to support; to promote",
+   "type": "verb"
+  },
+  "führend|content": {
+   "de": "führend",
+   "en": "leading",
+   "type": "adjective"
+  },
+  "ganz|content": {
+   "de": "ganz",
+   "en": "whole; entire",
+   "type": "adjective"
+  },
+  "Garantie|content": {
+   "de": "die Garantie",
+   "en": "guarantee; warranty",
+   "type": "noun"
+  },
+  "Gaststättenerlaubnis|content": {
+   "de": "die Gaststättenerlaubnis",
+   "en": "restaurant license",
+   "type": "noun"
+  },
+  "Gebet|content": {
+   "de": "das Gebet",
+   "en": "prayer",
+   "type": "noun"
+  },
+  "Gebetshaus|content": {
+   "de": "das Gebetshaus",
+   "en": "house of prayer",
+   "type": "noun"
+  },
+  "Geburt|content": {
+   "de": "die Geburt",
+   "en": "birth",
+   "type": "noun"
+  },
+  "Geburtsvorbereitung|content": {
+   "de": "die Geburtsvorbereitung",
+   "en": "antenatal class",
+   "type": "noun"
+  },
+  "Gebäudeversicherung|content": {
+   "de": "die Gebäudeversicherung",
+   "en": "building insurance",
+   "type": "noun"
+  },
+  "gedenken|content": {
+   "de": "gedenken",
+   "en": "to commemorate",
+   "type": "verb"
+  },
+  "Gedenkstätte|content": {
+   "de": "die Gedenkstätte",
+   "en": "memorial site",
+   "type": "noun"
+  },
+  "gefallen|content": {
+   "de": "gefallen",
+   "en": "to put up with",
+   "type": "verb"
+  },
+  "Gefängnis|content": {
+   "de": "das Gefängnis",
+   "en": "prison",
+   "type": "noun"
+  },
+  "gegliedert|content": {
+   "de": "gegliedert",
+   "en": "structured; divided",
+   "type": "adjective"
+  },
+  "Gehalt|content": {
+   "de": "das Gehalt",
+   "en": "salary",
+   "type": "noun"
+  },
+  "Gehaltszahlung|content": {
+   "de": "die Gehaltszahlung",
+   "en": "salary payment",
+   "type": "noun"
+  },
+  "geistig|content": {
+   "de": "geistig",
+   "en": "intellectual; mental",
+   "type": "adjective"
+  },
+  "gelenkt|content": {
+   "de": "gelenkt",
+   "en": "steered; controlled",
+   "type": "adjective"
+  },
+  "Gemeinderat|content": {
+   "de": "der Gemeinderat",
+   "en": "municipal council",
+   "type": "noun"
+  },
+  "Gemeindeverwaltung|content": {
+   "de": "die Gemeindeverwaltung",
+   "en": "municipal administration",
+   "type": "noun"
+  },
+  "gemeinsam|content": {
+   "de": "gemeinsam",
+   "en": "together; joint",
+   "type": "adverb"
+  },
+  "Gemeinsamkeit|content": {
+   "de": "die Gemeinsamkeit",
+   "en": "commonality",
+   "type": "noun"
+  },
+  "Gemeinschaft|content": {
+   "de": "die Gemeinschaft",
+   "en": "community",
+   "type": "noun"
+  },
+  "gering|content": {
+   "de": "gering",
+   "en": "low; small",
+   "type": "adjective"
+  },
+  "Gerät|content": {
+   "de": "das Gerät",
+   "en": "device; appliance",
+   "type": "noun"
+  },
+  "gesamt|content": {
+   "de": "gesamt",
+   "en": "total; entire",
+   "type": "adjective"
+  },
+  "Geschichtsunterricht|content": {
+   "de": "der Geschichtsunterricht",
+   "en": "history class",
+   "type": "noun"
+  },
+  "geschlechtsabhängig|content": {
+   "de": "geschlechtsabhängig",
+   "en": "gender-dependent",
+   "type": "adjective"
+  },
+  "Gesellenprüfung|content": {
+   "de": "die Gesellenprüfung",
+   "en": "journeyman's examination",
+   "type": "noun"
+  },
+  "Gesetzbuch|content": {
+   "de": "das Gesetzbuch",
+   "en": "law book; code",
+   "type": "noun"
+  },
+  "gesetzestreu|content": {
+   "de": "gesetzestreu",
+   "en": "law-abiding",
+   "type": "adjective"
+  },
+  "gesetzgebend|content": {
+   "de": "gesetzgebend",
+   "en": "legislative",
+   "type": "adjective"
+  },
+  "Gewerbeamt|content": {
+   "de": "das Gewerbeamt",
+   "en": "trade office",
+   "type": "noun"
+  },
+  "gewinnen|content": {
+   "de": "gewinnen",
+   "en": "to win",
+   "type": "verb"
+  },
+  "Gewissensfreiheit|content": {
+   "de": "die Gewissensfreiheit",
+   "en": "freedom of conscience",
+   "type": "noun"
+  },
+  "Ghetto|content": {
+   "de": "das Ghetto",
+   "en": "ghetto",
+   "type": "noun"
+  },
+  "gleichzeitig|content": {
+   "de": "gleichzeitig",
+   "en": "at the same time",
+   "type": "adverb"
+  },
+  "Goldmedaille|content": {
+   "de": "die Goldmedaille",
+   "en": "gold medal",
+   "type": "noun"
+  },
+  "Golfkrieg|content": {
+   "de": "der Golfkrieg",
+   "en": "Gulf War",
+   "type": "noun"
+  },
+  "Grab|content": {
+   "de": "das Grab",
+   "en": "grave",
+   "type": "noun"
+  },
+  "Grenze|content": {
+   "de": "die Grenze",
+   "en": "border",
+   "type": "noun"
+  },
+  "Großelter|content": {
+   "de": "die Großeltern",
+   "en": "grandparents",
+   "type": "noun"
+  },
+  "Grundlage|content": {
+   "de": "die Grundlage",
+   "en": "basis",
+   "type": "noun"
+  },
+  "grundsätzlich|content": {
+   "de": "grundsätzlich",
+   "en": "fundamentally",
+   "type": "adverb"
+  },
+  "Gruppe|content": {
+   "de": "die Gruppe",
+   "en": "group",
+   "type": "noun"
+  },
+  "Gründung|content": {
+   "de": "die Gründung",
+   "en": "founding",
+   "type": "noun"
+  },
+  "Gründungsmitglied|content": {
+   "de": "das Gründungsmitglied",
+   "en": "founding member",
+   "type": "noun"
+  },
+  "Gästehaus|content": {
+   "de": "das Gästehaus",
+   "en": "guesthouse",
+   "type": "noun"
+  },
+  "Götterfunk|content": {
+   "de": "der Götterfunken",
+   "en": "spark of the gods",
+   "type": "noun"
+  },
+  "gültig|content": {
+   "de": "gültig",
+   "en": "valid",
+   "type": "adjective"
+  },
+  "Hafen|content": {
+   "de": "der Hafen",
+   "en": "port",
+   "type": "noun"
+  },
+  "Haftpflichtversicherung|content": {
+   "de": "die Haftpflichtversicherung",
+   "en": "liability insurance",
+   "type": "noun"
+  },
+  "Hammer|content": {
+   "de": "der Hammer",
+   "en": "hammer",
+   "type": "noun"
+  },
+  "handeln|content": {
+   "de": "handeln",
+   "en": "to be about",
+   "type": "verb"
+  },
+  "Handlung|content": {
+   "de": "die Handlung",
+   "en": "action",
+   "type": "noun"
+  },
+  "hauptsächlich|content": {
+   "de": "hauptsächlich",
+   "en": "mainly",
+   "type": "adverb"
+  },
+  "Hausratsversicherung|content": {
+   "de": "die Hausratsversicherung",
+   "en": "home contents insurance",
+   "type": "noun"
+  },
+  "Haut|content": {
+   "de": "die Haut",
+   "en": "skin",
+   "type": "noun"
+  },
+  "Held|content": {
+   "de": "der Held",
+   "en": "hero",
+   "type": "noun"
+  },
+  "Herbst|content": {
+   "de": "der Herbst",
+   "en": "autumn",
+   "type": "noun"
+  },
+  "herrschen|content": {
+   "de": "herrschen",
+   "en": "to rule",
+   "type": "verb"
+  },
+  "hierfür|content": {
+   "de": "hierfür",
+   "en": "for this purpose",
+   "type": "adverb"
+  },
+  "Hilfe|content": {
+   "de": "die Hilfe",
+   "en": "help",
+   "type": "noun"
+  },
+  "Hinduismus|content": {
+   "de": "der Hinduismus",
+   "en": "Hinduism",
+   "type": "noun"
+  },
+  "hineingelassen|content": {
+   "de": "hineinlassen",
+   "en": "to let in",
+   "type": "verb"
+  },
+  "hinzu|content": {
+   "de": "hinzukommen",
+   "en": "to be added",
+   "type": "verb"
+  },
+  "Holocaustleugnung|content": {
+   "de": "die Holocaustleugnung",
+   "en": "Holocaust denial",
+   "type": "noun"
+  },
+  "hungern|content": {
+   "de": "hungern",
+   "en": "to starve",
+   "type": "verb"
+  },
+  "Hälfte|content": {
+   "de": "die Hälfte",
+   "en": "half",
+   "type": "noun"
+  },
+  "hören|content": {
+   "de": "hören",
+   "en": "to hear",
+   "type": "verb"
+  },
+  "ihnen|function": {
+   "de": "ihnen",
+   "en": "them",
+   "type": "function"
+  },
+  "informieren|content": {
+   "de": "informieren",
+   "en": "to inform",
+   "type": "verb"
+  },
+  "Inhalt|content": {
+   "de": "der Inhalt",
+   "en": "content",
+   "type": "noun"
+  },
+  "Initiative|content": {
+   "de": "die Initiative",
+   "en": "initiative",
+   "type": "noun"
+  },
+  "Integration|content": {
+   "de": "die Integration",
+   "en": "integration",
+   "type": "noun"
+  },
+  "international|content": {
+   "de": "international",
+   "en": "international",
+   "type": "adjective"
+  },
+  "Internet|content": {
+   "de": "das Internet",
+   "en": "internet",
+   "type": "noun"
+  },
+  "Islam|content": {
+   "de": "der Islam",
+   "en": "Islam",
+   "type": "noun"
+  },
+  "islamisch|content": {
+   "de": "islamisch",
+   "en": "Islamic",
+   "type": "adjective"
+  },
+  "Januar|content": {
+   "de": "der Januar",
+   "en": "January",
+   "type": "noun"
+  },
+  "je|content": {
+   "de": "je",
+   "en": "the (more... the...)",
+   "type": "function"
+  },
+  "jederzeit|content": {
+   "de": "jederzeit",
+   "en": "at any time",
+   "type": "adverb"
+  },
+  "Journalist|content": {
+   "de": "der Journalist",
+   "en": "journalist",
+   "type": "noun"
+  },
+  "Jubiläum|content": {
+   "de": "das Jubiläum",
+   "en": "anniversary",
+   "type": "noun"
+  },
+  "Jura|content": {
+   "de": "das Jura",
+   "en": "law (studies)",
+   "type": "noun"
+  },
+  "jährlich|content": {
+   "de": "jährlich",
+   "en": "annually",
+   "type": "adjective"
+  },
+  "kalt|content": {
+   "de": "kalt",
+   "en": "cold",
+   "type": "adjective"
+  },
+  "Kanton|content": {
+   "de": "der Kanton",
+   "en": "canton",
+   "type": "noun"
+  },
+  "Kapitalismus|content": {
+   "de": "der Kapitalismus",
+   "en": "capitalism",
+   "type": "noun"
+  },
+  "kapitalistisch|content": {
+   "de": "kapitalistisch",
+   "en": "capitalistic",
+   "type": "adjective"
+  },
+  "Kapitulation|content": {
+   "de": "die Kapitulation",
+   "en": "surrender",
+   "type": "noun"
+  },
+  "kaputt|content": {
+   "de": "kaputt",
+   "en": "broken",
+   "type": "adjective"
+  },
+  "Karte|content": {
+   "de": "die Karte",
+   "en": "card; map; ticket",
+   "type": "noun"
+  },
+  "katholisch|content": {
+   "de": "katholisch",
+   "en": "Catholic",
+   "type": "adjective"
+  },
+  "kaufen|content": {
+   "de": "kaufen",
+   "en": "to buy",
+   "type": "verb"
+  },
+  "Kellner|content": {
+   "de": "der Kellner",
+   "en": "waiter",
+   "type": "noun"
+  },
+  "kennzeichneten|content": {
+   "de": "kennzeichnen",
+   "en": "to characterize",
+   "type": "verb"
+  },
+  "Kindererziehung|content": {
+   "de": "die Kindererziehung",
+   "en": "child-rearing",
+   "type": "noun"
+  },
+  "Kindergartenplatz|content": {
+   "de": "der Kindergartenplatz",
+   "en": "kindergarten spot",
+   "type": "noun"
+  },
+  "klagen|content": {
+   "de": "klagen",
+   "en": "to sue; to complain",
+   "type": "verb"
+  },
+  "Kleidung|content": {
+   "de": "die Kleidung",
+   "en": "clothing",
+   "type": "noun"
+  },
+  "Kniefall|content": {
+   "de": "der Kniefall",
+   "en": "genuflection; kneeling",
+   "type": "noun"
+  },
+  "knüpfen|content": {
+   "de": "knüpfen",
+   "en": "to tie; to link",
+   "type": "verb"
+  },
+  "Kommission|content": {
+   "de": "die Kommission",
+   "en": "commission",
+   "type": "noun"
+  },
+  "Kommune|content": {
+   "de": "die Kommune",
+   "en": "municipality",
+   "type": "noun"
+  },
+  "Konflikt|content": {
+   "de": "der Konflikt",
+   "en": "conflict",
+   "type": "noun"
+  },
+  "kostengünstig|content": {
+   "de": "kostengünstig",
+   "en": "cost-effective",
+   "type": "adjective"
+  },
+  "kostenlos|content": {
+   "de": "kostenlos",
+   "en": "free of charge",
+   "type": "adjective"
+  },
+  "krank|content": {
+   "de": "krank",
+   "en": "ill",
+   "type": "adjective"
+  },
+  "Krankenhaus|content": {
+   "de": "das Krankenhaus",
+   "en": "hospital",
+   "type": "noun"
+  },
+  "Krankenkasse|content": {
+   "de": "die Krankenkasse",
+   "en": "health insurance fund",
+   "type": "noun"
+  },
+  "kritisch|content": {
+   "de": "kritisch",
+   "en": "critical",
+   "type": "adjective"
+  },
+  "Kultur|content": {
+   "de": "die Kultur",
+   "en": "culture",
+   "type": "noun"
+  },
+  "kulturell|content": {
+   "de": "kulturell",
+   "en": "cultural",
+   "type": "adjective"
+  },
+  "kurz|content": {
+   "de": "kurz",
+   "en": "short",
+   "type": "adjective"
+  },
+  "kämpfen|content": {
+   "de": "kämpfen",
+   "en": "to fight",
+   "type": "verb"
+  },
+  "kündigen|content": {
+   "de": "kündigen",
+   "en": "to terminate; to quit",
+   "type": "verb"
+  },
+  "Kündigung|content": {
+   "de": "die Kündigung",
+   "en": "termination; notice",
+   "type": "noun"
+  },
+  "Kündigungsfrist|content": {
+   "de": "die Kündigungsfrist",
+   "en": "notice period",
+   "type": "noun"
+  },
+  "Kündigungsschutzklage|content": {
+   "de": "die Kündigungsschutzklage",
+   "en": "wrongful termination lawsuit",
+   "type": "noun"
+  },
+  "Kürzung|content": {
+   "de": "die Kürzung",
+   "en": "reduction; cut",
+   "type": "noun"
+  },
+  "Landesflagge|content": {
+   "de": "die Landesflagge",
+   "en": "state flag",
+   "type": "noun"
+  },
+  "Landeshauptstadt|content": {
+   "de": "die Landeshauptstadt",
+   "en": "state capital",
+   "type": "noun"
+  },
+  "landesweit|content": {
+   "de": "landesweit",
+   "en": "nationwide",
+   "type": "adjective"
+  },
+  "Landeszentrale|content": {
+   "de": "die Landeszentrale",
+   "en": "state center",
+   "type": "noun"
+  },
+  "Landkreis|content": {
+   "de": "der Landkreis",
+   "en": "district",
+   "type": "noun"
+  },
+  "Landrat|content": {
+   "de": "der Landrat",
+   "en": "district administrator",
+   "type": "noun"
+  },
+  "Landtag|content": {
+   "de": "der Landtag",
+   "en": "state parliament",
+   "type": "noun"
+  },
+  "Landtagsabgeordneter|content": {
+   "de": "der Landtagsabgeordnete",
+   "en": "state parliament member",
+   "type": "noun"
+  },
+  "Landtransport|content": {
+   "de": "der Landtransport",
+   "en": "land transport",
+   "type": "noun"
+  },
+  "Landweg|content": {
+   "de": "der Landweg",
+   "en": "land route",
+   "type": "noun"
+  },
+  "lang|content": {
+   "de": "lang",
+   "en": "long",
+   "type": "adjective"
+  },
+  "lange|content": {
+   "de": "lange",
+   "en": "for a long time",
+   "type": "adverb"
+  },
+  "Last|content": {
+   "de": "die Last",
+   "en": "burden",
+   "type": "noun"
+  },
+  "Lebensform|content": {
+   "de": "die Lebensform",
+   "en": "lifestyle",
+   "type": "noun"
+  },
+  "Lebensjahr|content": {
+   "de": "das Lebensjahr",
+   "en": "year of life",
+   "type": "noun"
+  },
+  "Lebensmittel|content": {
+   "de": "das Lebensmittel",
+   "en": "food",
+   "type": "noun"
+  },
+  "Lebensversicherung|content": {
+   "de": "die Lebensversicherung",
+   "en": "life insurance",
+   "type": "noun"
+  },
+  "legen|content": {
+   "de": "legen",
+   "en": "to place; to file",
+   "type": "verb"
+  },
+  "Lehrstellensuch|content": {
+   "de": "die Lehrstellensuche",
+   "en": "apprenticeship search",
+   "type": "noun"
+  },
+  "leiten|content": {
+   "de": "leiten",
+   "en": "to lead; to manage",
+   "type": "verb"
+  },
+  "liberal|content": {
+   "de": "liberal",
+   "en": "liberal",
+   "type": "adjective"
+  },
+  "liegen|content": {
+   "de": "liegen",
+   "en": "to lie; to be located",
+   "type": "verb"
+  },
+  "Luft|content": {
+   "de": "die Luft",
+   "en": "air",
+   "type": "noun"
+  },
+  "lösen|content": {
+   "de": "lösen",
+   "en": "to solve; to dissolve",
+   "type": "verb"
+  },
+  "Löwe|content": {
+   "de": "der Löwe",
+   "en": "lion",
+   "type": "noun"
+  },
+  "Mahnverfahren|content": {
+   "de": "das Mahnverfahren",
+   "en": "dunning process",
+   "type": "noun"
+  },
+  "Maifeiertag|content": {
+   "de": "der Maifeiertag",
+   "en": "May Day",
+   "type": "noun"
+  },
+  "Mauerbau|content": {
+   "de": "der Mauerbau",
+   "en": "construction of the wall",
+   "type": "noun"
+  },
+  "Maßnahme|content": {
+   "de": "die Maßnahme",
+   "en": "measure",
+   "type": "noun"
+  },
+  "Medium|content": {
+   "de": "das Medium",
+   "en": "medium; media",
+   "type": "noun"
+  },
+  "mehrere|function": {
+   "de": "mehrere",
+   "en": "several",
+   "type": "function"
+  },
+  "mehrheitlich|content": {
+   "de": "mehrheitlich",
+   "en": "mostly; majority",
+   "type": "adverb"
+  },
+  "Meinungsäußerung|content": {
+   "de": "die Meinungsäußerung",
+   "en": "expression of opinion",
+   "type": "noun"
+  },
+  "Merkmal|content": {
+   "de": "das Merkmal",
+   "en": "feature; characteristic",
+   "type": "noun"
+  },
+  "Mietshäus|content": {
+   "de": "das Mietshaus",
+   "en": "apartment building",
+   "type": "noun"
+  },
+  "Militär|content": {
+   "de": "das Militär",
+   "en": "military",
+   "type": "noun"
+  },
+  "Militärbündnis|content": {
+   "de": "das Militärbündnis",
+   "en": "military alliance",
+   "type": "noun"
+  },
+  "Militärdienst|content": {
+   "de": "der Militärdienst",
+   "en": "military service",
+   "type": "noun"
+  },
+  "Mitarbeiterin|content": {
+   "de": "die Mitarbeiterin",
+   "en": "employee",
+   "type": "noun"
+  },
+  "Mitgliedschaft|content": {
+   "de": "die Mitgliedschaft",
+   "en": "membership",
+   "type": "noun"
+  },
+  "Mitgliedstaat|content": {
+   "de": "der Mitgliedstaat",
+   "en": "member state",
+   "type": "noun"
+  },
+  "Mitternacht|content": {
+   "de": "die Mitternacht",
+   "en": "midnight",
+   "type": "noun"
+  },
+  "monatlich|content": {
+   "de": "monatlich",
+   "en": "monthly",
+   "type": "adjective"
+  },
+  "Montagsdemonstration|content": {
+   "de": "die Montagsdemonstration",
+   "en": "Monday demonstration",
+   "type": "noun"
+  },
+  "Museum|content": {
+   "de": "das Museum",
+   "en": "museum",
+   "type": "noun"
+  },
+  "Musiker|content": {
+   "de": "der Musiker",
+   "en": "musician",
+   "type": "noun"
+  },
+  "Mutter|content": {
+   "de": "die Mutter",
+   "en": "mother",
+   "type": "noun"
+  },
+  "Mutterschutz|content": {
+   "de": "der Mutterschutz",
+   "en": "maternity protection",
+   "type": "noun"
+  },
+  "Männerwahlrecht|content": {
+   "de": "das Männerwahlrecht",
+   "en": "male suffrage",
+   "type": "noun"
+  },
+  "Nachteil|content": {
+   "de": "der Nachteil",
+   "en": "disadvantage",
+   "type": "noun"
+  },
+  "Nachtruh|content": {
+   "de": "die Nachtruhe",
+   "en": "nighttime quiet period",
+   "type": "noun"
+  },
+  "Name|content": {
+   "de": "der Name",
+   "en": "name",
+   "type": "noun"
+  },
+  "Nationalhymne|content": {
+   "de": "die Nationalhymne",
+   "en": "national anthem",
+   "type": "noun"
+  },
+  "nationalsozialistisch|content": {
+   "de": "nationalsozialistisch",
+   "en": "National Socialist",
+   "type": "adjective"
+  },
+  "Nebenkostenabrechnung|content": {
+   "de": "die Nebenkostenabrechnung",
+   "en": "utility bill",
+   "type": "noun"
+  },
+  "nehmen|content": {
+   "de": "nehmen",
+   "en": "to take",
+   "type": "verb"
+  },
+  "nie|content": {
+   "de": "nie",
+   "en": "never",
+   "type": "adverb"
+  },
+  "noch|function": {
+   "de": "noch",
+   "en": "still; yet",
+   "type": "function"
+  },
+  "Nordatlantikpakt|content": {
+   "de": "der Nordatlantikpakt",
+   "en": "North Atlantic Treaty Organization",
+   "type": "noun"
+  },
+  "nun|content": {
+   "de": "nun",
+   "en": "now",
+   "type": "adverb"
+  },
+  "nächster|content": {
+   "de": "nächster",
+   "en": "nearest, next",
+   "type": "adjective"
+  },
+  "nämlich|content": {
+   "de": "nämlich",
+   "en": "namely",
+   "type": "adverb"
+  },
+  "Oberhaupt|content": {
+   "de": "das Oberhaupt",
+   "en": "head, leader",
+   "type": "noun"
+  },
+  "Oberlandesgericht|content": {
+   "de": "das Oberlandesgericht",
+   "en": "higher regional court",
+   "type": "noun"
+  },
+  "Oktober|content": {
+   "de": "der Oktober",
+   "en": "October",
+   "type": "noun"
+  },
+  "Oktoberfest|content": {
+   "de": "das Oktoberfest",
+   "en": "Oktoberfest",
+   "type": "noun"
+  },
+  "olympisch|content": {
+   "de": "olympisch",
+   "en": "Olympic",
+   "type": "adjective"
+  },
+  "Operative|content": {
+   "de": "die Operative",
+   "en": "operations unit",
+   "type": "noun"
+  },
+  "Organ|content": {
+   "de": "das Organ",
+   "en": "organ, body",
+   "type": "noun"
+  },
+  "Organisation|content": {
+   "de": "die Organisation",
+   "en": "organization",
+   "type": "noun"
+  },
+  "orientieren|content": {
+   "de": "orientieren",
+   "en": "to orient",
+   "type": "verb"
+  },
+  "Orientierung|content": {
+   "de": "die Orientierung",
+   "en": "orientation, guidance",
+   "type": "noun"
+  },
+  "Ort|content": {
+   "de": "der Ort",
+   "en": "place, location",
+   "type": "noun"
+  },
+  "Ostern|content": {
+   "de": "Ostern",
+   "en": "Easter",
+   "type": "noun"
+  },
+  "Ostgrenze|content": {
+   "de": "die Ostgrenze",
+   "en": "eastern border",
+   "type": "noun"
+  },
+  "Oststaat|content": {
+   "de": "der Oststaat",
+   "en": "eastern state",
+   "type": "noun"
+  },
+  "Ostvertrag|content": {
+   "de": "der Ostvertrag",
+   "en": "Eastern Treaty",
+   "type": "noun"
+  },
+  "Paar|content": {
+   "de": "das Paar",
+   "en": "couple",
+   "type": "noun"
+  },
+  "packen|content": {
+   "de": "packen",
+   "en": "to pack, unpack",
+   "type": "verb"
+  },
+  "parken|content": {
+   "de": "parken",
+   "en": "to park",
+   "type": "verb"
+  },
+  "parlamentarisch|content": {
+   "de": "parlamentarisch",
+   "en": "parliamentary",
+   "type": "adjective"
+  },
+  "Parlamentsmitglied|content": {
+   "de": "das Parlamentsmitglied",
+   "en": "member of parliament",
+   "type": "noun"
+  },
+  "Parteimitglied|content": {
+   "de": "das Parteimitglied",
+   "en": "party member",
+   "type": "noun"
+  },
+  "Passant|content": {
+   "de": "der Passant",
+   "en": "passerby",
+   "type": "noun"
+  },
+  "passieren|content": {
+   "de": "passieren",
+   "en": "to happen",
+   "type": "verb"
+  },
+  "Personenkontroll|content": {
+   "de": "die Personenkontrolle",
+   "en": "identity check",
+   "type": "noun"
+  },
+  "persönlich|content": {
+   "de": "persönlich",
+   "en": "personal",
+   "type": "adjective"
+  },
+  "Persönlichkeit|content": {
+   "de": "die Persönlichkeit",
+   "en": "personality",
+   "type": "noun"
+  },
+  "Petition|content": {
+   "de": "die Petition",
+   "en": "petition",
+   "type": "noun"
+  },
+  "Pferd|content": {
+   "de": "das Pferd",
+   "en": "horse",
+   "type": "noun"
+  },
+  "Pflicht|content": {
+   "de": "die Pflicht",
+   "en": "duty, obligation",
+   "type": "noun"
+  },
+  "Plan|content": {
+   "de": "der Plan",
+   "en": "plan",
+   "type": "noun"
+  },
+  "planen|content": {
+   "de": "planen",
+   "en": "to plan",
+   "type": "verb"
+  },
+  "planend|content": {
+   "de": "planend",
+   "en": "planning",
+   "type": "adjective"
+  },
+  "Platz|content": {
+   "de": "der Platz",
+   "en": "place, seat, square",
+   "type": "noun"
+  },
+  "Plenarsaal|content": {
+   "de": "der Plenarsaal",
+   "en": "plenary hall",
+   "type": "noun"
+  },
+  "Politikunterricht|content": {
+   "de": "der Politikunterricht",
+   "en": "civics class",
+   "type": "noun"
+  },
+  "polnisch|content": {
+   "de": "polnisch",
+   "en": "Polish",
+   "type": "adjective"
+  },
+  "preußisch|content": {
+   "de": "preußisch",
+   "en": "Prussian",
+   "type": "adjective"
+  },
+  "privat|content": {
+   "de": "privat",
+   "en": "private",
+   "type": "adjective"
+  },
+  "Privatgrundstück|content": {
+   "de": "das Privatgrundstück",
+   "en": "private property",
+   "type": "noun"
+  },
+  "Privatpolizei|content": {
+   "de": "die Privatpolizei",
+   "en": "private police",
+   "type": "noun"
+  },
+  "produzieren|content": {
+   "de": "produzieren",
+   "en": "to produce",
+   "type": "verb"
+  },
+  "Prokura|content": {
+   "de": "die Prokura",
+   "en": "power of attorney",
+   "type": "noun"
+  },
+  "Protokoll|content": {
+   "de": "das Protokoll",
+   "en": "minutes, protocol",
+   "type": "noun"
+  },
+  "Prozedur|content": {
+   "de": "die Prozedur",
+   "en": "procedure",
+   "type": "noun"
+  },
+  "Prozent|content": {
+   "de": "das Prozent",
+   "en": "percent",
+   "type": "noun"
+  },
+  "prägen|content": {
+   "de": "prägen",
+   "en": "to shape, influence",
+   "type": "verb"
+  },
+  "Prüfung|content": {
+   "de": "die Prüfung",
+   "en": "exam; test",
+   "type": "noun"
+  },
+  "Prügelstrafe|content": {
+   "de": "die Prügelstrafe",
+   "en": "corporal punishment",
+   "type": "noun"
+  },
+  "Radfahr|content": {
+   "de": "das Radfahren",
+   "en": "cycling",
+   "type": "noun"
+  },
+  "Rakete|content": {
+   "de": "die Rakete",
+   "en": "rocket",
+   "type": "noun"
+  },
+  "Rassismus|content": {
+   "de": "der Rassismus",
+   "en": "racism",
+   "type": "noun"
+  },
+  "Rat|content": {
+   "de": "der Rat",
+   "en": "advice; council",
+   "type": "noun"
+  },
+  "rechter|content": {
+   "de": "rechte (rechts)",
+   "en": "right-wing",
+   "type": "adjective"
+  },
+  "Rechtsfrage|content": {
+   "de": "die Rechtsfrage",
+   "en": "legal question",
+   "type": "noun"
+  },
+  "rechtsprechend|content": {
+   "de": "rechtsprechend",
+   "en": "judicial",
+   "type": "adjective"
+  },
+  "Rechtsprechung|content": {
+   "de": "die Rechtsprechung",
+   "en": "jurisdiction; judiciary",
+   "type": "noun"
+  },
+  "rechtsstaatlich|content": {
+   "de": "rechtsstaatlich",
+   "en": "constitutional; rule of law",
+   "type": "adjective"
+  },
+  "Regierungsbildung|content": {
+   "de": "die Regierungsbildung",
+   "en": "formation of government",
+   "type": "noun"
+  },
+  "Regierungsgeschäft|content": {
+   "de": "das Regierungsgeschäft",
+   "en": "government business",
+   "type": "noun"
+  },
+  "Regierungsvertreter|content": {
+   "de": "der Regierungsvertreter",
+   "en": "government representative",
+   "type": "noun"
+  },
+  "Regierungswechsel|content": {
+   "de": "der Regierungswechsel",
+   "en": "change of government",
+   "type": "noun"
+  },
+  "reich|content": {
+   "de": "reich",
+   "en": "rich; wealthy",
+   "type": "adjective"
+  },
+  "Reichsadler|content": {
+   "de": "der Reichsadler",
+   "en": "imperial eagle",
+   "type": "noun"
+  },
+  "Reichskanzler|content": {
+   "de": "der Reichskanzler",
+   "en": "imperial chancellor",
+   "type": "noun"
+  },
+  "Reichskrone|content": {
+   "de": "die Reichskrone",
+   "en": "imperial crown",
+   "type": "noun"
+  },
+  "Reichspräsident|content": {
+   "de": "der Reichspräsident",
+   "en": "imperial president",
+   "type": "noun"
+  },
+  "Reichstag|content": {
+   "de": "der Reichstag",
+   "en": "parliament building; parliament",
+   "type": "noun"
+  },
+  "Reichstagsgebäud|content": {
+   "de": "das Reichstagsgebäude",
+   "en": "Reichstag building",
+   "type": "noun"
+  },
+  "Reisefreiheit|content": {
+   "de": "die Reisefreiheit",
+   "en": "freedom of travel",
+   "type": "noun"
+  },
+  "reklamieren|content": {
+   "de": "reklamieren",
+   "en": "complain; make a claim",
+   "type": "verb"
+  },
+  "Religionspflicht|content": {
+   "de": "die Religionspflicht",
+   "en": "religious duty",
+   "type": "noun"
+  },
+  "Rentenberechnung|content": {
+   "de": "die Rentenberechnung",
+   "en": "pension calculation",
+   "type": "noun"
+  },
+  "Rentenversicherung|content": {
+   "de": "die Rentenversicherung",
+   "en": "pension insurance",
+   "type": "noun"
+  },
+  "Reparationsleistung|content": {
+   "de": "die Reparationsleistung",
+   "en": "reparation payment",
+   "type": "noun"
+  },
+  "repräsentieren|content": {
+   "de": "repräsentieren",
+   "en": "represent",
+   "type": "verb"
+  },
+  "Resolution|content": {
+   "de": "die Resolution",
+   "en": "resolution",
+   "type": "noun"
+  },
+  "respektieren|content": {
+   "de": "respektieren",
+   "en": "respect",
+   "type": "verb"
+  },
+  "Revolution|content": {
+   "de": "die Revolution",
+   "en": "revolution",
+   "type": "noun"
+  },
+  "Rheinbund|content": {
+   "de": "der Rheinbund",
+   "en": "Confederation of the Rhine",
+   "type": "noun"
+  },
+  "Richtlinie|content": {
+   "de": "die Richtlinie",
+   "en": "guideline; directive",
+   "type": "noun"
+  },
+  "Richtung|content": {
+   "de": "die Richtung",
+   "en": "direction",
+   "type": "noun"
+  },
+  "Risiko|content": {
+   "de": "das Risiko",
+   "en": "risk",
+   "type": "noun"
+  },
+  "Rosenmontag|content": {
+   "de": "der Rosenmontag",
+   "en": "Rose Monday",
+   "type": "noun"
+  },
+  "rufen|content": {
+   "de": "rufen",
+   "en": "call; shout",
+   "type": "verb"
+  },
+  "rund|content": {
+   "de": "rund",
+   "en": "around; approximately",
+   "type": "adjective"
+  },
+  "Rundfunk|content": {
+   "de": "der Rundfunk",
+   "en": "broadcasting",
+   "type": "noun"
+  },
+  "Räterepublik|content": {
+   "de": "die Räterepublik",
+   "en": "soviet republic",
+   "type": "noun"
+  },
+  "Rückzug|content": {
+   "de": "der Rückzug",
+   "en": "withdrawal; retreat",
+   "type": "noun"
+  },
+  "Sache|content": {
+   "de": "die Sache",
+   "en": "thing; matter",
+   "type": "noun"
+  },
+  "schaffen|content": {
+   "de": "schaffen",
+   "en": "create; manage",
+   "type": "verb"
+  },
+  "Scheidungsprozess|content": {
+   "de": "der Scheidungsprozess",
+   "en": "divorce proceedings",
+   "type": "noun"
+  },
+  "schicken|content": {
+   "de": "schicken",
+   "en": "send",
+   "type": "verb"
+  },
+  "schießen|content": {
+   "de": "schießen",
+   "en": "shoot",
+   "type": "verb"
+  },
+  "schlafen|content": {
+   "de": "schlafen",
+   "en": "sleep",
+   "type": "verb"
+  },
+  "schlecht|content": {
+   "de": "schlecht",
+   "en": "bad",
+   "type": "adjective"
+  },
+  "schloss|content": {
+   "de": "schließen",
+   "en": "to close; to conclude",
+   "type": "verb"
+  },
+  "Schulamt|content": {
+   "de": "das Schulamt",
+   "en": "school authority",
+   "type": "noun"
+  },
+  "Schuld|content": {
+   "de": "die Schuld",
+   "en": "guilt; debt",
+   "type": "noun"
+  },
+  "Schulgeld|content": {
+   "de": "das Schulgeld",
+   "en": "tuition fees",
+   "type": "noun"
+  },
+  "Schulpflicht|content": {
+   "de": "die Schulpflicht",
+   "en": "compulsory schooling",
+   "type": "noun"
+  },
+  "Schulwese|content": {
+   "de": "das Schulwesen",
+   "en": "school system",
+   "type": "noun"
+  },
+  "schwanger|content": {
+   "de": "schwanger",
+   "en": "pregnant",
+   "type": "adjective"
+  },
+  "Schweigerecht|content": {
+   "de": "das Schweigerecht",
+   "en": "right to remain silent",
+   "type": "noun"
+  },
+  "Schwierigkeit|content": {
+   "de": "die Schwierigkeit",
+   "en": "difficulty",
+   "type": "noun"
+  },
+  "Schwimmbad|content": {
+   "de": "das Schwimmbad",
+   "en": "swimming pool",
+   "type": "noun"
+  },
+  "schön|content": {
+   "de": "schön",
+   "en": "beautiful; nice",
+   "type": "adjective"
+  },
+  "sechs|function": {
+   "de": "sechs",
+   "en": "six",
+   "type": "function"
+  },
+  "sehen|content": {
+   "de": "sehen",
+   "en": "to see",
+   "type": "verb"
+  },
+  "sehr|content": {
+   "de": "sehr",
+   "en": "very",
+   "type": "adverb"
+  },
+  "Sektor|content": {
+   "de": "der Sektor",
+   "en": "sector",
+   "type": "noun"
+  },
+  "selbe|content": {
+   "de": "derselbe, dieselbe, dasselbe",
+   "en": "the same",
+   "type": "adjective"
+  },
+  "selber|content": {
+   "de": "selber",
+   "en": "oneself, -self",
+   "type": "adverb"
+  },
+  "selbst|content": {
+   "de": "selbst",
+   "en": "myself; yourself (emphatic)",
+   "type": "adverb"
+  },
+  "Selbstjustiz|content": {
+   "de": "die Selbstjustiz",
+   "en": "vigilantism",
+   "type": "noun"
+  },
+  "selbstständig|content": {
+   "de": "selbstständig",
+   "en": "self-employed; independent",
+   "type": "adjective"
+  },
+  "selbstständige|content": {
+   "de": "der Selbstständige",
+   "en": "self-employed person",
+   "type": "noun"
+  },
+  "Signal|content": {
+   "de": "das Signal",
+   "en": "signal",
+   "type": "noun"
+  },
+  "Situation|content": {
+   "de": "die Situation",
+   "en": "situation",
+   "type": "noun"
+  },
+  "Sitzung|content": {
+   "de": "die Sitzung",
+   "en": "meeting; session",
+   "type": "noun"
+  },
+  "so|content": {
+   "de": "so",
+   "en": "so; thus",
+   "type": "adverb"
+  },
+  "sogenannter|content": {
+   "de": "sogenannt",
+   "en": "so-called",
+   "type": "adjective"
+  },
+  "solange|function": {
+   "de": "solange",
+   "en": "as long as",
+   "type": "function"
+  },
+  "solcher|function": {
+   "de": "solcher",
+   "en": "such a",
+   "type": "function"
+  },
+  "Sonne|content": {
+   "de": "die Sonne",
+   "en": "sun",
+   "type": "noun"
+  },
+  "sorgen|content": {
+   "de": "sorgen",
+   "en": "to care for; to ensure",
+   "type": "verb"
+  },
+  "Souveränität|content": {
+   "de": "die Souveränität",
+   "en": "sovereignty",
+   "type": "noun"
+  },
+  "sowjetisch|content": {
+   "de": "sowjetisch",
+   "en": "Soviet",
+   "type": "adjective"
+  },
+  "Sozialabgabe|content": {
+   "de": "die Sozialabgabe",
+   "en": "social security contribution",
+   "type": "noun"
+  },
+  "Sozialdemokratie|content": {
+   "de": "die Sozialdemokratie",
+   "en": "social democracy",
+   "type": "noun"
+  },
+  "sozialdemokratisch|content": {
+   "de": "sozialdemokratisch",
+   "en": "social democratic",
+   "type": "adjective"
+  },
+  "sozialgerecht|content": {
+   "de": "sozialgerecht",
+   "en": "socially just",
+   "type": "adjective"
+  },
+  "Sozialhilfe|content": {
+   "de": "die Sozialhilfe",
+   "en": "social welfare",
+   "type": "noun"
+  },
+  "Sozialismus|content": {
+   "de": "der Sozialismus",
+   "en": "socialism",
+   "type": "noun"
+  },
+  "sozialpolitisch|content": {
+   "de": "sozialpolitisch",
+   "en": "socio-political",
+   "type": "adjective"
+  },
+  "Sozialstaat|content": {
+   "de": "der Sozialstaat",
+   "en": "welfare state",
+   "type": "noun"
+  },
+  "Sozialstunde|content": {
+   "de": "die Sozialstunde",
+   "en": "community service hour",
+   "type": "noun"
+  },
+  "spenden|content": {
+   "de": "spenden",
+   "en": "to donate",
+   "type": "verb"
+  },
+  "Spendengelder|content": {
+   "de": "die Spendengelder",
+   "en": "donations",
+   "type": "noun"
+  },
+  "speziell|content": {
+   "de": "speziell",
+   "en": "special; specifically",
+   "type": "adjective"
+  },
+  "Spiel|content": {
+   "de": "das Spiel",
+   "en": "game",
+   "type": "noun"
+  },
+  "spielen|content": {
+   "de": "spielen",
+   "en": "to play",
+   "type": "verb"
+  },
+  "Sprachunterricht|content": {
+   "de": "der Sprachunterricht",
+   "en": "language instruction",
+   "type": "noun"
+  },
+  "spät|content": {
+   "de": "spät",
+   "en": "late",
+   "type": "adjective"
+  },
+  "Staatenbund|content": {
+   "de": "der Staatenbund",
+   "en": "confederation",
+   "type": "noun"
+  },
+  "Staatenverbund|content": {
+   "de": "der Staatenverbund",
+   "en": "association of states",
+   "type": "noun"
+  },
+  "Staatsform|content": {
+   "de": "die Staatsform",
+   "en": "form of government",
+   "type": "noun"
+  },
+  "Staatspräsident|content": {
+   "de": "der Staatspräsident",
+   "en": "state president",
+   "type": "noun"
+  },
+  "Staatssicherheit|content": {
+   "de": "die Staatssicherheit",
+   "en": "state security",
+   "type": "noun"
+  },
+  "Stadtoberhaupt|content": {
+   "de": "das Stadtoberhaupt",
+   "en": "head of city",
+   "type": "noun"
+  },
+  "Stadträt|content": {
+   "de": "der Stadtrat",
+   "en": "city council member",
+   "type": "noun"
+  },
+  "stark|content": {
+   "de": "stark",
+   "en": "strong",
+   "type": "adjective"
+  },
+  "Statistik|content": {
+   "de": "die Statistik",
+   "en": "statistics",
+   "type": "noun"
+  },
+  "sterben|content": {
+   "de": "sterben",
+   "en": "to die",
+   "type": "verb"
+  },
+  "Steuerbescheid|content": {
+   "de": "der Steuerbescheid",
+   "en": "tax assessment notice",
+   "type": "noun"
+  },
+  "Stimmzettel|content": {
+   "de": "der Stimmzettel",
+   "en": "ballot paper",
+   "type": "noun"
+  },
+  "Stolperstein|content": {
+   "de": "der Stolperstein",
+   "en": "stumbling stone",
+   "type": "noun"
+  },
+  "Strafgericht|content": {
+   "de": "das Strafgericht",
+   "en": "criminal court",
+   "type": "noun"
+  },
+  "Strafgesetze|content": {
+   "de": "das Strafgesetz",
+   "en": "criminal law",
+   "type": "noun"
+  },
+  "strafmündig|content": {
+   "de": "strafmündig",
+   "en": "criminally liable",
+   "type": "adjective"
+  },
+  "Straftat|content": {
+   "de": "die Straftat",
+   "en": "criminal offense",
+   "type": "noun"
+  },
+  "Streik|content": {
+   "de": "der Streik",
+   "en": "strike",
+   "type": "noun"
+  },
+  "studieren|content": {
+   "de": "studieren",
+   "en": "to study at university",
+   "type": "verb"
+  },
+  "Studium|content": {
+   "de": "das Studium",
+   "en": "university studies",
+   "type": "noun"
+  },
+  "Stufe|content": {
+   "de": "die Stufe",
+   "en": "level",
+   "type": "noun"
+  },
+  "suchen|content": {
+   "de": "suchen",
+   "en": "to look for",
+   "type": "verb"
+  },
+  "Symbol|content": {
+   "de": "das Symbol",
+   "en": "symbol",
+   "type": "noun"
+  },
+  "Taschengeld|content": {
+   "de": "das Taschengeld",
+   "en": "pocket money",
+   "type": "noun"
+  },
+  "telefonisch|content": {
+   "de": "telefonisch",
+   "en": "by telephone",
+   "type": "adverb"
+  },
+  "teuer|content": {
+   "de": "teuer",
+   "en": "expensive",
+   "type": "adjective"
+  },
+  "Thema|content": {
+   "de": "das Thema",
+   "en": "topic",
+   "type": "noun"
+  },
+  "Tier|content": {
+   "de": "das Tier",
+   "en": "animal",
+   "type": "noun"
+  },
+  "Todesstrafe|content": {
+   "de": "die Todesstrafe",
+   "en": "death penalty",
+   "type": "noun"
+  },
+  "tolerant|content": {
+   "de": "tolerant",
+   "en": "tolerant",
+   "type": "adjective"
+  },
+  "Toleranz|content": {
+   "de": "die Toleranz",
+   "en": "tolerance",
+   "type": "noun"
+  },
+  "tote|content": {
+   "de": "der Tote",
+   "en": "dead person",
+   "type": "noun"
+  },
+  "Tradition|content": {
+   "de": "die Tradition",
+   "en": "tradition",
+   "type": "noun"
+  },
+  "trainieren|content": {
+   "de": "trainieren",
+   "en": "to train",
+   "type": "verb"
+  },
+  "Trauertag|content": {
+   "de": "der Trauertag",
+   "en": "day of mourning",
+   "type": "noun"
+  },
+  "Treffen|content": {
+   "de": "das Treffen",
+   "en": "meeting",
+   "type": "noun"
+  },
+  "Trennungsjahr|content": {
+   "de": "das Trennungsjahr",
+   "en": "year of separation",
+   "type": "noun"
+  },
+  "Umsatzsteuer|content": {
+   "de": "die Umsatzsteuer",
+   "en": "sales tax",
+   "type": "noun"
+  },
+  "Umstand|content": {
+   "de": "der Umstand",
+   "en": "circumstance",
+   "type": "noun"
+  },
+  "Umweltschutz|content": {
+   "de": "der Umweltschutz",
+   "en": "environmental protection",
+   "type": "noun"
+  },
+  "umziehen|content": {
+   "de": "umziehen",
+   "en": "to move house",
+   "type": "verb"
+  },
+  "unantastbar|content": {
+   "de": "unantastbar",
+   "en": "inviolable",
+   "type": "adjective"
+  },
+  "Unantastbarkeit|content": {
+   "de": "die Unantastbarkeit",
+   "en": "inviolability",
+   "type": "noun"
+  },
+  "unbedingt|content": {
+   "de": "unbedingt",
+   "en": "absolutely",
+   "type": "adverb"
+  },
+  "unbegrenzt|content": {
+   "de": "unbegrenzt",
+   "en": "unlimited",
+   "type": "adjective"
+  },
+  "unbekannte|content": {
+   "de": "der Unbekannte",
+   "en": "unknown person",
+   "type": "noun"
+  },
+  "unbezahlen|content": {
+   "de": "unbezahlt",
+   "en": "unpaid",
+   "type": "adjective"
+  },
+  "Unfallversicherung|content": {
+   "de": "die Unfallversicherung",
+   "en": "accident insurance",
+   "type": "noun"
+  },
+  "unfragen|content": {
+   "de": "ungefragt",
+   "en": "unasked",
+   "type": "adverb"
+  },
+  "ungerechtfertigt|content": {
+   "de": "ungerechtfertigt",
+   "en": "unjustified",
+   "type": "adjective"
+  },
+  "Ungleichbehandlung|content": {
+   "de": "die Ungleichbehandlung",
+   "en": "unequal treatment",
+   "type": "noun"
+  },
+  "Unrecht|content": {
+   "de": "das Unrecht",
+   "en": "injustice",
+   "type": "noun"
+  },
+  "unser|function": {
+   "de": "unser",
+   "en": "our",
+   "type": "function"
+  },
+  "unter|function": {
+   "de": "unter",
+   "en": "under; among",
+   "type": "function"
+  },
+  "unterbrechen|content": {
+   "de": "unterbrechen",
+   "en": "interrupt",
+   "type": "verb"
+  },
+  "untergehen|content": {
+   "de": "untergehen",
+   "en": "set (sun)",
+   "type": "verb"
+  },
+  "Unterhaltung|content": {
+   "de": "die Unterhaltung",
+   "en": "entertainment; conversation",
+   "type": "noun"
+  },
+  "unterliegen|content": {
+   "de": "unterliegen",
+   "en": "be subject to",
+   "type": "verb"
+  },
+  "Unternehmer|content": {
+   "de": "der Unternehmer",
+   "en": "entrepreneur",
+   "type": "noun"
+  },
+  "Unternehmerverband|content": {
+   "de": "der Unternehmerverband",
+   "en": "employers' association",
+   "type": "noun"
+  },
+  "unterschiedlich|content": {
+   "de": "unterschiedlich",
+   "en": "different",
+   "type": "adjective"
+  },
+  "unterstützen|content": {
+   "de": "unterstützen",
+   "en": "support",
+   "type": "verb"
+  },
+  "Unterstützung|content": {
+   "de": "die Unterstützung",
+   "en": "support",
+   "type": "noun"
+  },
+  "unterwerfen|content": {
+   "de": "unterwerfen",
+   "en": "submit",
+   "type": "verb"
+  },
+  "Urkunde|content": {
+   "de": "die Urkunde",
+   "en": "document; certificate",
+   "type": "noun"
+  },
+  "Urlaubsreise|content": {
+   "de": "die Urlaubsreise",
+   "en": "vacation trip",
+   "type": "noun"
+  },
+  "Urteil|content": {
+   "de": "das Urteil",
+   "en": "verdict; judgment",
+   "type": "noun"
+  },
+  "Vater|content": {
+   "de": "der Vater",
+   "en": "father",
+   "type": "noun"
+  },
+  "Vaterland|content": {
+   "de": "das Vaterland",
+   "en": "fatherland",
+   "type": "noun"
+  },
+  "vaterländischen|content": {
+   "de": "vaterländisch",
+   "en": "patriotic",
+   "type": "adjective"
+  },
+  "Verabschiedung|content": {
+   "de": "die Verabschiedung",
+   "en": "adoption; farewell",
+   "type": "noun"
+  },
+  "Verantwortung|content": {
+   "de": "die Verantwortung",
+   "en": "responsibility",
+   "type": "noun"
+  },
+  "Verbot|content": {
+   "de": "das Verbot",
+   "en": "ban; prohibition",
+   "type": "noun"
+  },
+  "Verbraucherzentrale|content": {
+   "de": "die Verbraucherzentrale",
+   "en": "consumer advice center",
+   "type": "noun"
+  },
+  "Verbreitung|content": {
+   "de": "die Verbreitung",
+   "en": "dissemination; spread",
+   "type": "noun"
+  },
+  "verdienen|content": {
+   "de": "verdienen",
+   "en": "earn",
+   "type": "verb"
+  },
+  "Verdienstord|content": {
+   "de": "der Verdienstorden",
+   "en": "order of merit",
+   "type": "noun"
+  },
+  "vereinbar|content": {
+   "de": "vereinbar",
+   "en": "compatible",
+   "type": "adjective"
+  },
+  "Vereinigung|content": {
+   "de": "die Vereinigung",
+   "en": "association; unification",
+   "type": "noun"
+  },
+  "Vereinsbeiträg|content": {
+   "de": "der Vereinsbeitrag",
+   "en": "club membership fee",
+   "type": "noun"
+  },
+  "Verfahren|content": {
+   "de": "das Verfahren",
+   "en": "procedure; trial",
+   "type": "noun"
+  },
+  "Verfassungsorgan|content": {
+   "de": "das Verfassungsorgan",
+   "en": "constitutional body",
+   "type": "noun"
+  },
+  "Verfassungsvertrag|content": {
+   "de": "der Verfassungsvertrag",
+   "en": "constitutional treaty",
+   "type": "noun"
+  },
+  "verfassungswidrig|content": {
+   "de": "verfassungswidrig",
+   "en": "unconstitutional",
+   "type": "adjective"
+  },
+  "verfolgen|content": {
+   "de": "verfolgen",
+   "en": "pursue; persecute",
+   "type": "verb"
+  },
+  "Verfolgung|content": {
+   "de": "die Verfolgung",
+   "en": "persecution; pursuit",
+   "type": "noun"
+  },
+  "Vergebung|content": {
+   "de": "die Vergebung",
+   "en": "forgiveness",
+   "type": "noun"
+  },
+  "Verhaftung|content": {
+   "de": "die Verhaftung",
+   "en": "arrest",
+   "type": "noun"
+  },
+  "verhalten|content": {
+   "de": "das Verhalten",
+   "en": "behavior",
+   "type": "noun"
+  },
+  "verhindern|content": {
+   "de": "verhindern",
+   "en": "prevent",
+   "type": "verb"
+  },
+  "Verhältniswahlrecht|content": {
+   "de": "das Verhältniswahlrecht",
+   "en": "proportional representation",
+   "type": "noun"
+  },
+  "verkaufen|content": {
+   "de": "verkaufen",
+   "en": "sell",
+   "type": "verb"
+  },
+  "Verkehr|content": {
+   "de": "der Verkehr",
+   "en": "traffic; transport",
+   "type": "noun"
+  },
+  "Verkehrsmittel|content": {
+   "de": "das Verkehrsmittel",
+   "en": "means of transport",
+   "type": "noun"
+  },
+  "Verkehrstote|content": {
+   "de": "der Verkehrstote",
+   "en": "traffic fatality",
+   "type": "noun"
+  },
+  "Verkehrsunfall|content": {
+   "de": "der Verkehrsunfall",
+   "en": "traffic accident",
+   "type": "noun"
+  },
+  "verkleiden|content": {
+   "de": "verkleiden",
+   "en": "dress up",
+   "type": "verb"
+  },
+  "verletzen|content": {
+   "de": "verletzen",
+   "en": "injure; violate",
+   "type": "verb"
+  },
+  "verlängern|content": {
+   "de": "verlängern",
+   "en": "extend",
+   "type": "verb"
+  },
+  "Vernichtung|content": {
+   "de": "die Vernichtung",
+   "en": "destruction; annihilation",
+   "type": "noun"
+  },
+  "Vernichtungslager|content": {
+   "de": "das Vernichtungslager",
+   "en": "extermination camp",
+   "type": "noun"
+  },
+  "Verpflichtung|content": {
+   "de": "die Verpflichtung",
+   "en": "obligation",
+   "type": "noun"
+  },
+  "Versicherung|content": {
+   "de": "die Versicherung",
+   "en": "insurance",
+   "type": "noun"
+  },
+  "Versicherungspflicht|content": {
+   "de": "die Versicherungspflicht",
+   "en": "compulsory insurance",
+   "type": "noun"
+  },
+  "verstecken|content": {
+   "de": "verstecken",
+   "en": "to hide",
+   "type": "verb"
+  },
+  "verstehen|content": {
+   "de": "verstehen",
+   "en": "to understand; to mean",
+   "type": "verb"
+  },
+  "verstoßen|content": {
+   "de": "verstoßen",
+   "en": "to violate",
+   "type": "verb"
+  },
+  "Verteidigungsgemeinschaft|content": {
+   "de": "die Verteidigungsgemeinschaft",
+   "en": "defense community",
+   "type": "noun"
+  },
+  "Verteidigungspolitik|content": {
+   "de": "die Verteidigungspolitik",
+   "en": "defense policy",
+   "type": "noun"
+  },
+  "verteilen|content": {
+   "de": "verteilen",
+   "en": "to distribute",
+   "type": "verb"
+  },
+  "verurteilt|content": {
+   "de": "verurteilen",
+   "en": "to convict",
+   "type": "verb"
+  },
+  "Verwaltung|content": {
+   "de": "die Verwaltung",
+   "en": "administration",
+   "type": "noun"
+  },
+  "Verwaltungsaufbau|content": {
+   "de": "der Verwaltungsaufbau",
+   "en": "administrative structure",
+   "type": "noun"
+  },
+  "Verwaltungsgericht|content": {
+   "de": "das Verwaltungsgericht",
+   "en": "administrative court",
+   "type": "noun"
+  },
+  "verwandte|content": {
+   "de": "die Verwandten",
+   "en": "relatives",
+   "type": "noun"
+  },
+  "vielleicht|content": {
+   "de": "vielleicht",
+   "en": "perhaps",
+   "type": "adverb"
+  },
+  "Vietnamkrieg|content": {
+   "de": "der Vietnamkrieg",
+   "en": "Vietnam War",
+   "type": "noun"
+  },
+  "Volksaufstand|content": {
+   "de": "der Volksaufstand",
+   "en": "popular uprising",
+   "type": "noun"
+  },
+  "Volksbildung|content": {
+   "de": "die Volksbildung",
+   "en": "public education",
+   "type": "noun"
+  },
+  "Volksgesetz|content": {
+   "de": "das Volksgesetz",
+   "en": "popular law",
+   "type": "noun"
+  },
+  "Volkshochschule|content": {
+   "de": "die Volkshochschule",
+   "en": "adult education center",
+   "type": "noun"
+  },
+  "Volkskammer|content": {
+   "de": "die Volkskammer",
+   "en": "People's Chamber",
+   "type": "noun"
+  },
+  "voll|content": {
+   "de": "voll",
+   "en": "full",
+   "type": "adjective"
+  },
+  "vollziehend|content": {
+   "de": "vollziehend",
+   "en": "executive",
+   "type": "adjective"
+  },
+  "voneinander|content": {
+   "de": "voneinander",
+   "en": "from each other",
+   "type": "adverb"
+  },
+  "Vorhang|content": {
+   "de": "der Vorhang",
+   "en": "curtain",
+   "type": "noun"
+  },
+  "vorher|content": {
+   "de": "vorher",
+   "en": "beforehand",
+   "type": "adverb"
+  },
+  "vorliegen|content": {
+   "de": "vorliegen",
+   "en": "to exist; to be present",
+   "type": "verb"
+  },
+  "vorschlägen|content": {
+   "de": "vorschlagen",
+   "en": "to propose",
+   "type": "verb"
+  },
+  "vorsitzend|content": {
+   "de": "der/die Vorsitzende",
+   "en": "chairperson",
+   "type": "noun"
+  },
+  "Waffenbesitz|content": {
+   "de": "der Waffenbesitz",
+   "en": "gun ownership",
+   "type": "noun"
+  },
+  "Wahlerlaubnis|content": {
+   "de": "die Wahlerlaubnis",
+   "en": "voting permission",
+   "type": "noun"
+  },
+  "Wahlfreiheit|content": {
+   "de": "die Wahlfreiheit",
+   "en": "freedom of choice",
+   "type": "noun"
+  },
+  "Wahlgesetz|content": {
+   "de": "das Wahlgesetz",
+   "en": "electoral law",
+   "type": "noun"
+  },
+  "Wahlkabine|content": {
+   "de": "die Wahlkabine",
+   "en": "voting booth",
+   "type": "noun"
+  },
+  "Wahlkampagne|content": {
+   "de": "die Wahlkampagne",
+   "en": "election campaign",
+   "type": "noun"
+  },
+  "Wahllokal|content": {
+   "de": "das Wahllokal",
+   "en": "polling station",
+   "type": "noun"
+  },
+  "Wahlpflicht|content": {
+   "de": "die Wahlpflicht",
+   "en": "compulsory voting",
+   "type": "noun"
+  },
+  "Wahlsystem|content": {
+   "de": "das Wahlsystem",
+   "en": "electoral system",
+   "type": "noun"
+  },
+  "Wahltag|content": {
+   "de": "der Wahltag",
+   "en": "election day",
+   "type": "noun"
+  },
+  "Wahlverfahren|content": {
+   "de": "das Wahlverfahren",
+   "en": "election procedure",
+   "type": "noun"
+  },
+  "Wappentier|content": {
+   "de": "das Wappentier",
+   "en": "heraldic animal",
+   "type": "noun"
+  },
+  "warten|content": {
+   "de": "warten",
+   "en": "to wait",
+   "type": "verb"
+  },
+  "Wechsel|content": {
+   "de": "der Wechsel",
+   "en": "change",
+   "type": "noun"
+  },
+  "weder|function": {
+   "de": "weder",
+   "en": "neither",
+   "type": "function"
+  },
+  "wegen|function": {
+   "de": "wegen",
+   "en": "because of",
+   "type": "function"
+  },
+  "wegwerfen|content": {
+   "de": "wegwerfen",
+   "en": "to throw away",
+   "type": "verb"
+  },
+  "wehren|content": {
+   "de": "sich wehren",
+   "en": "to defend oneself",
+   "type": "verb"
+  },
+  "Wehrmacht|content": {
+   "de": "die Wehrmacht",
+   "en": "Wehrmacht",
+   "type": "noun"
+  },
+  "weiterarbeiten|content": {
+   "de": "weiterarbeiten",
+   "en": "to continue working",
+   "type": "verb"
+  },
+  "Weiterbildung|content": {
+   "de": "die Weiterbildung",
+   "en": "further education",
+   "type": "noun"
+  },
+  "wen|content": {
+   "de": "wer",
+   "en": "whom",
+   "type": "function"
+  },
+  "Wende|content": {
+   "de": "die Wende",
+   "en": "turning point (1989)",
+   "type": "noun"
+  },
+  "wenden|content": {
+   "de": "wenden",
+   "en": "to turn; to contact",
+   "type": "verb"
+  },
+  "weniger|function": {
+   "de": "wenig",
+   "en": "less; fewer",
+   "type": "function"
+  },
+  "Westen|content": {
+   "de": "der Westen",
+   "en": "west",
+   "type": "noun"
+  },
+  "westlich|content": {
+   "de": "westlich",
+   "en": "western",
+   "type": "adjective"
+  },
+  "Westmächten|content": {
+   "de": "die Westmächte",
+   "en": "western powers",
+   "type": "noun"
+  },
+  "Weststaat|content": {
+   "de": "der Weststaat",
+   "en": "western state",
+   "type": "noun"
+  },
+  "Wettbewerb|content": {
+   "de": "der Wettbewerb",
+   "en": "competition",
+   "type": "noun"
+  },
+  "widersprechen|content": {
+   "de": "widersprechen",
+   "en": "to contradict; to object",
+   "type": "verb"
+  },
+  "Widerspruch|content": {
+   "de": "der Widerspruch",
+   "en": "objection; contradiction",
+   "type": "noun"
+  },
+  "Wille|content": {
+   "de": "der Wille",
+   "en": "will",
+   "type": "noun"
+  },
+  "willkürlich|content": {
+   "de": "willkürlich",
+   "en": "arbitrary",
+   "type": "adjective"
+  },
+  "wir|function": {
+   "de": "wir",
+   "en": "we",
+   "type": "function"
+  },
+  "wirken|content": {
+   "de": "wirken",
+   "en": "to participate; to work",
+   "type": "verb"
+  },
+  "Wirtschaftsform|content": {
+   "de": "die Wirtschaftsform",
+   "en": "economic system",
+   "type": "noun"
+  },
+  "Wirtschaftspolitik|content": {
+   "de": "die Wirtschaftspolitik",
+   "en": "economic policy",
+   "type": "noun"
+  },
+  "Wirtschaftssystem|content": {
+   "de": "das Wirtschaftssystem",
+   "en": "economic system",
+   "type": "noun"
+  },
+  "Wirtschaftswunder|content": {
+   "de": "das Wirtschaftswunder",
+   "en": "economic miracle",
+   "type": "noun"
+  },
+  "wissen|content": {
+   "de": "wissen",
+   "en": "to know",
+   "type": "verb"
+  },
+  "wo|function": {
+   "de": "wo",
+   "en": "where",
+   "type": "function"
+  },
+  "Woche|content": {
+   "de": "die Woche",
+   "en": "week",
+   "type": "noun"
+  },
+  "Wochenbett|content": {
+   "de": "das Wochenbett",
+   "en": "postpartum period",
+   "type": "noun"
+  },
+  "wofür|content": {
+   "de": "wofür",
+   "en": "what for",
+   "type": "function"
+  },
+  "wohin|content": {
+   "de": "wohin",
+   "en": "where to",
+   "type": "function"
+  },
+  "wohnen|content": {
+   "de": "wohnen",
+   "en": "to live; to reside",
+   "type": "verb"
+  },
+  "Wohngeld|content": {
+   "de": "das Wohngeld",
+   "en": "housing benefit",
+   "type": "noun"
+  },
+  "womit|function": {
+   "de": "womit",
+   "en": "with what",
+   "type": "function"
+  },
+  "womit|content": {
+   "de": "womit",
+   "en": "with what",
+   "type": "function"
+  },
+  "woraus|content": {
+   "de": "woraus",
+   "en": "from what",
+   "type": "function"
+  },
+  "Wort|content": {
+   "de": "das Wort",
+   "en": "word",
+   "type": "noun"
+  },
+  "Wählermehrheit|content": {
+   "de": "die Wählermehrheit",
+   "en": "majority of voters",
+   "type": "noun"
+  },
+  "Währung|content": {
+   "de": "die Währung",
+   "en": "currency",
+   "type": "noun"
+  },
+  "Würde|content": {
+   "de": "die Würde",
+   "en": "dignity",
+   "type": "noun"
+  },
+  "Zeitraum|content": {
+   "de": "der Zeitraum",
+   "en": "period of time",
+   "type": "noun"
+  },
+  "Zeitung|content": {
+   "de": "die Zeitung",
+   "en": "newspaper",
+   "type": "noun"
+  },
+  "Zensuswahlrecht|content": {
+   "de": "das Zensuswahlrecht",
+   "en": "census suffrage",
+   "type": "noun"
+  },
+  "Zentralstaat|content": {
+   "de": "der Zentralstaat",
+   "en": "centralized state",
+   "type": "noun"
+  },
+  "ziehen|content": {
+   "de": "ziehen",
+   "en": "to pull; einziehen: to enter (parliament)",
+   "type": "verb"
+  },
+  "Zionistenkongreß|content": {
+   "de": "der Zionistenkongress",
+   "en": "Zionist Congress",
+   "type": "noun"
+  },
+  "Zirkel|content": {
+   "de": "der Zirkel",
+   "en": "compass; circle",
+   "type": "noun"
+  },
+  "zuerst|content": {
+   "de": "zuerst",
+   "en": "first",
+   "type": "adverb"
+  },
+  "Zukunft|content": {
+   "de": "die Zukunft",
+   "en": "future",
+   "type": "noun"
+  },
+  "Zulassungsgrenze|content": {
+   "de": "die Zulassungsgrenze",
+   "en": "admission threshold",
+   "type": "noun"
+  },
+  "zurzeit|content": {
+   "de": "zurzeit",
+   "en": "currently",
+   "type": "adverb"
+  },
+  "zurück|content": {
+   "de": "zurück",
+   "en": "back",
+   "type": "adverb"
+  },
+  "zurückholen|content": {
+   "de": "zurückholen",
+   "en": "to bring back",
+   "type": "verb"
+  },
+  "zusammenleben|content": {
+   "de": "zusammenleben",
+   "en": "to live together",
+   "type": "verb"
+  },
+  "Zusammenschluss|content": {
+   "de": "der Zusammenschluss",
+   "en": "merger, union",
+   "type": "noun"
+  },
+  "zuvor|content": {
+   "de": "zuvor",
+   "en": "before, beforehand",
+   "type": "adverb"
+  },
+  "Zwangsarbeit|content": {
+   "de": "die Zwangsarbeit",
+   "en": "forced labor",
+   "type": "noun"
+  },
+  "zweijähriger|content": {
+   "de": "zweijährig",
+   "en": "two-year-old",
+   "type": "adjective"
+  },
+  "zwischen|function": {
+   "de": "zwischen",
+   "en": "between",
+   "type": "function"
+  },
+  "Ährenkranz|content": {
+   "de": "der Ährenkranz",
+   "en": "wreath of ears of corn",
+   "type": "noun"
+  },
+  "Ältestenrat|content": {
+   "de": "der Ältestenrat",
+   "en": "council of elders",
+   "type": "noun"
+  },
+  "Öffentlichkeit|content": {
+   "de": "die Öffentlichkeit",
+   "en": "public",
+   "type": "noun"
+  },
+  "östlich|content": {
+   "de": "östlich",
+   "en": "eastern",
+   "type": "adjective"
+  },
+  "üben|content": {
+   "de": "üben",
+   "en": "exercise, practice",
+   "type": "verb"
+  },
+  "überall|content": {
+   "de": "überall",
+   "en": "everywhere",
+   "type": "adverb"
+  },
+  "Überfall|content": {
+   "de": "der Überfall",
+   "en": "assault, attack",
+   "type": "noun"
+  },
+  "übernehmen|content": {
+   "de": "übernehmen",
+   "en": "take on, assume",
+   "type": "verb"
+  },
+  "übertreten|content": {
+   "de": "übertreten",
+   "en": "convert, cross over",
+   "type": "verb"
+  },
+  "muss|content": {
+   "de": "müssen",
+   "en": "must; have to",
+   "type": "verb"
+  },
+  "alle|function": {
+   "de": "alle",
+   "en": "all; everyone",
+   "type": "function"
+  },
+  "deutsche|content": {
+   "de": "der/die Deutsche",
+   "en": "German person",
+   "type": "noun"
+  },
+  "mussn|content": {
+   "de": "müssen",
+   "en": "must; have to",
+   "type": "verb"
+  },
+  "viel|function": {
+   "de": "viel",
+   "en": "much; a lot",
+   "type": "function"
+  },
+  "welches|function": {
+   "de": "welcher/welche/welches",
+   "en": "which",
+   "type": "function"
+  },
+  "wen|function": {
+   "de": "wer",
+   "en": "whom",
+   "type": "function"
+  },
+  "benachteiligt|content": {
+   "de": "benachteiligt",
+   "en": "disadvantaged",
+   "type": "adjective"
+  },
+  "Besatzungsmacht|content": {
+   "de": "die Besatzungsmacht",
+   "en": "occupying power",
+   "type": "noun"
+  },
+  "bewerben|content": {
+   "de": "bewerben",
+   "en": "apply",
+   "type": "verb"
+  },
+  "christlicher|content": {
+   "de": "christlich",
+   "en": "Christian",
+   "type": "adjective"
+  },
+  "deutsches|content": {
+   "de": "deutsch",
+   "en": "German",
+   "type": "adjective"
+  },
+  "erwachsen|content": {
+   "de": "erwachsen",
+   "en": "adult",
+   "type": "adjective"
+  },
+  "lässt|content": {
+   "de": "lassen",
+   "en": "let; allow; have done",
+   "type": "verb"
+  },
+  "mussen|content": {
+   "de": "müssen",
+   "en": "must; have to",
+   "type": "verb"
+  },
+  "schließen|content": {
+   "de": "schließen",
+   "en": "close; shut",
+   "type": "verb"
+  },
+  "welchenr|function": {
+   "de": "welcher/welche/welches",
+   "en": "which",
+   "type": "function"
+  },
+  "wem|function": {
+   "de": "wer",
+   "en": "whom",
+   "type": "function"
+  },
+  "unterster|content": {
+   "de": "unterst",
+   "en": "lowest",
+   "type": "adjective"
+  }
+ }
+}

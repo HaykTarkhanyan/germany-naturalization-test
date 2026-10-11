@@ -1,0 +1,41 @@
+{
+  "description": "Where the correct answer sits inside an exam picture, in pixels of data/images/<id>.png (x0, y0, x1, y1). The video's exam card draws a green box there. Set by hand from the image; only questions whose answer is a picture or a number in the picture need one.",
+  "marks": {
+    "301": [
+      133,
+      52,
+      252,
+      221
+    ],
+    "308": [
+      334,
+      204,
+      386,
+      252
+    ],
+    "130": [
+      52,
+      76,
+      322,
+      292
+    ],
+    "209": [
+      203,
+      230,
+      352,
+      374
+    ],
+    "21": [
+      76,
+      60,
+      214,
+      212
+    ],
+    "226": [
+      300,
+      64,
+      478,
+      160
+    ]
+  }
+}

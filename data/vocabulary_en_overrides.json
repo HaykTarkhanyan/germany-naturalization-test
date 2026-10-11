@@ -1,0 +1,105 @@
+{
+ "description": "Hand corrections for data/vocabulary_en.json, applied on top of the machine translation by scripts/translate_vocabulary.py every run. Keys are data/vocabulary.json keys (lemma|function or lemma|content); an unknown key fails the run. From the review of 2026-10-11 and the schlagen fix (DECISIONS.md #18).",
+ "words": {
+  "schlagen|content": {
+   "de": "schlagen",
+   "en": "to hit (vorschlagen: to propose)",
+   "type": "verb"
+  },
+  "nächster|content": {
+   "de": "nächster",
+   "en": "nearest, next",
+   "type": "adjective"
+  },
+  "rechter|content": {
+   "de": "rechte (rechts)",
+   "en": "right-wing",
+   "type": "adjective"
+  },
+  "selber|content": {
+   "de": "selber",
+   "en": "oneself, -self",
+   "type": "adverb"
+  },
+  "selbe|content": {
+   "de": "derselbe, dieselbe, dasselbe",
+   "en": "the same",
+   "type": "adjective"
+  },
+  "richten|content": {
+   "de": "sich richten nach",
+   "en": "to depend on, follow",
+   "type": "verb"
+  },
+  "ziehen|content": {
+   "de": "ziehen",
+   "en": "to pull; einziehen: to enter (parliament)",
+   "type": "verb"
+  },
+  "weiter|content": {
+   "de": "weiter",
+   "en": "further, on (weitergeben: to pass on)",
+   "type": "adverb"
+  },
+  "geben|content": {
+   "de": "geben",
+   "en": "to give; es gibt: there is",
+   "type": "verb"
+  },
+  "sein|content": {
+   "de": "sein",
+   "en": "to be",
+   "type": "verb"
+  },
+  "seine|function": {
+   "de": "sein (seine, seinem, seinen)",
+   "en": "his, its",
+   "type": "function"
+  },
+  "sich|function": {
+   "de": "sich",
+   "en": "oneself, themselves (reflexive)",
+   "type": "function"
+  },
+  "sie|function": {
+   "de": "sie",
+   "en": "she, they; Sie: you (formal)",
+   "type": "function"
+  },
+  "ihr|function": {
+   "de": "ihr",
+   "en": "her, their; Ihr: your (formal)",
+   "type": "function"
+  },
+  "meister|function": {
+   "de": "die meisten",
+   "en": "most",
+   "type": "function"
+  },
+  "Uhr|content": {
+   "de": "die Uhr",
+   "en": "o'clock; clock",
+   "type": "noun"
+  },
+  "Wende|content": {
+   "de": "die Wende",
+   "en": "turning point (1989)",
+   "type": "noun"
+  },
+  "strafmündig|content": {
+   "de": "strafmündig",
+   "en": "criminally liable",
+   "type": "adjective"
+  },
+  "trainieren|content": {
+   "de": "trainieren",
+   "en": "to train",
+   "type": "verb"
+  },
+  "der|function": {
+   "de": "der, die, das",
+   "en": "the (definite article)",
+   "type": "function"
+  }
+ }
+}

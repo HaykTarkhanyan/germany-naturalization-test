@@ -679,3 +679,48 @@ tr.total td {
     display: inline;
   }
 }
+
+/* vocabulary */
+.word-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+
+.word-controls input[type='search'],
+.word-controls select {
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+
+.word-controls input[type='search'] {
+  flex: 1 1 220px;
+}
+
+.word-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+}
+
+.article {
+  font-weight: 600;
+}
+
+.article.der {
+  color: #2f6fd6;
+}
+
+.article.die {
+  color: #c63a3a;
+}
+
+.article.das {
+  color: #2d8a4e;
+}

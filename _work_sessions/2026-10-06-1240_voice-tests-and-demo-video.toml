@@ -1,0 +1,33 @@
+title = "Gemini voice tests and the first demo video (01_bayern, RU + EN)"
+date = "2026-10-06"
+time = "12:40"
+areas = ["videos/", ".gitignore", ".env (gitignored)", "_learnings/", "DECISIONS.md"]
+
+done = [
+  "Google key: GEMINI_API_KEY + Vertex settings copied from ~/OneDrive/Desktop/kargin_project/.env into this repo's .env; .env gitignored first (it was not), values never printed",
+  "Gemini TTS models available to the key: 2.5 flash/pro preview, 3.1 flash preview, 3.8 flash, 3.8 flash lite; used gemini-3.8-flash-tts (google-genai 2.28.0)",
+  "Mistake found by Hayk: my style instruction was prefixed to the text and spoken aloud in 8 samples and the first demo (24 calls, $0.107 at paid rates); my 'the voice is slow' conclusion was wrong because of it. Old files moved to old_* folders, ledger entries flagged",
+  "Fix: style via speech_metadata annotation (Interactions API); system_instruction is rejected (400). Every clip now transcribed with gemini-3.1-flash-lite and compared with the script; the run fails on extra or missing words",
+  "Hayk picked Charon, calm style; asked for no web photos and English translations on the cards (DECISIONS #16, #15 updated)",
+  "Demo videos rendered (static frames, Pillow + ffmpeg, 2 threads): 01_bayern.ru.mp4 2:24 2.9 MB, 01_bayern.en.mp4 2:16 2.7 MB; all 16 scenes pass the transcription check (82-100% word match, mismatches are digits and German spellings)",
+  "Listening page videos/build/index.html (sample grid + both videos)",
+  "PLAN.md, learnings (WAV not PCM; instructions read aloud) and DECISIONS updated",
+  "Account check: the AI Studio key belongs to another Cloud project (found via an API error's consumer field); the trial credit is on the metric account's Vertex project and cannot pay for AI Studio keys (Google free-trial page)",
+  "Switched TTS + transcription to Vertex with the metric account (Hayk): interactions API unsupported there, Part.speech_metadata style works (RU calm 15.0 s, transcripts 100%); helper and renderer switched; smoke test passed; DECISIONS #17",
+]
+pending = [
+  "Hayk to watch the demos and give notes",
+  "Renderer and helpers live in the session scratchpad (demo_render.py, tts_check.py): move into the repo once the look is approved (D2 renderer choice)",
+  "Commit of the 2026-10-05 second round + today's docs (scripts, PLAN, DECISIONS #15-#16, learnings, .gitignore) not done yet",
+]
+next = [
+  "Apply Hayk's notes to 01_bayern, then render 02-06 one at a time",
+  "Check whether 'Landeszentrale für politische Bildung' is pronounced in German in the English recap (transcript heard 'for Political')",
+]
+files = [
+  ".gitignore", "videos/PLAN.md", "videos/image_marks.json", "DECISIONS.md",
+  "_learnings/2026-10-06-1250_gemini-tts-returns-wav-not-pcm.md", "_learnings/2026-10-06-1345_gemini-tts-reads-instructions-aloud.md", "_learnings/2026-10-06-1435_gemini-tts-on-vertex-and-trial-credit.md",
+  "videos/build/ (gitignored): index.html, voice_test/, demo/, media/, costs.json",
+]
+commits = []
+notes = "API spend this session: 79 ledger entries, $0.208 at paid rates (AI Studio part probably $0 on the free tier; the Vertex part, $0.011, bills the trial credit); $0.107 of it on the spoken-instruction bug. Commons photos were fetched before Hayk said they are not needed; one search returned a 1932 NSDAP poster for 'Flag of Bavaria', deleted immediately. Never use search results unseen."
