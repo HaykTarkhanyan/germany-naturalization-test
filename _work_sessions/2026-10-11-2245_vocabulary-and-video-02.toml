@@ -15,14 +15,18 @@ done = [
   "Vocabulary review fixes: word type from the translator, duplicate rows merged (stable via data/vocabulary_raw.json), hand lemma fixes (führen, was, mich, seine, erster, unterste), feminine merge rules, overrides file (20), search ignores the article, tests for duplicates and types; 1,392 words, 864 core; re-translation $0.093",
   "TTS language drift: Russian scenes came back Ukrainian (04 sc1 once, 08 sc5 three times); language_code 'ru-RU' pins Russian ('ru' does not); renderer retries up to 3 times with every failed clip kept; learning file",
   "Videos 03-06 rendered RU + EN (04 RU after a retry); batch for 07-14 + frame re-render of 01-06 running",
+  "First 07-14 batch was stopped by Claude Code (machine low on memory: 0.8 GB of 15.6 GB free, Chrome/VS Code/Claude using most of it); restarted on request, all 28 videos rendered (2:00-5:35 each)",
+  "language_code ru-RU tried against the Ukrainian drift: one good probe, but the full render still drifted 4 times (08 sc5 twice, 08 sc6, 13 sc6); retries caught all; learning corrected",
+  "Recap scenes of 10 and 14 showed only subtitles (term card too long and skipped); renderer now shrinks the card to fit and fails if it cannot; 10 and 14 re-rendered from cached audio",
+  "Subtitles cut off in the recaps of 07, 09, 10, 13, 14 (one long sentence with semicolons wrapped to 4-7 lines, the box shows 3): renderer now also splits at ';'; all scripts checked, no chunk over 3 lines; those 10 videos re-rendered from cached audio",
+  "Videos committed to git in videos/mp4/ (DECISIONS #20); DEFERRED_TODO: renderer into the repo, 01-06 frame re-render, pronunciation hints, known-word tick",
 ]
 pending = [
-  "Commit and push (vocabulary, Words page, video scripts and docs since 2026-10-05, .gitignore) - waiting for Hayk",
-  "Re-render 08 RU with ru-RU after the batch",
-  "Renderer + helpers still in the session scratchpad; move into the repo (videos/pipeline/) once Hayk is happy with the look",
+  "Renderer + helpers still in the session scratchpad; move into the repo (videos/pipeline/) once Hayk is happy with the look (DEFERRED_TODO.md)",
+  "Videos 01-06 rendered before the card grid; frame re-render from cached audio (DEFERRED_TODO.md)",
 ]
 next = [
-  "Videos 03-06 (scripted), then decide whether to script the other 18 topics",
+  "Hayk watches the videos; fix whatever looks or sounds wrong, then move the renderer into the repo",
   "Words page: maybe a 'known' tick per word, if Hayk wants to track vocabulary",
 ]
 files = [
@@ -30,5 +34,5 @@ files = [
   "app/src/lib/vocabulary.ts", "app/src/lib/vocabulary.test.ts", "app/src/pages/Words.tsx", "app/src/App.tsx", "app/src/styles.css",
   "videos/scripts/02_mauer_einheit.md", "videos/scripts/07-14 (new)", "videos/image_marks.json", "videos/PLAN.md", "data/vocabulary_raw.json", "data/vocabulary_en_overrides.json", "data/lessons.json (Q208)", "_learnings/2026-10-12-0010_tts-language-drift.md", "README.md", "DECISIONS.md", "results/vocabulary_de.json (first exploratory count)",
 ]
-commits = []
-notes = "API spend 2026-10-11: vocabulary translation $0.073, video 02 about $0.06 (both via Vertex, trial credit). Session total since 2026-10-05 about $0.35 at paid rates."
+commits = ["5936383 vocabulary page, videos 01-09 (16 files), scripts, docs", "follow-up: remaining 12 videos, bookkeeping"]
+notes = "API spend (ledger videos/build/costs.json, paid-tier rates): since 2026-10-11 $1.35; all-time $1.56, of which $1.36 on Vertex (trial credit), videos $1.32, vocabulary $0.17, $0.11 spoiled by the spoken-instruction bug."

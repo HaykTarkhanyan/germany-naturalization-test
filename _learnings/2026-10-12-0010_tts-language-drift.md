@@ -9,15 +9,18 @@
   голоси, і важніше другий. 11 питань іспиту..."), overlap 39%. The same text came out as correct Russian on the
   next generation.
 - Video 08, scene 5 ("Выборы в Германии свободные, равные и тайные: frei, gleich, geheim ..."): Ukrainian three
-  attempts in a row ("Вибори в Німеччині — вільні, рівні і таємні").
+  attempts in a row ("Вибори в Німеччині - вільні, рівні і таємні").
 
 **Cause:** Gemini 3.8 Flash TTS (Vertex, voice Charon, `speech_metadata` style) picks the spoken language per
 generation when the request does not set `language_code` (ours did not). German words inside Russian text make a switch more likely, and plain
-Russian can still drift (twice in about 200 scenes, one of them every time).
+Russian can still drift: 7 failed attempts in about 200 Russian scenes, all caught and regenerated.
 
-**What pins the language (tested on that scene, 2026-10-12):** `SpeechConfig(language_code="ru")` still gave
-Ukrainian (overlap 22%); `language_code="ru-RU"` gave Russian (overlap 96%). The transcriber was the same in both
-runs, so the voice really drifted. Russian clips now always use "ru-RU"; English has not drifted and stays unpinned.
+**`language_code` is not a reliable fix (tested 2026-10-12):** on 08 scene 5, `SpeechConfig(language_code="ru")`
+still gave Ukrainian (overlap 22%) and `"ru-RU"` gave Russian (96%) in a single try, so I pinned "ru-RU". But the
+next full render with "ru-RU" still produced Ukrainian twice on 08 scene 5 and once on 08 scene 6 before a retry
+passed. One good sample proved nothing; "ru-RU" stays set (it does no harm), but the transcription check with
+retries is what actually catches the drift. The transcriber was the same model in all runs, so the voice really
+drifts.
 
 **Fix:**
 - Every clip is transcribed (`gemini-3.1-flash-lite`) and compared with the script; Russian is scored on Cyrillic

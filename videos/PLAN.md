@@ -1,8 +1,9 @@
 # Explainer videos (Russian and English) - plan
 
-Status 2026-10-05: plan and six pilot scripts written, each with a Russian and an English voice track and exam
-cards. Nothing is installed or rendered yet; the technology choices below are open for Hayk to make (see
-"Decisions needed").
+Status 2026-10-12: all 24 topics scripted as 14 videos, rendered in Russian and English (28 MP4s in
+`videos/mp4/`, committed: DECISIONS #20). Voice: Gemini 3.8 Flash TTS, Charon, calm style, on Vertex (DECISIONS
+#16-#17); every clip checked by transcription and regenerated on a mismatch. The renderer still lives outside the
+repo (DEFERRED_TODO.md). The rest of this file is the plan as it was decided step by step.
 
 Contents: [Goal](#goal) · [Format](#format) · [Two languages](#two-languages) · [Exam cards](#exam-cards) ·
 [Which topics first](#which-topics-first) · [Scripts](#scripts) · [Pipeline](#pipeline) ·
