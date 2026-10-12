@@ -7,6 +7,7 @@ import { Learn, LessonPage } from './pages/Learn.tsx'
 import { Practice } from './pages/Practice.tsx'
 import { ProgressPage } from './pages/Progress.tsx'
 import { Topics } from './pages/Topics.tsx'
+import { VideoTextPage } from './pages/VideoText.tsx'
 import { Words } from './pages/Words.tsx'
 
 const NAV: [string, string][] = [
@@ -31,7 +32,7 @@ export function App() {
         </a>
         <nav>
           {NAV.map(([key, label]) => (
-            <a key={key} href={link(...(key ? [key] : []))} className={page === key || (key === 'topics' && page === 'practice') ? 'active' : ''}>
+            <a key={key} href={link(...(key ? [key] : []))} className={page === key || (key === 'topics' && page === 'practice') || (key === 'learn' && page === 'read') ? 'active' : ''}>
               {label}
             </a>
           ))}
@@ -57,6 +58,8 @@ function Page({ route }: { route: string[] }) {
       return <Home />
     case 'learn':
       return route[1] ? <LessonPage key={route[1]} topicKey={route[1]} /> : <Learn />
+    case 'read':
+      return <VideoTextPage key={route[1] ?? ''} slug={route[1] ?? ''} />
     case 'words':
       return <Words />
     case 'topics':

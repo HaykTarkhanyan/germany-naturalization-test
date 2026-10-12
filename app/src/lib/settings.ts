@@ -3,9 +3,10 @@ import { useSyncExternalStore } from 'react'
 import { z } from 'zod'
 
 const KEY = 'einbuergerungstest.settings.v1'
-const SettingsSchema = z.strictObject({ showEnglish: z.boolean() })
+// videoLang has a default so settings saved before it existed still load.
+const SettingsSchema = z.strictObject({ showEnglish: z.boolean(), videoLang: z.enum(['ru', 'en']).default('ru') })
 export type Settings = z.infer<typeof SettingsSchema>
-const DEFAULTS: Settings = { showEnglish: true }
+const DEFAULTS: Settings = { showEnglish: true, videoLang: 'ru' }
 
 let current: Settings | null = null
 const listeners = new Set<() => void>()

@@ -7,6 +7,8 @@ import { defineConfig } from 'vite'
 const appDir = path.dirname(fileURLToPath(import.meta.url))
 // The questions, topics and images live in ../data (built by scripts/build_dataset.py), outside the Vite root.
 const dataDir = path.resolve(appDir, '..', 'data')
+// The video texts are read from the video scripts (src/lib/videoTexts.ts).
+const scriptsDir = path.resolve(appDir, '..', 'videos', 'scripts')
 
 export default defineConfig(({ command, isPreview }) => ({
   // GitHub Pages serves the site at /germany-naturalization-test/; the dev server serves it at /.
@@ -15,7 +17,7 @@ export default defineConfig(({ command, isPreview }) => ({
   server: {
     port: 5174,
     strictPort: true,
-    fs: { allow: [appDir, dataDir] },
+    fs: { allow: [appDir, dataDir, scriptsDir] },
   },
   test: {
     include: ['src/**/*.test.ts'],

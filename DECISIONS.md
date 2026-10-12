@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 21. Video texts in the app are parsed from the video scripts at startup, not from a generated copy
+
+- **Date / status:** 2026-10-12, active (Hayk: "I'd like text versions of the video, so that I can read if I don't feel like watching")
+- **Why:** `videos/scripts/NN_*.md` is what the videos were voiced from, so reading it directly keeps text and video identical with no build step to forget. The app imports the scripts raw (`import.meta.glob` with `?raw`, like the images) and `src/lib/videoTexts.ts` parses them, failing loudly on any format slip: every scene needs Voice RU, Voice EN, On screen and Questions, the `{Q}` markers of both languages must match the Questions line, and all 310 questions must be answered exactly once across the 14 videos (until now only checked by a scratchpad script). Page `#/read/<slug>`, listed on the Learn page and linked from each lesson; Russian or English, remembered per device; answers shown as question + correct option (German, English under it), pictures included, common sense grey. Cost: the bundle grows from 901 kB to 1,029 kB (the scripts are 119 kB of text).
+- **Alternatives rejected:** a generated `data/video_texts.json` (a second copy that goes stale when a script is edited); a standalone HTML file next to the videos (not on the phone, not linked from the lessons); all four options per answer (as on the video cards: twice the reading, and the practice round shows them anyway).
+- **What would change this:** Scripts getting stage directions that should not be read (then strip them in the parser), or the bundle size starting to slow the first load on the phone (then load the texts lazily per video).
+
 ## 20. Rendered videos are committed to git (videos/mp4/), not kept local only
 
 - **Date / status:** 2026-10-12, active (Hayk: "commit the vids as well, I need them in git"); supersedes the "local first" pick of videos/PLAN.md D4

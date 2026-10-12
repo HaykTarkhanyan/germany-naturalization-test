@@ -12,6 +12,8 @@ import {
   type LessonStats,
 } from '../lib/lessons.ts'
 import { link } from '../lib/router.ts'
+import { videoForLesson, VIDEO_TEXTS } from '../lib/videoTexts.ts'
+import { VideoTextList } from './VideoText.tsx'
 
 const STATS = new Map(LESSONS.map((l) => [l.topic, lessonStats(l)]))
 const TOTAL_MINUTES = LESSONS.reduce((sum, l) => sum + readingMinutes(l), 0)
@@ -81,6 +83,9 @@ export function Learn() {
               {m.title}
             </button>
           ))}
+          <button type="button" className="linklike" onClick={() => scrollTo('learn-videos')}>
+            Video texts
+          </button>
         </div>
       </div>
       <details open id="learn-points" className="card module learn-module">
@@ -186,6 +191,17 @@ export function Learn() {
           </details>
         )
       })}
+      <details open id="learn-videos" className="card module learn-module">
+        <summary>
+          <span className="module-title">Video texts</span>{' '}
+          <span className="muted small">Russian or English · {VIDEO_TEXTS.length} videos</span>
+        </summary>
+        <p className="muted small">
+          What the explainer videos say, to read instead of watching: the narration and every exam question it answers, with the correct
+          answer. Longer than the lessons, with more explanation.
+        </p>
+        <VideoTextList />
+      </details>
     </>
   )
 }
@@ -212,6 +228,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
   const idx = TOPICS.indexOf(topic)
   const next = TOPICS[idx + 1] ?? null
   const module = MODULES.find((m) => m.key === topic.module)
+  const video = videoForLesson(topic.key)
   return (
     <>
       <div className="practice-head">
@@ -224,6 +241,12 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
         <h1>{topic.title}</h1>
         <p className="muted small">
           {topic.title_en} · {readingMinutes(lesson)} min read · covers all {s.questions} exam questions of this topic
+          {video && (
+            <>
+              {' · '}
+              <a href={link('read', video.slug)}>video text (RU/EN)</a>
+            </>
+          )}
         </p>
         <div className="stats">
           <div>
