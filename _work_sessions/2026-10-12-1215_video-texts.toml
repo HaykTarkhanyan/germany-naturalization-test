@@ -1,0 +1,30 @@
+title = "Video texts in the app, renderer moved into the repo, all videos re-rendered with merged subtitles"
+date = "2026-10-12"
+time = "12:15"
+areas = ["app/", "videos/", "README.md", "DECISIONS.md", "DEFERRED_TODO.md"]
+
+done = [
+  "Commit 2d87dd6 (pushed with 5936383): all 28 videos in videos/mp4/, recap subtitles of 07/09/10/13/14 no longer cut off (renderer splits at ';'), bookkeeping; Pages deploy green",
+  "Quick review (inline): README video row was stale (six pilot scripts, open tool choices) -> fixed; Vertex total in the 2026-10-11 log corrected to the ledger ($1.352); no secrets in tracked files; renderer only in the session temp folder -> backed up to videos/build/pipeline_backup/ (ignored)",
+  "Video texts (Hayk: text versions to read instead of watching): app/src/lib/videoTexts.ts parses videos/scripts/*.md at startup (fails on format slips, marker mismatches, any question not answered exactly once); page #/read/<slug> with Russian/English switch (remembered in settings, old settings still load), narration with Q tags, answer cards (question + correct option, English, pictures, common sense grey), practice link; listed on Learn, linked from each lesson (DECISIONS #21)",
+  "5 new tests (36 pass), production build passes, pages checked in headless Chrome at 1280 px and 512 px (Playwright plugin disconnected; headless Chrome cannot go below 512 px)",
+  "Commit 9fcda0f: video texts (Hayk: do all 3 then commit and push)",
+  "Renderer into the repo: videos/pipeline/render.py + tts.py (logging, pillow 12.3.0, google-genai 2.29.0 = the versions used), non_essential/check_scripts.py (now also checks subtitle and term card fit) and listen_page.py (+ README); verified pixel-identical to the old renderer on 12 RU and 13 EN (142/142 frames, same durations)",
+  "Silent stale-audio risk fixed: clips cached by file name only; now sN.txt holds the voiced text and a clip is reused only while it matches; audited all 226 cached clips against ledger char counts + transcripts (all match) before writing sN.txt; videos/build/demo moved to videos/build/render",
+  "Silent subtitle cut ([:3]) now fails the render; new audio only with --tts; ledger re-read before each write (10 clips missing from it, ~$0.05: two concurrent renders overwrote each other)",
+  "Subtitle merge: pieces < 40 chars joined to a neighbour up to 150 chars: 1,304 -> 827 subtitles, under 1.5 s on screen 172 -> 1; all 28 videos re-rendered from cached audio (also gives 01-06 the card grid) (DECISIONS #22)",
+]
+pending = [
+  "Voice cache (~250 MB, videos/build/render/) exists only on this laptop: back it up (DEFERRED_TODO.md)",
+]
+next = [
+  "Hayk reads a video text on the phone; adjust layout if needed",
+  "Watch a re-rendered video for the merged subtitles",
+]
+files = [
+  "app/src/lib/videoTexts.ts", "app/src/lib/videoTexts.test.ts", "app/src/pages/VideoText.tsx", "app/src/pages/Learn.tsx", "app/src/App.tsx",
+  "app/src/lib/settings.ts", "app/src/styles.css", "app/vite.config.ts", "README.md", "DECISIONS.md",
+  "videos/pipeline/render.py", "videos/pipeline/tts.py", "videos/pipeline/non_essential/", "videos/mp4/ (all 28)", "videos/PLAN.md", "DEFERRED_TODO.md",
+]
+commits = ["2d87dd6 remaining videos 07-14 and bookkeeping", "9fcda0f video texts", "follow-up: renderer in the repo, all videos re-rendered"]
+notes = "No API spend this session (all renders from cached audio). Ledger: $1.558 at paid-tier rates, $1.352 of it on Vertex trial credit; plus ~$0.05 for 10 clips the ledger lost, so ~$1.61 really spent. Git history grows by ~111 MB with this re-render (~240 MB of videos in total, DECISIONS #20 revisits at 500 MB)."

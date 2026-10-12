@@ -111,6 +111,10 @@ memorize question is left to the recap.
 
 ## Pipeline
 
+**As built (2026-10-12):** `videos/pipeline/render.py` (DECISIONS #22). Steps 1, 2, 4 and 6 below without word
+timings, `.srt` or a per-video JSON; no stock media (step 3 dropped on 2026-10-06), plain background, static frames.
+Cached voice in `videos/build/render/<video>.<lang>/`, output straight into `videos/mp4/`. The plan as written:
+
 All local, scripted, rerunnable; outputs in `videos/build/` (gitignored: audio, downloaded media, renders).
 
 1. **Parse** a script into scenes; validate it (the check above).

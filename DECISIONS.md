@@ -2,6 +2,13 @@
 
 Newest first.
 
+## 22. The video renderer lives in videos/pipeline/; voice clips are reused only for their exact text, new audio only with --tts
+
+- **Date / status:** 2026-10-12, active (Hayk: "do all 3": renderer into the repo, re-render 01-06, merge short subtitles)
+- **Why:** The renderer existed only in a session temp folder, so nothing in git could rebuild or fix a video. It is now `videos/pipeline/render.py` + `tts.py` with logging and the versions the renders actually ran with (pillow 12.3.0, google-genai 2.29.0). Checked before trusting it: 12 RU and 13 EN rendered with their old subtitle rules came out pixel-identical to the old renders (142 of 142 frames, same durations). Two silent failure modes are gone: (1) clips were cached by file name only, so an edited script line would have played the old audio under new subtitles; now each clip has `sN.txt` with the text it was voiced from and is reused only while that equals the scene's current text (the 226 existing clips got their `sN.txt` after checking the ledger's character counts and the saved transcripts against the current scripts: all matched); (2) subtitles longer than 3 lines were cut silently (`[:3]`, how the recap bug went unnoticed); now the render fails. New audio is made only with `--tts`, so a re-render never spends money unasked; without it the render stops and names the scenes and the cost. Subtitles: pieces under 40 characters are joined to a neighbour up to 150 characters; over all 28 videos that turns 1,304 subtitles into 827 and the ones on screen for under 1.5 s from 172 to 1 (shortest 0.96 s, was 0.36 s). The cost ledger is re-read before every write: two renders that each kept their own copy had overwritten each other's entries (10 clips, about $0.05 missing from the totals).
+- **Alternatives rejected:** committing the voice cache (~250 MB of WAV; re-voicing everything costs ~$1.30, so a backup copy is the cheaper insurance, DEFERRED_TODO.md); a hash as cache key (sN.txt is readable and shows what was said); joining subtitles up to 95 characters (the old split limit: still left 1-second cue lines); keeping the renderer in the scratchpad (lost when temp files are cleaned).
+- **What would change this:** Rendering on a second machine (the voice cache then needs a shared home, e.g. compressed audio as release assets) or on Linux/macOS (the Segoe UI font paths are Windows-only).
+
 ## 21. Video texts in the app are parsed from the video scripts at startup, not from a generated copy
 
 - **Date / status:** 2026-10-12, active (Hayk: "I'd like text versions of the video, so that I can read if I don't feel like watching")

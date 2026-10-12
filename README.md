@@ -8,7 +8,8 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
 **https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Read a 1-2 minute lesson per
 topic (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
-the topic is worth and which of its questions need memorizing vs. common sense), look up the catalog's ~1,400 German
+the topic is worth and which of its questions need memorizing vs. common sense; also the text of each explainer video,
+in Russian or English, with every exam answer it reveals), look up the catalog's ~1,400 German
 words (Words: dictionary form with der/die/das, English meaning, how often each appears), practice topic by topic (the
 24 topics of `data/topics.json`, with instant feedback), take real-format mock exams (30 general + 3 Bayern, 60 min,
 17 to pass), and see your pass chance today. Every question and answer shows its English translation under the
@@ -49,9 +50,10 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
 | `scripts/` | Dataset build (scraper + `build_dataset.py`), pattern analysis (`mine_patterns.py`, `build_pattern_report.py`), vocabulary (`build_vocabulary.py`, `translate_vocabulary.py`) |
+| `videos/pipeline/` | The video renderer: `render.py` (script -> MP4, voice cached per scene, new audio only with `--tts`), `tts.py` (Gemini TTS on Vertex + transcription check), `non_essential/` (script checker, local viewer page) |
 | `videos/mp4/` | The rendered explainer videos, Russian and English (`NN_topic.ru.mp4`, `.en.mp4`): exam cards with German + English, correct answer marked |
-| [`videos/PLAN.md`](videos/PLAN.md) | Plan for short explainer videos in Russian and English with on-screen exam cards (open tool choices, costs), and `videos/scripts/`: six pilot scripts |
-| `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json`, `data/lessons.json`, `data/translations_en.json`, `data/vocabulary*.json` and `data/images/` directly |
+| [`videos/PLAN.md`](videos/PLAN.md) | Plan and status of the explainer videos (voice, cards, costs), and `videos/scripts/`: the 14 scripts (Russian and English narration per scene, exam questions); the app shows them as video texts |
+| `app/` | The study app (Vite + React + TypeScript), reads `data/questions_bayern.json`, `data/topics.json`, `data/lessons.json`, `data/translations_en.json`, `data/vocabulary*.json`, `data/images/` and the video scripts in `videos/scripts/` directly |
 
 ## Where the answers come from (and why you can trust them)
 
