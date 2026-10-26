@@ -10,8 +10,13 @@ import { countStatuses, lastWrong, statusById } from '../lib/stats.ts'
 // Bayern first: each Bayern question is three times as likely to be on the sheet (3 of 10 vs 30 of 300).
 const STUDY_ORDER = [...TOPICS.filter((t) => t.module === 'bayern'), ...TOPICS.filter((t) => t.module !== 'bayern')]
 
+/** Calendar days in local time: an exam at 23:00 is "yesterday" the next morning, not "today". */
 function daysAgo(t: number): string {
-  const d = Math.floor((Date.now() - t) / 86_400_000)
+  const day = (ms: number) => {
+    const d = new Date(ms)
+    return Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()) / 86_400_000
+  }
+  const d = day(Date.now()) - day(t)
   return d <= 0 ? 'today' : d === 1 ? 'yesterday' : `${d} days ago`
 }
 

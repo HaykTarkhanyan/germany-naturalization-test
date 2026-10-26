@@ -100,6 +100,11 @@
    "de": "der, die, das",
    "en": "the (definite article)",
    "type": "function"
+  },
+  "Ministerpräsident|content": {
+   "de": "der Ministerpräsident",
+   "en": "Minister-President (head of a state government)",
+   "type": "noun"
   }
  }
 }

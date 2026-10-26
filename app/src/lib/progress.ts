@@ -115,12 +115,25 @@ export function useLoadError(): ProgressError | null {
   return useSyncExternalStore(subscribe, getLoadError)
 }
 
-/** Applies a change and saves it. A failed save (storage full, blocked) throws. */
+/** Applies a change and saves it. A failed save (storage full, blocked) throws. The change is applied to what is
+ * stored now, not to this page's copy: with two tabs open, saving the copy loaded earlier wiped the other tab's
+ * answers (measured: an answer from tab A was gone after tab B answered). */
 export function updateProgress(change: (p: Progress) => Progress): void {
-  const next = change(getProgress())
+  getProgress() // a load error stops here, before anything is written
+  const next = change(read())
   localStorage.setItem(STORAGE_KEY, JSON.stringify(next))
   current = next
   for (const l of listeners) l()
+}
+
+// Another tab saved: reload, so this tab shows its answers and builds on them.
+if (typeof window !== 'undefined') {
+  window.addEventListener('storage', (e) => {
+    if (e.key !== STORAGE_KEY && e.key !== null) return
+    current = null
+    loadError = null
+    for (const l of listeners) l()
+  })
 }
 
 /** Replaces everything, e.g. after an import or a reset (also clears a load error). */

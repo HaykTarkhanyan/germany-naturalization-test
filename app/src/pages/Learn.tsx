@@ -5,6 +5,7 @@ import { EXAM, expectedScore, passProbability } from '../lib/exam.ts'
 import {
   isCommonSense,
   LESSON_BY_TOPIC,
+  lessonIn,
   LESSONS,
   lessonStats,
   readingMinutes,
@@ -13,6 +14,8 @@ import {
   type LessonStats,
 } from '../lib/lessons.ts'
 import { link } from '../lib/router.ts'
+import { useSettings } from '../lib/settings.ts'
+import { studyFile, studyIndex } from '../lib/study.ts'
 import { videoForLesson, VIDEO_TEXTS } from '../lib/videoTexts.ts'
 import { VideoTextList } from './VideoText.tsx'
 
@@ -50,12 +53,16 @@ function statsOf(topicKey: string): LessonStats {
   return s
 }
 
+// Headings that belong to the lesson text follow the explanation language; the rest of the page stays English.
+const HEADINGS = { en: { sixty: 'In 60 seconds', traps: 'Watch out' }, ru: { sixty: 'За 60 секунд', traps: 'Осторожно' } } as const
+
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 }
 
 /** #/learn: where the points are, then all lessons by module. */
 export function Learn() {
+  const { videoLang: lang } = useSettings()
   return (
     <>
       <div className="card">
@@ -69,6 +76,10 @@ export function Learn() {
           boil down to <b>{TOTAL.facts} facts</b> worth memorizing (counted per lesson, so a few like "18" repeat across lessons). Common sense alone, with blind guesses on the rest, averages about{' '}
           {fmt(SENSE_EXPECTED)} of {EXAM.questions} ({EXAM.passMark} pass), with a pass chance of {Math.round(100 * SENSE_PASS)}%. That holds
           only if my common-sense calls are right and you read the German correctly. The facts are what make the pass safe.
+        </p>
+        <p className="muted small">
+          Lessons in English or Russian: switch "Explanations" at the top. Every lesson with all its exam questions is also a file to
+          read offline or print: <a href={studyIndex()}>all files (HTML and PDF)</a>.
         </p>
         <div className="toc">
           <button type="button" className="linklike" onClick={() => scrollTo('learn-points')}>
@@ -180,7 +191,9 @@ export function Learn() {
                     {readingMinutes(l)} min · {s.questions} questions · ≈{fmt(s.points)} points · {s.memorize} to memorize ({s.facts}{' '}
                     facts)
                   </span>
-                  <span className="lesson-teaser">{l.hook}</span>
+                  <span className="lesson-teaser" lang={lang}>
+                    {lessonIn(t.key, lang).hook}
+                  </span>
                 </a>
               )
             })}
@@ -209,6 +222,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+  const { videoLang: lang } = useSettings()
 
   const topic = TOPIC_BY_KEY.get(topicKey)
   if (!topic) {
@@ -219,7 +233,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
       </div>
     )
   }
-  const lesson = lessonOf(topic.key)
+  const lesson = lessonIn(topic.key, lang)
   const s = statsOf(topic.key)
   const idx = TOPICS.indexOf(topic)
   const next = TOPICS[idx + 1] ?? null
@@ -243,6 +257,10 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
               <a href={link('read', video.slug)}>video (RU/EN)</a>
             </>
           )}
+          {' · read offline: '}
+          <a href={studyFile(topic.key, lang, 'html')}>HTML</a>
+          {', '}
+          <a href={studyFile(topic.key, lang, 'pdf')}>PDF</a>
         </p>
         <div className="stats">
           <div>
@@ -258,9 +276,11 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
             <b>{s.commonSense}</b> common sense (grey Q numbers)
           </div>
         </div>
-        <p className="lesson-hook">{lesson.hook}</p>
-        <div className="sixty">
-          <h2>In 60 seconds</h2>
+        <p className="lesson-hook" lang={lang}>
+          {lesson.hook}
+        </p>
+        <div className="sixty" lang={lang}>
+          <h2>{HEADINGS[lang].sixty}</h2>
           <ul>
             {lesson.summary.map((line, i) => (
               <li key={i}>
@@ -277,13 +297,13 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
           ))}
           {lesson.traps.length > 0 && (
             <button type="button" className="linklike" onClick={() => scrollTo('lesson-traps')}>
-              Watch out
+              {HEADINGS[lang].traps}
             </button>
           )}
         </div>
       </div>
       {lesson.sections.map((sec, i) => (
-        <details open key={i} id={`lesson-s${i}`} className="card lesson-section">
+        <details open key={i} id={`lesson-s${i}`} className="card lesson-section" lang={lang}>
           <summary>
             <h2>{sec.title}</h2>
           </summary>
@@ -291,9 +311,9 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
         </details>
       ))}
       {lesson.traps.length > 0 && (
-        <details open id="lesson-traps" className="card lesson-section traps">
+        <details open id="lesson-traps" className="card lesson-section traps" lang={lang}>
           <summary>
-            <h2>Watch out</h2>
+            <h2>{HEADINGS[lang].traps}</h2>
           </summary>
           <Facts lesson={lesson} facts={lesson.traps} trap />
         </details>

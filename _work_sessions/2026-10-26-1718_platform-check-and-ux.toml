@@ -1,7 +1,7 @@
-title = "Platform check, five UX features, then a codebase review and its fixes"
+title = "Platform check, five UX features, two review rounds, Russian explanations, study files per topic"
 date = "2026-10-26"
 time = "17:18"
-areas = ["app/", "scripts/", "results/", "reports/", "_learnings/", "README.md", "PATTERNS.md", "DECISIONS.md", "DEFERRED_TODO.md"]
+areas = ["app/", "scripts/", "data/", "study/", "results/", "reports/", "_learnings/", "README.md", "PATTERNS.md", "DECISIONS.md", "DEFERRED_TODO.md"]
 
 done = [
   "Videos: all 28 ready and matching their scripts (14 videos, RU + EN, 92 min); nothing to generate",
@@ -19,21 +19,29 @@ done = [
   "Review fix: build_dataset.py option check ignored word order, so Q176 (four orders of the same four countries) could not catch a swap; raw texts must now match by position for such questions; real build passes with byte-identical output, a swapped Q176 in memory is refused",
   "Review fix: search accepts Q128 (the lessons' tag); a regex in search.ts held literal combining characters instead of \u0300-\u036f (written by the file tool), restored as escapes",
   "Review fix: mine_patterns.py, build_pattern_report.py, check_sheet_order.py moved to scripts/non_essential/ (README), paths updated; all three re-run: identical results, only timestamps and Plotly chart ids changed",
+  "Review round 2: two tabs overwrote each other's progress (live repro: tab A's answer gone after tab B answered); progress and settings now re-read storage before saving and follow other tabs via the storage event; re-tested [1,4] stored, settings follow; 'last exam: today' counted 24 h windows, now calendar days",
+  "Russian explanations (Hayk: one switch, default English): header switch Explanations EN/RU drives lessons, why, video texts and videos; data/lessons_ru.json (386 texts) and data/translations_ru.json (310 questions + answers) translated by Claude; script check (structure, numbers, bold terms, Cyrillic, no dashes) + startup validation in lessons.ts; 2 new unit tests (46 pass)",
+  "Independent review of the Russian (1 fresh-context agent, after a you-should-know note): Q37/Q309 'премьер-министр' = the wrong option Premierminister -> 'министр-президент'; English lesson said **Executive** (exam: Exekutive) -> fixed in both; one unclear sentence; Words page 'state premier' -> 'Minister-President' (override, $0 rerun)",
+  "Study files (Hayk: PDF + HTML): scripts/build_study_files.py -> study/en|ru/NN_topic.html + .pdf (48 + 48, 9.8 MB, 145-289 s via headless Chrome) + index; standalone (pictures as data URIs, checked alone in an empty folder), Cyrillic fonts embedded; lesson pages link HTML/PDF; site build refuses stale files (manifest of input hashes, LF-normalised; tested with a 1-byte change); dev server and tests do not check",
+  "Escapes in tool inputs became real characters twice (\u0300 in search.ts, CR LF in vite.config.ts): fixed from character codes, all touched files scanned (learning file)",
   "Tests: 43 unit tests pass (7 new); production build passes; Playwright on the local production build: 70 routes, why/mistakes/search/words/video (load, language switch, seek, 206 range), exam review why x33, timer red at 4:30 and auto-submit at 60:01 via fake clock, no overflow at 390/375 px, dark mode",
 ]
 pending = [
+  "Commit and push of round 2 + Russian + study files: waiting for Hayk",
   "Q6 (Hayk to choose): committed UI tests with @playwright/test, or keep manual Playwright checks (DEFERRED_TODO.md)",
   "Q7: skip the 114 MB deploy for doc-only pushes (DEFERRED_TODO.md)",
 ]
 next = [
   "Live check after the push passed: 69 routes, 28 videos served as video/mp4 with byte ranges (117 MB), language switch, seek, why, mistakes, search, Q128 at 375 px",
   "Hayk tries the mistakes round and the video pages on the phone",
+  "Hayk reads a Russian lesson and a PDF; errors found while studying go into the JSON (checks + build guard catch slips)",
 ]
 files = [
   "app/src/components/Text.tsx", "app/src/components/Why.tsx", "app/src/components/QuestionCard.tsx", "app/src/lib/search.ts", "app/src/lib/search.test.ts",
   "app/src/lib/stats.ts", "app/src/lib/stats.test.ts", "app/src/lib/lessons.ts", "app/src/lib/lessons.test.ts", "app/src/pages/Practice.tsx", "app/src/pages/Home.tsx",
   "app/src/pages/Topics.tsx", "app/src/pages/Exam.tsx", "app/src/pages/VideoText.tsx", "app/src/pages/Learn.tsx", "app/src/pages/Words.tsx", "app/src/styles.css", "app/vite.config.ts",
   "README.md", "DECISIONS.md", "DEFERRED_TODO.md", "_learnings/2026-10-26-1830_slash-forms-overflow-on-phones.md", "_learnings/2026-10-26-1835_vite-build-eperm-while-preview-serves-videos.md",
+  "data/lessons_ru.json", "data/translations_ru.json", "data/vocabulary_en*.json", "scripts/build_study_files.py", "study/", "app/src/lib/study.ts", "app/src/lib/settings.ts", "app/src/lib/progress.ts", "app/vite.config.ts",
 ]
 commits = ["c09b12f session log 2026-10-12 final results", "cafbdb5 mistakes round, why, search, videos on the site, phone fix (deploy green in 77 s)", "1808a1a session log", "review fixes (exam keyboard, expired exam, dataset check, Q128, scripts tiering)"]
 notes = "No API spend. GitHub Pages limits checked on docs.github.com: 1 GB per site, soft 100 GB traffic per month, 10 min deploy timeout. Playwright test data lived in Playwright's own browser (github.io and 127.0.0.1 origins), not in Hayk's browser."

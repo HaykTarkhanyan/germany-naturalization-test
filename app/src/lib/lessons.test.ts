@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { TOPICS } from './data.ts'
-import { factsFor, LESSON_BY_TOPIC, LESSONS, lessonStats, readingMinutes } from './lessons.ts'
+import { factsFor, LESSON_BY_TOPIC, lessonIn, LESSONS, lessonStats, readingMinutes } from './lessons.ts'
 
 describe('lessons', () => {
   it('has one lesson per topic that covers exactly the questions of its topic', () => {
@@ -36,5 +36,27 @@ describe('factsFor', () => {
     const all = Array.from({ length: 310 }, (_, i) => factsFor(i + 1)).flat()
     expect(all.some((f) => f.trap)).toBe(true)
     expect(() => factsFor(311)).toThrow()
+  })
+})
+
+describe('Russian lessons', () => {
+  const cyrillic = /[а-яё]/i
+  it('has every lesson in Russian with the same questions, in the same places', () => {
+    for (const l of LESSONS) {
+      const ru = lessonIn(l.topic, 'ru')
+      expect(cyrillic.test(ru.hook), l.topic).toBe(true)
+      expect(ru.sections.map((s) => s.facts.map((f) => f.q))).toEqual(l.sections.map((s) => s.facts.map((f) => f.q)))
+      expect(ru.traps.map((t) => t.q)).toEqual(l.traps.map((t) => t.q))
+      expect(ru.common_sense).toEqual(l.common_sense)
+    }
+    expect(lessonIn('bayern', 'en')).toBe(LESSON_BY_TOPIC.get('bayern'))
+  })
+
+  it('gives the why in Russian for every question', () => {
+    for (let id = 1; id <= 310; id++) {
+      const ru = factsFor(id, 'ru')
+      expect(ru.length).toBe(factsFor(id, 'en').length)
+      expect(ru.every((f) => cyrillic.test(f.text)), `question ${id}`).toBe(true)
+    }
   })
 })

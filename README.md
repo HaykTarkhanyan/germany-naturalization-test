@@ -7,9 +7,10 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 ## Study app
 
 **https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Read a 1-2 minute lesson per
-topic (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
+topic in English or Russian (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
 the topic is worth and which of its questions need memorizing vs. common sense; also the 14 explainer videos, to watch
-or read, in Russian or English, with every exam answer they reveal), look up the catalog's ~1,400 German
+or read, in Russian or English, with every exam answer they reveal; every topic also as an HTML and PDF file to read
+offline or print, in both languages: `study/`), look up the catalog's ~1,400 German
 words (Words: dictionary form with der/die/das, English meaning, how often each appears), practice topic by topic (the
 24 topics of `data/topics.json`, with instant feedback and the lesson fact behind each answer), repeat your mistakes
 from all topics and exams in one round, find any question by number or words (German or English), take real-format mock exams (30 general + 3 Bayern, 60 min,
@@ -39,6 +40,8 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `data/topics.json` | The 310 questions grouped into 24 study topics (in the 3 BAMF course modules + Bayern), ids in study order with related questions next to each other |
 | `data/vocabulary.json`, `data/vocabulary_en.json` | The catalog's distinct German words (1,392 dictionary forms, names and places not counted) with how often and where they appear, plus dictionary form with article, English meaning and word type; `vocabulary_raw.json` (rows before merging, the translator's input) and `vocabulary_en_overrides.json` (hand fixes) (DECISIONS.md #18) |
 | `data/lessons.json` | One short English lesson per study topic; every fact lists the questions it answers, and `common_sense` marks the questions answerable without studying (DECISIONS.md #12, #13) |
+| `data/lessons_ru.json`, `data/translations_ru.json` | The lessons in Russian (text only, checked against the English at startup) and every question with its correct answer in Russian (DECISIONS.md #25) |
+| `study/` | Every topic as a readable file: `en/` and `ru/`, standalone HTML and PDF (lesson + all exam questions with answers), `index.html` lists them; built by `scripts/build_study_files.py`, also on the site (DECISIONS.md #26) |
 | `data/images/` | The 13 picture questions (coats of arms, flags, photos) as served by BAMF |
 | `data/raw/` | Raw scrape of the BAMF Online-Testcenter - the record the dataset is built from |
 | `official/gesamtfragenkatalog-lebenindeutschland_2025-05-26.pdf` | Official BAMF catalog, all 460 questions incl. all 16 states, "Stand 07.05.2025". **No answers in it.** |
@@ -50,7 +53,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `reports/patterns_report.html` | Interactive report for the pattern analysis, incl. your ordered study list (open in a browser) |
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
-| `scripts/` | Dataset build (scraper + `build_dataset.py`), pattern analysis in `non_essential/` (`mine_patterns.py`, `build_pattern_report.py`, `check_sheet_order.py`), vocabulary (`build_vocabulary.py`, `translate_vocabulary.py`) |
+| `scripts/` | Dataset build (scraper + `build_dataset.py`), pattern analysis in `non_essential/` (`mine_patterns.py`, `build_pattern_report.py`, `check_sheet_order.py`), vocabulary (`build_vocabulary.py`, `translate_vocabulary.py`), study files (`build_study_files.py`) |
 | `videos/pipeline/` | The video renderer: `render.py` (script -> MP4, voice cached per scene, new audio only with `--tts`), `tts.py` (Gemini TTS on Vertex + transcription check), `non_essential/` (script checker, local viewer page) |
 | `videos/mp4/` | The rendered explainer videos, Russian and English (`NN_topic.ru.mp4`, `.en.mp4`): exam cards with German + English, correct answer marked |
 | [`videos/PLAN.md`](videos/PLAN.md) | Plan and status of the explainer videos (voice, cards, costs), and `videos/scripts/`: the 14 scripts (Russian and English narration per scene, exam questions); the app shows them as video texts |

@@ -23,7 +23,7 @@ const NAV: [string, string][] = [
 export function App() {
   const route = useRoute()
   const loadError = useLoadError()
-  const { showEnglish } = useSettings()
+  const { showEnglish, videoLang } = useSettings()
   const page = route[0] ?? ''
   const path = route.join('/')
   useEffect(() => {
@@ -49,6 +49,14 @@ export function App() {
             onClick={() => updateSettings({ showEnglish: !showEnglish })}
           >
             English {showEnglish ? 'on' : 'off'}
+          </button>
+          <button
+            type="button"
+            className="toggle on"
+            title="Language of the lessons, the explanations after each answer, and the videos"
+            onClick={() => updateSettings({ videoLang: videoLang === 'en' ? 'ru' : 'en' })}
+          >
+            Explanations: {videoLang === 'en' ? 'EN' : 'RU'}
           </button>
         </nav>
       </header>
