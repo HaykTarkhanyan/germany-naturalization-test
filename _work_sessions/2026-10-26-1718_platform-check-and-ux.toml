@@ -15,11 +15,9 @@ done = [
   "Feature: Home shows the last mock exam (score, passed, days ago, count)",
   "Tests: 43 unit tests pass (7 new); production build passes; Playwright on the local production build: 70 routes, why/mistakes/search/words/video (load, language switch, seek, 206 range), exam review why x33, timer red at 4:30 and auto-submit at 60:01 via fake clock, no overflow at 390/375 px, dark mode",
 ]
-pending = [
-  "Not committed or pushed: the features and the 2026-10-12 session log update (waiting for Hayk)",
-  "After the push: check the live site (videos are served from Pages, deploy uploads 114 MB)",
-]
+pending = []
 next = [
+  "Live check after the push passed: 69 routes, 28 videos served as video/mp4 with byte ranges (117 MB), language switch, seek, why, mistakes, search, Q128 at 375 px",
   "Hayk tries the mistakes round and the video pages on the phone",
 ]
 files = [
@@ -28,5 +26,5 @@ files = [
   "app/src/pages/Topics.tsx", "app/src/pages/Exam.tsx", "app/src/pages/VideoText.tsx", "app/src/pages/Learn.tsx", "app/src/pages/Words.tsx", "app/src/styles.css", "app/vite.config.ts",
   "README.md", "DECISIONS.md", "DEFERRED_TODO.md", "_learnings/2026-10-26-1830_slash-forms-overflow-on-phones.md", "_learnings/2026-10-26-1835_vite-build-eperm-while-preview-serves-videos.md",
 ]
-commits = []
+commits = ["c09b12f session log 2026-10-12 final results", "cafbdb5 mistakes round, why, search, videos on the site, phone fix (deploy green in 77 s)"]
 notes = "No API spend. GitHub Pages limits checked on docs.github.com: 1 GB per site, soft 100 GB traffic per month, 10 min deploy timeout. Playwright test data lived in Playwright's own browser (github.io and 127.0.0.1 origins), not in Hayk's browser."
