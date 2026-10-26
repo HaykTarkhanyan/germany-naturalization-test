@@ -5,14 +5,21 @@ import { TOPICS } from '../lib/data.ts'
 import { EXAM } from '../lib/exam.ts'
 import { useProgress } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
-import { countStatuses, statusById } from '../lib/stats.ts'
+import { countStatuses, lastWrong, statusById } from '../lib/stats.ts'
 
 // Bayern first: each Bayern question is three times as likely to be on the sheet (3 of 10 vs 30 of 300).
 const STUDY_ORDER = [...TOPICS.filter((t) => t.module === 'bayern'), ...TOPICS.filter((t) => t.module !== 'bayern')]
 
+function daysAgo(t: number): string {
+  const d = Math.floor((Date.now() - t) / 86_400_000)
+  return d <= 0 ? 'today' : d === 1 ? 'yesterday' : `${d} days ago`
+}
+
 export function Home() {
   const progress = useProgress()
   const statuses = useMemo(() => statusById(progress.answers), [progress.answers])
+  const mistakes = useMemo(() => lastWrong(progress.answers), [progress.answers])
+  const lastExam = progress.exams.at(-1)
   const next = STUDY_ORDER.map((t) => ({ t, open: t.questions.length - countStatuses(t.questions, statuses).known })).find(
     (x) => x.open > 0,
   )
@@ -24,6 +31,18 @@ export function Home() {
         </div>
       )}
       <Readiness />
+      {mistakes.length > 0 && (
+        <div className="card">
+          <h2>My mistakes</h2>
+          <p>
+            {mistakes.length} question{mistakes.length === 1 ? '' : 's'} you got wrong the last time you answered{' '}
+            {mistakes.length === 1 ? 'it' : 'them'}, from every topic and the mock exams.
+          </p>
+          <a className="button primary" href={link('practice', 'mistakes', 'all')}>
+            Repeat my mistakes ({mistakes.length})
+          </a>
+        </div>
+      )}
       <div className="card">
         <h2>Next up</h2>
         {next ? (
@@ -57,6 +76,15 @@ export function Home() {
           {EXAM.questions} questions ({EXAM.general.draw} general + {EXAM.bayern.draw} Bayern), {EXAM.minutes} minutes,{' '}
           {EXAM.passMark} correct to pass.
         </p>
+        {lastExam && (
+          <p>
+            Last one:{' '}
+            <a href={link('exam', 'result', lastExam.id)}>
+              {lastExam.score} / {EXAM.questions}, {lastExam.passed ? 'passed' : 'not passed'}
+            </a>{' '}
+            · {daysAgo(lastExam.finishedAt)} · {progress.exams.length} so far
+          </p>
+        )}
         <a className="button" href={link('exam')}>
           {progress.activeExam ? 'Continue the exam' : 'Start a mock exam'}
         </a>

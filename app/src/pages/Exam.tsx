@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import { QuestionCard } from '../components/QuestionCard.tsx'
+import { Why } from '../components/Why.tsx'
 import { QUESTION_BY_ID } from '../lib/data.ts'
 import { EXAM } from '../lib/exam.ts'
 import { correctIndices, finishExam, formatClock, newExam, remainingMs } from '../lib/examFlow.ts'
@@ -204,13 +205,10 @@ function ExamResultView({ result }: { result: ExamResult }) {
     const q = QUESTION_BY_ID.get(r.id)
     if (!q) throw new Error(`exam contains unknown question ${r.id}`)
     return (
-      <QuestionCard
-        key={r.id}
-        question={q}
-        chosen={r.chosen}
-        reveal
-        label={`Question ${r.i + 1}${r.chosen === null ? ' · not answered' : ''}`}
-      />
+      <Fragment key={r.id}>
+        <QuestionCard question={q} chosen={r.chosen} reveal label={`Question ${r.i + 1}${r.chosen === null ? ' · not answered' : ''}`} />
+        <Why id={r.id} />
+      </Fragment>
     )
   }
   return (

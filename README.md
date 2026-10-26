@@ -8,10 +8,11 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
 **https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Read a 1-2 minute lesson per
 topic (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
-the topic is worth and which of its questions need memorizing vs. common sense; also the text of each explainer video,
-in Russian or English, with every exam answer it reveals), look up the catalog's ~1,400 German
+the topic is worth and which of its questions need memorizing vs. common sense; also the 14 explainer videos, to watch
+or read, in Russian or English, with every exam answer they reveal), look up the catalog's ~1,400 German
 words (Words: dictionary form with der/die/das, English meaning, how often each appears), practice topic by topic (the
-24 topics of `data/topics.json`, with instant feedback), take real-format mock exams (30 general + 3 Bayern, 60 min,
+24 topics of `data/topics.json`, with instant feedback and the lesson fact behind each answer), repeat your mistakes
+from all topics and exams in one round, find any question by number or words (German or English), take real-format mock exams (30 general + 3 Bayern, 60 min,
 17 to pass), and see your pass chance today. Every question and answer shows its English translation under the
 German (switch "English on/off" in the header). Progress is saved in the browser only; export/import it on the
 Progress page to move it between devices.

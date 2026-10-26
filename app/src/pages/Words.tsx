@@ -38,7 +38,8 @@ export function Words() {
   const [shown, setShown] = useState(PAGE)
 
   const list = useMemo(() => {
-    const q = query.trim().toLowerCase()
+    // "die Wahl" finds die Wahl: an article typed before a word is dropped (matches() ignores articles)
+    const q = query.trim().toLowerCase().replace(/^(der|die|das)\s+(?=\S)/, '')
     const out = WORDS.filter(
       (w) => (kind === 'all' || w.kind === (kind as WordKind)) && (!coreOnly || w.core) && (q === '' || matches(w, q)),
     )

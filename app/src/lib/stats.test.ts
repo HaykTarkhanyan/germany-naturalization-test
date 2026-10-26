@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Answer } from './progress.ts'
-import { countStatuses, readiness, statusById, statusOf } from './stats.ts'
+import { countStatuses, lastWrong, readiness, statusById, statusOf } from './stats.ts'
 
 const answer = (qid: number, correct: boolean): Answer => ({ qid, chosen: 0, correct, at: '2026-10-03T00:00:00Z', mode: 'practice' })
 
@@ -26,4 +26,12 @@ describe('statusById / readiness', () => {
     expect(r.knownBayern).toBe(1)
     expect(r.pass).toBeGreaterThan(0)
   })
+})
+
+describe('lastWrong', () => {
+  it('lists questions whose last answer was wrong, in catalog order', () => {
+    const answers = [answer(9, false), answer(3, true), answer(3, false), answer(5, false), answer(5, true), answer(301, false)]
+    expect(lastWrong(answers)).toEqual([3, 9, 301]) // 5 was answered right after its mistake
+  })
+  it('is empty without answers', () => expect(lastWrong([])).toEqual([]))
 })

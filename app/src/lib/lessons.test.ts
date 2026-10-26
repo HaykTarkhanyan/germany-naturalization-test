@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { TOPICS } from './data.ts'
-import { LESSON_BY_TOPIC, LESSONS, lessonStats, readingMinutes } from './lessons.ts'
+import { factsFor, LESSON_BY_TOPIC, LESSONS, lessonStats, readingMinutes } from './lessons.ts'
 
 describe('lessons', () => {
   it('has one lesson per topic that covers exactly the questions of its topic', () => {
@@ -27,5 +27,14 @@ describe('lessons', () => {
 
   it('keeps every lesson short', () => {
     for (const l of LESSONS) expect(readingMinutes(l)).toBeLessThanOrEqual(3)
+  })
+})
+
+describe('factsFor', () => {
+  it('gives every exam question at least one lesson fact, traps marked', () => {
+    for (let id = 1; id <= 310; id++) expect(factsFor(id).length, `question ${id}`).toBeGreaterThan(0)
+    const all = Array.from({ length: 310 }, (_, i) => factsFor(i + 1)).flat()
+    expect(all.some((f) => f.trap)).toBe(true)
+    expect(() => factsFor(311)).toThrow()
   })
 })

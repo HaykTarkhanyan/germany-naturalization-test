@@ -13,5 +13,8 @@ Parked ideas, not started.
 - **Pattern report: TOC + collapsible sections** - `reports/patterns_report.html` was built before the global HTML rule (sections collapsible, table of contents on top); rebuild `scripts/build_pattern_report.py` to follow it.
 - **Pronunciation hints for German terms in Russian narration** (`videos/pronunciation.json`) - only if listening shows mispronounced terms.
 - **Words page: "known" tick per word** - track which words are learned, like the question progress.
+- **Offline / install on the phone (PWA)** - a web app manifest and a service worker so the site opens without network (U-Bahn). Cut from the 2026-10-26 UX round: a cached old version after a deploy is the classic PWA bug, and the videos (114 MB) must not be pre-cached.
+- **Flag a question** - a star on a question to collect hard ones by hand. Cut on 2026-10-26: "My mistakes" (DECISIONS #24) covers most of it automatically.
+- **Split the app bundle** - Vite warns that the main chunk is over 500 kB (1,034 kB, 270 kB gzipped, measured 2026-10-26: all data is bundled). Fine on 4G; lazy-load the vocabulary and video texts if the first load ever feels slow.
 - **Back up the voice cache** - `videos/build/render/*/sN.wav` (~250 MB, this machine only) is what makes re-renders free; losing it means re-voicing all 226 scenes for ~$1.30 (`render.py all --tts`). Copy it somewhere safe if the laptop is replaced.
 

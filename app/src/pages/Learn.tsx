@@ -1,4 +1,5 @@
 import { Fragment, useEffect } from 'react'
+import { Rich } from '../components/Text.tsx'
 import { BAYERN_IDS, imageUrl, MODULES, QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS } from '../lib/data.ts'
 import { EXAM, expectedScore, passProbability } from '../lib/exam.ts'
 import {
@@ -49,11 +50,6 @@ function statsOf(topicKey: string): LessonStats {
   return s
 }
 
-/** Renders "a **b** c" with b in bold. */
-function Rich({ text }: { text: string }) {
-  return <>{text.split('**').map((part, i) => (i % 2 === 1 ? <b key={i}>{part}</b> : part))}</>
-}
-
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 }
@@ -84,7 +80,7 @@ export function Learn() {
             </button>
           ))}
           <button type="button" className="linklike" onClick={() => scrollTo('learn-videos')}>
-            Video texts
+            Videos
           </button>
         </div>
       </div>
@@ -193,12 +189,12 @@ export function Learn() {
       })}
       <details open id="learn-videos" className="card module learn-module">
         <summary>
-          <span className="module-title">Video texts</span>{' '}
+          <span className="module-title">Videos</span>{' '}
           <span className="muted small">Russian or English · {VIDEO_TEXTS.length} videos</span>
         </summary>
         <p className="muted small">
-          What the explainer videos say, to read instead of watching: the narration and every exam question it answers, with the correct
-          answer. Longer than the lessons, with more explanation.
+          The explainer videos, each with its text to read instead of watching: the narration and every exam question it answers, with
+          the correct answer. Longer than the lessons, with more explanation.
         </p>
         <VideoTextList />
       </details>
@@ -244,7 +240,7 @@ export function LessonPage({ topicKey }: { topicKey: string }) {
           {video && (
             <>
               {' · '}
-              <a href={link('read', video.slug)}>video text (RU/EN)</a>
+              <a href={link('read', video.slug)}>video (RU/EN)</a>
             </>
           )}
         </p>

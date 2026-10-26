@@ -26,6 +26,14 @@ export function statusById(answers: readonly Answer[]): Map<number, Status> {
   return result
 }
 
+/** Questions whose last answer was wrong, in catalog order: the "my mistakes" round. A question answered right
+ * once since its mistake is not in it (it is still "learning" and comes back with its topic). */
+export function lastWrong(answers: readonly Answer[]): number[] {
+  const last = new Map<number, boolean>()
+  for (const a of answers) last.set(a.qid, a.correct)
+  return [...last].filter(([, correct]) => !correct).map(([id]) => id).sort((a, b) => a - b)
+}
+
 export type Counts = Record<Status, number>
 
 export function countStatuses(ids: readonly number[], statuses: ReadonlyMap<number, Status>): Counts {

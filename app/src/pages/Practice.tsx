@@ -1,31 +1,46 @@
 import { useEffect, useState } from 'react'
 import { QuestionCard } from '../components/QuestionCard.tsx'
 import { ReadButton } from '../components/ReadButton.tsx'
+import { SoftBreaks } from '../components/Text.tsx'
+import { Why } from '../components/Why.tsx'
 import { english, QUESTION_BY_ID, TOPIC_BY_KEY, TOPICS, type Question } from '../lib/data.ts'
 import { getProgress, recordAnswer } from '../lib/progress.ts'
 import { link } from '../lib/router.ts'
 import { useSettings } from '../lib/settings.ts'
-import { statusById } from '../lib/stats.ts'
+import { lastWrong, statusById } from '../lib/stats.ts'
 
-type Session = { title: string; ids: number[]; topicKey: string | null }
+type Session = { title: string; ids: number[]; topicKey: string | null; empty: string }
 
 /**
- * source = a topic key with arg "all" or "open" (not known yet), or "list" with arg = comma-separated
- * question ids (e.g. the mistakes of a mock exam).
+ * source = a topic key with arg "all" or "open" (not known yet), "list" with arg = comma-separated
+ * question ids (e.g. the mistakes of a mock exam), or "mistakes" (every question whose last answer was wrong).
  */
 function buildSession(source: string, arg: string): Session | string {
   if (source === 'list') {
     const ids = arg.split(',').map(Number)
     const bad = ids.filter((id) => !QUESTION_BY_ID.has(id))
     if (bad.length > 0 || ids.length === 0) return `"${arg}" is not a list of question numbers 1-310.`
-    return { title: 'Selected questions', ids, topicKey: null }
+    return { title: 'Selected questions', ids, topicKey: null, empty: '' }
+  }
+  if (source === 'mistakes') {
+    return {
+      title: 'My mistakes',
+      ids: lastWrong(getProgress().answers),
+      topicKey: null,
+      empty: 'No mistakes to repeat: every question you got wrong, you have answered right since.',
+    }
   }
   const topic = TOPIC_BY_KEY.get(source)
   if (!topic) return `There is no topic "${source}".`
-  if (arg === 'all') return { title: topic.title, ids: topic.questions, topicKey: topic.key }
+  if (arg === 'all') return { title: topic.title, ids: topic.questions, topicKey: topic.key, empty: '' }
   if (arg === 'open') {
     const statuses = statusById(getProgress().answers)
-    return { title: `${topic.title} · not known yet`, ids: topic.questions.filter((id) => statuses.get(id) !== 'known'), topicKey: topic.key }
+    return {
+      title: `${topic.title} · not known yet`,
+      ids: topic.questions.filter((id) => statuses.get(id) !== 'known'),
+      topicKey: topic.key,
+      empty: 'Nothing left here: you know every question in this topic.',
+    }
   }
   return `Unknown practice mode "${arg}" (use "all" or "open").`
 }
@@ -97,7 +112,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
     return (
       <div className="card">
         <h2>{session.title}</h2>
-        <p>Nothing left here: you know every question in this topic.</p>
+        <p>{session.empty}</p>
         <div className="actions">
           {session.topicKey && (
             <a className="button" href={link('practice', session.topicKey, 'all')}>
@@ -128,7 +143,10 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
               const q = question(id)
               return (
                 <li key={id}>
-                  <span className="muted">Frage {id}:</span> {q.question} <b>→ {q.answer}</b>
+                  <span className="muted">Frage {id}:</span> <SoftBreaks text={q.question} />{' '}
+                  <b>
+                    → <SoftBreaks text={q.answer} />
+                  </b>
                   {showEnglish && (
                     <span className="en">
                       {english(q).question} → {english(q).options[q.answer_index]}
@@ -180,9 +198,14 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
           <span>
             {right ? 'Right.' : (
               <>
-                Not quite. Right answer: <b>{'ABCD'[current.answer_index]}) {current.answer}</b>
+                Not quite. Right answer:{' '}
+                <b>
+                  {'ABCD'[current.answer_index]}) <SoftBreaks text={current.answer} />
+                </b>
                 {showEnglish && english(current).options[current.answer_index] !== current.answer && (
-                  <span className="en">{english(current).options[current.answer_index]}</span>
+                  <span className="en">
+                    <SoftBreaks text={english(current).options[current.answer_index]} />
+                  </span>
                 )}
               </>
             )}
@@ -192,6 +215,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
           </button>
         </div>
       )}
+      {chosen !== null && <Why id={current.id} />}
       <p className="muted small hint">Keys: 1-4 or A-D to answer, Enter for the next question.</p>
     </>
   )

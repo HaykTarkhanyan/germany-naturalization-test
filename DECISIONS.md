@@ -2,6 +2,20 @@
 
 Newest first.
 
+## 24. "My mistakes" means questions whose last answer was wrong
+
+- **Date / status:** 2026-10-26, active (Hayk asked for useful features; mistakes coming back was the biggest gap)
+- **Why:** Before, a mistake came back only inside its own topic ("not known yet") or as the one-off "practice the mistakes" of a single exam. The new round (Home, Topics, `#/practice/mistakes/all`) collects every question whose most recent answer, in practice or a mock exam, was wrong. It is a list of real misses, small enough to do in one go, and a question leaves it as soon as it is answered right once.
+- **Alternatives rejected:** every "learning" question (answered but not yet right twice in a row): that also pulls in questions answered right once, so the round would mix misses with lucky first tries; a spaced-repetition schedule (due dates per question): more machinery than a 310-question pool needs, and the "known = last two right" rule already decides when a question is learned.
+- **What would change this:** The list growing past ~50 for a long time (then cap a round at 20 and start with Bayern questions), or Hayk wanting the second right answer to be required before a question leaves the list.
+
+## 23. The explainer videos are served by the GitHub Pages site, next to their texts
+
+- **Date / status:** 2026-10-26, active (Hayk: "think about UX and what other useful features can be added")
+- **Why:** The 28 MP4s were in the repo but not on the site, so they could not be watched on the phone. `app/vite.config.ts` now copies `videos/mp4/` into the build (and streams it in dev, with byte ranges for seeking), and each video page plays its video in the language chosen there; the build fails if a script has no video in either language. Size: the site grows from about 2 MB to 114 MB, against GitHub's limits of 1 GB per published site, a soft 100 GB of traffic per month and a 10-minute deploy timeout (docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits, read 2026-10-26). A full watch is 2-7.5 MB, so 100 GB is about 20,000 plays. `preload="metadata"` loads only the first frame and duration until play is pressed. The repo is public, so nothing becomes public that was not already.
+- **Alternatives rejected:** linking to the files on github.com (the GitHub file viewer is not a comfortable player on a phone, and raw file URLs are not meant as a video host); YouTube (another account and service, and an outside page to maintain); a GitHub Release (no in-app player, a second place to update after every re-render).
+- **What would change this:** The site approaching 1 GB (each re-render replaces the files, it does not add to the site), traffic warnings from GitHub, or deploys getting slow (then move the videos to Release assets or a CDN and keep only the links).
+
 ## 22. The video renderer lives in videos/pipeline/; voice clips are reused only for their exact text, new audio only with --tts
 
 - **Date / status:** 2026-10-12, active (Hayk: "do all 3": renderer into the repo, re-render 01-06, merge short subtitles)

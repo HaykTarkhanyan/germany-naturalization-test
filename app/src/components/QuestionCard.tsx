@@ -1,5 +1,6 @@
 import { english, imageUrl, TOPIC_OF_QUESTION, type Question } from '../lib/data.ts'
 import { useSettings } from '../lib/settings.ts'
+import { SoftBreaks } from './Text.tsx'
 
 type Props = {
   question: Question
@@ -25,8 +26,14 @@ export function QuestionCard({ question, chosen, reveal, onChoose, label }: Prop
           {topic ? ` · ${showEnglish ? topic.title_en : topic.title}` : ''}
         </span>
       </div>
-      <p className="question-text">{question.question}</p>
-      {showEnglish && <p className="en question-en">{en.question}</p>}
+      <p className="question-text">
+        <SoftBreaks text={question.question} />
+      </p>
+      {showEnglish && (
+        <p className="en question-en">
+          <SoftBreaks text={en.question} />
+        </p>
+      )}
       {img && <img className="question-img" src={img} alt={`Bild zu Frage ${question.id}`} />}
       <div className="options">
         {question.options.map((opt, i) => {
@@ -46,8 +53,12 @@ export function QuestionCard({ question, chosen, reveal, onChoose, label }: Prop
             >
               <span className="option-key">{'ABCD'[i]}</span>
               <span>
-                {opt}
-                {showOptionEn && <span className="en option-en">{en.options[i]}</span>}
+                <SoftBreaks text={opt} />
+                {showOptionEn && (
+                  <span className="en option-en">
+                    <SoftBreaks text={en.options[i]} />
+                  </span>
+                )}
               </span>
             </button>
           )

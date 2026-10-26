@@ -3,9 +3,22 @@ import { english, imageUrl, QUESTION_BY_ID, TOPIC_BY_KEY } from '../lib/data.ts'
 import { LESSON_BY_TOPIC } from '../lib/lessons.ts'
 import { link } from '../lib/router.ts'
 import { updateSettings, useSettings } from '../lib/settings.ts'
-import { narrationParts, VIDEO_LANGS, VIDEO_TEXT_BY_SLUG, VIDEO_TEXTS, videoReadingMinutes, type VideoText } from '../lib/videoTexts.ts'
+import {
+  narrationParts,
+  VIDEO_LANGS,
+  VIDEO_TEXT_BY_SLUG,
+  VIDEO_TEXTS,
+  videoReadingMinutes,
+  type VideoLang,
+  type VideoText,
+} from '../lib/videoTexts.ts'
 
 const LANG_LABELS = { ru: 'Русский', en: 'English' } as const
+
+/** The rendered MP4 (videos/mp4/, copied into the site by vite.config.ts). */
+function videoUrl(slug: string, lang: VideoLang): string {
+  return `${import.meta.env.BASE_URL}videos/${slug}.${lang}.mp4`
+}
 
 function scrollTo(id: string) {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -40,7 +53,7 @@ export function VideoTextList() {
   ))
 }
 
-/** #/read/<slug>: the narration of one video, with the exam answers it reveals. */
+/** #/read/<slug>: one video, then its narration with the exam answers it reveals. */
 export function VideoTextPage({ slug }: { slug: string }) {
   // Block body on purpose (see LessonPage): scrollTo may return a Promise.
   useEffect(() => {
@@ -70,7 +83,7 @@ export function VideoTextPage({ slug }: { slug: string }) {
       <div className="card">
         <h1>{v.title}</h1>
         <p className="muted small">
-          Text of the video · {videoReadingMinutes(v, videoLang)} min read · answers {ids.length} exam questions · lessons:{' '}
+          Watch it or read it · {videoReadingMinutes(v, videoLang)} min read · answers {ids.length} exam questions · lessons:{' '}
           {v.lessons.map((k, i) => (
             <Fragment key={k}>
               {i > 0 && ', '}
@@ -91,6 +104,8 @@ export function VideoTextPage({ slug }: { slug: string }) {
             </button>
           ))}
         </div>
+        {/* key: a new element per language, so switching loads the other file */}
+        <video key={videoLang} className="video" controls preload="metadata" playsInline src={videoUrl(v.slug, videoLang)} />
         <div className="toc">
           {v.scenes.map((s, i) => (
             <button key={i} type="button" className="linklike" onClick={() => scrollTo(`video-s${i}`)}>

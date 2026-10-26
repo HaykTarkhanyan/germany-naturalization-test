@@ -53,6 +53,22 @@ for (const [i, l] of LESSONS.entries()) {
   }
 }
 
+export type QuestionFact = { text: string; trap: boolean; topic: string }
+const FACTS_BY_QUESTION = new Map<number, QuestionFact[]>()
+for (const l of LESSONS) {
+  const facts = [...l.sections.flatMap((s) => s.facts.map((f) => ({ f, trap: false }))), ...l.traps.map((f) => ({ f, trap: true }))]
+  for (const { f, trap } of facts) {
+    for (const id of f.q) FACTS_BY_QUESTION.set(id, [...(FACTS_BY_QUESTION.get(id) ?? []), { text: f.text, trap, topic: l.topic }])
+  }
+}
+
+/** The lesson facts (and traps) that answer a question, in lesson order: the "why" shown after answering. */
+export function factsFor(id: number): QuestionFact[] {
+  const facts = FACTS_BY_QUESTION.get(id)
+  if (!facts) throw new Error(`no lesson fact covers question ${id}`)
+  return facts
+}
+
 /** Whole minutes at 180 words per minute (an unhurried pace), at least 1. */
 export function readingMinutes(l: Lesson): number {
   const words = texts(l).join(' ').replaceAll('**', '').split(/\s+/).filter(Boolean).length
