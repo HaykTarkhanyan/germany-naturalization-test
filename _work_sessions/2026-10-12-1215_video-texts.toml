@@ -13,9 +13,13 @@ done = [
   "Silent stale-audio risk fixed: clips cached by file name only; now sN.txt holds the voiced text and a clip is reused only while it matches; audited all 226 cached clips against ledger char counts + transcripts (all match) before writing sN.txt; videos/build/demo moved to videos/build/render",
   "Silent subtitle cut ([:3]) now fails the render; new audio only with --tts; ledger re-read before each write (10 clips missing from it, ~$0.05: two concurrent renders overwrote each other)",
   "Subtitle merge: pieces < 40 chars joined to a neighbour up to 150 chars: 1,304 -> 827 subtitles, under 1.5 s on screen 172 -> 1; all 28 videos re-rendered from cached audio (also gives 01-06 the card grid) (DECISIONS #22)",
+  "Re-render of all 28: 1,963 s (33 min), no errors; lengths -0.76 to +0.04 s vs the committed files, checked: audio streams equal voice.wav to the ms, only the last frame lingers less (25 fps rounding over fewer frames); recap frames of 07 EN and 14 RU looked at",
+  "Commit b450b4b: renderer, 28 videos, docs; pushed with 9fcda0f; Pages deploy green, live bundle has the video texts (#/read/<video>)",
 ]
 pending = [
   "Voice cache (~250 MB, videos/build/render/) exists only on this laptop: back it up (DEFERRED_TODO.md)",
+  "videos/build/pipeline_backup/ (ignored) is redundant now that the renderer is in the repo; left in place, delete only if Hayk says so",
+  "Offered: _learnings/ files for the two silent failures (cache keyed by file name, [:3] subtitle cut); not answered, both are in DECISIONS #22",
 ]
 next = [
   "Hayk reads a video text on the phone; adjust layout if needed",
@@ -26,5 +30,5 @@ files = [
   "app/src/lib/settings.ts", "app/src/styles.css", "app/vite.config.ts", "README.md", "DECISIONS.md",
   "videos/pipeline/render.py", "videos/pipeline/tts.py", "videos/pipeline/non_essential/", "videos/mp4/ (all 28)", "videos/PLAN.md", "DEFERRED_TODO.md",
 ]
-commits = ["2d87dd6 remaining videos 07-14 and bookkeeping", "9fcda0f video texts", "follow-up: renderer in the repo, all videos re-rendered"]
-notes = "No API spend this session (all renders from cached audio). Ledger: $1.558 at paid-tier rates, $1.352 of it on Vertex trial credit; plus ~$0.05 for 10 clips the ledger lost, so ~$1.61 really spent. Git history grows by ~111 MB with this re-render (~240 MB of videos in total, DECISIONS #20 revisits at 500 MB)."
+commits = ["2d87dd6 remaining videos 07-14 and bookkeeping", "9fcda0f video texts", "b450b4b renderer in the repo, all 28 videos re-rendered with joined subtitles"]
+notes = "No API spend this session (all renders from cached audio). Ledger: $1.558 at paid-tier rates, $1.352 of it on Vertex trial credit; plus ~$0.05 for 10 clips the ledger lost, so ~$1.61 really spent. Repo objects after the re-render: 242 MiB (git count-objects); each full re-render adds ~111 MB, so two more reach the 500 MB revisit point of DECISIONS #20."
