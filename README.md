@@ -50,7 +50,7 @@ Every push to `main` runs the tests, builds and deploys to GitHub Pages (`.githu
 | `reports/patterns_report.html` | Interactive report for the pattern analysis, incl. your ordered study list (open in a browser) |
 | `results/patterns.json` | Raw results of the pattern analysis (the report is built from it) |
 | [`RESOURCES.md`](RESOURCES.md) | GitHub repos, datasets, apps, bots, AI tools - what exists and what is worth using |
-| `scripts/` | Dataset build (scraper + `build_dataset.py`), pattern analysis (`mine_patterns.py`, `build_pattern_report.py`), vocabulary (`build_vocabulary.py`, `translate_vocabulary.py`) |
+| `scripts/` | Dataset build (scraper + `build_dataset.py`), pattern analysis in `non_essential/` (`mine_patterns.py`, `build_pattern_report.py`, `check_sheet_order.py`), vocabulary (`build_vocabulary.py`, `translate_vocabulary.py`) |
 | `videos/pipeline/` | The video renderer: `render.py` (script -> MP4, voice cached per scene, new audio only with `--tts`), `tts.py` (Gemini TTS on Vertex + transcription check), `non_essential/` (script checker, local viewer page) |
 | `videos/mp4/` | The rendered explainer videos, Russian and English (`NN_topic.ru.mp4`, `.en.mp4`): exam cards with German + English, correct answer marked |
 | [`videos/PLAN.md`](videos/PLAN.md) | Plan and status of the explainer videos (voice, cards, costs), and `videos/scripts/`: the 14 scripts (Russian and English narration per scene, exam questions); the app shows them as video texts |
@@ -126,9 +126,9 @@ python scripts/build_dataset.py      # ~4-12 s, stdlib only, needs pdftotext (po
 Pattern analysis (needs `uv sync` once; plotly is pinned in `pyproject.toml`):
 
 ```
-python scripts/check_sheet_order.py             # ~30 s -> results/sheet_order_check.json (option order on official sample sheets)
-uv run python scripts/mine_patterns.py          # ~6 s  -> results/patterns.json
-uv run python scripts/build_pattern_report.py   # ~5 s  -> reports/patterns_report.html (needs both JSONs)
+python scripts/non_essential/check_sheet_order.py             # ~30 s -> results/sheet_order_check.json (option order on official sample sheets)
+uv run python scripts/non_essential/mine_patterns.py          # ~6 s  -> results/patterns.json
+uv run python scripts/non_essential/build_pattern_report.py   # ~5 s  -> reports/patterns_report.html (needs both JSONs)
 ```
 
 To re-scrape the answers (e.g. after BAMF publishes a new catalog), follow the header of

@@ -1,5 +1,5 @@
 // The exam: 30 of the 300 general questions + 3 of the 10 Bayern questions, 60 minutes, 17 correct pass.
-// passProbability is the exact model from scripts/mine_patterns.py (multivariate hypergeometric draw,
+// passProbability is the exact model from scripts/non_essential/mine_patterns.py (multivariate hypergeometric draw,
 // binomial tail for guesses), reduced to two kinds of question: known (always right) and not known
 // (a blind guess, right with p = 0.25).
 

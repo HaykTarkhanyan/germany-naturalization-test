@@ -1,7 +1,8 @@
+import { useEffect } from 'react'
 import { emptyProgress, downloadText, replaceProgress, useLoadError, type ProgressError } from './lib/progress.ts'
 import { link, useRoute } from './lib/router.ts'
 import { updateSettings, useSettings } from './lib/settings.ts'
-import { ExamPage } from './pages/Exam.tsx'
+import { ExamPage, finishExpiredExam } from './pages/Exam.tsx'
 import { Home } from './pages/Home.tsx'
 import { Learn, LessonPage } from './pages/Learn.tsx'
 import { Practice } from './pages/Practice.tsx'
@@ -24,6 +25,10 @@ export function App() {
   const loadError = useLoadError()
   const { showEnglish } = useSettings()
   const page = route[0] ?? ''
+  const path = route.join('/')
+  useEffect(() => {
+    if (!loadError) finishExpiredExam()
+  }, [path, loadError])
   return (
     <>
       <header>

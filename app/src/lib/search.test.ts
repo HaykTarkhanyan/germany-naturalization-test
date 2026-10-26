@@ -7,6 +7,7 @@ describe('searchQuestions', () => {
   it('finds a question by its number', () => {
     expect(ids('128')).toEqual([128])
     expect(ids('Frage 309')).toEqual([309])
+    expect(ids('Q128')).toEqual([128]) // the tag the lessons show
     expect(ids('999')).toEqual([])
   })
   it('needs every word, in German or English, ignoring case', () => {

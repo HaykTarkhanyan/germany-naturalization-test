@@ -1,6 +1,6 @@
 """Build the HTML report on the answer patterns from results/patterns.json (written by mine_patterns.py).
 
-Run:      uv run python scripts/build_pattern_report.py
+Run:      uv run python scripts/non_essential/build_pattern_report.py
 Output:   reports/patterns_report.html (single offline file, plotly.js inlined, ~5 MB)
 Runtime:  ~2 s (measured on this laptop)
 """
@@ -14,9 +14,9 @@ from pathlib import Path
 
 import plotly.graph_objects as go
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]   # scripts/non_essential/ -> repo root
 RESULTS = ROOT / "results" / "patterns.json"
-SHEET_ORDER = ROOT / "results" / "sheet_order_check.json"   # from scripts/check_sheet_order.py
+SHEET_ORDER = ROOT / "results" / "sheet_order_check.json"   # from scripts/non_essential/check_sheet_order.py
 QUESTIONS = ROOT / "data" / "questions_bayern.json"
 OUT = ROOT / "reports" / "patterns_report.html"
 
@@ -261,7 +261,7 @@ option order either way.</li>
 of the shuffled scenario.</p>
 <p class="note">"Checkable" excludes questions whose options are only picture labels or that match several catalog
 questions with identical options; "not matched" are 2008/2021 questions that have since been reworded or removed.
-Raw data: <code>results/sheet_order_check.json</code> from <code>scripts/check_sheet_order.py</code>.</p>""")
+Raw data: <code>results/sheet_order_check.json</code> from <code>scripts/non_essential/check_sheet_order.py</code>.</p>""")
 
     # ---------------------------------------------------------------- word rules
     def word_rows(direction):
@@ -387,7 +387,7 @@ these questions; blue ones are scored on questions they did not see.</p>""")
 <h2>Method and caveats</h2>
 <ul>
 <li>Data: the 310 Bayern questions with official answers (<code>data/questions_bayern.json</code>). Raw results:
-<code>results/patterns.json</code>, generated {esc(meta['generated'])} by <code>scripts/mine_patterns.py</code>.</li>
+<code>results/patterns.json</code>, generated {esc(meta['generated'])} by <code>scripts/non_essential/mine_patterns.py</code>.</li>
 <li>Your test is drawn from exactly these 310 questions, so a rule only has to work on them. In-sample numbers are
 what you would get on the exam if you apply the rules exactly. Cross-validated numbers (5 folds, seed {meta['seed']})
 tell you whether a pattern is a real property of how BAMF writes questions or just luck in this pool.</li>

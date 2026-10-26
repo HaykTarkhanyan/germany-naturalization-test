@@ -20,17 +20,20 @@ export function correctIndices(questionIds: readonly number[]): number[] {
   })
 }
 
-/** The finished exam, plus one answer-log entry per answered question (unanswered ones are not logged). */
+/** The finished exam, plus one answer-log entry per answered question (unanswered ones are not logged). An exam
+ * whose time ran out while the page was closed is finished when it is next seen, so the end is capped at the
+ * deadline: it took 60 minutes, not the hours until the app was opened again. */
 export function finishExam(exam: ActiveExam, now: number, timedOut: boolean): { result: ExamResult; logged: Answer[] } {
   const correct = correctIndices(exam.questionIds)
   const score = scoreExam(exam.answers, correct)
-  const at = new Date(now).toISOString()
+  const end = Math.min(now, exam.startedAt + EXAM.minutes * 60_000)
+  const at = new Date(end).toISOString()
   const logged: Answer[] = []
   exam.questionIds.forEach((qid, i) => {
     const chosen = exam.answers[i]
     if (chosen !== null) logged.push({ qid, chosen, correct: chosen === correct[i], at, mode: 'exam' })
   })
-  return { result: { ...exam, finishedAt: now, score, passed: score >= EXAM.passMark, timedOut }, logged }
+  return { result: { ...exam, finishedAt: end, score, passed: score >= EXAM.passMark, timedOut }, logged }
 }
 
 export function remainingMs(exam: ActiveExam, now: number): number {

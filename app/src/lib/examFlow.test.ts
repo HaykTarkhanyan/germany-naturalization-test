@@ -21,6 +21,16 @@ describe('finishExam', () => {
     exam.answers = correct.map((c, i) => (i < 16 ? c : null))
     expect(finishExam(exam, 1, true).result).toMatchObject({ score: 16, passed: false, timedOut: true })
   })
+
+  it('ends a timed-out exam at its deadline, not when the app is opened again', () => {
+    const exam = newExam(0)
+    exam.answers[0] = 1
+    const threeHoursLater = 3 * 3_600_000
+    const { result, logged } = finishExam(exam, threeHoursLater, true)
+    expect(result.finishedAt).toBe(3_600_000)
+    expect(formatClock(result.finishedAt - result.startedAt)).toBe('60:00')
+    expect(logged[0].at).toBe(new Date(3_600_000).toISOString())
+  })
 })
 
 describe('timer', () => {

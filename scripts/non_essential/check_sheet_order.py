@@ -5,7 +5,7 @@ current catalog (official/gesamtfragenkatalog-*.pdf, all 460 questions incl. all
 then checks whether the four options appear in the same order. If BAMF shuffled options per sheet, a question would
 keep catalog order with probability 1/24.
 
-Run:      python scripts/check_sheet_order.py
+Run:      python scripts/non_essential/check_sheet_order.py
 Output:   results/sheet_order_check.json
 Runtime:  ~30 s (measured on this laptop; the fuzzy match against all 460 catalog questions dominates)
 """
@@ -20,7 +20,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]   # scripts/non_essential/ -> repo root
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_dataset import parse_catalog, pdf_text  # noqa: E402
 

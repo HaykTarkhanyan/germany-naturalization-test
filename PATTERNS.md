@@ -2,8 +2,8 @@
 
 Analysis run 2026-10-02 on `data/questions_bayern.json`. Raw results: `results/patterns.json`.
 Interactive report with all charts and the full study list: `reports/patterns_report.html`.
-Rebuild: `python scripts/check_sheet_order.py` (~30 s), `uv run python scripts/mine_patterns.py` (~6 s), then
-`uv run python scripts/build_pattern_report.py` (~5 s).
+Rebuild: `python scripts/non_essential/check_sheet_order.py` (~30 s), `uv run python scripts/non_essential/mine_patterns.py` (~6 s), then
+`uv run python scripts/non_essential/build_pattern_report.py` (~5 s).
 
 ## Verdict
 
@@ -84,7 +84,7 @@ exactly this pool, the 40% is what you get if you apply them.
 
 ## Option order on the real exam
 
-Checked 2026-10-02 (`scripts/check_sheet_order.py` -> `results/sheet_order_check.json`):
+Checked 2026-10-02 (`scripts/non_essential/check_sheet_order.py` -> `results/sheet_order_check.json`):
 
 | Source | What it says |
 |---|---|

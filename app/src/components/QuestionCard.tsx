@@ -45,7 +45,9 @@ export function QuestionCard({ question, chosen, reveal, onChoose, label }: Prop
           const showOptionEn = showEnglish && en.options[i] !== opt && !/^(Image )?\d$/.test(en.options[i])
           return (
             <button
-              key={i}
+              // New buttons per question: a reused button kept the focus, and Enter on the next question
+              // "clicked" it, answering that question with the old option.
+              key={`${question.id}-${i}`}
               type="button"
               className={classes.join(' ')}
               disabled={!onChoose}

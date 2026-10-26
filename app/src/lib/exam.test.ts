@@ -14,7 +14,7 @@ function seeded(seed: number): () => number {
 
 describe('passProbability', () => {
   // Reference values from an independent Python implementation (math.comb, exact sums), and they match
-  // scripts/mine_patterns.py: blind guessing 0.00095, "every second question memorized" 0.9361.
+  // scripts/non_essential/mine_patterns.py: blind guessing 0.00095, "every second question memorized" 0.9361.
   it.each([
     [0, 0, 0.0009509599956171568],
     [150, 5, 0.9360898856228623],

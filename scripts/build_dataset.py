@@ -176,6 +176,7 @@ def main() -> None:
     IMG_DIR.mkdir(parents=True, exist_ok=True)
     records = []
     low_similarity = []
+    order_unverified = []
     missing_stem = []
     for q in oet:
         num = q["num"]
@@ -191,6 +192,13 @@ def main() -> None:
         sims = [similarity(a, b) for a, b in zip(oet_options, pdf_q["options"])]
         if min(sims) < MIN_OPTION_SIMILARITY:
             low_similarity.append((num, oet_options, pdf_q["options"], sims))
+        # norm() ignores word order, so options made of the same words in another order (Q176: four orders of the
+        # same four countries) all look identical to the check above, and a reordering between the two sources
+        # would pass unseen; for such questions the raw texts must match position by position.
+        if len({norm(o) for o in pdf_q["options"]}) < 4:
+            squash = lambda t: " ".join(t.split())
+            if [squash(o) for o in oet_options] != [squash(o) for o in pdf_q["options"]]:
+                order_unverified.append((num, oet_options, pdf_q["options"]))
 
         # The OET site shows no stem at all for a handful of questions (only an internal ID such as
         # "ET2021a_Meinungsfreiheit"); the PDF text covers those. A picture question must have its image.
@@ -224,6 +232,10 @@ def main() -> None:
         for num, a, b, sims in low_similarity:
             log.error(f"question {num}: OET options {a} do not match PDF options {b} (similarity {sims})")
         raise ValueError(f"{len(low_similarity)} questions have mismatched options between PDF and OET")
+    if order_unverified:
+        for num, a, b in order_unverified:
+            log.error(f"question {num}: options differ only in word order and are not identical by position: OET {a}, PDF {b}")
+        raise ValueError(f"{len(order_unverified)} questions: option order between PDF and OET cannot be confirmed")
     log.info(f"OET shows no question stem for {len(missing_stem)} questions (text taken from PDF): {missing_stem}")
 
     OUT_JSON.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")

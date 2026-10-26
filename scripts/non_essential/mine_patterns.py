@@ -1,7 +1,7 @@
 """Mine shortcut rules ("patterns") in the 310 Bayern questions and measure how well they work.
 
 Reads data/questions_bayern.json and writes results/patterns.json - the record. The HTML report is built
-from that JSON by scripts/build_pattern_report.py, so the report can be rebuilt without rerunning this.
+from that JSON by scripts/non_essential/build_pattern_report.py, so the report can be rebuilt without rerunning this.
 
 What it measures:
   - picker rules (pick one option, e.g. "the longest option"): support, precision, lift over the 25% of a
@@ -16,7 +16,7 @@ What it measures:
     (30 of 300 general + 3 of 10 Bayern drawn, 17 of 33 to pass) and how many questions you still
     have to memorize with and without the rules
 
-Run:      uv run python scripts/mine_patterns.py
+Run:      uv run python scripts/non_essential/mine_patterns.py
 Runtime:  ~6 s (measured on this laptop; was 106 s before caching per-question results)
 """
 
@@ -29,7 +29,7 @@ import time
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]   # scripts/non_essential/ -> repo root
 DATA = ROOT / "data" / "questions_bayern.json"
 OUT = ROOT / "results" / "patterns.json"
 

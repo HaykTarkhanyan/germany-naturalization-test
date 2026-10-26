@@ -87,12 +87,24 @@ export function ExamHistory({ exams }: { exams: ExamResult[] }) {
   )
 }
 
-function submit(id: string, timedOut: boolean): void {
+/** Finishes the running exam; false if it was already finished (e.g. the timer and the button at once). */
+function finish(id: string, timedOut: boolean): boolean {
   const active = getProgress().activeExam
-  if (!active || active.id !== id) return // already finished (e.g. the timer and the button at once)
+  if (!active || active.id !== id) return false
   const { result, logged } = finishExam(active, Date.now(), timedOut)
   updateProgress((p) => ({ ...p, activeExam: null, exams: [...p.exams, result], answers: [...p.answers, ...logged] }))
-  go('exam', 'result', id)
+  return true
+}
+
+function submit(id: string, timedOut: boolean): void {
+  if (finish(id, timedOut)) go('exam', 'result', id)
+}
+
+/** An exam whose hour ran out while its page was not open is finished on the next page view (App.tsx), so Home
+ * does not keep showing it as running. The exam page itself finishes it first and opens the result. */
+export function finishExpiredExam(): void {
+  const active = getProgress().activeExam
+  if (active && remainingMs(active, Date.now()) <= 0) finish(active.id, true)
 }
 
 function RunningExam({ exam }: { exam: ActiveExam }) {
@@ -129,6 +141,9 @@ function RunningExam({ exam }: { exam: ActiveExam }) {
       if (e.ctrlKey || e.metaKey || e.altKey) return
       const k = e.key.toLowerCase()
       const idx = ['1', '2', '3', '4'].indexOf(k) >= 0 ? Number(k) - 1 : ['a', 'b', 'c', 'd'].indexOf(k)
+      const handled = idx >= 0 || k === 'arrowright' || k === 'enter' || k === 'arrowleft'
+      // Without this, Enter also "clicks" the focused button (an option clicked earlier) and changes that answer.
+      if (handled) e.preventDefault()
       if (idx >= 0) answer(idx)
       else if (k === 'arrowright' || k === 'enter') move(1)
       else if (k === 'arrowleft') move(-1)
