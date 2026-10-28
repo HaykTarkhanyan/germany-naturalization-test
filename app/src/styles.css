@@ -665,9 +665,70 @@ tr.total td {
 
 /* Narrow screens: the nav wraps (measured up to 614px with Segoe UI; 700 leaves room for other fonts), so a sticky
    header would eat the screen and cover the exam bar. */
+.toggles {
+  display: flex;
+  gap: 4px;
+}
+
+.short-label {
+  display: none;
+}
+
 @media (max-width: 700px) {
   header {
     position: static;
+    gap: 6px 8px;
+    padding: 8px 12px;
+  }
+
+  /* phone header: name and toggles on one row, the menu as one row that scrolls sideways */
+  .toggles {
+    order: 1;
+  }
+
+  nav {
+    order: 2;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+    mask-image: linear-gradient(to right, #000 85%, transparent);
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: none;
+    padding: 6px 9px;
+  }
+
+  button.toggle {
+    padding: 4px 8px;
+    font-size: 0.8rem;
+  }
+
+  .long-label {
+    display: none;
+  }
+
+  .short-label {
+    display: inline;
+  }
+
+  /* exam: the 33 question buttons in 3 rows instead of 5, so the question starts higher */
+  .navigator {
+    grid-template-columns: repeat(11, 1fr);
+    gap: 3px;
+    margin-bottom: 8px;
+  }
+
+  .navigator button {
+    min-height: 0;
+    padding: 4px 0;
+    font-size: 0.75rem;
   }
 
   .exam-bar {
@@ -821,4 +882,11 @@ tr.total td {
 
 .status-known {
   color: var(--ok);
+}
+
+/* key hints mean nothing on a touch screen */
+@media (hover: none) {
+  .keys {
+    display: none;
+  }
 }

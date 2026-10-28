@@ -1,0 +1,26 @@
+title = "Video folder for YouTube, phone UX round, long EN and RU videos with chapters"
+date = "2026-10-29"
+time = "00:20"
+areas = ["app/src/", "videos/pipeline/non_essential/", "README.md"]
+
+done = [
+  "Opened videos/mp4/ (28 MP4s) in Explorer for the YouTube upload",
+  "UX survey on a 390 px phone (Playwright): header 126 px in 3 rows; exam question started at 403 px of 844 (33-button grid in 5 rows); practice 'Next' at the bottom edge, off-screen after picture questions; key hints shown on touch screens; video list only at the bottom of an 8,000 px Learn page",
+  "U1 Videos in the menu: #/videos lists all 14 (moved from the bottom of Learn), video pages go back to Videos and highlight it",
+  "U2 phone header: name + toggles on one row, menu one sideways-scrolling row (fade at the edge, active item kept in view sideways only): 126 -> 86 px; desktop still one row (56 px); 'Explanations' -> 'Explain' on phones",
+  "U3 exam grid on phones: 11 columns, 3 rows: question 403 -> 264 px, all 4 options on screen (last option bottom 760 of 844)",
+  "U4 practice: after answering, the feedback with 'Next' scrolls into view when it is off-screen (picture question: Next at 740-781 of 844)",
+  "U5 key hints hidden on touch screens (hover: none); the exam's 'Cancel this exam' stays",
+  "Long videos for YouTube (Hayk): videos/pipeline/non_essential/long_videos.py joins the 14 parts per language by stream copy (all 28 parts checked identical: h264 1280x720 25 fps, aac 24 kHz mono) -> videos/build/youtube/einbuergerungstest_bayern_en.mp4 (45:43, 58 MB) and _ru (45:55, 59 MB) + timestamps.txt; every chapter start checked by frame comparison; 57 s; not in git (build folder)",
+  "My chat copy of the RU chapters had a typo (Deutschland und Европа); timestamps.txt was right; told Hayk",
+  "Checks: 46 unit tests, build; Playwright with a mobile touch profile: 70 routes x EN/RU, no errors, no sideways scroll; desktop unchanged",
+]
+pending = [
+  "Q6 browser test suite, Q7 doc-only deploys (DEFERRED_TODO.md)",
+]
+next = [
+  "Hayk uploads the two long videos to YouTube with the chapter lines from videos/build/youtube/timestamps.txt",
+]
+files = ["videos/pipeline/non_essential/long_videos.py", "videos/pipeline/non_essential/README.md", "app/src/App.tsx", "app/src/pages/VideoText.tsx", "app/src/pages/Learn.tsx", "app/src/pages/Practice.tsx", "app/src/pages/Exam.tsx", "app/src/styles.css", "README.md"]
+commits = ["phone UX round + long videos script (this commit)"]
+notes = "No API spend. Windows lock again: a running vite preview made the build fail (ENOTEMPTY on dist/videos); stopping it first fixed it (_learnings/2026-10-26-1835)."

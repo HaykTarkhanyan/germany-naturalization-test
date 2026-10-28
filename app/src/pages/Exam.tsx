@@ -205,7 +205,8 @@ function RunningExam({ exam }: { exam: ActiveExam }) {
         </button>
       </div>
       <p className="muted small hint">
-        Keys: 1-4 or A-D to answer, ←/→ to move. <button type="button" className="linklike" onClick={onCancel}>Cancel this exam</button>
+        <span className="keys">Keys: 1-4 or A-D to answer, ←/→ to move. </span>
+        <button type="button" className="linklike" onClick={onCancel}>Cancel this exam</button>
       </p>
     </>
   )

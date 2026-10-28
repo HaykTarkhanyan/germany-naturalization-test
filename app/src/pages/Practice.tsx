@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { QuestionCard } from '../components/QuestionCard.tsx'
 import { ReadButton } from '../components/ReadButton.tsx'
 import { SoftBreaks } from '../components/Text.tsx'
@@ -58,8 +58,15 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
   const [chosen, setChosen] = useState<number | null>(null)
   const [results, setResults] = useState<{ id: number; correct: boolean }[]>([])
   const { showEnglish } = useSettings()
+  const feedbackRef = useRef<HTMLDivElement>(null)
 
   const current = pos < queue.length ? question(queue[pos]) : null
+
+  // On a phone the feedback and "Next" land below the screen after a picture question: bring them into view (only
+  // scrolls when they are not visible already).
+  useEffect(() => {
+    if (chosen !== null) feedbackRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+  }, [chosen])
 
   function choose(i: number) {
     if (current === null || chosen !== null) return
@@ -194,7 +201,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
       </div>
       <QuestionCard question={current} chosen={chosen} reveal={chosen !== null} onChoose={choose} />
       {chosen !== null && (
-        <div className={`card feedback ${right ? 'ok' : 'bad'}`}>
+        <div ref={feedbackRef} className={`card feedback ${right ? 'ok' : 'bad'}`}>
           <span>
             {right ? 'Right.' : (
               <>
@@ -216,7 +223,7 @@ export function Practice({ source, arg }: { source: string; arg: string }) {
         </div>
       )}
       {chosen !== null && <Why id={current.id} />}
-      <p className="muted small hint">Keys: 1-4 or A-D to answer, Enter for the next question.</p>
+      <p className="muted small hint keys">Keys: 1-4 or A-D to answer, Enter for the next question.</p>
     </>
   )
 }

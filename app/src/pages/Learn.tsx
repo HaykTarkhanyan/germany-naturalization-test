@@ -16,8 +16,7 @@ import {
 import { link } from '../lib/router.ts'
 import { useSettings } from '../lib/settings.ts'
 import { studyFile, studyIndex } from '../lib/study.ts'
-import { videoForLesson, VIDEO_TEXTS } from '../lib/videoTexts.ts'
-import { VideoTextList } from './VideoText.tsx'
+import { videoForLesson } from '../lib/videoTexts.ts'
 
 const STATS = new Map(LESSONS.map((l) => [l.topic, lessonStats(l)]))
 const TOTAL_MINUTES = LESSONS.reduce((sum, l) => sum + readingMinutes(l), 0)
@@ -90,9 +89,7 @@ export function Learn() {
               {m.title}
             </button>
           ))}
-          <button type="button" className="linklike" onClick={() => scrollTo('learn-videos')}>
-            Videos
-          </button>
+          <a href={link('videos')}>Videos</a>
         </div>
       </div>
       <details open id="learn-points" className="card module learn-module">
@@ -200,17 +197,6 @@ export function Learn() {
           </details>
         )
       })}
-      <details open id="learn-videos" className="card module learn-module">
-        <summary>
-          <span className="module-title">Videos</span>{' '}
-          <span className="muted small">Russian or English · {VIDEO_TEXTS.length} videos</span>
-        </summary>
-        <p className="muted small">
-          The explainer videos, each with its text to read instead of watching: the narration and every exam question it answers, with
-          the correct answer. Longer than the lessons, with more explanation.
-        </p>
-        <VideoTextList />
-      </details>
     </>
   )
 }

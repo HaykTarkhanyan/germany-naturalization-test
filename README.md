@@ -8,7 +8,7 @@ steps in Munich, and a survey of existing tools. Facts checked on 2026-10-02.
 
 **https://hayktarkhanyan.github.io/germany-naturalization-test/** (works on the phone). Read a 1-2 minute lesson per
 topic in English or Russian (Learn: about 25 minutes for all 24, each covering every exam question of its topic, with how many exam points
-the topic is worth and which of its questions need memorizing vs. common sense; also the 14 explainer videos, to watch
+the topic is worth and which of its questions need memorizing vs. common sense; also the 14 explainer videos (Videos page), to watch
 or read, in Russian or English, with every exam answer they reveal; every topic also as an HTML and PDF file to read
 offline or print, in both languages: `study/`), look up the catalog's ~1,400 German
 words (Words: dictionary form with der/die/das, English meaning, how often each appears), practice topic by topic (the

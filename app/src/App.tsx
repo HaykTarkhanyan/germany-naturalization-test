@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { emptyProgress, downloadText, replaceProgress, useLoadError, type ProgressError } from './lib/progress.ts'
 import { link, useRoute } from './lib/router.ts'
 import { updateSettings, useSettings } from './lib/settings.ts'
@@ -8,12 +8,13 @@ import { Learn, LessonPage } from './pages/Learn.tsx'
 import { Practice } from './pages/Practice.tsx'
 import { ProgressPage } from './pages/Progress.tsx'
 import { Topics } from './pages/Topics.tsx'
-import { VideoTextPage } from './pages/VideoText.tsx'
+import { VideosPage, VideoTextPage } from './pages/VideoText.tsx'
 import { Words } from './pages/Words.tsx'
 
 const NAV: [string, string][] = [
   ['', 'Home'],
   ['learn', 'Learn'],
+  ['videos', 'Videos'],
   ['words', 'Words'],
   ['topics', 'Topics'],
   ['exam', 'Exam'],
@@ -29,18 +30,28 @@ export function App() {
   useEffect(() => {
     if (!loadError) finishExpiredExam()
   }, [path, loadError])
+  // On a phone the menu is one row that scrolls sideways: keep the current page's item in view (sideways only, so the
+  // page itself never jumps).
+  const navRef = useRef<HTMLElement>(null)
+  useEffect(() => {
+    const nav = navRef.current
+    const active = nav?.querySelector<HTMLElement>('a.active')
+    if (nav && active) nav.scrollLeft = active.offsetLeft - (nav.clientWidth - active.offsetWidth) / 2
+  }, [page])
   return (
     <>
       <header>
         <a className="brand" href={link()}>
           Einbürgerungstest
         </a>
-        <nav>
+        <nav ref={navRef}>
           {NAV.map(([key, label]) => (
-            <a key={key} href={link(...(key ? [key] : []))} className={page === key || (key === 'topics' && page === 'practice') || (key === 'learn' && page === 'read') ? 'active' : ''}>
+            <a key={key} href={link(...(key ? [key] : []))} className={page === key || (key === 'topics' && page === 'practice') || (key === 'videos' && page === 'read') ? 'active' : ''}>
               {label}
             </a>
           ))}
+        </nav>
+        <div className="toggles">
           <button
             type="button"
             className={`toggle ${showEnglish ? 'on' : ''}`}
@@ -56,9 +67,13 @@ export function App() {
             title="Language of the lessons, the explanations after each answer, and the videos"
             onClick={() => updateSettings({ videoLang: videoLang === 'en' ? 'ru' : 'en' })}
           >
-            Explanations: {videoLang === 'en' ? 'EN' : 'RU'}
+            {/* one span: buttons are flex boxes, and a gap between the parts read "Explain : EN" */}
+            <span>
+              <span className="long-label">Explanations</span>
+              <span className="short-label">Explain</span>: {videoLang === 'en' ? 'EN' : 'RU'}
+            </span>
           </button>
-        </nav>
+        </div>
       </header>
       <main>{loadError ? <Recovery error={loadError} /> : <Page route={route} />}</main>
     </>
@@ -71,6 +86,8 @@ function Page({ route }: { route: string[] }) {
       return <Home />
     case 'learn':
       return route[1] ? <LessonPage key={route[1]} topicKey={route[1]} /> : <Learn />
+    case 'videos':
+      return <VideosPage />
     case 'read':
       return <VideoTextPage key={route[1] ?? ''} slug={route[1] ?? ''} />
     case 'words':

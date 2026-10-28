@@ -35,8 +35,25 @@ function commonSense(v: VideoText): Set<number> {
   )
 }
 
-/** The list of video texts, for the Learn page. */
-export function VideoTextList() {
+/** #/videos: all explainer videos, each opening its page (video + text). */
+export function VideosPage() {
+  return (
+    <>
+      <div className="card">
+        <h1>Videos</h1>
+        <p className="muted">
+          {VIDEO_TEXTS.length} explainer videos that together answer all 310 exam questions, in English or Russian (switch "Explanations"
+          at the top). Each page plays the video and has its full text to read instead, with every exam answer it reveals.
+        </p>
+      </div>
+      <div className="card">
+        <VideoTextList />
+      </div>
+    </>
+  )
+}
+
+function VideoTextList() {
   const { videoLang } = useSettings()
   return VIDEO_TEXTS.map((v) => (
     <a key={v.slug} className="lesson-link" href={link('read', v.slug)}>
@@ -75,7 +92,7 @@ export function VideoTextPage({ slug }: { slug: string }) {
   return (
     <>
       <div className="practice-head">
-        <a href={link('learn')}>← Learn</a>
+        <a href={link('videos')}>← Videos</a>
         <span className="muted small">
           video {v.number} of {VIDEO_TEXTS.length}
         </span>
